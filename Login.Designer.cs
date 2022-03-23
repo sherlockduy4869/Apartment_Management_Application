@@ -54,6 +54,8 @@
             this.txbUserName.Name = "txbUserName";
             this.txbUserName.Size = new System.Drawing.Size(380, 39);
             this.txbUserName.TabIndex = 1;
+            this.txbUserName.Text = "admin1";
+            this.txbUserName.Click += new System.EventHandler(this.txbUserName_Click);
             // 
             // label1
             // 
@@ -79,6 +81,9 @@
             this.txbPassWord.Name = "txbPassWord";
             this.txbPassWord.Size = new System.Drawing.Size(380, 39);
             this.txbPassWord.TabIndex = 1;
+            this.txbPassWord.Text = "123456";
+            this.txbPassWord.UseSystemPasswordChar = true;
+            this.txbPassWord.Click += new System.EventHandler(this.txbPassWord_Click);
             // 
             // label2
             // 
@@ -106,6 +111,7 @@
             this.btnLogin.Text = "Login";
             this.btnLogin.TextColor = System.Drawing.Color.White;
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // Login
             // 
