@@ -64,6 +64,7 @@
             this.btnTax.TabIndex = 55;
             this.btnTax.Text = "Taxes";
             this.btnTax.UseVisualStyleBackColor = true;
+            this.btnTax.Click += new System.EventHandler(this.btnTax_Click);
             // 
             // btnApart
             // 
@@ -79,6 +80,7 @@
             this.btnApart.TabIndex = 1;
             this.btnApart.Text = "Apart";
             this.btnApart.UseVisualStyleBackColor = true;
+            this.btnApart.Click += new System.EventHandler(this.btnApart_Click);
             // 
             // pnCick
             // 
@@ -111,6 +113,7 @@
             this.ClientSize = new System.Drawing.Size(1635, 881);
             this.Controls.Add(this.pnLeft);
             this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainForm";
             this.pnLeft.ResumeLayout(false);
             this.ResumeLayout(false);

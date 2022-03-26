@@ -16,5 +16,17 @@ namespace QuanlyCanHoGiangTran
         {
             InitializeComponent();
         }
+
+        private void btnApart_Click(object sender, EventArgs e)
+        {
+            ShowInfoApart showInfoApart = new ShowInfoApart();
+            showInfoApart.Show();
+        }
+
+        private void btnTax_Click(object sender, EventArgs e)
+        {
+            ShowInfoTax showInfoTax = new ShowInfoTax();
+            showInfoTax.Show();
+        }
     }
 }

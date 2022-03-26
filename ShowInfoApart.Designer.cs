@@ -101,6 +101,7 @@
             this.Controls.Add(this.dtgvApartInfo);
             this.Controls.Add(this.label1);
             this.Name = "ShowInfoApart";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Info Apart";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).EndInit();
             this.ResumeLayout(false);
