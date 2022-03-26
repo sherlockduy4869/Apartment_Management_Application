@@ -1,6 +1,6 @@
 ﻿namespace QuanlyCanHoGiangTran
 {
-    partial class Redo
+    partial class RemoveApart
     {
         /// <summary>
         /// Required designer variable.
@@ -28,31 +28,31 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnReDo = new QuanlyCanHoGiangTran.Custom.RJButton();
+            this.btnRemove = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txbMaCanHo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // btnReDo
+            // btnRemove
             // 
-            this.btnReDo.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnReDo.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnReDo.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnReDo.BorderRadius = 40;
-            this.btnReDo.BorderSize = 0;
-            this.btnReDo.FlatAppearance.BorderSize = 0;
-            this.btnReDo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReDo.ForeColor = System.Drawing.Color.White;
-            this.btnReDo.Location = new System.Drawing.Point(226, 261);
-            this.btnReDo.Name = "btnReDo";
-            this.btnReDo.Size = new System.Drawing.Size(300, 80);
-            this.btnReDo.TabIndex = 3;
-            this.btnReDo.Text = "ReDo";
-            this.btnReDo.TextColor = System.Drawing.Color.White;
-            this.btnReDo.UseVisualStyleBackColor = false;
-            this.btnReDo.Click += new System.EventHandler(this.btnReDo_Click);
+            this.btnRemove.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnRemove.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnRemove.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnRemove.BorderRadius = 40;
+            this.btnRemove.BorderSize = 0;
+            this.btnRemove.FlatAppearance.BorderSize = 0;
+            this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemove.ForeColor = System.Drawing.Color.White;
+            this.btnRemove.Location = new System.Drawing.Point(238, 261);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(300, 80);
+            this.btnRemove.TabIndex = 5;
+            this.btnRemove.Text = "Remove";
+            this.btnRemove.TextColor = System.Drawing.Color.White;
+            this.btnRemove.UseVisualStyleBackColor = false;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // panel1
             // 
@@ -61,7 +61,7 @@
             this.panel1.Location = new System.Drawing.Point(79, 110);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(643, 111);
-            this.panel1.TabIndex = 2;
+            this.panel1.TabIndex = 4;
             // 
             // txbMaCanHo
             // 
@@ -80,16 +80,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ma can ho";
             // 
-            // Redo
+            // RemoveApart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.btnReDo);
+            this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.panel1);
-            this.Name = "Redo";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Redo";
+            this.Name = "RemoveApart";
+            this.Text = "Remove Apart";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -98,7 +97,7 @@
 
         #endregion
 
-        private Custom.RJButton btnReDo;
+        private Custom.RJButton btnRemove;
         private Panel panel1;
         private TextBox txbMaCanHo;
         private Label label1;

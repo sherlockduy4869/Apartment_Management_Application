@@ -29,20 +29,28 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txbMaCanHo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.btnMarkDone = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txbMaCanHo);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(74, 77);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(643, 111);
             this.panel1.TabIndex = 0;
+            // 
+            // txbMaCanHo
+            // 
+            this.txbMaCanHo.ForeColor = System.Drawing.Color.WhiteSmoke;
+            this.txbMaCanHo.Location = new System.Drawing.Point(194, 45);
+            this.txbMaCanHo.Name = "txbMaCanHo";
+            this.txbMaCanHo.Size = new System.Drawing.Size(428, 39);
+            this.txbMaCanHo.TabIndex = 1;
             // 
             // label1
             // 
@@ -53,13 +61,6 @@
             this.label1.Size = new System.Drawing.Size(174, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ma can ho";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(194, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(428, 39);
-            this.textBox1.TabIndex = 1;
             // 
             // btnMarkDone
             // 
@@ -78,6 +79,7 @@
             this.btnMarkDone.Text = "MarkDone";
             this.btnMarkDone.TextColor = System.Drawing.Color.White;
             this.btnMarkDone.UseVisualStyleBackColor = false;
+            this.btnMarkDone.Click += new System.EventHandler(this.btnMarkDone_Click);
             // 
             // MarkDone
             // 
@@ -98,7 +100,7 @@
         #endregion
 
         private Panel panel1;
-        private TextBox textBox1;
+        private TextBox txbMaCanHo;
         private Label label1;
         private Custom.RJButton btnMarkDone;
     }

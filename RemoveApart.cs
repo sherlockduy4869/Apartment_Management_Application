@@ -11,26 +11,26 @@ using System.Windows.Forms;
 
 namespace QuanlyCanHoGiangTran
 {
-    public partial class MarkDone : Form
+    public partial class RemoveApart : Form
     {
-        public MarkDone()
+        public RemoveApart()
         {
             InitializeComponent();
         }
 
-        private void btnMarkDone_Click(object sender, EventArgs e)
+        private void btnRemove_Click(object sender, EventArgs e)
         {
             string maCanHo = txbMaCanHo.Text;
 
             try
             {
 
-                int i = AdminDAL.Instance.markDone(maCanHo);
+                int i = AdminDAL.Instance.removeApartment(maCanHo);
 
                 if (i != 0)
                 {
                     txbMaCanHo.Text = String.Empty;
-                    MessageBox.Show("MarkDone");
+                    MessageBox.Show("Removed");
                 }
                 else
                 {

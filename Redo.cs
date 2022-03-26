@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanlyCanHoGiangTran.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,32 @@ namespace QuanlyCanHoGiangTran
         public Redo()
         {
             InitializeComponent();
+        }
+
+        private void btnReDo_Click(object sender, EventArgs e)
+        {
+            string maCanHo = txbMaCanHo.Text;
+
+            try
+            {
+
+                int i = AdminDAL.Instance.reDo(maCanHo);
+
+                if (i != 0)
+                {
+                    txbMaCanHo.Text = String.Empty;
+                    MessageBox.Show("Redo");
+                }
+                else
+                {
+                    MessageBox.Show("Failed");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR 404");
+            }
         }
     }
 }
