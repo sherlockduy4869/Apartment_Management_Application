@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtgvApartTax = new System.Windows.Forms.DataGridView();
             this.btnMarkDone = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnReDo = new QuanlyCanHoGiangTran.Custom.RJButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvApartTax)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -45,15 +45,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "LIST APARTMENT NEED TO COLLECT MONEY";
             // 
-            // dataGridView1
+            // dtgvApartTax
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 192);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 82;
-            this.dataGridView1.RowTemplate.Height = 41;
-            this.dataGridView1.Size = new System.Drawing.Size(1759, 744);
-            this.dataGridView1.TabIndex = 1;
+            this.dtgvApartTax.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvApartTax.Location = new System.Drawing.Point(12, 192);
+            this.dtgvApartTax.Name = "dtgvApartTax";
+            this.dtgvApartTax.RowHeadersWidth = 82;
+            this.dtgvApartTax.RowTemplate.Height = 41;
+            this.dtgvApartTax.Size = new System.Drawing.Size(1759, 744);
+            this.dtgvApartTax.TabIndex = 1;
             // 
             // btnMarkDone
             // 
@@ -98,12 +98,12 @@
             this.ClientSize = new System.Drawing.Size(1783, 1142);
             this.Controls.Add(this.btnReDo);
             this.Controls.Add(this.btnMarkDone);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtgvApartTax);
             this.Controls.Add(this.label1);
             this.Name = "ShowInfoTax";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Info Tax";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvApartTax)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -112,7 +112,7 @@
         #endregion
 
         private Label label1;
-        private DataGridView dataGridView1;
+        private DataGridView dtgvApartTax;
         private Custom.RJButton btnMarkDone;
         private Custom.RJButton btnReDo;
     }

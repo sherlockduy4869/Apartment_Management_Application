@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanlyCanHoGiangTran.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,14 @@ namespace QuanlyCanHoGiangTran
         public ShowInfoTax()
         {
             InitializeComponent();
+            listApartTax();
+        }
+
+        void listApartTax()
+        {
+            string mon = DateTime.Now.Month.ToString();
+
+            dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE MONTH(NGAYCANTHU) = '" + mon + "'");
         }
     }
 }
