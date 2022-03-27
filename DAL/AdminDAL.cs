@@ -52,5 +52,12 @@ namespace QuanlyCanHoGiangTran.DAL
             int i = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maCanHo });
             return i;
         }
+
+        public int expireApart(string maCanHo)
+        {
+            string query = "EXEC dbo.ADDING_EXPIRED_APARTMENT @macanho ";
+            int i = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maCanHo });
+            return i;
+        }
     }
 }

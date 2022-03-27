@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanlyCanHoGiangTran.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,32 @@ namespace QuanlyCanHoGiangTran
         public Expire()
         {
             InitializeComponent();
+        }
+
+        private void btnExpire_Click(object sender, EventArgs e)
+        {
+            string maCanHo = txbMaCanHo.Text;
+
+            try
+            {
+
+                int i = AdminDAL.Instance.expireApart(maCanHo);
+
+                if (i != 0)
+                {
+                    txbMaCanHo.Text = String.Empty;
+                    MessageBox.Show("Done");
+                }
+                else
+                {
+                    MessageBox.Show("Failed");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR 404");
+            }
         }
     }
 }

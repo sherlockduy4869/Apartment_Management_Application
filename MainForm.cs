@@ -32,5 +32,10 @@ namespace QuanlyCanHoGiangTran
             showInfoTax.ShowDialog();
             this.Show();
         }
+
+        private void btnHistory_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

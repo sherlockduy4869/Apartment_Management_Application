@@ -52,6 +52,7 @@
             this.btnExpire.Text = "Expire";
             this.btnExpire.TextColor = System.Drawing.Color.White;
             this.btnExpire.UseVisualStyleBackColor = false;
+            this.btnExpire.Click += new System.EventHandler(this.btnExpire_Click);
             // 
             // panel1
             // 
@@ -88,6 +89,7 @@
             this.Controls.Add(this.btnExpire);
             this.Controls.Add(this.panel1);
             this.Name = "Expire";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Expire";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
