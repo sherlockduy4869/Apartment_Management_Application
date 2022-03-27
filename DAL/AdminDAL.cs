@@ -46,5 +46,11 @@ namespace QuanlyCanHoGiangTran.DAL
             return i;
         }
 
+        public int nextCyle(string maCanHo)
+        {
+            string query = "EXEC dbo.Next_Ngaycanthu @macanho ";
+            int i = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maCanHo });
+            return i;
+        }
     }
 }

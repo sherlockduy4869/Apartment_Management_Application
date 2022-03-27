@@ -40,5 +40,10 @@ namespace QuanlyCanHoGiangTran
             removeApart.Show();
         }
 
+        private void btnExpire_Click(object sender, EventArgs e)
+        {
+            Expire expire = new Expire();
+            expire.Show();
+        }
     }
 }

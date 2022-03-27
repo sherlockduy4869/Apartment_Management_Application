@@ -21,7 +21,7 @@ namespace QuanlyCanHoGiangTran
 
         void listApartTax()
         {
-            string mon = DateTime.Now.Month.ToString();
+            string mon = "7";
 
             dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE MONTH(NGAYCANTHU) = '" + mon + "'");
         }
@@ -36,6 +36,26 @@ namespace QuanlyCanHoGiangTran
         {
             Redo redo = new Redo();
             redo.Show();
+        }
+
+        private void btnNextCycle_Click(object sender, EventArgs e)
+        {
+            NextCycle nextCycle = new NextCycle();
+            nextCycle.Show();
+        }
+
+        private void dtgvApartTax_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            foreach (DataGridViewRow row in dtgvApartTax.Rows)
+            {
+                string trangThai = Convert.ToString(row.Cells["TRANGTHAI"].Value);
+
+                if (trangThai == "Da thu tien")
+                {
+                    row.DefaultCellStyle.ForeColor = Color.FromArgb(0, 174, 114);
+                }
+
+            }
         }
     }
 }

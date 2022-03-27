@@ -1,6 +1,6 @@
 ﻿namespace QuanlyCanHoGiangTran
 {
-    partial class MarkDone
+    partial class Expire
     {
         /// <summary>
         /// Required designer variable.
@@ -28,21 +28,39 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.btnExpire = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txbMaCanHo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnMarkDone = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // btnExpire
+            // 
+            this.btnExpire.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnExpire.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnExpire.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnExpire.BorderRadius = 40;
+            this.btnExpire.BorderSize = 0;
+            this.btnExpire.FlatAppearance.BorderSize = 0;
+            this.btnExpire.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExpire.ForeColor = System.Drawing.Color.White;
+            this.btnExpire.Location = new System.Drawing.Point(226, 261);
+            this.btnExpire.Name = "btnExpire";
+            this.btnExpire.Size = new System.Drawing.Size(300, 80);
+            this.btnExpire.TabIndex = 3;
+            this.btnExpire.Text = "Expire";
+            this.btnExpire.TextColor = System.Drawing.Color.White;
+            this.btnExpire.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
             this.panel1.Controls.Add(this.txbMaCanHo);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(74, 77);
+            this.panel1.Location = new System.Drawing.Point(79, 110);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(643, 111);
-            this.panel1.TabIndex = 0;
+            this.panel1.TabIndex = 2;
             // 
             // txbMaCanHo
             // 
@@ -62,35 +80,15 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ma can ho";
             // 
-            // btnMarkDone
-            // 
-            this.btnMarkDone.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnMarkDone.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnMarkDone.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnMarkDone.BorderRadius = 40;
-            this.btnMarkDone.BorderSize = 0;
-            this.btnMarkDone.FlatAppearance.BorderSize = 0;
-            this.btnMarkDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMarkDone.ForeColor = System.Drawing.Color.White;
-            this.btnMarkDone.Location = new System.Drawing.Point(221, 228);
-            this.btnMarkDone.Name = "btnMarkDone";
-            this.btnMarkDone.Size = new System.Drawing.Size(300, 80);
-            this.btnMarkDone.TabIndex = 1;
-            this.btnMarkDone.Text = "MarkDone";
-            this.btnMarkDone.TextColor = System.Drawing.Color.White;
-            this.btnMarkDone.UseVisualStyleBackColor = false;
-            this.btnMarkDone.Click += new System.EventHandler(this.btnMarkDone_Click);
-            // 
-            // MarkDone
+            // Expire
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(784, 384);
-            this.Controls.Add(this.btnMarkDone);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnExpire);
             this.Controls.Add(this.panel1);
-            this.Name = "MarkDone";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "MarkDone";
+            this.Name = "Expire";
+            this.Text = "Expire";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -99,9 +97,9 @@
 
         #endregion
 
+        private Custom.RJButton btnExpire;
         private Panel panel1;
         private TextBox txbMaCanHo;
         private Label label1;
-        private Custom.RJButton btnMarkDone;
     }
 }

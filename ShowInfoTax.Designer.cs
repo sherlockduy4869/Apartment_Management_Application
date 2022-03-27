@@ -32,6 +32,7 @@
             this.dtgvApartTax = new System.Windows.Forms.DataGridView();
             this.btnMarkDone = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnReDo = new QuanlyCanHoGiangTran.Custom.RJButton();
+            this.btnNextCycle = new QuanlyCanHoGiangTran.Custom.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartTax)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +56,7 @@
             this.dtgvApartTax.RowTemplate.Height = 41;
             this.dtgvApartTax.Size = new System.Drawing.Size(1759, 744);
             this.dtgvApartTax.TabIndex = 1;
+            this.dtgvApartTax.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dtgvApartTax_CellFormatting);
             // 
             // btnMarkDone
             // 
@@ -66,7 +68,7 @@
             this.btnMarkDone.FlatAppearance.BorderSize = 0;
             this.btnMarkDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMarkDone.ForeColor = System.Drawing.Color.White;
-            this.btnMarkDone.Location = new System.Drawing.Point(476, 1021);
+            this.btnMarkDone.Location = new System.Drawing.Point(179, 1020);
             this.btnMarkDone.Name = "btnMarkDone";
             this.btnMarkDone.Size = new System.Drawing.Size(300, 80);
             this.btnMarkDone.TabIndex = 2;
@@ -85,7 +87,7 @@
             this.btnReDo.FlatAppearance.BorderSize = 0;
             this.btnReDo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReDo.ForeColor = System.Drawing.Color.White;
-            this.btnReDo.Location = new System.Drawing.Point(1036, 1021);
+            this.btnReDo.Location = new System.Drawing.Point(756, 1020);
             this.btnReDo.Name = "btnReDo";
             this.btnReDo.Size = new System.Drawing.Size(300, 80);
             this.btnReDo.TabIndex = 3;
@@ -94,11 +96,31 @@
             this.btnReDo.UseVisualStyleBackColor = false;
             this.btnReDo.Click += new System.EventHandler(this.btnReDo_Click);
             // 
+            // btnNextCycle
+            // 
+            this.btnNextCycle.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnNextCycle.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnNextCycle.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnNextCycle.BorderRadius = 40;
+            this.btnNextCycle.BorderSize = 0;
+            this.btnNextCycle.FlatAppearance.BorderSize = 0;
+            this.btnNextCycle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNextCycle.ForeColor = System.Drawing.Color.White;
+            this.btnNextCycle.Location = new System.Drawing.Point(1304, 1020);
+            this.btnNextCycle.Name = "btnNextCycle";
+            this.btnNextCycle.Size = new System.Drawing.Size(300, 80);
+            this.btnNextCycle.TabIndex = 4;
+            this.btnNextCycle.Text = "Next Cycle";
+            this.btnNextCycle.TextColor = System.Drawing.Color.White;
+            this.btnNextCycle.UseVisualStyleBackColor = false;
+            this.btnNextCycle.Click += new System.EventHandler(this.btnNextCycle_Click);
+            // 
             // ShowInfoTax
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1783, 1142);
+            this.Controls.Add(this.btnNextCycle);
             this.Controls.Add(this.btnReDo);
             this.Controls.Add(this.btnMarkDone);
             this.Controls.Add(this.dtgvApartTax);
@@ -118,5 +140,6 @@
         private DataGridView dtgvApartTax;
         private Custom.RJButton btnMarkDone;
         private Custom.RJButton btnReDo;
+        private Custom.RJButton btnNextCycle;
     }
 }
