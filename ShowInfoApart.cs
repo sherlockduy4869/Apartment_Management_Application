@@ -31,6 +31,7 @@ namespace QuanlyCanHoGiangTran
             this.Hide();
             addNewApart.ShowDialog();
             this.Show();
+
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
