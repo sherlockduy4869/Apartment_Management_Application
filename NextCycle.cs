@@ -16,7 +16,6 @@ namespace QuanlyCanHoGiangTran
         public NextCycle()
         {
             InitializeComponent();
-            listMaCanHo();
         }
 
         private void btnNextCyle_Click(object sender, EventArgs e)
