@@ -30,8 +30,8 @@
         {
             this.btnNextCyle = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.txbMaCanHo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.txbMaCanHo = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -63,14 +63,6 @@
             this.panel1.Size = new System.Drawing.Size(643, 111);
             this.panel1.TabIndex = 2;
             // 
-            // txbMaCanHo
-            // 
-            this.txbMaCanHo.ForeColor = System.Drawing.Color.Black;
-            this.txbMaCanHo.Location = new System.Drawing.Point(194, 45);
-            this.txbMaCanHo.Name = "txbMaCanHo";
-            this.txbMaCanHo.Size = new System.Drawing.Size(428, 39);
-            this.txbMaCanHo.TabIndex = 1;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -80,6 +72,13 @@
             this.label1.Size = new System.Drawing.Size(174, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ma can ho";
+            // 
+            // txbMaCanHo
+            // 
+            this.txbMaCanHo.Location = new System.Drawing.Point(221, 45);
+            this.txbMaCanHo.Name = "txbMaCanHo";
+            this.txbMaCanHo.Size = new System.Drawing.Size(390, 39);
+            this.txbMaCanHo.TabIndex = 1;
             // 
             // NextCycle
             // 
@@ -101,7 +100,7 @@
 
         private Custom.RJButton btnNextCyle;
         private Panel panel1;
-        private TextBox txbMaCanHo;
         private Label label1;
+        private TextBox txbMaCanHo;
     }
 }

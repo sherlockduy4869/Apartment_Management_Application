@@ -16,6 +16,7 @@ namespace QuanlyCanHoGiangTran
         public NextCycle()
         {
             InitializeComponent();
+            listMaCanHo();
         }
 
         private void btnNextCyle_Click(object sender, EventArgs e)
@@ -29,7 +30,6 @@ namespace QuanlyCanHoGiangTran
 
                 if (i != 0)
                 {
-                    txbMaCanHo.Text = String.Empty;
                     MessageBox.Show("Done");
                 }
                 else

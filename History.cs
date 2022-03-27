@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanlyCanHoGiangTran.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,18 @@ namespace QuanlyCanHoGiangTran
         public History()
         {
             InitializeComponent();
+            showInforExpiredApart();
+        }
+
+        void showInforExpiredApart()
+        {
+            dtgvHistory.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM EXPIRED_APARTMENT");
+            this.dtgvHistory.Sort(this.dtgvHistory.Columns["STT"], ListSortDirection.Ascending);
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

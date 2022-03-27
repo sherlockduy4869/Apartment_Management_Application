@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.dtgvApartInfo = new System.Windows.Forms.DataGridView();
+            this.dtgvHistory = new System.Windows.Forms.DataGridView();
             this.btnExit = new QuanlyCanHoGiangTran.Custom.RJButton();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvHistory)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -44,16 +44,16 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "INFORMATION OF EXPIRED APARTMENT";
             // 
-            // dtgvApartInfo
+            // dtgvHistory
             // 
-            this.dtgvApartInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dtgvApartInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvApartInfo.Location = new System.Drawing.Point(12, 197);
-            this.dtgvApartInfo.Name = "dtgvApartInfo";
-            this.dtgvApartInfo.RowHeadersWidth = 82;
-            this.dtgvApartInfo.RowTemplate.Height = 41;
-            this.dtgvApartInfo.Size = new System.Drawing.Size(2144, 680);
-            this.dtgvApartInfo.TabIndex = 2;
+            this.dtgvHistory.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dtgvHistory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgvHistory.Location = new System.Drawing.Point(12, 197);
+            this.dtgvHistory.Name = "dtgvHistory";
+            this.dtgvHistory.RowHeadersWidth = 82;
+            this.dtgvHistory.RowTemplate.Height = 41;
+            this.dtgvHistory.Size = new System.Drawing.Size(2144, 680);
+            this.dtgvHistory.TabIndex = 2;
             // 
             // btnExit
             // 
@@ -72,6 +72,7 @@
             this.btnExit.Text = "Exit";
             this.btnExit.TextColor = System.Drawing.Color.White;
             this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // History
             // 
@@ -79,11 +80,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2168, 1043);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.dtgvApartInfo);
+            this.Controls.Add(this.dtgvHistory);
             this.Controls.Add(this.label1);
             this.Name = "History";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "History";
-            ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgvHistory)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -92,7 +94,7 @@
         #endregion
 
         private Label label1;
-        private DataGridView dtgvApartInfo;
+        private DataGridView dtgvHistory;
         private Custom.RJButton btnExit;
     }
 }

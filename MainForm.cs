@@ -35,7 +35,10 @@ namespace QuanlyCanHoGiangTran
 
         private void btnHistory_Click(object sender, EventArgs e)
         {
-
+            History history = new History();
+            this.Hide();
+            history.ShowDialog();
+            this.Show();
         }
     }
 }
