@@ -20,13 +20,17 @@ namespace QuanlyCanHoGiangTran
         private void btnApart_Click(object sender, EventArgs e)
         {
             ShowInfoApart showInfoApart = new ShowInfoApart();
-            showInfoApart.Show();
+            this.Hide();
+            showInfoApart.ShowDialog();
+            this.Show();
         }
 
         private void btnTax_Click(object sender, EventArgs e)
         {
             ShowInfoTax showInfoTax = new ShowInfoTax();
-            showInfoTax.Show();
+            this.Hide();
+            showInfoTax.ShowDialog();
+            this.Show();
         }
     }
 }

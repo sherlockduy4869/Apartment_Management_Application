@@ -47,6 +47,7 @@
             // 
             // dtgvApartTax
             // 
+            this.dtgvApartTax.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvApartTax.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvApartTax.Location = new System.Drawing.Point(12, 192);
             this.dtgvApartTax.Name = "dtgvApartTax";
@@ -72,6 +73,7 @@
             this.btnMarkDone.Text = "Mark Done";
             this.btnMarkDone.TextColor = System.Drawing.Color.White;
             this.btnMarkDone.UseVisualStyleBackColor = false;
+            this.btnMarkDone.Click += new System.EventHandler(this.btnMarkDone_Click);
             // 
             // btnReDo
             // 
@@ -90,6 +92,7 @@
             this.btnReDo.Text = "Redo";
             this.btnReDo.TextColor = System.Drawing.Color.White;
             this.btnReDo.UseVisualStyleBackColor = false;
+            this.btnReDo.Click += new System.EventHandler(this.btnReDo_Click);
             // 
             // ShowInfoTax
             // 

@@ -88,6 +88,7 @@
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.panel1);
             this.Name = "RemoveApart";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Remove Apart";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();

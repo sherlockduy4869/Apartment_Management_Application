@@ -22,6 +22,22 @@ namespace QuanlyCanHoGiangTran
         void showInforAllApart()
         {
             dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_INFO");
+            this.dtgvApartInfo.Sort(this.dtgvApartInfo.Columns["STT"], ListSortDirection.Ascending);
         }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            AddNewApart addNewApart = new AddNewApart();
+            this.Hide();
+            addNewApart.ShowDialog();
+            this.Show();
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            RemoveApart removeApart = new RemoveApart();
+            removeApart.Show();
+        }
+
     }
 }
