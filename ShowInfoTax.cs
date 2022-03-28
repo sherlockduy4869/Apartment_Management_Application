@@ -21,7 +21,7 @@ namespace QuanlyCanHoGiangTran
 
         void listApartTax()
         {
-            string mon = "8";
+            string mon = "6";
 
             dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE MONTH(NGAYCANTHU) = '" + mon + "'");
         }
@@ -56,6 +56,14 @@ namespace QuanlyCanHoGiangTran
                 }
 
             }
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            ShowInfoTax showInfoTax = new ShowInfoTax();
+            showInfoTax.Show();
+            
         }
     }
 }

@@ -33,6 +33,7 @@
             this.btnMarkDone = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnReDo = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnNextCycle = new QuanlyCanHoGiangTran.Custom.RJButton();
+            this.btnRefresh = new QuanlyCanHoGiangTran.Custom.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartTax)).BeginInit();
             this.SuspendLayout();
             // 
@@ -115,11 +116,31 @@
             this.btnNextCycle.UseVisualStyleBackColor = false;
             this.btnNextCycle.Click += new System.EventHandler(this.btnNextCycle_Click);
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnRefresh.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnRefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnRefresh.BorderRadius = 40;
+            this.btnRefresh.BorderSize = 0;
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(57, 96);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(149, 60);
+            this.btnRefresh.TabIndex = 5;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.TextColor = System.Drawing.Color.White;
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // ShowInfoTax
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1783, 1142);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnNextCycle);
             this.Controls.Add(this.btnReDo);
             this.Controls.Add(this.btnMarkDone);
@@ -141,5 +162,6 @@
         private Custom.RJButton btnMarkDone;
         private Custom.RJButton btnReDo;
         private Custom.RJButton btnNextCycle;
+        private Custom.RJButton btnRefresh;
     }
 }

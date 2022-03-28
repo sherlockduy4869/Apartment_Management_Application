@@ -60,6 +60,8 @@ namespace QuanlyCanHoGiangTran
                 {
                     clearInfo();
                     MessageBox.Show("Added");
+                    ShowInfoApart showInfoApart = new ShowInfoApart();
+                    showInfoApart.Show();
                 }
                 else
                 {

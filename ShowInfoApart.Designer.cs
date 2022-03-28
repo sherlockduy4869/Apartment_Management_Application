@@ -32,7 +32,7 @@
             this.dtgvApartInfo = new System.Windows.Forms.DataGridView();
             this.btnAdd = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnRemove = new QuanlyCanHoGiangTran.Custom.RJButton();
-            this.btnExpire = new QuanlyCanHoGiangTran.Custom.RJButton();
+            this.btnRefresh = new QuanlyCanHoGiangTran.Custom.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,7 +67,7 @@
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(224, 966);
+            this.btnAdd.Location = new System.Drawing.Point(612, 967);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(300, 80);
             this.btnAdd.TabIndex = 2;
@@ -86,7 +86,7 @@
             this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(929, 966);
+            this.btnRemove.Location = new System.Drawing.Point(1317, 967);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(300, 80);
             this.btnRemove.TabIndex = 3;
@@ -95,31 +95,31 @@
             this.btnRemove.UseVisualStyleBackColor = false;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
-            // btnExpire
+            // btnRefresh
             // 
-            this.btnExpire.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnExpire.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnExpire.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnExpire.BorderRadius = 40;
-            this.btnExpire.BorderSize = 0;
-            this.btnExpire.FlatAppearance.BorderSize = 0;
-            this.btnExpire.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExpire.ForeColor = System.Drawing.Color.White;
-            this.btnExpire.Location = new System.Drawing.Point(1582, 966);
-            this.btnExpire.Name = "btnExpire";
-            this.btnExpire.Size = new System.Drawing.Size(300, 80);
-            this.btnExpire.TabIndex = 4;
-            this.btnExpire.Text = "Expire";
-            this.btnExpire.TextColor = System.Drawing.Color.White;
-            this.btnExpire.UseVisualStyleBackColor = false;
-            this.btnExpire.Click += new System.EventHandler(this.btnExpire_Click);
+            this.btnRefresh.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnRefresh.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnRefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnRefresh.BorderRadius = 40;
+            this.btnRefresh.BorderSize = 0;
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(137, 115);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(149, 60);
+            this.btnRefresh.TabIndex = 6;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.TextColor = System.Drawing.Color.White;
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // ShowInfoApart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2168, 1104);
-            this.Controls.Add(this.btnExpire);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dtgvApartInfo);
@@ -139,6 +139,6 @@
         private DataGridView dtgvApartInfo;
         private Custom.RJButton btnAdd;
         private Custom.RJButton btnRemove;
-        private Custom.RJButton btnExpire;
+        private Custom.RJButton btnRefresh;
     }
 }

@@ -30,8 +30,6 @@ namespace QuanlyCanHoGiangTran
             AddNewApart addNewApart = new AddNewApart();
             this.Hide();
             addNewApart.ShowDialog();
-            this.Show();
-
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
@@ -40,10 +38,11 @@ namespace QuanlyCanHoGiangTran
             removeApart.Show();
         }
 
-        private void btnExpire_Click(object sender, EventArgs e)
+        private void btnRefresh_Click(object sender, EventArgs e)
         {
-            Expire expire = new Expire();
-            expire.Show();
+            this.Close();
+            ShowInfoApart showInfoApart = new ShowInfoApart();
+            showInfoApart.Show();
         }
     }
 }
