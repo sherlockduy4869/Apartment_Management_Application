@@ -23,6 +23,7 @@ namespace QuanlyCanHoGiangTran
         {
             dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_INFO");
             this.dtgvApartInfo.Sort(this.dtgvApartInfo.Columns["STT"], ListSortDirection.Ascending);
+            dtgvApartInfo.Columns["TIENTHU"].DefaultCellStyle.Format = "N2";
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

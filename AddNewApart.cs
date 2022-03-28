@@ -28,7 +28,11 @@ namespace QuanlyCanHoGiangTran
                 listChuKy.Add(i);
             }
             cbChuKy.DataSource = listChuKy;
+
+            
         }
+
+
         void clearInfo()
         {
             txbMaCanHo.Text = string.Empty;
@@ -36,7 +40,7 @@ namespace QuanlyCanHoGiangTran
             txbMaSoThue.Text = string.Empty;
             txbHTKhaiThue.Text = string.Empty;
             txbCQThuThue.Text = string.Empty;
-            txbTienThu.Text = string.Empty;
+            txbThue.Text = string.Empty;
         }
 
         private void btnAddNew_Click(object sender, EventArgs e)
@@ -46,7 +50,7 @@ namespace QuanlyCanHoGiangTran
             string maSoThue = txbMaSoThue.Text;
             string hinhThucKT = txbHTKhaiThue.Text;
             string coQuanTT = txbCQThuThue.Text;
-            float tienThu = float.Parse(txbTienThu.Text, CultureInfo.InvariantCulture.NumberFormat);
+            float tienThu = float.Parse(txbThue.Text, CultureInfo.InvariantCulture.NumberFormat);
             string chuKy = cbChuKy.Text;
             string ngayStart = dtpkStart.Text;
             string ngayEnd = dtpkEnd.Text;
@@ -75,6 +79,16 @@ namespace QuanlyCanHoGiangTran
 
         }
 
+        private void txbThue_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != (char)8;
+
+        }
+
+        private void txbThue_Leave(object sender, EventArgs e)
+        {
+            txbThue.Text = string.Format("{0:n}", double.Parse(txbThue.Text));
+        }
     }
     
 }
