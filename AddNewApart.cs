@@ -17,10 +17,10 @@ namespace QuanlyCanHoGiangTran
         public AddNewApart()
         {
             InitializeComponent();
-            listChuKy();
+            listAllComboBox();
         }
 
-        void listChuKy()
+        void listAllComboBox()
         {
             List<int> listChuKy = new List<int>();
             for (int i = 1; i <= 12; i++)
@@ -29,7 +29,13 @@ namespace QuanlyCanHoGiangTran
             }
             cbChuKy.DataSource = listChuKy;
 
-            
+            List<string> listTinhTrang = new List<string>();
+            string[] arrayList = { "Mới bán", "Chưa nhận bàn giao nhà", "Đã nhận bàn giao nhà", "Đang cho thuê", "Đang available cho thuê"};
+            foreach(string str in arrayList)
+            {
+                listTinhTrang.Add(str);
+            }
+            cbTinhTrang.DataSource = listTinhTrang;
         }
 
 
@@ -46,11 +52,20 @@ namespace QuanlyCanHoGiangTran
         private void btnAddNew_Click(object sender, EventArgs e)
         {
             string maCanHo = txbMaCanHo.Text;
+            string tinhTrang = cbTinhTrang.Text;
             string tenChuHo = txbTenChuHo.Text;
             string maSoThue = txbMaSoThue.Text;
             string hinhThucKT = txbHTKhaiThue.Text;
             string coQuanTT = txbCQThuThue.Text;
-            float tienThu = float.Parse(txbThue.Text, CultureInfo.InvariantCulture.NumberFormat);
+
+            float thue = float.Parse(txbThue.Text, CultureInfo.InvariantCulture.NumberFormat);
+            float phiKeKhaiThue = float.Parse(txbPhiKeKhaiThue.Text, CultureInfo.InvariantCulture.NumberFormat);
+            float phiQuanly = float.Parse(txbPhiQuanLy.Text, CultureInfo.InvariantCulture.NumberFormat);
+            float tienReFundKhach = float.Parse(txbTienRefund.Text, CultureInfo.InvariantCulture.NumberFormat);
+            float phiDonVeSinh = float.Parse(txbPhiDonVeSinh.Text, CultureInfo.InvariantCulture.NumberFormat);
+            float tienThu = float.Parse(txbTienThu.Text, CultureInfo.InvariantCulture.NumberFormat);
+
+            string duAn = cbDuAn.Text;
             string chuKy = cbChuKy.Text;
 
             Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
@@ -58,7 +73,8 @@ namespace QuanlyCanHoGiangTran
             string ngayEnd = dtpkEnd.Value.ToString();
 
 
-            int i = AdminDAL.Instance.addApartment(maCanHo, tenChuHo, maSoThue, hinhThucKT, coQuanTT, tienThu, chuKy, ngayStart, ngayEnd);
+            int i = AdminDAL.Instance.addApartment(maCanHo, duAn, tenChuHo, maSoThue, hinhThucKT, coQuanTT, tinhTrang, 
+                                                    thue, phiKeKhaiThue, phiQuanly, tienReFundKhach, phiDonVeSinh, tienThu, chuKy, ngayStart, ngayEnd);
 
             try
             {

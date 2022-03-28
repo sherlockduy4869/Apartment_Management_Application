@@ -14,18 +14,34 @@ namespace QuanlyCanHoGiangTran.DTO
         private string _masothue;
         private string _hinhthucthuthue;
         private string _coquanthuthue;
-        private float _tienthu;
         private string _chuky;
+        private string _tinhtrang;
+        private string _duan;
+
+        private float _thue;
+        private float _phikekhaithue;
+        private float _phiquanly;
+        private float _tienrefundkhach;
+        private float _phidonvesinh;
+        private float _tienthu;
+
         private DateTime _ngaybatdau;
         private DateTime _ngayketthuc;
 
         public Apartment(DataRow row)
         {
-            _macanho = (string)row["MACANHO"];
             _tenchuho = (string)row["TENCHUHO"];
+            _macanho = (string)row["MACANHO"];
+            _duan = (string)row["DUAN"];
             _masothue = (string)row["MASOTHUE"];
             _hinhthucthuthue = (string)row["HINHTHUCKHAITHUE"];
             _coquanthuthue = (string)row["COQUANTHUTHUE"];
+            _tinhtrang = (string)row["TINHTRANG"];
+            _thue = (float)row["THUE"];
+            _phikekhaithue = (float)row["PHIKEKHAITHUE"];
+            _phiquanly = (float)row["PHIQUANLY"];
+            _tienrefundkhach = (float)row["TIENREFUNDKHACH"];
+            _phidonvesinh = (float)row["PHIDONVESINH"];
             _tienthu = (float)row["TIENTHU"];
             _chuky = (string)row["CHUKY"];
             _ngaybatdau = (DateTime)row["NGAYBATDAU"];
@@ -56,15 +72,20 @@ namespace QuanlyCanHoGiangTran.DTO
             get { return _coquanthuthue; }
             set { _coquanthuthue = value; }
         }
-        public float Tienthu
-        {
-            get { return _tienthu; }
-            set { _tienthu = value; }
-        }
         public string Chuky
         {
             get { return _chuky; }
             set { _chuky = value; }
+        }
+        public string Duan
+        {
+            get { return _duan; }
+            set { _duan = value; }
+        }
+        public string Tinhtrang
+        {
+            get { return _tinhtrang; }
+            set { _tinhtrang = value;}
         }
         public DateTime Ngaybatdau
         {
@@ -75,6 +96,42 @@ namespace QuanlyCanHoGiangTran.DTO
         {
             get { return _ngayketthuc; }
             set { _ngayketthuc = value; }
+        }
+
+        public float Thue
+        {
+            get { return _thue; }
+            set { _thue = value; }
+        }
+
+        public float Tienthu
+        {
+            get { return _tienthu; }
+            set { _tienthu = value; }
+        }
+
+        public float Phikekhaithue
+        {
+            get { return _phikekhaithue; }
+            set { _phikekhaithue = value;}
+        }
+
+        public float Phiquanly
+        {
+            get { return _phiquanly; }
+            set { _phiquanly = value; }
+        }
+
+        public float Tienrefundkhach
+        {
+            get { return _tienrefundkhach;}
+            set { _tienrefundkhach = value;}
+        }
+
+        public float Phidonvesinh
+        {
+            get { return _phidonvesinh; }
+            set { _phidonvesinh = value;}
         }
     }
 }
