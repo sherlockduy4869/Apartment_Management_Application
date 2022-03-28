@@ -29,8 +29,8 @@ namespace QuanlyCanHoGiangTran.DAL
 
         public int removeApartment(string maCanHo)
         {
-            string query = " DELETE FROM APARTMENT_INFO WHERE MACANHO = '" + maCanHo + "' ";
-            int i = DataProvider.Instance.ExecuteNonQuery(query);
+            string query = "EXEC dbo.DELETING_APARTMENT @macanho";
+            int i = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maCanHo });
             return i;
         }
 
