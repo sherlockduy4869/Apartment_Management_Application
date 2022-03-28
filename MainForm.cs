@@ -35,5 +35,11 @@ namespace QuanlyCanHoGiangTran
             History history = new History();
             history.Show();
         }
+
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            Admin admin = new Admin();
+            admin.Show();
+        }
     }
 }

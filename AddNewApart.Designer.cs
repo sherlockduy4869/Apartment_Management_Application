@@ -284,7 +284,7 @@
             // dtpkStart
             // 
             this.dtpkStart.CustomFormat = "dd-MM-yyyy";
-            this.dtpkStart.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpkStart.Location = new System.Drawing.Point(320, 9);
             this.dtpkStart.Name = "dtpkStart";
             this.dtpkStart.Size = new System.Drawing.Size(428, 39);
@@ -312,7 +312,7 @@
             // dtpkEnd
             // 
             this.dtpkEnd.CustomFormat = "dd-MM-yyyy";
-            this.dtpkEnd.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpkEnd.Location = new System.Drawing.Point(320, 12);
             this.dtpkEnd.Name = "dtpkEnd";
             this.dtpkEnd.Size = new System.Drawing.Size(428, 39);

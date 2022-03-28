@@ -25,6 +25,7 @@ namespace QuanlyCanHoGiangTran
 
             dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE MONTH(NGAYCANTHU) = '" + mon + "'");
             dtgvApartTax.Columns["TIENCANTHU"].DefaultCellStyle.Format = "N2";
+            dtgvApartTax.Columns["NGAYCANTHU"].DefaultCellStyle.Format = "dd-MM-yyyy";
         }
 
         private void btnMarkDone_Click(object sender, EventArgs e)

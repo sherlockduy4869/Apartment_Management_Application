@@ -52,8 +52,10 @@ namespace QuanlyCanHoGiangTran
             string coQuanTT = txbCQThuThue.Text;
             float tienThu = float.Parse(txbThue.Text, CultureInfo.InvariantCulture.NumberFormat);
             string chuKy = cbChuKy.Text;
-            string ngayStart = dtpkStart.Text;
-            string ngayEnd = dtpkEnd.Text;
+
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
+            string ngayStart = dtpkStart.Value.ToString();
+            string ngayEnd = dtpkEnd.Value.ToString();
 
 
             int i = AdminDAL.Instance.addApartment(maCanHo, tenChuHo, maSoThue, hinhThucKT, coQuanTT, tienThu, chuKy, ngayStart, ngayEnd);
