@@ -52,5 +52,11 @@ namespace QuanlyCanHoGiangTran
             ShowInfoApart showInfoApart = new ShowInfoApart();
             showInfoApart.Show();
         }
+
+        private void btnExpire_Click(object sender, EventArgs e)
+        {
+            ExpireApart expireApart = new ExpireApart();
+            expireApart.Show();
+        }
     }
 }

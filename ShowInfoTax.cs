@@ -21,7 +21,8 @@ namespace QuanlyCanHoGiangTran
 
         void listApartTax()
         {
-            string toDay = DateTime.UtcNow.Date.ToString();
+            //string toDay = DateTime.UtcNow.Date.ToString();
+            string toDay = "2022-05-15";
 
             dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE (NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) OR ('" + toDay + "' >= NGAYCUOI AND TRANGTHAI = 'Chua thu tien' )");
             dtgvApartTax.Columns["TIENCANTHU"].DefaultCellStyle.Format = "N2";

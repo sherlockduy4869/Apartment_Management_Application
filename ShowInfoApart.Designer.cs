@@ -132,6 +132,7 @@
             this.btnExpire.Text = "Expire";
             this.btnExpire.TextColor = System.Drawing.Color.White;
             this.btnExpire.UseVisualStyleBackColor = false;
+            this.btnExpire.Click += new System.EventHandler(this.btnExpire_Click);
             // 
             // ShowInfoApart
             // 
