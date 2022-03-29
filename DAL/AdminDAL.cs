@@ -28,7 +28,7 @@ namespace QuanlyCanHoGiangTran.DAL
             string query = "Insert into APARTMENT_INFO(MACANHO, DUAN, TENCHUHO, MASOTHUE, HINHTHUCKHAITHUE, COQUANTHUTHUE, TINHTRANG, " +
                             "THUE, PHIKEKHAITHUE, PHIQUANLY, TIENREFUNDKHACH, PHIDONVESINH, TIENTHU, NGAYBATDAU, NGAYKETTHUC, CHUKY) " +
                             "VALUES('" + maCanHo + "','" + duAn + "','"  + tenChuHo + "','" + maSoThue + "', '" + hinhThucKT 
-                            + "', '" + coQuanTT + "','" + tinhTrang + "','" + thue + "','" + phiKeKhaiThue + "','" + phiQuanLy + "','" 
+                            + "', '" + coQuanTT + "',N'" + tinhTrang + "','" + thue + "','" + phiKeKhaiThue + "','" + phiQuanLy + "','" 
                             + tienReFundKhach + "','" + phiDonVeSinh + "','" + tienThu + "','" + ngayStart + "', '" + ngayEnd + "', '" + chuKy + "') ";
             int i = DataProvider.Instance.ExecuteNonQuery(query);
             return i;

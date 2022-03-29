@@ -114,7 +114,12 @@ namespace QuanlyCanHoGiangTran
 
         private void txbThue_Leave(object sender, EventArgs e)
         {
-            txbThue.Text = string.Format("{0:n}", double.Parse(txbThue.Text));
+            txbThue.Text = string.Format("{0:n}", double.Parse(txbThue.Text)/double.Parse(cbChuKy.Text));
+        }
+
+        private void txbThue_Click(object sender, EventArgs e)
+        {
+            txbThue.Clear();
         }
     }
     

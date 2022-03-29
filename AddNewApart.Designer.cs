@@ -259,6 +259,7 @@
             this.txbThue.Name = "txbThue";
             this.txbThue.Size = new System.Drawing.Size(428, 39);
             this.txbThue.TabIndex = 7;
+            this.txbThue.Click += new System.EventHandler(this.txbThue_Click);
             this.txbThue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbThue_KeyPress);
             this.txbThue.Leave += new System.EventHandler(this.txbThue_Leave);
             // 

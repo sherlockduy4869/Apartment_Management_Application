@@ -21,9 +21,9 @@ namespace QuanlyCanHoGiangTran
 
         void listApartTax()
         {
-            string mon = "6";
+            string toDay = DateTime.UtcNow.Date.ToString();
 
-            dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE MONTH(NGAYCANTHU) = '" + mon + "'");
+            dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE NGAYCANTHU = '" + toDay + "'");
             dtgvApartTax.Columns["TIENCANTHU"].DefaultCellStyle.Format = "N2";
             dtgvApartTax.Columns["NGAYCANTHU"].DefaultCellStyle.Format = "dd-MM-yyyy";
         }
