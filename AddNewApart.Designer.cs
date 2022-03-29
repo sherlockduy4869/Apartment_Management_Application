@@ -475,6 +475,7 @@
             this.txbTienThu.ReadOnly = true;
             this.txbTienThu.Size = new System.Drawing.Size(428, 39);
             this.txbTienThu.TabIndex = 6;
+            this.txbTienThu.Text = "45";
             // 
             // label14
             // 

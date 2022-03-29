@@ -25,7 +25,8 @@ namespace QuanlyCanHoGiangTran.DAL
                                 float phiQuanLy, float tienReFundKhach, float phiDonVeSinh, float tienThu, string chuKy, 
                                 string ngayStart, string ngayEnd)
         {
-            string query = "Insert into APARTMENT_INFO(MACANHO, DUAN, TENCHUHO, MASOTHUE, HINHTHUCKHAITHUE, COQUANTHUTHUE, TINHTRANG, TIENTHU, NGAYBATDAU, NGAYKETTHUC, CHUKY) " +
+            string query = "Insert into APARTMENT_INFO(MACANHO, DUAN, TENCHUHO, MASOTHUE, HINHTHUCKHAITHUE, COQUANTHUTHUE, TINHTRANG, " +
+                            "THUE, PHIKEKHAITHUE, PHIQUANLY, TIENREFUNDKHACH, PHIDONVESINH, TIENTHU, NGAYBATDAU, NGAYKETTHUC, CHUKY) " +
                             "VALUES('" + maCanHo + "','" + duAn + "','"  + tenChuHo + "','" + maSoThue + "', '" + hinhThucKT 
                             + "', '" + coQuanTT + "','" + tinhTrang + "','" + thue + "','" + phiKeKhaiThue + "','" + phiQuanLy + "','" 
                             + tienReFundKhach + "','" + phiDonVeSinh + "','" + tienThu + "','" + ngayStart + "', '" + ngayEnd + "', '" + chuKy + "') ";

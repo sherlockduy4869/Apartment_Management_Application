@@ -40,7 +40,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(675, 102);
+            this.label1.Location = new System.Drawing.Point(818, 102);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(890, 63);
             this.label1.TabIndex = 0;
@@ -50,11 +50,11 @@
             // 
             this.dtgvApartInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvApartInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvApartInfo.Location = new System.Drawing.Point(12, 198);
+            this.dtgvApartInfo.Location = new System.Drawing.Point(3, 198);
             this.dtgvApartInfo.Name = "dtgvApartInfo";
             this.dtgvApartInfo.RowHeadersWidth = 82;
             this.dtgvApartInfo.RowTemplate.Height = 41;
-            this.dtgvApartInfo.Size = new System.Drawing.Size(2144, 680);
+            this.dtgvApartInfo.Size = new System.Drawing.Size(2446, 680);
             this.dtgvApartInfo.TabIndex = 1;
             // 
             // btnAdd
@@ -67,7 +67,7 @@
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(612, 967);
+            this.btnAdd.Location = new System.Drawing.Point(646, 964);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(300, 80);
             this.btnAdd.TabIndex = 2;
@@ -86,7 +86,7 @@
             this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(1317, 967);
+            this.btnRemove.Location = new System.Drawing.Point(1552, 955);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(300, 80);
             this.btnRemove.TabIndex = 3;
@@ -118,7 +118,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2168, 1104);
+            this.ClientSize = new System.Drawing.Size(2461, 1205);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);

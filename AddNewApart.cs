@@ -30,12 +30,20 @@ namespace QuanlyCanHoGiangTran
             cbChuKy.DataSource = listChuKy;
 
             List<string> listTinhTrang = new List<string>();
-            string[] arrayList = { "Mới bán", "Chưa nhận bàn giao nhà", "Đã nhận bàn giao nhà", "Đang cho thuê", "Đang available cho thuê"};
-            foreach(string str in arrayList)
+            string[] arrayListTinhTrang = { "Mới bán", "Chưa nhận bàn giao nhà", "Đã nhận bàn giao nhà", "Đang cho thuê", "Đang available cho thuê"};
+            foreach(string str in arrayListTinhTrang)
             {
                 listTinhTrang.Add(str);
             }
             cbTinhTrang.DataSource = listTinhTrang;
+
+            List<string> listDuAn = new List<string>();
+            string[] arrayListDuAn = { "Vinhomes Golden River", "Vinhomes Central Park", "Estella Height", "Estella", "The Vista", "Celesta" };
+            foreach (string str in arrayListDuAn)
+            {
+                listDuAn.Add(str);
+            }
+            cbDuAn.DataSource = listDuAn;
         }
 
 
@@ -74,7 +82,8 @@ namespace QuanlyCanHoGiangTran
 
 
             int i = AdminDAL.Instance.addApartment(maCanHo, duAn, tenChuHo, maSoThue, hinhThucKT, coQuanTT, tinhTrang, 
-                                                    thue, phiKeKhaiThue, phiQuanly, tienReFundKhach, phiDonVeSinh, tienThu, chuKy, ngayStart, ngayEnd);
+                                                    thue, phiKeKhaiThue, phiQuanly, tienReFundKhach, phiDonVeSinh,
+                                                    tienThu, chuKy, ngayStart, ngayEnd);
 
             try
             {
