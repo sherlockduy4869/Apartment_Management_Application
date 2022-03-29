@@ -23,9 +23,10 @@ namespace QuanlyCanHoGiangTran
         {
             string toDay = DateTime.UtcNow.Date.ToString();
 
-            dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE NGAYCANTHU = '" + toDay + "'");
+            dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE (NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) OR ('" + toDay + "' >= NGAYCUOI AND TRANGTHAI = 'Chua thu tien' )");
             dtgvApartTax.Columns["TIENCANTHU"].DefaultCellStyle.Format = "N2";
-            dtgvApartTax.Columns["NGAYCANTHU"].DefaultCellStyle.Format = "dd-MM-yyyy";
+            dtgvApartTax.Columns["NGAYDAU"].DefaultCellStyle.Format = "dd-MM-yyyy";
+            dtgvApartTax.Columns["NGAYCUOI"].DefaultCellStyle.Format = "dd-MM-yyyy";
         }
 
         private void btnMarkDone_Click(object sender, EventArgs e)

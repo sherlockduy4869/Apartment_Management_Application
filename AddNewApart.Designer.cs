@@ -77,6 +77,9 @@
             this.panel16 = new System.Windows.Forms.Panel();
             this.cbDuAn = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
+            this.panel17 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.cbNhacNho = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -93,6 +96,7 @@
             this.panel14.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
+            this.panel17.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAddNew
@@ -105,10 +109,10 @@
             this.btnAddNew.FlatAppearance.BorderSize = 0;
             this.btnAddNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddNew.ForeColor = System.Drawing.Color.White;
-            this.btnAddNew.Location = new System.Drawing.Point(713, 753);
+            this.btnAddNew.Location = new System.Drawing.Point(704, 888);
             this.btnAddNew.Name = "btnAddNew";
             this.btnAddNew.Size = new System.Drawing.Size(300, 80);
-            this.btnAddNew.TabIndex = 17;
+            this.btnAddNew.TabIndex = 18;
             this.btnAddNew.Text = "Add New";
             this.btnAddNew.TextColor = System.Drawing.Color.White;
             this.btnAddNew.UseVisualStyleBackColor = false;
@@ -259,6 +263,7 @@
             this.txbThue.Name = "txbThue";
             this.txbThue.Size = new System.Drawing.Size(428, 39);
             this.txbThue.TabIndex = 7;
+            this.txbThue.Text = "0";
             this.txbThue.Click += new System.EventHandler(this.txbThue_Click);
             this.txbThue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbThue_KeyPress);
             this.txbThue.Leave += new System.EventHandler(this.txbThue_Leave);
@@ -371,6 +376,10 @@
             this.txbPhiKeKhaiThue.Name = "txbPhiKeKhaiThue";
             this.txbPhiKeKhaiThue.Size = new System.Drawing.Size(428, 39);
             this.txbPhiKeKhaiThue.TabIndex = 8;
+            this.txbPhiKeKhaiThue.Text = "0";
+            this.txbPhiKeKhaiThue.Click += new System.EventHandler(this.txbPhiKeKhaiThue_Click);
+            this.txbPhiKeKhaiThue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPhiKeKhaiThue_KeyPress);
+            this.txbPhiKeKhaiThue.Leave += new System.EventHandler(this.txbPhiKeKhaiThue_Leave);
             // 
             // label10
             // 
@@ -397,6 +406,10 @@
             this.txbPhiQuanLy.Name = "txbPhiQuanLy";
             this.txbPhiQuanLy.Size = new System.Drawing.Size(428, 39);
             this.txbPhiQuanLy.TabIndex = 6;
+            this.txbPhiQuanLy.Text = "0";
+            this.txbPhiQuanLy.Click += new System.EventHandler(this.txbPhiQuanLy_Click);
+            this.txbPhiQuanLy.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPhiQuanLy_KeyPress);
+            this.txbPhiQuanLy.Leave += new System.EventHandler(this.txbPhiQuanLy_Leave);
             // 
             // label11
             // 
@@ -423,6 +436,10 @@
             this.txbTienRefund.Name = "txbTienRefund";
             this.txbTienRefund.Size = new System.Drawing.Size(428, 39);
             this.txbTienRefund.TabIndex = 6;
+            this.txbTienRefund.Text = "0";
+            this.txbTienRefund.Click += new System.EventHandler(this.txbTienRefund_Click);
+            this.txbTienRefund.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbTienRefund_KeyPress);
+            this.txbTienRefund.Leave += new System.EventHandler(this.txbTienRefund_Leave);
             // 
             // label12
             // 
@@ -449,6 +466,10 @@
             this.txbPhiDonVeSinh.Name = "txbPhiDonVeSinh";
             this.txbPhiDonVeSinh.Size = new System.Drawing.Size(428, 39);
             this.txbPhiDonVeSinh.TabIndex = 6;
+            this.txbPhiDonVeSinh.Text = "0";
+            this.txbPhiDonVeSinh.Click += new System.EventHandler(this.txbPhiDonVeSinh_Click);
+            this.txbPhiDonVeSinh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPhiDonVeSinh_KeyPress);
+            this.txbPhiDonVeSinh.Leave += new System.EventHandler(this.txbPhiDonVeSinh_Leave);
             // 
             // label13
             // 
@@ -476,7 +497,6 @@
             this.txbTienThu.ReadOnly = true;
             this.txbTienThu.Size = new System.Drawing.Size(428, 39);
             this.txbTienThu.TabIndex = 6;
-            this.txbTienThu.Text = "45";
             // 
             // label14
             // 
@@ -542,11 +562,39 @@
             this.label16.TabIndex = 0;
             this.label16.Text = "Du An";
             // 
+            // panel17
+            // 
+            this.panel17.Controls.Add(this.cbNhacNho);
+            this.panel17.Controls.Add(this.label17);
+            this.panel17.Location = new System.Drawing.Point(879, 685);
+            this.panel17.Name = "panel17";
+            this.panel17.Size = new System.Drawing.Size(768, 65);
+            this.panel17.TabIndex = 17;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label17.Location = new System.Drawing.Point(14, 12);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(206, 36);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Nhac nho HD";
+            // 
+            // cbNhacNho
+            // 
+            this.cbNhacNho.FormattingEnabled = true;
+            this.cbNhacNho.Location = new System.Drawing.Point(320, 8);
+            this.cbNhacNho.Name = "cbNhacNho";
+            this.cbNhacNho.Size = new System.Drawing.Size(428, 40);
+            this.cbNhacNho.TabIndex = 10;
+            // 
             // AddNewApart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1729, 920);
+            this.ClientSize = new System.Drawing.Size(1729, 1009);
+            this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.panel15);
             this.Controls.Add(this.panel14);
@@ -599,6 +647,8 @@
             this.panel15.PerformLayout();
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
+            this.panel17.ResumeLayout(false);
+            this.panel17.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -654,5 +704,8 @@
         private Label label16;
         private TextBox txbThue;
         private TextBox txbPhiKeKhaiThue;
+        private Panel panel17;
+        private ComboBox cbNhacNho;
+        private Label label17;
     }
 }

@@ -23,6 +23,11 @@ namespace QuanlyCanHoGiangTran
         {
             dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_INFO");
             this.dtgvApartInfo.Sort(this.dtgvApartInfo.Columns["STT"], ListSortDirection.Ascending);
+            dtgvApartInfo.Columns["THUE"].DefaultCellStyle.Format = "N2";
+            dtgvApartInfo.Columns["PHIKEKHAITHUE"].DefaultCellStyle.Format = "N2";
+            dtgvApartInfo.Columns["PHIQUANLY"].DefaultCellStyle.Format = "N2";
+            dtgvApartInfo.Columns["TIENREFUNDKHACH"].DefaultCellStyle.Format = "N2";
+            dtgvApartInfo.Columns["PHIDONVESINH"].DefaultCellStyle.Format = "N2";
             dtgvApartInfo.Columns["TIENTHU"].DefaultCellStyle.Format = "N2";
             dtgvApartInfo.Columns["NGAYBATDAU"].DefaultCellStyle.Format = "dd-MM-yyyy";
             dtgvApartInfo.Columns["NGAYKETTHUC"].DefaultCellStyle.Format = "dd-MM-yyyy";

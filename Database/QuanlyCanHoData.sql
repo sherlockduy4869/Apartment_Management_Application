@@ -42,7 +42,8 @@ CREATE TABLE APARTMENT_MONEY
 	STT INT IDENTITY,
 	TENCHUHO VARCHAR(40),
 	MACANHO VARCHAR(25),
-	NGAYCANTHU DATE,
+	NGAYDAU DATE,
+	NGAYCUOI DATE,
 	CHUKY INT,
 	TIENCANTHU FLOAT,
 	TRANGTHAI VARCHAR(30) DEFAULT 'Chua thu tien',
@@ -123,37 +124,21 @@ AS
 BEGIN
 	
 	DECLARE @chuky INT
-	DECLARE @ngayketthuc DATE
-	DECLARE @ngaycanthu DATE
-	DECLARE @ngaycanthuNext DATE
-	DECLARE @ngaycanthuNextCycle DATE
+	DECLARE @ngaydau DATE
+	DECLARE @ngaycuoi DATE
+	DECLARE @ngaydauNext DATE
+	DECLARE @ngaycuoiNext DATE
 
 	SELECT @chuky =  CHUKY FROM APARTMENT_MONEY WHERE MACANHO = @macanho
-	SELECT @ngaycanthu = NGAYCANTHU FROM APARTMENT_MONEY WHERE MACANHO = @macanho
-	SELECT @ngayketthuc = NGAYKETTHUC FROM APARTMENT_INFO WHERE MACANHO = @macanho
+	SELECT @ngaydau = NGAYDAU FROM APARTMENT_MONEY WHERE MACANHO = @macanho
+	SELECT @ngaycuoi = NGAYCUOI FROM APARTMENT_MONEY WHERE MACANHO = @macanho
 	
-	IF (@ngaycanthu < @ngayketthuc)
-		BEGIN
-			IF (DAY(@ngaycanthu) = 1)
-				BEGIN
-					SET @ngaycanthuNext = DATEADD(DAY, -1 , @ngaycanthu)
-					SET @ngaycanthuNextCycle = DATEADD(MONTH, @chuky, @ngaycanthuNext)
-				END
-			ELSE
-				BEGIN
-					SET @ngaycanthuNextCycle = DATEADD(MONTH, @chuky, @ngaycanthu)
-				END
+	SET @ngaydauNext = DATEADD(DAY, 1 , @ngaycuoi)
+	SET @ngaycuoiNext = DATEADD(MONTH, @chuky , @ngaycuoi)
 
-			UPDATE APARTMENT_MONEY
-			SET NGAYCANTHU = @ngaycanthuNextCycle, TRANGTHAI = 'Chua thu tien'
-			WHERE MACANHO = @macanho
-		END
-
-	ELSE
-		BEGIN
-			EXEC dbo.ADDING_EXPIRED_APARTMENT @macanho
-			DELETE FROM APARTMENT_MONEY WHERE MACANHO = @macanho
-		END
+	UPDATE APARTMENT_MONEY
+	SET NGAYDAU = @ngaydauNext, NGAYCUOI = @ngaycuoiNext, TRANGTHAI = 'Chua thu tien'
+	WHERE MACANHO = @macanho
 
 END
 GO
@@ -169,23 +154,24 @@ BEGIN
 	DECLARE @tenchuho VARCHAR(40)
 	DECLARE @ngaycanthu DATE
 	DECLARE @chuky INT
-	DECLARE @ngaybatdau DATE
-	DECLARE @ngaycanthuMinus DATE
+	DECLARE @ngaydau DATE
+	DECLARE @ngaycuoi DATE
+	DECLARE @ngaycuoiMinus DATE
 	DECLARE @tienthu FLOAT
 	DECLARE @tiencanthu FLOAT
 
 
 	SELECT @macanho = MACANHO FROM inserted
 	SELECT @tenchuho = TENCHUHO FROM inserted
-	SELECT @ngaybatdau = NGAYBATDAU FROM inserted
+	SELECT @ngaydau = NGAYBATDAU FROM inserted
 	SELECT @chuky = CHUKY FROM inserted
 	SELECT @tienthu = TIENTHU FROM inserted
 
-	SET @ngaycanthu = DATEADD(MONTH, @chuky, @ngaybatdau)
-	SET @ngaycanthuMinus = DATEADD(DAY, -1, @ngaycanthu)
-	SET @tiencanthu = @tienthu * @chuky
+	SET @ngaycuoi = DATEADD(MONTH, @chuky, @ngaydau)
+	SET @ngaycuoiMinus = DATEADD(DAY, -1, @ngaycuoi)
+	SET @tiencanthu = @tienthu
 
-	INSERT INTO APARTMENT_MONEY(MACANHO, TENCHUHO, NGAYCANTHU, CHUKY, TIENCANTHU) VALUES(@macanho, @tenchuho, @ngaycanthuMinus, @chuky, @tiencanthu)
+	INSERT INTO APARTMENT_MONEY(MACANHO, TENCHUHO, NGAYDAU, NGAYCUOI, CHUKY, TIENCANTHU) VALUES(@macanho, @tenchuho, @ngaydau, @ngaycuoiMinus, @chuky, @tiencanthu)
 END
 GO
 
@@ -193,4 +179,3 @@ GO
 --CREATE DEFAULT ACCOUNT FOR PROGRAM
 INSERT INTO ACCOUNT(USERNAME,PASSWORD) VALUES('admin1','123456')
 GO
-

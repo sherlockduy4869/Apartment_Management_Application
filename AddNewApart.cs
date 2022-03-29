@@ -44,6 +44,17 @@ namespace QuanlyCanHoGiangTran
                 listDuAn.Add(str);
             }
             cbDuAn.DataSource = listDuAn;
+
+            List<int> listNhacNho = new List<int>();
+            int[] arrayNhacNho = { 10, 15, 20, 25, 30, 45, 60, 75, 90 };
+            foreach (int num in arrayNhacNho)
+            {
+                listNhacNho.Add(num);
+            }
+            cbNhacNho.DataSource = listNhacNho;
+
+            int tienThu = 0;
+            txbTienThu.Text = tienThu.ToString("N");
         }
 
 
@@ -114,12 +125,72 @@ namespace QuanlyCanHoGiangTran
 
         private void txbThue_Leave(object sender, EventArgs e)
         {
-            txbThue.Text = string.Format("{0:n}", double.Parse(txbThue.Text)/double.Parse(cbChuKy.Text));
+            txbThue.Text = string.Format("{0:n}", double.Parse(txbThue.Text));
         }
 
         private void txbThue_Click(object sender, EventArgs e)
         {
             txbThue.Clear();
+        }
+
+        private void txbPhiKeKhaiThue_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != (char)8;
+        }
+
+        private void txbPhiKeKhaiThue_Leave(object sender, EventArgs e)
+        {
+            txbPhiKeKhaiThue.Text = string.Format("{0:n}", double.Parse(txbPhiKeKhaiThue.Text));
+        }
+
+        private void txbPhiKeKhaiThue_Click(object sender, EventArgs e)
+        {
+            txbPhiKeKhaiThue.Clear();
+        }
+
+        private void txbPhiQuanLy_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != (char)8;
+        }
+
+        private void txbPhiQuanLy_Leave(object sender, EventArgs e)
+        {
+            txbPhiQuanLy.Text = string.Format("{0:n}", double.Parse(txbPhiQuanLy.Text));
+        }
+
+        private void txbPhiQuanLy_Click(object sender, EventArgs e)
+        {
+            txbPhiQuanLy.Clear();
+        }
+
+        private void txbTienRefund_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != (char)8;
+        }
+
+        private void txbTienRefund_Leave(object sender, EventArgs e)
+        {
+            txbTienRefund.Text = string.Format("{0:n}", double.Parse(txbTienRefund.Text));
+        }
+
+        private void txbTienRefund_Click(object sender, EventArgs e)
+        {
+            txbTienRefund.Clear();
+        }
+
+        private void txbPhiDonVeSinh_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != (char)8;
+        }
+
+        private void txbPhiDonVeSinh_Leave(object sender, EventArgs e)
+        {
+            txbPhiDonVeSinh.Text = string.Format("{0:n}", double.Parse(txbPhiDonVeSinh.Text));
+        }
+
+        private void txbPhiDonVeSinh_Click(object sender, EventArgs e)
+        {
+            txbPhiDonVeSinh.Clear();
         }
     }
     
