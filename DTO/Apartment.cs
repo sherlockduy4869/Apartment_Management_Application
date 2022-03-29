@@ -28,6 +28,7 @@ namespace QuanlyCanHoGiangTran.DTO
         private DateTime _ngaybatdau;
         private DateTime _ngayketthuc;
 
+        private int _songaynhacnho;
         public Apartment(DataRow row)
         {
             _tenchuho = (string)row["TENCHUHO"];
@@ -46,6 +47,7 @@ namespace QuanlyCanHoGiangTran.DTO
             _chuky = (string)row["CHUKY"];
             _ngaybatdau = (DateTime)row["NGAYBATDAU"];
             _ngayketthuc = (DateTime)row["NGAYKETTHUC"];
+            _songaynhacnho = (int)row["SONGAYNHACNHO"];
         }
         public string Macanho
         {
@@ -132,6 +134,12 @@ namespace QuanlyCanHoGiangTran.DTO
         {
             get { return _phidonvesinh; }
             set { _phidonvesinh = value;}
+        }
+
+        public int SoNgayNhacNho
+        {
+            get { return _songaynhacnho;}
+            set { _songaynhacnho = value;}
         }
     }
 }

@@ -78,8 +78,8 @@
             this.cbDuAn = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.panel17 = new System.Windows.Forms.Panel();
+            this.cbSoNgayNhac = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
-            this.cbNhacNho = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -564,12 +564,20 @@
             // 
             // panel17
             // 
-            this.panel17.Controls.Add(this.cbNhacNho);
+            this.panel17.Controls.Add(this.cbSoNgayNhac);
             this.panel17.Controls.Add(this.label17);
             this.panel17.Location = new System.Drawing.Point(879, 685);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(768, 65);
             this.panel17.TabIndex = 17;
+            // 
+            // cbSoNgayNhac
+            // 
+            this.cbSoNgayNhac.FormattingEnabled = true;
+            this.cbSoNgayNhac.Location = new System.Drawing.Point(320, 8);
+            this.cbSoNgayNhac.Name = "cbSoNgayNhac";
+            this.cbSoNgayNhac.Size = new System.Drawing.Size(428, 40);
+            this.cbSoNgayNhac.TabIndex = 10;
             // 
             // label17
             // 
@@ -577,17 +585,9 @@
             this.label17.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label17.Location = new System.Drawing.Point(14, 12);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(206, 36);
+            this.label17.Size = new System.Drawing.Size(218, 36);
             this.label17.TabIndex = 0;
-            this.label17.Text = "Nhac nho HD";
-            // 
-            // cbNhacNho
-            // 
-            this.cbNhacNho.FormattingEnabled = true;
-            this.cbNhacNho.Location = new System.Drawing.Point(320, 8);
-            this.cbNhacNho.Name = "cbNhacNho";
-            this.cbNhacNho.Size = new System.Drawing.Size(428, 40);
-            this.cbNhacNho.TabIndex = 10;
+            this.label17.Text = "So Ngay Nhac";
             // 
             // AddNewApart
             // 
@@ -705,7 +705,7 @@
         private TextBox txbThue;
         private TextBox txbPhiKeKhaiThue;
         private Panel panel17;
-        private ComboBox cbNhacNho;
+        private ComboBox cbSoNgayNhac;
         private Label label17;
     }
 }

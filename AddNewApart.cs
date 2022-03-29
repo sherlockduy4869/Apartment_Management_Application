@@ -51,7 +51,7 @@ namespace QuanlyCanHoGiangTran
             {
                 listNhacNho.Add(num);
             }
-            cbNhacNho.DataSource = listNhacNho;
+            cbSoNgayNhac.DataSource = listNhacNho;
 
             int tienThu = 0;
             txbTienThu.Text = tienThu.ToString("N");
@@ -91,10 +91,12 @@ namespace QuanlyCanHoGiangTran
             string ngayStart = dtpkStart.Value.ToString();
             string ngayEnd = dtpkEnd.Value.ToString();
 
+            int soNgayNhacNho = Int32.Parse(cbSoNgayNhac.Text);
+
 
             int i = AdminDAL.Instance.addApartment(maCanHo, duAn, tenChuHo, maSoThue, hinhThucKT, coQuanTT, tinhTrang, 
                                                     thue, phiKeKhaiThue, phiQuanly, tienReFundKhach, phiDonVeSinh,
-                                                    tienThu, chuKy, ngayStart, ngayEnd);
+                                                    tienThu, chuKy, ngayStart, ngayEnd, soNgayNhacNho);
 
             try
             {
