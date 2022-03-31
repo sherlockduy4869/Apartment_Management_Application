@@ -68,5 +68,24 @@ namespace QuanlyCanHoGiangTran.DAL
             int i = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maCanHo });
             return i;
         }
+
+        public int doneNegotiation(string maCanHo)
+        {
+            string query = "UPDATE APARTMENT_CONTRACT SET STATUS = 'DONE' WHERE MACANHO = '" + maCanHo + "'";
+            int i = DataProvider.Instance.ExecuteNonQuery(query);
+            return i;
+        }
+        public int reDoNegotiation(string maCanHo)
+        {
+            string query = "UPDATE APARTMENT_CONTRACT SET STATUS = 'NOT DONE' WHERE MACANHO = '" + maCanHo + "'";
+            int i = DataProvider.Instance.ExecuteNonQuery(query);
+            return i;
+        }
+        public int skipNegotiation(string maCanHo)
+        {
+            string query = "DELETE FROM APARTMENT_CONTRACT WHERE MACANHO = '" + maCanHo + "'";
+            int i = DataProvider.Instance.ExecuteNonQuery(query);
+            return i;
+        }
     }
 }

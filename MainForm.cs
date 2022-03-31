@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanlyCanHoGiangTran.SHOW_INFO_FORM;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -40,6 +41,12 @@ namespace QuanlyCanHoGiangTran
         {
             Admin admin = new Admin();
             admin.Show();
+        }
+
+        private void btnNegotiation_Click(object sender, EventArgs e)
+        {
+            Negotiation negotiation = new Negotiation();
+            negotiation.Show();
         }
     }
 }

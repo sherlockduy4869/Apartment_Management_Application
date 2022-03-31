@@ -30,18 +30,20 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.pnLeft = new System.Windows.Forms.Panel();
+            this.btnAdmin = new System.Windows.Forms.Button();
             this.btnHistory = new System.Windows.Forms.Button();
             this.btnTax = new System.Windows.Forms.Button();
             this.btnApart = new System.Windows.Forms.Button();
             this.pnCick = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.Button();
-            this.btnAdmin = new System.Windows.Forms.Button();
+            this.btnNegotiation = new System.Windows.Forms.Button();
             this.pnLeft.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnLeft
             // 
             this.pnLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.pnLeft.Controls.Add(this.btnNegotiation);
             this.pnLeft.Controls.Add(this.btnAdmin);
             this.pnLeft.Controls.Add(this.btnHistory);
             this.pnLeft.Controls.Add(this.btnTax);
@@ -51,8 +53,24 @@
             this.pnLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnLeft.Location = new System.Drawing.Point(0, 0);
             this.pnLeft.Name = "pnLeft";
-            this.pnLeft.Size = new System.Drawing.Size(349, 881);
+            this.pnLeft.Size = new System.Drawing.Size(349, 923);
             this.pnLeft.TabIndex = 0;
+            // 
+            // btnAdmin
+            // 
+            this.btnAdmin.FlatAppearance.BorderSize = 0;
+            this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAdmin.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnAdmin.ForeColor = System.Drawing.Color.White;
+            this.btnAdmin.Image = ((System.Drawing.Image)(resources.GetObject("btnAdmin.Image")));
+            this.btnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAdmin.Location = new System.Drawing.Point(31, 773);
+            this.btnAdmin.Name = "btnAdmin";
+            this.btnAdmin.Size = new System.Drawing.Size(318, 110);
+            this.btnAdmin.TabIndex = 57;
+            this.btnAdmin.Text = "Admin";
+            this.btnAdmin.UseVisualStyleBackColor = true;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
             // btnHistory
             // 
@@ -61,8 +79,8 @@
             this.btnHistory.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnHistory.ForeColor = System.Drawing.Color.White;
             this.btnHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnHistory.Image")));
-            this.btnHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHistory.Location = new System.Drawing.Point(12, 541);
+            this.btnHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHistory.Location = new System.Drawing.Point(31, 541);
             this.btnHistory.Name = "btnHistory";
             this.btnHistory.Size = new System.Drawing.Size(318, 110);
             this.btnHistory.TabIndex = 56;
@@ -77,8 +95,8 @@
             this.btnTax.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnTax.ForeColor = System.Drawing.Color.White;
             this.btnTax.Image = ((System.Drawing.Image)(resources.GetObject("btnTax.Image")));
-            this.btnTax.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnTax.Location = new System.Drawing.Point(12, 425);
+            this.btnTax.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTax.Location = new System.Drawing.Point(31, 425);
             this.btnTax.Name = "btnTax";
             this.btnTax.Size = new System.Drawing.Size(318, 110);
             this.btnTax.TabIndex = 55;
@@ -93,8 +111,8 @@
             this.btnApart.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnApart.ForeColor = System.Drawing.Color.White;
             this.btnApart.Image = ((System.Drawing.Image)(resources.GetObject("btnApart.Image")));
-            this.btnApart.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnApart.Location = new System.Drawing.Point(12, 309);
+            this.btnApart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnApart.Location = new System.Drawing.Point(31, 309);
             this.btnApart.Name = "btnApart";
             this.btnApart.Size = new System.Drawing.Size(318, 110);
             this.btnApart.TabIndex = 1;
@@ -118,35 +136,35 @@
             this.btnHome.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
-            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnHome.Location = new System.Drawing.Point(9, 183);
+            this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHome.Location = new System.Drawing.Point(31, 183);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(318, 110);
             this.btnHome.TabIndex = 53;
             this.btnHome.Text = "   Home";
             this.btnHome.UseVisualStyleBackColor = true;
             // 
-            // btnAdmin
+            // btnNegotiation
             // 
-            this.btnAdmin.FlatAppearance.BorderSize = 0;
-            this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdmin.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnAdmin.Image = ((System.Drawing.Image)(resources.GetObject("btnAdmin.Image")));
-            this.btnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnAdmin.Location = new System.Drawing.Point(9, 657);
-            this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(318, 110);
-            this.btnAdmin.TabIndex = 57;
-            this.btnAdmin.Text = "Admin";
-            this.btnAdmin.UseVisualStyleBackColor = true;
-            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
+            this.btnNegotiation.FlatAppearance.BorderSize = 0;
+            this.btnNegotiation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNegotiation.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnNegotiation.ForeColor = System.Drawing.Color.White;
+            this.btnNegotiation.Image = ((System.Drawing.Image)(resources.GetObject("btnNegotiation.Image")));
+            this.btnNegotiation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNegotiation.Location = new System.Drawing.Point(31, 657);
+            this.btnNegotiation.Name = "btnNegotiation";
+            this.btnNegotiation.Size = new System.Drawing.Size(318, 110);
+            this.btnNegotiation.TabIndex = 58;
+            this.btnNegotiation.Text = "Negotiation";
+            this.btnNegotiation.UseVisualStyleBackColor = true;
+            this.btnNegotiation.Click += new System.EventHandler(this.btnNegotiation_Click);
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1635, 881);
+            this.ClientSize = new System.Drawing.Size(1635, 923);
             this.Controls.Add(this.pnLeft);
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -165,5 +183,6 @@
         private Button btnHome;
         private Button btnHistory;
         private Button btnAdmin;
+        private Button btnNegotiation;
     }
 }
