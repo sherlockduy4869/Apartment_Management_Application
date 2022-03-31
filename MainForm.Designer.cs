@@ -30,13 +30,13 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.pnLeft = new System.Windows.Forms.Panel();
+            this.btnNegotiation = new System.Windows.Forms.Button();
             this.btnAdmin = new System.Windows.Forms.Button();
             this.btnHistory = new System.Windows.Forms.Button();
             this.btnTax = new System.Windows.Forms.Button();
             this.btnApart = new System.Windows.Forms.Button();
             this.pnCick = new System.Windows.Forms.Panel();
             this.btnHome = new System.Windows.Forms.Button();
-            this.btnNegotiation = new System.Windows.Forms.Button();
             this.pnLeft.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -55,6 +55,22 @@
             this.pnLeft.Name = "pnLeft";
             this.pnLeft.Size = new System.Drawing.Size(349, 923);
             this.pnLeft.TabIndex = 0;
+            // 
+            // btnNegotiation
+            // 
+            this.btnNegotiation.FlatAppearance.BorderSize = 0;
+            this.btnNegotiation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNegotiation.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnNegotiation.ForeColor = System.Drawing.Color.White;
+            this.btnNegotiation.Image = ((System.Drawing.Image)(resources.GetObject("btnNegotiation.Image")));
+            this.btnNegotiation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNegotiation.Location = new System.Drawing.Point(31, 657);
+            this.btnNegotiation.Name = "btnNegotiation";
+            this.btnNegotiation.Size = new System.Drawing.Size(318, 110);
+            this.btnNegotiation.TabIndex = 58;
+            this.btnNegotiation.Text = "Negotiation";
+            this.btnNegotiation.UseVisualStyleBackColor = true;
+            this.btnNegotiation.Click += new System.EventHandler(this.btnNegotiation_Click);
             // 
             // btnAdmin
             // 
@@ -143,22 +159,6 @@
             this.btnHome.TabIndex = 53;
             this.btnHome.Text = "   Home";
             this.btnHome.UseVisualStyleBackColor = true;
-            // 
-            // btnNegotiation
-            // 
-            this.btnNegotiation.FlatAppearance.BorderSize = 0;
-            this.btnNegotiation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNegotiation.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnNegotiation.ForeColor = System.Drawing.Color.White;
-            this.btnNegotiation.Image = ((System.Drawing.Image)(resources.GetObject("btnNegotiation.Image")));
-            this.btnNegotiation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNegotiation.Location = new System.Drawing.Point(31, 657);
-            this.btnNegotiation.Name = "btnNegotiation";
-            this.btnNegotiation.Size = new System.Drawing.Size(318, 110);
-            this.btnNegotiation.TabIndex = 58;
-            this.btnNegotiation.Text = "Negotiation";
-            this.btnNegotiation.UseVisualStyleBackColor = true;
-            this.btnNegotiation.Click += new System.EventHandler(this.btnNegotiation_Click);
             // 
             // MainForm
             // 

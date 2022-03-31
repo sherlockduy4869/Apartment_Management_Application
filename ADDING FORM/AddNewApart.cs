@@ -14,10 +14,12 @@ namespace QuanlyCanHoGiangTran
 {
     public partial class AddNewApart : Form
     {
+        private float tienThu;
         public AddNewApart()
         {
             InitializeComponent();
             listAllComboBox();
+            calculateTienThu();
         }
 
         void listAllComboBox()
@@ -53,10 +55,14 @@ namespace QuanlyCanHoGiangTran
             }
             cbSoNgayNhac.DataSource = listNhacNho;
 
-            int tienThu = 0;
-            txbTienThu.Text = tienThu.ToString("N");
+            
         }
 
+        void calculateTienThu ()
+        {
+            tienThu = 0;
+            txbTienThu.Text = tienThu.ToString("N");
+        }
 
         void clearInfo()
         {
@@ -128,10 +134,14 @@ namespace QuanlyCanHoGiangTran
         private void txbThue_Leave(object sender, EventArgs e)
         {
             txbThue.Text = string.Format("{0:n}", double.Parse(txbThue.Text));
+            tienThu = tienThu + float.Parse(txbThue.Text);
+            txbTienThu.Text = tienThu.ToString("N");
         }
 
         private void txbThue_Click(object sender, EventArgs e)
         {
+            tienThu = tienThu - float.Parse(txbThue.Text);
+            txbTienThu.Text = tienThu.ToString("N");
             txbThue.Clear();
         }
 
@@ -143,10 +153,14 @@ namespace QuanlyCanHoGiangTran
         private void txbPhiKeKhaiThue_Leave(object sender, EventArgs e)
         {
             txbPhiKeKhaiThue.Text = string.Format("{0:n}", double.Parse(txbPhiKeKhaiThue.Text));
+            tienThu = tienThu + float.Parse(txbPhiKeKhaiThue.Text);
+            txbTienThu.Text = tienThu.ToString("N");
         }
 
         private void txbPhiKeKhaiThue_Click(object sender, EventArgs e)
         {
+            tienThu = tienThu - float.Parse(txbPhiKeKhaiThue.Text);
+            txbTienThu.Text = tienThu.ToString("N");
             txbPhiKeKhaiThue.Clear();
         }
 
@@ -158,10 +172,14 @@ namespace QuanlyCanHoGiangTran
         private void txbPhiQuanLy_Leave(object sender, EventArgs e)
         {
             txbPhiQuanLy.Text = string.Format("{0:n}", double.Parse(txbPhiQuanLy.Text));
+            tienThu = tienThu + float.Parse(txbPhiQuanLy.Text);
+            txbTienThu.Text = tienThu.ToString("N");
         }
 
         private void txbPhiQuanLy_Click(object sender, EventArgs e)
         {
+            tienThu = tienThu - float.Parse(txbPhiQuanLy.Text);
+            txbTienThu.Text = tienThu.ToString("N");
             txbPhiQuanLy.Clear();
         }
 
@@ -173,10 +191,14 @@ namespace QuanlyCanHoGiangTran
         private void txbTienRefund_Leave(object sender, EventArgs e)
         {
             txbTienRefund.Text = string.Format("{0:n}", double.Parse(txbTienRefund.Text));
+            tienThu = tienThu + float.Parse(txbTienRefund.Text);
+            txbTienThu.Text = tienThu.ToString("N");
         }
 
         private void txbTienRefund_Click(object sender, EventArgs e)
         {
+            tienThu = tienThu - float.Parse(txbTienRefund.Text);
+            txbTienThu.Text = tienThu.ToString("N");
             txbTienRefund.Clear();
         }
 
@@ -188,10 +210,14 @@ namespace QuanlyCanHoGiangTran
         private void txbPhiDonVeSinh_Leave(object sender, EventArgs e)
         {
             txbPhiDonVeSinh.Text = string.Format("{0:n}", double.Parse(txbPhiDonVeSinh.Text));
+            tienThu = tienThu + float.Parse(txbPhiDonVeSinh.Text);
+            txbTienThu.Text = tienThu.ToString("N");
         }
 
         private void txbPhiDonVeSinh_Click(object sender, EventArgs e)
         {
+            tienThu = tienThu - float.Parse(txbPhiDonVeSinh.Text);
+            txbTienThu.Text = tienThu.ToString("N");
             txbPhiDonVeSinh.Clear();
         }
     }
