@@ -48,5 +48,12 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             SkipNegotiation skipNegotiation = new SkipNegotiation();
             skipNegotiation.Show();
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Negotiation negotiation = new Negotiation();
+            negotiation.Show();
+        }
     }
 }
