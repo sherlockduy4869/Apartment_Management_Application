@@ -1,4 +1,6 @@
-﻿using QuanlyCanHoGiangTran.SHOW_INFO_FORM;
+﻿using QuanlyCanHoGiangTran.DAL;
+using QuanlyCanHoGiangTran.DTO;
+using QuanlyCanHoGiangTran.SHOW_INFO_FORM;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,6 +22,8 @@ namespace QuanlyCanHoGiangTran.OTHERS_FUNCTION_FORM
 
         private void btnDetail_Click(object sender, EventArgs e)
         {
+            
+
             ShowFinanceDetail showFinanceDetail = new ShowFinanceDetail();
             showFinanceDetail.Show();
         }

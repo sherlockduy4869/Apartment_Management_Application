@@ -1,4 +1,6 @@
-﻿using QuanlyCanHoGiangTran.SHOW_INFO_FORM;
+﻿using QuanlyCanHoGiangTran.DAL;
+using QuanlyCanHoGiangTran.DTO;
+using QuanlyCanHoGiangTran.SHOW_INFO_FORM;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +22,10 @@ namespace QuanlyCanHoGiangTran.OTHERS_FUNCTION_FORM
 
         private void btnDetailInformation_Click(object sender, EventArgs e)
         {
-            ShowInformationDetail showInformationDetail = new ShowInformationDetail();
+            Apartment apartment = AdminDAL.Instance.getApartmentByMaCanHo(txbMaCanHo.Text);
+            ShowInformationDetail showInformationDetail = new ShowInformationDetail(apartment.Macanho, apartment.Duan, apartment.Tenchuho,apartment.Masothue, apartment.Hinhthucthuthue
+                                                                                    ,apartment.Coquanthuthue, apartment.Tinhtrang, apartment.Thue, apartment.Phikekhaithue, apartment.Phiquanly
+                                                                                    , apartment.Tienrefundkhach, apartment.Phidonvesinh, apartment.Tienthu, apartment.Chuky, apartment.Ngaybatdau, apartment.Ngayketthuc);
             showInformationDetail.Show();
         }
     }

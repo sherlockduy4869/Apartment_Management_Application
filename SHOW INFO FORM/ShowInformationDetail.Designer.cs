@@ -54,10 +54,8 @@
             this.txbChuKy = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.dtpkEnd = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.dtpkStart = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.txbThue = new System.Windows.Forms.TextBox();
@@ -88,6 +86,8 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dtpkStart = new System.Windows.Forms.DateTimePicker();
+            this.dtpkEnd = new System.Windows.Forms.DateTimePicker();
             this.panel16.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel14.SuspendLayout();
@@ -342,16 +342,6 @@
             this.panel8.Size = new System.Drawing.Size(768, 65);
             this.panel8.TabIndex = 32;
             // 
-            // dtpkEnd
-            // 
-            this.dtpkEnd.CustomFormat = "dd-MM-yyyy";
-            this.dtpkEnd.Enabled = false;
-            this.dtpkEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpkEnd.Location = new System.Drawing.Point(320, 12);
-            this.dtpkEnd.Name = "dtpkEnd";
-            this.dtpkEnd.Size = new System.Drawing.Size(428, 39);
-            this.dtpkEnd.TabIndex = 8;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -371,16 +361,6 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(768, 65);
             this.panel7.TabIndex = 31;
-            // 
-            // dtpkStart
-            // 
-            this.dtpkStart.CustomFormat = "dd-MM-yyyy";
-            this.dtpkStart.Enabled = false;
-            this.dtpkStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpkStart.Location = new System.Drawing.Point(320, 9);
-            this.dtpkStart.Name = "dtpkStart";
-            this.dtpkStart.Size = new System.Drawing.Size(428, 39);
-            this.dtpkStart.TabIndex = 7;
             // 
             // label7
             // 
@@ -676,6 +656,26 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // dtpkStart
+            // 
+            this.dtpkStart.CustomFormat = "dd/MM/yyyy";
+            this.dtpkStart.Enabled = false;
+            this.dtpkStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpkStart.Location = new System.Drawing.Point(320, 12);
+            this.dtpkStart.Name = "dtpkStart";
+            this.dtpkStart.Size = new System.Drawing.Size(428, 39);
+            this.dtpkStart.TabIndex = 1;
+            // 
+            // dtpkEnd
+            // 
+            this.dtpkEnd.CustomFormat = "dd/MM/yyyy";
+            this.dtpkEnd.Enabled = false;
+            this.dtpkEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpkEnd.Location = new System.Drawing.Point(320, 12);
+            this.dtpkEnd.Name = "dtpkEnd";
+            this.dtpkEnd.Size = new System.Drawing.Size(428, 39);
+            this.dtpkEnd.TabIndex = 2;
+            // 
             // ShowInformationDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -766,10 +766,8 @@
         private Panel panel9;
         private Label label9;
         private Panel panel8;
-        private DateTimePicker dtpkEnd;
         private Label label8;
         private Panel panel7;
-        private DateTimePicker dtpkStart;
         private Label label7;
         private Panel panel6;
         private TextBox txbThue;
@@ -803,5 +801,7 @@
         private Label label24;
         private Label label25;
         private Label label26;
+        private DateTimePicker dtpkEnd;
+        private DateTimePicker dtpkStart;
     }
 }

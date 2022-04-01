@@ -14,21 +14,21 @@ namespace QuanlyCanHoGiangTran.DTO
         private string _masothue;
         private string _hinhthucthuthue;
         private string _coquanthuthue;
-        private string _chuky;
         private string _tinhtrang;
         private string _duan;
 
-        private float _thue;
-        private float _phikekhaithue;
-        private float _phiquanly;
-        private float _tienrefundkhach;
-        private float _phidonvesinh;
-        private float _tienthu;
+        private double _thue;
+        private double _phikekhaithue;
+        private double _phiquanly;
+        private double _tienrefundkhach;
+        private double _phidonvesinh;
+        private double _tienthu;
 
         private DateTime _ngaybatdau;
         private DateTime _ngayketthuc;
 
         private int _songaynhacnho;
+        private int _chuky;
         public Apartment(DataRow row)
         {
             _tenchuho = (string)row["TENCHUHO"];
@@ -38,13 +38,13 @@ namespace QuanlyCanHoGiangTran.DTO
             _hinhthucthuthue = (string)row["HINHTHUCKHAITHUE"];
             _coquanthuthue = (string)row["COQUANTHUTHUE"];
             _tinhtrang = (string)row["TINHTRANG"];
-            _thue = (float)row["THUE"];
-            _phikekhaithue = (float)row["PHIKEKHAITHUE"];
-            _phiquanly = (float)row["PHIQUANLY"];
-            _tienrefundkhach = (float)row["TIENREFUNDKHACH"];
-            _phidonvesinh = (float)row["PHIDONVESINH"];
-            _tienthu = (float)row["TIENTHU"];
-            _chuky = (string)row["CHUKY"];
+            _thue = (double)row["THUE"];
+            _phikekhaithue = (double)row["PHIKEKHAITHUE"];
+            _phiquanly = (double)row["PHIQUANLY"];
+            _tienrefundkhach = (double)row["TIENREFUNDKHACH"];
+            _phidonvesinh = (double)row["PHIDONVESINH"];
+            _tienthu = (double)row["TIENTHU"];
+            _chuky = (int)row["CHUKY"];
             _ngaybatdau = (DateTime)row["NGAYBATDAU"];
             _ngayketthuc = (DateTime)row["NGAYKETTHUC"];
             _songaynhacnho = (int)row["SONGAYNHACNHO"];
@@ -74,7 +74,7 @@ namespace QuanlyCanHoGiangTran.DTO
             get { return _coquanthuthue; }
             set { _coquanthuthue = value; }
         }
-        public string Chuky
+        public int Chuky
         {
             get { return _chuky; }
             set { _chuky = value; }
@@ -100,37 +100,37 @@ namespace QuanlyCanHoGiangTran.DTO
             set { _ngayketthuc = value; }
         }
 
-        public float Thue
+        public double Thue
         {
             get { return _thue; }
             set { _thue = value; }
         }
 
-        public float Tienthu
+        public double Tienthu
         {
             get { return _tienthu; }
             set { _tienthu = value; }
         }
 
-        public float Phikekhaithue
+        public double Phikekhaithue
         {
             get { return _phikekhaithue; }
             set { _phikekhaithue = value;}
         }
 
-        public float Phiquanly
+        public double Phiquanly
         {
             get { return _phiquanly; }
             set { _phiquanly = value; }
         }
 
-        public float Tienrefundkhach
+        public double Tienrefundkhach
         {
             get { return _tienrefundkhach;}
             set { _tienrefundkhach = value;}
         }
 
-        public float Phidonvesinh
+        public double Phidonvesinh
         {
             get { return _phidonvesinh; }
             set { _phidonvesinh = value;}

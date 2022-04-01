@@ -236,6 +236,7 @@ BEGIN
 	INSERT INTO APARTMENT_CONTRACT(MACANHO, TENCHUHO, NGAYBATDAU, NGAYKETTHUC, NGAYNHAC, CHUKY, SONGAYNHACNHO, TIENTHU) 
 	VALUES(@macanho, @tenchuho, @ngaybatdau, @ngayketthuc, @ngaynhac, @chuky, @songaynhacnho, @tienthu)
 END
+GO
 
 --TRIGGER FOR ADDING INFORMATION FOR APARTMENT_FINANCE
 CREATE TRIGGER ADDING_APARTMENT_FINANCE
@@ -264,6 +265,7 @@ BEGIN
 	VALUES(@macanho, @thue, @phikekhaithue, @phiquanly, @tienrefundkhach, @phidonvesinh, @tienthu)
 
 END
+GO
 
 /*DEFAULT AREA*/
 --CREATE DEFAULT ACCOUNT FOR PROGRAM

@@ -21,8 +21,8 @@ namespace QuanlyCanHoGiangTran.DAL
         private AdminDAL() { }
 
         public int addApartment(string maCanHo, string duAn, string tenChuHo, string maSoThue, 
-                                string hinhThucKT, string coQuanTT, string tinhTrang, float thue, float phiKeKhaiThue, 
-                                float phiQuanLy, float tienReFundKhach, float phiDonVeSinh, float tienThu, string chuKy, 
+                                string hinhThucKT, string coQuanTT, string tinhTrang, double thue, double phiKeKhaiThue,
+                                double phiQuanLy, double tienReFundKhach, double phiDonVeSinh, double tienThu, int chuKy, 
                                 string ngayStart, string ngayEnd, int soNgayNhac)
         {
             string query = "Insert into APARTMENT_INFO(MACANHO, DUAN, TENCHUHO, MASOTHUE, HINHTHUCKHAITHUE, COQUANTHUTHUE, TINHTRANG, " +
@@ -86,6 +86,17 @@ namespace QuanlyCanHoGiangTran.DAL
             string query = "DELETE FROM APARTMENT_CONTRACT WHERE MACANHO = '" + maCanHo + "'";
             int i = DataProvider.Instance.ExecuteNonQuery(query);
             return i;
+        }
+
+        public Apartment getApartmentByMaCanHo(string maCanHo)
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,MACANHO,DUAN,TINHTRANG,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE,PHIQUANLY,TIENREFUNDKHACH," +
+                                                                "PHIDONVESINH,TIENTHU,NGAYBATDAU,NGAYKETTHUC,SONGAYNHACNHO,CHUKY FROM APARTMENT_INFO WHERE MACANHO = '" + maCanHo + "'");
+            foreach (DataRow row in data.Rows)
+            {
+                return new Apartment(row);
+            }
+            return null;
         }
     }
 }

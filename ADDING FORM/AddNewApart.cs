@@ -91,7 +91,7 @@ namespace QuanlyCanHoGiangTran
             float tienThu = float.Parse(txbTienThu.Text, CultureInfo.InvariantCulture.NumberFormat);
 
             string duAn = cbDuAn.Text;
-            string chuKy = cbChuKy.Text;
+            int chuKy = Int32.Parse(cbChuKy.Text);
 
             Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
             string ngayStart = dtpkStart.Value.ToString();
