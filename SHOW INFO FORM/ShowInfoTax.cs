@@ -1,4 +1,5 @@
 ﻿using QuanlyCanHoGiangTran.DAL;
+using QuanlyCanHoGiangTran.OTHERS_FUNCTION_FORM;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -69,6 +70,18 @@ namespace QuanlyCanHoGiangTran
             ShowInfoTax showInfoTax = new ShowInfoTax();
             showInfoTax.Show();
             
+        }
+
+        private void btnFinanceDetail_Click(object sender, EventArgs e)
+        {
+            FinanceDetail detailFinance = new FinanceDetail();
+            detailFinance.Show();
+        }
+
+        private void btnInformationDetail_Click(object sender, EventArgs e)
+        {
+            InformationDetail informationDetail = new InformationDetail();
+            informationDetail.Show();
         }
     }
 }

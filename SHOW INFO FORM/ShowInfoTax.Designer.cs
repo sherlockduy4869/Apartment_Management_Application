@@ -34,6 +34,8 @@
             this.btnReDo = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnNextCycle = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnRefresh = new QuanlyCanHoGiangTran.Custom.RJButton();
+            this.btnFinanceDetail = new QuanlyCanHoGiangTran.Custom.RJButton();
+            this.btnInformationDetail = new QuanlyCanHoGiangTran.Custom.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartTax)).BeginInit();
             this.SuspendLayout();
             // 
@@ -126,7 +128,7 @@
             this.btnRefresh.FlatAppearance.BorderSize = 0;
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(57, 96);
+            this.btnRefresh.Location = new System.Drawing.Point(1582, 86);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(149, 60);
             this.btnRefresh.TabIndex = 5;
@@ -135,11 +137,51 @@
             this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
+            // btnFinanceDetail
+            // 
+            this.btnFinanceDetail.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnFinanceDetail.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnFinanceDetail.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnFinanceDetail.BorderRadius = 40;
+            this.btnFinanceDetail.BorderSize = 0;
+            this.btnFinanceDetail.FlatAppearance.BorderSize = 0;
+            this.btnFinanceDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFinanceDetail.ForeColor = System.Drawing.Color.White;
+            this.btnFinanceDetail.Location = new System.Drawing.Point(74, 22);
+            this.btnFinanceDetail.Name = "btnFinanceDetail";
+            this.btnFinanceDetail.Size = new System.Drawing.Size(227, 79);
+            this.btnFinanceDetail.TabIndex = 6;
+            this.btnFinanceDetail.Text = "Finance Detail";
+            this.btnFinanceDetail.TextColor = System.Drawing.Color.White;
+            this.btnFinanceDetail.UseVisualStyleBackColor = false;
+            this.btnFinanceDetail.Click += new System.EventHandler(this.btnFinanceDetail_Click);
+            // 
+            // btnInformationDetail
+            // 
+            this.btnInformationDetail.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnInformationDetail.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnInformationDetail.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnInformationDetail.BorderRadius = 40;
+            this.btnInformationDetail.BorderSize = 0;
+            this.btnInformationDetail.FlatAppearance.BorderSize = 0;
+            this.btnInformationDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInformationDetail.ForeColor = System.Drawing.Color.White;
+            this.btnInformationDetail.Location = new System.Drawing.Point(74, 107);
+            this.btnInformationDetail.Name = "btnInformationDetail";
+            this.btnInformationDetail.Size = new System.Drawing.Size(227, 79);
+            this.btnInformationDetail.TabIndex = 7;
+            this.btnInformationDetail.Text = "Information Detail";
+            this.btnInformationDetail.TextColor = System.Drawing.Color.White;
+            this.btnInformationDetail.UseVisualStyleBackColor = false;
+            this.btnInformationDetail.Click += new System.EventHandler(this.btnInformationDetail_Click);
+            // 
             // ShowInfoTax
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1783, 1142);
+            this.Controls.Add(this.btnInformationDetail);
+            this.Controls.Add(this.btnFinanceDetail);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnNextCycle);
             this.Controls.Add(this.btnReDo);
@@ -163,5 +205,7 @@
         private Custom.RJButton btnReDo;
         private Custom.RJButton btnNextCycle;
         private Custom.RJButton btnRefresh;
+        private Custom.RJButton btnFinanceDetail;
+        private Custom.RJButton btnInformationDetail;
     }
 }
