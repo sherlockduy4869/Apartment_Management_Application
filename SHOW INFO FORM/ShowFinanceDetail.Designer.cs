@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.CheckBox ckbThue;
             this.panel1 = new System.Windows.Forms.Panel();
             this.txbMaCanHo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,16 +49,15 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.txbTienThu = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.ckbPhiKeKhaiThue = new System.Windows.Forms.CheckBox();
-            this.ckbPhiQuanLy = new System.Windows.Forms.CheckBox();
-            this.ckbTienRefundKhach = new System.Windows.Forms.CheckBox();
-            this.ckbPhiDonVeSinh = new System.Windows.Forms.CheckBox();
-            this.ckbTienThu = new System.Windows.Forms.CheckBox();
             this.btnMarkDone = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnRedo = new QuanlyCanHoGiangTran.Custom.RJButton();
-            this.btnRefresh = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.cbFinanceCategory = new System.Windows.Forms.ComboBox();
-            ckbThue = new System.Windows.Forms.CheckBox();
+            this.lbThue = new System.Windows.Forms.Label();
+            this.lbPhiKeKhaiThue = new System.Windows.Forms.Label();
+            this.lbPhiQuanLy = new System.Windows.Forms.Label();
+            this.lbTienReFundKhach = new System.Windows.Forms.Label();
+            this.lbPhidonvesinh = new System.Windows.Forms.Label();
+            this.lbTienThu = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -68,19 +66,6 @@
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // ckbThue
-            // 
-            ckbThue.AutoSize = true;
-            ckbThue.Checked = true;
-            ckbThue.CheckState = System.Windows.Forms.CheckState.Checked;
-            ckbThue.Enabled = false;
-            ckbThue.Location = new System.Drawing.Point(742, 285);
-            ckbThue.Name = "ckbThue";
-            ckbThue.Size = new System.Drawing.Size(104, 36);
-            ckbThue.TabIndex = 7;
-            ckbThue.Text = "Done";
-            ckbThue.UseVisualStyleBackColor = true;
             // 
             // panel1
             // 
@@ -257,71 +242,6 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Tien Thu";
             // 
-            // ckbPhiKeKhaiThue
-            // 
-            this.ckbPhiKeKhaiThue.AutoSize = true;
-            this.ckbPhiKeKhaiThue.Checked = true;
-            this.ckbPhiKeKhaiThue.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ckbPhiKeKhaiThue.Enabled = false;
-            this.ckbPhiKeKhaiThue.Location = new System.Drawing.Point(742, 371);
-            this.ckbPhiKeKhaiThue.Name = "ckbPhiKeKhaiThue";
-            this.ckbPhiKeKhaiThue.Size = new System.Drawing.Size(104, 36);
-            this.ckbPhiKeKhaiThue.TabIndex = 8;
-            this.ckbPhiKeKhaiThue.Text = "Done";
-            this.ckbPhiKeKhaiThue.UseVisualStyleBackColor = true;
-            // 
-            // ckbPhiQuanLy
-            // 
-            this.ckbPhiQuanLy.AutoSize = true;
-            this.ckbPhiQuanLy.Checked = true;
-            this.ckbPhiQuanLy.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ckbPhiQuanLy.Enabled = false;
-            this.ckbPhiQuanLy.Location = new System.Drawing.Point(742, 473);
-            this.ckbPhiQuanLy.Name = "ckbPhiQuanLy";
-            this.ckbPhiQuanLy.Size = new System.Drawing.Size(104, 36);
-            this.ckbPhiQuanLy.TabIndex = 9;
-            this.ckbPhiQuanLy.Text = "Done";
-            this.ckbPhiQuanLy.UseVisualStyleBackColor = true;
-            // 
-            // ckbTienRefundKhach
-            // 
-            this.ckbTienRefundKhach.AutoSize = true;
-            this.ckbTienRefundKhach.Checked = true;
-            this.ckbTienRefundKhach.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ckbTienRefundKhach.Enabled = false;
-            this.ckbTienRefundKhach.Location = new System.Drawing.Point(742, 563);
-            this.ckbTienRefundKhach.Name = "ckbTienRefundKhach";
-            this.ckbTienRefundKhach.Size = new System.Drawing.Size(104, 36);
-            this.ckbTienRefundKhach.TabIndex = 10;
-            this.ckbTienRefundKhach.Text = "Done";
-            this.ckbTienRefundKhach.UseVisualStyleBackColor = true;
-            // 
-            // ckbPhiDonVeSinh
-            // 
-            this.ckbPhiDonVeSinh.AutoSize = true;
-            this.ckbPhiDonVeSinh.Checked = true;
-            this.ckbPhiDonVeSinh.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ckbPhiDonVeSinh.Enabled = false;
-            this.ckbPhiDonVeSinh.Location = new System.Drawing.Point(742, 653);
-            this.ckbPhiDonVeSinh.Name = "ckbPhiDonVeSinh";
-            this.ckbPhiDonVeSinh.Size = new System.Drawing.Size(104, 36);
-            this.ckbPhiDonVeSinh.TabIndex = 11;
-            this.ckbPhiDonVeSinh.Text = "Done";
-            this.ckbPhiDonVeSinh.UseVisualStyleBackColor = true;
-            // 
-            // ckbTienThu
-            // 
-            this.ckbTienThu.AutoSize = true;
-            this.ckbTienThu.Checked = true;
-            this.ckbTienThu.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ckbTienThu.Enabled = false;
-            this.ckbTienThu.Location = new System.Drawing.Point(742, 745);
-            this.ckbTienThu.Name = "ckbTienThu";
-            this.ckbTienThu.Size = new System.Drawing.Size(104, 36);
-            this.ckbTienThu.TabIndex = 12;
-            this.ckbTienThu.Text = "Done";
-            this.ckbTienThu.UseVisualStyleBackColor = true;
-            // 
             // btnMarkDone
             // 
             this.btnMarkDone.BackColor = System.Drawing.Color.MediumSlateBlue;
@@ -332,13 +252,14 @@
             this.btnMarkDone.FlatAppearance.BorderSize = 0;
             this.btnMarkDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMarkDone.ForeColor = System.Drawing.Color.White;
-            this.btnMarkDone.Location = new System.Drawing.Point(75, 925);
+            this.btnMarkDone.Location = new System.Drawing.Point(50, 925);
             this.btnMarkDone.Name = "btnMarkDone";
             this.btnMarkDone.Size = new System.Drawing.Size(300, 80);
             this.btnMarkDone.TabIndex = 14;
             this.btnMarkDone.Text = "Mark Done";
             this.btnMarkDone.TextColor = System.Drawing.Color.White;
             this.btnMarkDone.UseVisualStyleBackColor = false;
+            this.btnMarkDone.Click += new System.EventHandler(this.btnMarkDone_Click);
             // 
             // btnRedo
             // 
@@ -350,55 +271,97 @@
             this.btnRedo.FlatAppearance.BorderSize = 0;
             this.btnRedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRedo.ForeColor = System.Drawing.Color.White;
-            this.btnRedo.Location = new System.Drawing.Point(546, 925);
+            this.btnRedo.Location = new System.Drawing.Point(524, 925);
             this.btnRedo.Name = "btnRedo";
             this.btnRedo.Size = new System.Drawing.Size(300, 80);
             this.btnRedo.TabIndex = 15;
             this.btnRedo.Text = "Redo";
             this.btnRedo.TextColor = System.Drawing.Color.White;
             this.btnRedo.UseVisualStyleBackColor = false;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnRefresh.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnRefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnRefresh.BorderRadius = 40;
-            this.btnRefresh.BorderSize = 0;
-            this.btnRefresh.FlatAppearance.BorderSize = 0;
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(75, 58);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(147, 61);
-            this.btnRefresh.TabIndex = 16;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.TextColor = System.Drawing.Color.White;
-            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRedo.Click += new System.EventHandler(this.btnRedo_Click);
             // 
             // cbFinanceCategory
             // 
             this.cbFinanceCategory.FormattingEnabled = true;
-            this.cbFinanceCategory.Location = new System.Drawing.Point(321, 826);
+            this.cbFinanceCategory.Location = new System.Drawing.Point(269, 827);
             this.cbFinanceCategory.Name = "cbFinanceCategory";
-            this.cbFinanceCategory.Size = new System.Drawing.Size(242, 40);
+            this.cbFinanceCategory.Size = new System.Drawing.Size(363, 40);
             this.cbFinanceCategory.TabIndex = 17;
+            // 
+            // lbThue
+            // 
+            this.lbThue.AutoSize = true;
+            this.lbThue.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbThue.Location = new System.Drawing.Point(742, 285);
+            this.lbThue.Name = "lbThue";
+            this.lbThue.Size = new System.Drawing.Size(150, 33);
+            this.lbThue.TabIndex = 18;
+            this.lbThue.Text = "unchecked";
+            // 
+            // lbPhiKeKhaiThue
+            // 
+            this.lbPhiKeKhaiThue.AutoSize = true;
+            this.lbPhiKeKhaiThue.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbPhiKeKhaiThue.Location = new System.Drawing.Point(742, 378);
+            this.lbPhiKeKhaiThue.Name = "lbPhiKeKhaiThue";
+            this.lbPhiKeKhaiThue.Size = new System.Drawing.Size(150, 33);
+            this.lbPhiKeKhaiThue.TabIndex = 19;
+            this.lbPhiKeKhaiThue.Text = "unchecked";
+            // 
+            // lbPhiQuanLy
+            // 
+            this.lbPhiQuanLy.AutoSize = true;
+            this.lbPhiQuanLy.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbPhiQuanLy.Location = new System.Drawing.Point(742, 478);
+            this.lbPhiQuanLy.Name = "lbPhiQuanLy";
+            this.lbPhiQuanLy.Size = new System.Drawing.Size(150, 33);
+            this.lbPhiQuanLy.TabIndex = 20;
+            this.lbPhiQuanLy.Text = "unchecked";
+            // 
+            // lbTienReFundKhach
+            // 
+            this.lbTienReFundKhach.AutoSize = true;
+            this.lbTienReFundKhach.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbTienReFundKhach.Location = new System.Drawing.Point(742, 564);
+            this.lbTienReFundKhach.Name = "lbTienReFundKhach";
+            this.lbTienReFundKhach.Size = new System.Drawing.Size(150, 33);
+            this.lbTienReFundKhach.TabIndex = 21;
+            this.lbTienReFundKhach.Text = "unchecked";
+            // 
+            // lbPhidonvesinh
+            // 
+            this.lbPhidonvesinh.AutoSize = true;
+            this.lbPhidonvesinh.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbPhidonvesinh.Location = new System.Drawing.Point(742, 653);
+            this.lbPhidonvesinh.Name = "lbPhidonvesinh";
+            this.lbPhidonvesinh.Size = new System.Drawing.Size(150, 33);
+            this.lbPhidonvesinh.TabIndex = 22;
+            this.lbPhidonvesinh.Text = "unchecked";
+            // 
+            // lbTienThu
+            // 
+            this.lbTienThu.AutoSize = true;
+            this.lbTienThu.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbTienThu.Location = new System.Drawing.Point(742, 750);
+            this.lbTienThu.Name = "lbTienThu";
+            this.lbTienThu.Size = new System.Drawing.Size(150, 33);
+            this.lbTienThu.TabIndex = 23;
+            this.lbTienThu.Text = "unchecked";
             // 
             // ShowFinanceDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(934, 1054);
+            this.ClientSize = new System.Drawing.Size(916, 1054);
+            this.Controls.Add(this.lbTienThu);
+            this.Controls.Add(this.lbPhidonvesinh);
+            this.Controls.Add(this.lbTienReFundKhach);
+            this.Controls.Add(this.lbPhiQuanLy);
+            this.Controls.Add(this.lbPhiKeKhaiThue);
+            this.Controls.Add(this.lbThue);
             this.Controls.Add(this.cbFinanceCategory);
-            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnRedo);
             this.Controls.Add(this.btnMarkDone);
-            this.Controls.Add(this.ckbTienThu);
-            this.Controls.Add(this.ckbPhiDonVeSinh);
-            this.Controls.Add(this.ckbTienRefundKhach);
-            this.Controls.Add(this.ckbPhiQuanLy);
-            this.Controls.Add(this.ckbPhiKeKhaiThue);
-            this.Controls.Add(ckbThue);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
@@ -451,15 +414,14 @@
         private Panel panel7;
         private TextBox txbTienThu;
         private Label label7;
-        private CheckBox ckbThue;
-        private CheckBox ckbPhiKeKhaiThue;
-        private CheckBox ckbPhiQuanLy;
-        private CheckBox ckbTienRefundKhach;
-        private CheckBox ckbPhiDonVeSinh;
-        private CheckBox ckbTienThu;
         private Custom.RJButton btnMarkDone;
         private Custom.RJButton btnRedo;
-        private Custom.RJButton btnRefresh;
         private ComboBox cbFinanceCategory;
+        private Label lbThue;
+        private Label lbPhiKeKhaiThue;
+        private Label lbPhiQuanLy;
+        private Label lbTienReFundKhach;
+        private Label lbPhidonvesinh;
+        private Label lbTienThu;
     }
 }

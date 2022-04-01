@@ -29,16 +29,15 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             txbHTKhaiThue.Text = hinhThucKT;
             txbCQThuThue.Text = coQuanTT;
             txbTinhTrang.Text = tinhTrang;
-            txbThue.Text = thue.ToString();
-            txbPhiKeKhaiThue.Text = phiKeKhaiThue.ToString();
-            txbPhiQuanLy.Text = phiQuanLy.ToString();
-            txbTienRefund.Text = tienReFundKhach.ToString();
-            txbPhiDonVeSinh.Text = phiDonVeSinh.ToString();
-            txbTienThu.Text = tienThu.ToString();
+            txbThue.Text = thue.ToString("N");
+            txbPhiKeKhaiThue.Text = phiKeKhaiThue.ToString("N");
+            txbPhiQuanLy.Text = phiQuanLy.ToString("N");
+            txbTienRefund.Text = tienReFundKhach.ToString("N");
+            txbPhiDonVeSinh.Text = phiDonVeSinh.ToString("N");
+            txbTienThu.Text = tienThu.ToString("N");
             txbChuKy.Text = chuKy.ToString();
             dtpkStart.Value = ngayBatDau;
             dtpkEnd.Value = ngayKetThuc;
         }
-
     }
 }

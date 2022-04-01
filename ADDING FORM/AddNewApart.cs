@@ -55,7 +55,6 @@ namespace QuanlyCanHoGiangTran
             }
             cbSoNgayNhac.DataSource = listNhacNho;
 
-            
         }
 
         void calculateTienThu ()

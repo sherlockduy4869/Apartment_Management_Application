@@ -98,5 +98,30 @@ namespace QuanlyCanHoGiangTran.DAL
             }
             return null;
         }
+
+        public ApartmentFinance getFinanceDetailByMaCanHo(string maCanHo)
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT MACANHO, THUE,PHIKEKHAITHUE,PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU, STATUS_THUE, STATUS_PHIKEKHAITHUE, STATUS_PHIQUANLY, " +
+                                                                "STATUS_TIENREFUNDKHACH, STATUS_PHIDONVESINH, STATUS_TIENTHU FROM APARTMENT_FINANCE WHERE MACANHO = '" + maCanHo + "'");
+            foreach (DataRow row in data.Rows)
+            {
+                return new ApartmentFinance(row);
+            }
+            return null;
+        }
+
+        public int markDoneFee(string typeOfStatus, string maCanHo)
+        {
+            string query = "UPDATE APARTMENT_FINANCE SET " + typeOfStatus + " = 'CHECKED' WHERE MACANHO = '" + maCanHo + "'";
+            int i = DataProvider.Instance.ExecuteNonQuery(query);
+            return i;
+        }
+
+        public int reDoFee(string typeOfStatus, string maCanHo)
+        {
+            string query = "UPDATE APARTMENT_FINANCE SET " + typeOfStatus + " = 'UNCHECKED' WHERE MACANHO = '" + maCanHo + "'";
+            int i = DataProvider.Instance.ExecuteNonQuery(query);
+            return i;
+        }
     }
 }

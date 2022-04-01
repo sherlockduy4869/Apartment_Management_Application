@@ -22,9 +22,13 @@ namespace QuanlyCanHoGiangTran.OTHERS_FUNCTION_FORM
 
         private void btnDetail_Click(object sender, EventArgs e)
         {
-            
+            ApartmentFinance apartmentFinance = AdminDAL.Instance.getFinanceDetailByMaCanHo(txbMaCanHo.Text);
 
-            ShowFinanceDetail showFinanceDetail = new ShowFinanceDetail();
+            ShowFinanceDetail showFinanceDetail = new ShowFinanceDetail(apartmentFinance.Macanho, apartmentFinance.Thue, apartmentFinance.Phikekhaithue
+                                                                        , apartmentFinance.Phiquanly, apartmentFinance.Tienrefundkhach, apartmentFinance.Phidonvesinh
+                                                                        , apartmentFinance.Tienthu, apartmentFinance.Statusthue, apartmentFinance.Statusphikekhaithue
+                                                                        , apartmentFinance.Statusphiquanly, apartmentFinance.Statustienrefundkhach, apartmentFinance.Statusphidonvesinh
+                                                                        , apartmentFinance.Statustienthu);
             showFinanceDetail.Show();
         }
     }
