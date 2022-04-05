@@ -23,7 +23,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         void listApartNegotiate()
         {
             //string toDay = DateTime.UtcNow.Date.ToString();
-            string toDay = "2022-08-15";
+            string toDay = "2022-12-15";
 
             dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT STT,TENCHUHO,MACANHO,NGAYBATDAU,NGAYKETTHUC,CHUKY, STATUS FROM APARTMENT_CONTRACT " +
                                                                                 "WHERE NGAYNHAC <= '" + toDay + "' AND '" + toDay + "' <= NGAYKETTHUC");

@@ -23,10 +23,10 @@ namespace QuanlyCanHoGiangTran
         void listApartTax()
         {
             //string toDay = DateTime.UtcNow.Date.ToString();
-            string toDay = "2022-05-15";
+            string toDay = "2022-07-10";
 
             dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE (NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
-                                                                         "OR ('" + toDay + "' >= NGAYCUOI AND TRANGTHAI = 'Chua thu tien' )");
+                                                                         "OR ('" + toDay + "' >= NGAYCUOI)");
             dtgvApartTax.Columns["TIENCANTHU"].DefaultCellStyle.Format = "N2";
             dtgvApartTax.Columns["NGAYDAU"].DefaultCellStyle.Format = "dd-MM-yyyy";
             dtgvApartTax.Columns["NGAYCUOI"].DefaultCellStyle.Format = "dd-MM-yyyy";

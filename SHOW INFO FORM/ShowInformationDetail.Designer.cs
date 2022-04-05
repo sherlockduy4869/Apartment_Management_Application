@@ -54,8 +54,10 @@
             this.txbChuKy = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.dtpkEnd = new System.Windows.Forms.DateTimePicker();
             this.label8 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.dtpkStart = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.txbThue = new System.Windows.Forms.TextBox();
@@ -86,8 +88,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.dtpkStart = new System.Windows.Forms.DateTimePicker();
-            this.dtpkEnd = new System.Windows.Forms.DateTimePicker();
             this.panel16.SuspendLayout();
             this.panel15.SuspendLayout();
             this.panel14.SuspendLayout();
@@ -342,6 +342,16 @@
             this.panel8.Size = new System.Drawing.Size(768, 65);
             this.panel8.TabIndex = 32;
             // 
+            // dtpkEnd
+            // 
+            this.dtpkEnd.CustomFormat = "dd/MM/yyyy";
+            this.dtpkEnd.Enabled = false;
+            this.dtpkEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpkEnd.Location = new System.Drawing.Point(320, 12);
+            this.dtpkEnd.Name = "dtpkEnd";
+            this.dtpkEnd.Size = new System.Drawing.Size(428, 39);
+            this.dtpkEnd.TabIndex = 2;
+            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -361,6 +371,16 @@
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(768, 65);
             this.panel7.TabIndex = 31;
+            // 
+            // dtpkStart
+            // 
+            this.dtpkStart.CustomFormat = "dd/MM/yyyy";
+            this.dtpkStart.Enabled = false;
+            this.dtpkStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtpkStart.Location = new System.Drawing.Point(320, 12);
+            this.dtpkStart.Name = "dtpkStart";
+            this.dtpkStart.Size = new System.Drawing.Size(428, 39);
+            this.dtpkStart.TabIndex = 1;
             // 
             // label7
             // 
@@ -544,14 +564,15 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(454, 68);
+            this.label17.Location = new System.Drawing.Point(616, 73);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(788, 58);
+            this.label17.Size = new System.Drawing.Size(456, 58);
             this.label17.TabIndex = 33;
-            this.label17.Text = "APARMENT DETAIL INFORMATION";
+            this.label17.Text = "PAYMENT REQUEST";
             // 
             // panel17
             // 
+            this.panel17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel17.Controls.Add(this.label26);
             this.panel17.Controls.Add(this.label25);
             this.panel17.Controls.Add(this.label24);
@@ -655,26 +676,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // dtpkStart
-            // 
-            this.dtpkStart.CustomFormat = "dd/MM/yyyy";
-            this.dtpkStart.Enabled = false;
-            this.dtpkStart.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpkStart.Location = new System.Drawing.Point(320, 12);
-            this.dtpkStart.Name = "dtpkStart";
-            this.dtpkStart.Size = new System.Drawing.Size(428, 39);
-            this.dtpkStart.TabIndex = 1;
-            // 
-            // dtpkEnd
-            // 
-            this.dtpkEnd.CustomFormat = "dd/MM/yyyy";
-            this.dtpkEnd.Enabled = false;
-            this.dtpkEnd.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpkEnd.Location = new System.Drawing.Point(320, 12);
-            this.dtpkEnd.Name = "dtpkEnd";
-            this.dtpkEnd.Size = new System.Drawing.Size(428, 39);
-            this.dtpkEnd.TabIndex = 2;
             // 
             // ShowInformationDetail
             // 
