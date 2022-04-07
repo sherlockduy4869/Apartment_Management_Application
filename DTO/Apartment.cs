@@ -87,7 +87,7 @@ namespace QuanlyCanHoGiangTran.DTO
         public string Tinhtrang
         {
             get { return _tinhtrang; }
-            set { _tinhtrang = value;}
+            set { _tinhtrang = value; }
         }
         public DateTime Ngaybatdau
         {
@@ -115,7 +115,7 @@ namespace QuanlyCanHoGiangTran.DTO
         public double Phikekhaithue
         {
             get { return _phikekhaithue; }
-            set { _phikekhaithue = value;}
+            set { _phikekhaithue = value; }
         }
 
         public double Phiquanly
@@ -126,20 +126,20 @@ namespace QuanlyCanHoGiangTran.DTO
 
         public double Tienrefundkhach
         {
-            get { return _tienrefundkhach;}
-            set { _tienrefundkhach = value;}
+            get { return _tienrefundkhach; }
+            set { _tienrefundkhach = value; }
         }
 
         public double Phidonvesinh
         {
             get { return _phidonvesinh; }
-            set { _phidonvesinh = value;}
+            set { _phidonvesinh = value; }
         }
 
         public int SoNgayNhacNho
         {
-            get { return _songaynhacnho;}
-            set { _songaynhacnho = value;}
+            get { return _songaynhacnho; }
+            set { _songaynhacnho = value; }
         }
     }
 }

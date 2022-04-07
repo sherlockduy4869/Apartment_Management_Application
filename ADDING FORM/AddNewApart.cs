@@ -32,8 +32,8 @@ namespace QuanlyCanHoGiangTran
             cbChuKy.DataSource = listChuKy;
 
             List<string> listTinhTrang = new List<string>();
-            string[] arrayListTinhTrang = { "Mới bán", "Chưa nhận bàn giao nhà", "Đã nhận bàn giao nhà", "Đang cho thuê", "Đang available cho thuê"};
-            foreach(string str in arrayListTinhTrang)
+            string[] arrayListTinhTrang = { "Mới bán", "Chưa nhận bàn giao nhà", "Đã nhận bàn giao nhà", "Đang cho thuê", "Đang available cho thuê" };
+            foreach (string str in arrayListTinhTrang)
             {
                 listTinhTrang.Add(str);
             }
@@ -57,7 +57,7 @@ namespace QuanlyCanHoGiangTran
 
         }
 
-        void calculateTienThu ()
+        void calculateTienThu()
         {
             tienThu = 0;
             txbTienThu.Text = tienThu.ToString("N");
@@ -99,7 +99,7 @@ namespace QuanlyCanHoGiangTran
             int soNgayNhacNho = Int32.Parse(cbSoNgayNhac.Text);
 
 
-            int i = AdminDAL.Instance.addApartment(maCanHo, duAn, tenChuHo, maSoThue, hinhThucKT, coQuanTT, tinhTrang, 
+            int i = AdminDAL.Instance.addApartment(maCanHo, duAn, tenChuHo, maSoThue, hinhThucKT, coQuanTT, tinhTrang,
                                                     thue, phiKeKhaiThue, phiQuanly, tienReFundKhach, phiDonVeSinh,
                                                     tienThu, chuKy, ngayStart, ngayEnd, soNgayNhacNho);
 
@@ -220,5 +220,5 @@ namespace QuanlyCanHoGiangTran
             txbPhiDonVeSinh.Clear();
         }
     }
-    
+
 }

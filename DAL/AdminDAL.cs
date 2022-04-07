@@ -20,15 +20,15 @@ namespace QuanlyCanHoGiangTran.DAL
 
         private AdminDAL() { }
 
-        public int addApartment(string maCanHo, string duAn, string tenChuHo, string maSoThue, 
+        public int addApartment(string maCanHo, string duAn, string tenChuHo, string maSoThue,
                                 string hinhThucKT, string coQuanTT, string tinhTrang, double thue, double phiKeKhaiThue,
-                                double phiQuanLy, double tienReFundKhach, double phiDonVeSinh, double tienThu, int chuKy, 
+                                double phiQuanLy, double tienReFundKhach, double phiDonVeSinh, double tienThu, int chuKy,
                                 string ngayStart, string ngayEnd, int soNgayNhac)
         {
             string query = "Insert into APARTMENT_INFO(MACANHO, DUAN, TENCHUHO, MASOTHUE, HINHTHUCKHAITHUE, COQUANTHUTHUE, TINHTRANG, " +
                             "THUE, PHIKEKHAITHUE, PHIQUANLY, TIENREFUNDKHACH, PHIDONVESINH, TIENTHU, NGAYBATDAU, NGAYKETTHUC, CHUKY, SONGAYNHACNHO) " +
-                            "VALUES('" + maCanHo + "','" + duAn + "','"  + tenChuHo + "','" + maSoThue + "', '" + hinhThucKT 
-                            + "', '" + coQuanTT + "',N'" + tinhTrang + "','" + thue + "','" + phiKeKhaiThue + "','" + phiQuanLy + "','" 
+                            "VALUES('" + maCanHo + "','" + duAn + "','" + tenChuHo + "','" + maSoThue + "', '" + hinhThucKT
+                            + "', '" + coQuanTT + "',N'" + tinhTrang + "','" + thue + "','" + phiKeKhaiThue + "','" + phiQuanLy + "','"
                             + tienReFundKhach + "','" + phiDonVeSinh + "','" + tienThu + "','" + ngayStart + "', '" + ngayEnd + "', '" + chuKy + "', '" + soNgayNhac + "')";
             int i = DataProvider.Instance.ExecuteNonQuery(query);
             return i;

@@ -52,28 +52,28 @@ namespace QuanlyCanHoGiangTran.DTO
         }
         public string Statusphikekhaithue
         {
-            get { return _statusphikekhaithue;}
-            set { _statusphikekhaithue=value; }
+            get { return _statusphikekhaithue; }
+            set { _statusphikekhaithue = value; }
         }
         public string Statusphiquanly
         {
-            get { return _statusphiquanly;}
-            set { _statusphiquanly = value;}
+            get { return _statusphiquanly; }
+            set { _statusphiquanly = value; }
         }
         public string Statustienrefundkhach
         {
-            get { return _statustienrefundkhach;}
-            set { _statustienrefundkhach=value;}
+            get { return _statustienrefundkhach; }
+            set { _statustienrefundkhach = value; }
         }
         public string Statusphidonvesinh
         {
-            get { return _statusphidonvesinh;}
-            set { _statusphidonvesinh=value;}
+            get { return _statusphidonvesinh; }
+            set { _statusphidonvesinh = value; }
         }
         public string Statustienthu
         {
-            get { return _statustienthu;}
-            set { _statustienthu=value;}
+            get { return _statustienthu; }
+            set { _statustienthu = value; }
         }
         public double Thue
         {
@@ -112,4 +112,3 @@ namespace QuanlyCanHoGiangTran.DTO
         }
     }
 }
-
