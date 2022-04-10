@@ -31,7 +31,18 @@ namespace QuanlyCanHoGiangTran
             dtgvApartTax.Columns["NGAYDAU"].DefaultCellStyle.Format = "dd-MM-yyyy";
             dtgvApartTax.Columns["NGAYCUOI"].DefaultCellStyle.Format = "dd-MM-yyyy";
         }
+        private void txbSearch_TextChanged(object sender, EventArgs e)
+        {
+            //string toDay = DateTime.UtcNow.Date.ToString();
+            string toDay = "2022-07-10";
 
+            txbSearch.ForeColor = System.Drawing.Color.Black;
+            dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE ((NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
+                                                                         "OR ('" + toDay + "' >= NGAYCUOI)) AND MACANHO LIKE '" + txbSearch.Text + "%'");
+            dtgvApartTax.Columns["TIENCANTHU"].DefaultCellStyle.Format = "N2";
+            dtgvApartTax.Columns["NGAYDAU"].DefaultCellStyle.Format = "dd-MM-yyyy";
+            dtgvApartTax.Columns["NGAYCUOI"].DefaultCellStyle.Format = "dd-MM-yyyy";
+        }
         private void btnMarkDone_Click(object sender, EventArgs e)
         {
             MarkDone markDone = new MarkDone();
@@ -83,5 +94,12 @@ namespace QuanlyCanHoGiangTran
             InformationDetail informationDetail = new InformationDetail();
             informationDetail.Show();
         }
+
+        private void txbSearch_Click(object sender, EventArgs e)
+        {
+            txbSearch.Clear();
+        }
+
+        
     }
 }

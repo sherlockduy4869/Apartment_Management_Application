@@ -28,13 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Negotiation));
             this.dtgvNegotiateApart = new System.Windows.Forms.DataGridView();
             this.btnDone = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnRedoNegotiation = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnSkip = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.label1 = new System.Windows.Forms.Label();
             this.btnRefresh = new QuanlyCanHoGiangTran.Custom.RJButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txbSearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvNegotiateApart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // dtgvNegotiateApart
@@ -134,11 +138,34 @@
             this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1007, 45);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 44);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 28;
+            this.pictureBox1.TabStop = false;
+            // 
+            // txbSearch
+            // 
+            this.txbSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txbSearch.Location = new System.Drawing.Point(680, 45);
+            this.txbSearch.Name = "txbSearch";
+            this.txbSearch.Size = new System.Drawing.Size(321, 39);
+            this.txbSearch.TabIndex = 27;
+            this.txbSearch.Text = "Search apartment...";
+            this.txbSearch.Click += new System.EventHandler(this.txbSearch_Click);
+            this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
+            // 
             // Negotiation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1836, 1059);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.txbSearch);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnSkip);
@@ -149,6 +176,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Negotiation";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvNegotiateApart)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,5 +190,7 @@
         private Custom.RJButton btnSkip;
         private Label label1;
         private Custom.RJButton btnRefresh;
+        private PictureBox pictureBox1;
+        private TextBox txbSearch;
     }
 }

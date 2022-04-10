@@ -28,12 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowInfoApart));
             this.label1 = new System.Windows.Forms.Label();
             this.dtgvApartInfo = new System.Windows.Forms.DataGridView();
             this.btnAdd = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnRemove = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnRefresh = new QuanlyCanHoGiangTran.Custom.RJButton();
+            this.txbSearch = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -114,11 +118,34 @@
             this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
+            // txbSearch
+            // 
+            this.txbSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txbSearch.Location = new System.Drawing.Point(431, 136);
+            this.txbSearch.Name = "txbSearch";
+            this.txbSearch.Size = new System.Drawing.Size(321, 39);
+            this.txbSearch.TabIndex = 7;
+            this.txbSearch.Text = "Search apartment...";
+            this.txbSearch.Click += new System.EventHandler(this.txbSearch_Click);
+            this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(758, 136);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 44);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 26;
+            this.pictureBox1.TabStop = false;
+            // 
             // ShowInfoApart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2461, 1205);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.txbSearch);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
@@ -128,6 +155,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Info Apart";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -140,5 +168,7 @@
         private Custom.RJButton btnAdd;
         private Custom.RJButton btnRemove;
         private Custom.RJButton btnRefresh;
+        private TextBox txbSearch;
+        private PictureBox pictureBox1;
     }
 }

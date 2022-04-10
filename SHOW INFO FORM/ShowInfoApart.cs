@@ -53,5 +53,26 @@ namespace QuanlyCanHoGiangTran
             ShowInfoApart showInfoApart = new ShowInfoApart();
             showInfoApart.Show();
         }
+
+        private void txbSearch_Click(object sender, EventArgs e)
+        {
+            txbSearch.Clear();
+        }
+
+        private void txbSearch_TextChanged(object sender, EventArgs e)
+        {
+            txbSearch.ForeColor = System.Drawing.Color.Black;
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DUAN,TINHTRANG,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
+                                                                         "PHIQUANLY,TIENREFUNDKHACH,TIENTHU,PHIDONVESINH,NGAYBATDAU,NGAYKETTHUC FROM APARTMENT_INFO WHERE MACANHO LIKE '" + txbSearch.Text + "%'");
+            //this.dtgvApartInfo.Sort(this.dtgvApartInfo.Columns["STT"], ListSortDirection.Ascending);
+            dtgvApartInfo.Columns["THUE"].DefaultCellStyle.Format = "N2";
+            dtgvApartInfo.Columns["PHIKEKHAITHUE"].DefaultCellStyle.Format = "N2";
+            dtgvApartInfo.Columns["PHIQUANLY"].DefaultCellStyle.Format = "N2";
+            dtgvApartInfo.Columns["TIENREFUNDKHACH"].DefaultCellStyle.Format = "N2";
+            dtgvApartInfo.Columns["PHIDONVESINH"].DefaultCellStyle.Format = "N2";
+            dtgvApartInfo.Columns["TIENTHU"].DefaultCellStyle.Format = "N2";
+            dtgvApartInfo.Columns["NGAYBATDAU"].DefaultCellStyle.Format = "dd-MM-yyyy";
+            dtgvApartInfo.Columns["NGAYKETTHUC"].DefaultCellStyle.Format = "dd-MM-yyyy";
+        }
     }
 }

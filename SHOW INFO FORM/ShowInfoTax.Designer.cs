@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowInfoTax));
             this.label1 = new System.Windows.Forms.Label();
             this.dtgvApartTax = new System.Windows.Forms.DataGridView();
             this.btnMarkDone = new QuanlyCanHoGiangTran.Custom.RJButton();
@@ -36,7 +37,10 @@
             this.btnRefresh = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnFinanceDetail = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnInformationDetail = new QuanlyCanHoGiangTran.Custom.RJButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txbSearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartTax)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -175,11 +179,34 @@
             this.btnInformationDetail.UseVisualStyleBackColor = false;
             this.btnInformationDetail.Click += new System.EventHandler(this.btnInformationDetail_Click);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(1083, 32);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 44);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 30;
+            this.pictureBox1.TabStop = false;
+            // 
+            // txbSearch
+            // 
+            this.txbSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txbSearch.Location = new System.Drawing.Point(756, 32);
+            this.txbSearch.Name = "txbSearch";
+            this.txbSearch.Size = new System.Drawing.Size(321, 39);
+            this.txbSearch.TabIndex = 29;
+            this.txbSearch.Text = "Search apartment...";
+            this.txbSearch.Click += new System.EventHandler(this.txbSearch_Click);
+            this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
+            // 
             // ShowInfoTax
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1783, 1142);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.txbSearch);
             this.Controls.Add(this.btnInformationDetail);
             this.Controls.Add(this.btnFinanceDetail);
             this.Controls.Add(this.btnRefresh);
@@ -192,6 +219,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Info Tax";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartTax)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -207,5 +235,7 @@
         private Custom.RJButton btnRefresh;
         private Custom.RJButton btnFinanceDetail;
         private Custom.RJButton btnInformationDetail;
+        private PictureBox pictureBox1;
+        private TextBox txbSearch;
     }
 }
