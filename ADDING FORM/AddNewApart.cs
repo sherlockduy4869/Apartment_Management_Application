@@ -88,6 +88,7 @@ namespace QuanlyCanHoGiangTran
             float tienReFundKhach = float.Parse(txbTienRefund.Text, CultureInfo.InvariantCulture.NumberFormat);
             float phiDonVeSinh = float.Parse(txbPhiDonVeSinh.Text, CultureInfo.InvariantCulture.NumberFormat);
             float tienThu = float.Parse(txbTienThu.Text, CultureInfo.InvariantCulture.NumberFormat);
+            float tienThue1Thang = float.Parse(txbTienthue1thang.Text, CultureInfo.InvariantCulture.NumberFormat);
 
             string duAn = cbDuAn.Text;
             int chuKy = Int32.Parse(cbChuKy.Text);
@@ -101,7 +102,7 @@ namespace QuanlyCanHoGiangTran
 
             int i = AdminDAL.Instance.addApartment(maCanHo, duAn, tenChuHo, maSoThue, hinhThucKT, coQuanTT, tinhTrang,
                                                     thue, phiKeKhaiThue, phiQuanly, tienReFundKhach, phiDonVeSinh,
-                                                    tienThu, chuKy, ngayStart, ngayEnd, soNgayNhacNho);
+                                                    tienThu, tienThue1Thang, chuKy, ngayStart, ngayEnd, soNgayNhacNho);
 
             try
             {
@@ -218,6 +219,21 @@ namespace QuanlyCanHoGiangTran
             tienThu = tienThu - float.Parse(txbPhiDonVeSinh.Text);
             txbTienThu.Text = tienThu.ToString("N");
             txbPhiDonVeSinh.Clear();
+        }
+
+        private void txbTienthue1thang_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != (char)8;
+        }
+
+        private void txbTienthue1thang_Leave(object sender, EventArgs e)
+        {
+            txbTienthue1thang.Text = string.Format("{0:n}", double.Parse(txbTienthue1thang.Text));
+        }
+
+        private void txbTienthue1thang_Click(object sender, EventArgs e)
+        {
+            txbTienthue1thang.Clear();
         }
     }
 

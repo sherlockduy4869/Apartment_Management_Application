@@ -22,14 +22,14 @@ namespace QuanlyCanHoGiangTran.DAL
 
         public int addApartment(string maCanHo, string duAn, string tenChuHo, string maSoThue,
                                 string hinhThucKT, string coQuanTT, string tinhTrang, double thue, double phiKeKhaiThue,
-                                double phiQuanLy, double tienReFundKhach, double phiDonVeSinh, double tienThu, int chuKy,
+                                double phiQuanLy, double tienReFundKhach, double phiDonVeSinh, double tienThu, double tienThue1Thang, int chuKy,
                                 string ngayStart, string ngayEnd, int soNgayNhac)
         {
             string query = "Insert into APARTMENT_INFO(MACANHO, DUAN, TENCHUHO, MASOTHUE, HINHTHUCKHAITHUE, COQUANTHUTHUE, TINHTRANG, " +
-                            "THUE, PHIKEKHAITHUE, PHIQUANLY, TIENREFUNDKHACH, PHIDONVESINH, TIENTHU, NGAYBATDAU, NGAYKETTHUC, CHUKY, SONGAYNHACNHO) " +
+                            "THUE, PHIKEKHAITHUE, PHIQUANLY, TIENREFUNDKHACH, PHIDONVESINH, TIENTHU, TIENTHUEMOTTHANG, NGAYBATDAU, NGAYKETTHUC, CHUKY, SONGAYNHACNHO) " +
                             "VALUES('" + maCanHo + "','" + duAn + "','" + tenChuHo + "','" + maSoThue + "', '" + hinhThucKT
                             + "', '" + coQuanTT + "',N'" + tinhTrang + "','" + thue + "','" + phiKeKhaiThue + "','" + phiQuanLy + "','"
-                            + tienReFundKhach + "','" + phiDonVeSinh + "','" + tienThu + "','" + ngayStart + "', '" + ngayEnd + "', '" + chuKy + "', '" + soNgayNhac + "')";
+                            + tienReFundKhach + "','" + phiDonVeSinh + "','" + tienThu + "','" + tienThue1Thang + "','" + ngayStart + "', '" + ngayEnd + "', '" + chuKy + "', '" + soNgayNhac + "')";
             int i = DataProvider.Instance.ExecuteNonQuery(query);
             return i;
         }
@@ -62,13 +62,6 @@ namespace QuanlyCanHoGiangTran.DAL
             return i;
         }
 
-        public int expireApart(string maCanHo)
-        {
-            string query = "EXEC dbo.ADDING_EXPIRED_APARTMENT @macanho ";
-            int i = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maCanHo });
-            return i;
-        }
-
         public int doneNegotiation(string maCanHo)
         {
             string query = "UPDATE APARTMENT_CONTRACT SET STATUS = 'DONE' WHERE MACANHO = '" + maCanHo + "'";
@@ -91,7 +84,7 @@ namespace QuanlyCanHoGiangTran.DAL
         public Apartment getApartmentByMaCanHo(string maCanHo)
         {
             DataTable data = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,MACANHO,DUAN,TINHTRANG,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE,PHIQUANLY,TIENREFUNDKHACH," +
-                                                                "PHIDONVESINH,TIENTHU,NGAYBATDAU,NGAYKETTHUC,SONGAYNHACNHO,CHUKY FROM APARTMENT_INFO WHERE MACANHO = '" + maCanHo + "'");
+                                                                "PHIDONVESINH,TIENTHU,TIENTHUEMOTTHANG,NGAYBATDAU,NGAYKETTHUC,SONGAYNHACNHO,CHUKY FROM APARTMENT_INFO WHERE MACANHO = '" + maCanHo + "'");
             foreach (DataRow row in data.Rows)
             {
                 return new Apartment(row);

@@ -33,7 +33,6 @@
             this.btnAdd = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnRemove = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnRefresh = new QuanlyCanHoGiangTran.Custom.RJButton();
-            this.btnExpire = new QuanlyCanHoGiangTran.Custom.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,7 +67,7 @@
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(269, 969);
+            this.btnAdd.Location = new System.Drawing.Point(611, 960);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(300, 80);
             this.btnAdd.TabIndex = 2;
@@ -87,7 +86,7 @@
             this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(1175, 960);
+            this.btnRemove.Location = new System.Drawing.Point(1860, 960);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(300, 80);
             this.btnRemove.TabIndex = 3;
@@ -115,31 +114,11 @@
             this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
-            // btnExpire
-            // 
-            this.btnExpire.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnExpire.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnExpire.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnExpire.BorderRadius = 40;
-            this.btnExpire.BorderSize = 0;
-            this.btnExpire.FlatAppearance.BorderSize = 0;
-            this.btnExpire.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExpire.ForeColor = System.Drawing.Color.White;
-            this.btnExpire.Location = new System.Drawing.Point(1965, 960);
-            this.btnExpire.Name = "btnExpire";
-            this.btnExpire.Size = new System.Drawing.Size(300, 80);
-            this.btnExpire.TabIndex = 7;
-            this.btnExpire.Text = "Expire";
-            this.btnExpire.TextColor = System.Drawing.Color.White;
-            this.btnExpire.UseVisualStyleBackColor = false;
-            this.btnExpire.Click += new System.EventHandler(this.btnExpire_Click);
-            // 
             // ShowInfoApart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2461, 1205);
-            this.Controls.Add(this.btnExpire);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
@@ -161,6 +140,5 @@
         private Custom.RJButton btnAdd;
         private Custom.RJButton btnRemove;
         private Custom.RJButton btnRefresh;
-        private Custom.RJButton btnExpire;
     }
 }

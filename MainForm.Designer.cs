@@ -32,7 +32,6 @@
             this.pnLeft = new System.Windows.Forms.Panel();
             this.btnNegotiation = new System.Windows.Forms.Button();
             this.btnAdmin = new System.Windows.Forms.Button();
-            this.btnHistory = new System.Windows.Forms.Button();
             this.btnTax = new System.Windows.Forms.Button();
             this.btnApart = new System.Windows.Forms.Button();
             this.pnCick = new System.Windows.Forms.Panel();
@@ -45,7 +44,6 @@
             this.pnLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.pnLeft.Controls.Add(this.btnNegotiation);
             this.pnLeft.Controls.Add(this.btnAdmin);
-            this.pnLeft.Controls.Add(this.btnHistory);
             this.pnLeft.Controls.Add(this.btnTax);
             this.pnLeft.Controls.Add(this.btnApart);
             this.pnLeft.Controls.Add(this.pnCick);
@@ -87,22 +85,6 @@
             this.btnAdmin.Text = "Admin";
             this.btnAdmin.UseVisualStyleBackColor = true;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
-            // 
-            // btnHistory
-            // 
-            this.btnHistory.FlatAppearance.BorderSize = 0;
-            this.btnHistory.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHistory.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnHistory.ForeColor = System.Drawing.Color.White;
-            this.btnHistory.Image = ((System.Drawing.Image)(resources.GetObject("btnHistory.Image")));
-            this.btnHistory.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHistory.Location = new System.Drawing.Point(31, 541);
-            this.btnHistory.Name = "btnHistory";
-            this.btnHistory.Size = new System.Drawing.Size(318, 110);
-            this.btnHistory.TabIndex = 56;
-            this.btnHistory.Text = "History";
-            this.btnHistory.UseVisualStyleBackColor = true;
-            this.btnHistory.Click += new System.EventHandler(this.btnHistory_Click);
             // 
             // btnTax
             // 
@@ -181,7 +163,6 @@
         private Button btnApart;
         private Panel pnCick;
         private Button btnHome;
-        private Button btnHistory;
         private Button btnAdmin;
         private Button btnNegotiation;
     }

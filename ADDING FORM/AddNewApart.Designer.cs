@@ -80,6 +80,9 @@
             this.panel17 = new System.Windows.Forms.Panel();
             this.cbSoNgayNhac = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
+            this.panel18 = new System.Windows.Forms.Panel();
+            this.txbTienthue1thang = new System.Windows.Forms.TextBox();
+            this.label18 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -97,6 +100,7 @@
             this.panel15.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel17.SuspendLayout();
+            this.panel18.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnAddNew
@@ -252,7 +256,7 @@
             // 
             this.panel6.Controls.Add(this.txbThue);
             this.panel6.Controls.Add(this.label6);
-            this.panel6.Location = new System.Drawing.Point(879, 117);
+            this.panel6.Location = new System.Drawing.Point(79, 685);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(768, 65);
             this.panel6.TabIndex = 9;
@@ -282,7 +286,7 @@
             // 
             this.panel7.Controls.Add(this.dtpkStart);
             this.panel7.Controls.Add(this.label7);
-            this.panel7.Location = new System.Drawing.Point(879, 543);
+            this.panel7.Location = new System.Drawing.Point(879, 472);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(768, 65);
             this.panel7.TabIndex = 15;
@@ -310,7 +314,7 @@
             // 
             this.panel8.Controls.Add(this.dtpkEnd);
             this.panel8.Controls.Add(this.label8);
-            this.panel8.Location = new System.Drawing.Point(879, 614);
+            this.panel8.Location = new System.Drawing.Point(879, 543);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(768, 65);
             this.panel8.TabIndex = 16;
@@ -365,7 +369,7 @@
             // 
             this.panel10.Controls.Add(this.txbPhiKeKhaiThue);
             this.panel10.Controls.Add(this.label10);
-            this.panel10.Location = new System.Drawing.Point(879, 188);
+            this.panel10.Location = new System.Drawing.Point(879, 117);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(768, 65);
             this.panel10.TabIndex = 10;
@@ -395,7 +399,7 @@
             // 
             this.panel11.Controls.Add(this.txbPhiQuanLy);
             this.panel11.Controls.Add(this.label11);
-            this.panel11.Location = new System.Drawing.Point(879, 259);
+            this.panel11.Location = new System.Drawing.Point(879, 188);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(768, 65);
             this.panel11.TabIndex = 11;
@@ -425,7 +429,7 @@
             // 
             this.panel12.Controls.Add(this.txbTienRefund);
             this.panel12.Controls.Add(this.label12);
-            this.panel12.Location = new System.Drawing.Point(879, 330);
+            this.panel12.Location = new System.Drawing.Point(879, 259);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(768, 65);
             this.panel12.TabIndex = 12;
@@ -455,7 +459,7 @@
             // 
             this.panel13.Controls.Add(this.txbPhiDonVeSinh);
             this.panel13.Controls.Add(this.label13);
-            this.panel13.Location = new System.Drawing.Point(879, 401);
+            this.panel13.Location = new System.Drawing.Point(879, 330);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(768, 65);
             this.panel13.TabIndex = 13;
@@ -485,7 +489,7 @@
             // 
             this.panel14.Controls.Add(this.txbTienThu);
             this.panel14.Controls.Add(this.label14);
-            this.panel14.Location = new System.Drawing.Point(879, 472);
+            this.panel14.Location = new System.Drawing.Point(879, 401);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(768, 65);
             this.panel14.TabIndex = 14;
@@ -566,7 +570,7 @@
             // 
             this.panel17.Controls.Add(this.cbSoNgayNhac);
             this.panel17.Controls.Add(this.label17);
-            this.panel17.Location = new System.Drawing.Point(879, 685);
+            this.panel17.Location = new System.Drawing.Point(879, 614);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(768, 65);
             this.panel17.TabIndex = 17;
@@ -589,11 +593,42 @@
             this.label17.TabIndex = 0;
             this.label17.Text = "So Ngay Nhac";
             // 
+            // panel18
+            // 
+            this.panel18.Controls.Add(this.txbTienthue1thang);
+            this.panel18.Controls.Add(this.label18);
+            this.panel18.Location = new System.Drawing.Point(879, 685);
+            this.panel18.Name = "panel18";
+            this.panel18.Size = new System.Drawing.Size(768, 65);
+            this.panel18.TabIndex = 19;
+            // 
+            // txbTienthue1thang
+            // 
+            this.txbTienthue1thang.Location = new System.Drawing.Point(320, 12);
+            this.txbTienthue1thang.Name = "txbTienthue1thang";
+            this.txbTienthue1thang.Size = new System.Drawing.Size(428, 39);
+            this.txbTienthue1thang.TabIndex = 7;
+            this.txbTienthue1thang.Text = "0";
+            this.txbTienthue1thang.Click += new System.EventHandler(this.txbTienthue1thang_Click);
+            this.txbTienthue1thang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbTienthue1thang_KeyPress);
+            this.txbTienthue1thang.Leave += new System.EventHandler(this.txbTienthue1thang_Leave);
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label18.Location = new System.Drawing.Point(14, 12);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(269, 36);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "Tien Thue 1 Thang";
+            // 
             // AddNewApart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1729, 1009);
+            this.Controls.Add(this.panel18);
             this.Controls.Add(this.panel17);
             this.Controls.Add(this.panel16);
             this.Controls.Add(this.panel15);
@@ -649,6 +684,8 @@
             this.panel16.PerformLayout();
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
+            this.panel18.ResumeLayout(false);
+            this.panel18.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -707,5 +744,8 @@
         private Panel panel17;
         private ComboBox cbSoNgayNhac;
         private Label label17;
+        private Panel panel18;
+        private TextBox txbTienthue1thang;
+        private Label label18;
     }
 }

@@ -23,6 +23,7 @@ namespace QuanlyCanHoGiangTran.DTO
         private double _tienrefundkhach;
         private double _phidonvesinh;
         private double _tienthu;
+        private double _tienthuemotthang;
 
         private DateTime _ngaybatdau;
         private DateTime _ngayketthuc;
@@ -44,6 +45,7 @@ namespace QuanlyCanHoGiangTran.DTO
             _tienrefundkhach = (double)row["TIENREFUNDKHACH"];
             _phidonvesinh = (double)row["PHIDONVESINH"];
             _tienthu = (double)row["TIENTHU"];
+            _tienthu = (double)row["TIENTHUEMOTTHANG"];
             _chuky = (int)row["CHUKY"];
             _ngaybatdau = (DateTime)row["NGAYBATDAU"];
             _ngayketthuc = (DateTime)row["NGAYKETTHUC"];
@@ -140,6 +142,11 @@ namespace QuanlyCanHoGiangTran.DTO
         {
             get { return _songaynhacnho; }
             set { _songaynhacnho = value; }
+        }
+
+        public double Tienthuemotthang { 
+            get { return _tienthuemotthang; }
+            set { _tienthuemotthang = value; }
         }
     }
 }

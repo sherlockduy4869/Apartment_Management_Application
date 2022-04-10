@@ -31,12 +31,6 @@ namespace QuanlyCanHoGiangTran
             showInfoTax.Show();
         }
 
-        private void btnHistory_Click(object sender, EventArgs e)
-        {
-            History history = new History();
-            history.Show();
-        }
-
         private void btnAdmin_Click(object sender, EventArgs e)
         {
             Admin admin = new Admin();

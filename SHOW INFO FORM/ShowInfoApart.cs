@@ -21,8 +21,9 @@ namespace QuanlyCanHoGiangTran
 
         void showInforAllApart()
         {
-            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_INFO");
-            this.dtgvApartInfo.Sort(this.dtgvApartInfo.Columns["STT"], ListSortDirection.Ascending);
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,MACANHO,DUAN,TINHTRANG,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
+                                                                         "PHIQUANLY,TIENREFUNDKHACH,TIENTHU,PHIDONVESINH,NGAYBATDAU,NGAYKETTHUC FROM APARTMENT_INFO");
+            //this.dtgvApartInfo.Sort(this.dtgvApartInfo.Columns["STT"], ListSortDirection.Ascending);
             dtgvApartInfo.Columns["THUE"].DefaultCellStyle.Format = "N2";
             dtgvApartInfo.Columns["PHIKEKHAITHUE"].DefaultCellStyle.Format = "N2";
             dtgvApartInfo.Columns["PHIQUANLY"].DefaultCellStyle.Format = "N2";
@@ -51,12 +52,6 @@ namespace QuanlyCanHoGiangTran
             this.Close();
             ShowInfoApart showInfoApart = new ShowInfoApart();
             showInfoApart.Show();
-        }
-
-        private void btnExpire_Click(object sender, EventArgs e)
-        {
-            ExpireApart expireApart = new ExpireApart();
-            expireApart.Show();
         }
     }
 }
