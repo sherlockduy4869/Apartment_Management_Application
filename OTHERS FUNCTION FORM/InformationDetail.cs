@@ -23,9 +23,8 @@ namespace QuanlyCanHoGiangTran.OTHERS_FUNCTION_FORM
         private void btnDetailInformation_Click(object sender, EventArgs e)
         {
             Apartment apartment = AdminDAL.Instance.getApartmentByMaCanHo(txbMaCanHo.Text);
-            ShowInformationDetail showInformationDetail = new ShowInformationDetail(apartment.Macanho, apartment.Duan, apartment.Tenchuho,apartment.Masothue, apartment.Hinhthucthuthue
-                                                                                    ,apartment.Coquanthuthue, apartment.Tinhtrang, apartment.Thue, apartment.Phikekhaithue, apartment.Phiquanly
-                                                                                    , apartment.Tienrefundkhach, apartment.Phidonvesinh, apartment.Tienthu, apartment.Chuky, apartment.Ngaybatdau, apartment.Ngayketthuc);
+            ShowInformationDetail showInformationDetail = new ShowInformationDetail(apartment.Macanho, apartment.Duan, apartment.Tenchuho,apartment.Masothue, apartment.Thue, apartment.Phikekhaithue, apartment.Phiquanly
+                                                                                    , apartment.Tienrefundkhach, apartment.Phidonvesinh, apartment.Tienthu);
             showInformationDetail.Show();
         }
     }
