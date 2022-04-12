@@ -45,7 +45,7 @@ namespace QuanlyCanHoGiangTran.DTO
             _tienrefundkhach = (double)row["TIENREFUNDKHACH"];
             _phidonvesinh = (double)row["PHIDONVESINH"];
             _tienthu = (double)row["TIENTHU"];
-            _tienthu = (double)row["TIENTHUEMOTTHANG"];
+            _tienthuemotthang = (double)row["TIENTHUEMOTTHANG"];
             _chuky = (int)row["CHUKY"];
             _ngaybatdau = (DateTime)row["NGAYBATDAU"];
             _ngayketthuc = (DateTime)row["NGAYKETTHUC"];
