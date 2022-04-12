@@ -14,7 +14,15 @@ namespace QuanlyCanHoGiangTran
 {
     public partial class AddNewApart : Form
     {
-        private float tienThu;
+        private float tienThu = 0;
+
+        private float thue = 0;
+        private float phiKeKhaiThue = 0;
+        private float phiQuanly = 0;
+        private float tienReFundKhach = 0;
+        private float phiDonVeSinh = 0;
+        private float tienThue1Thang = 0;
+
         public AddNewApart()
         {
             InitializeComponent();
@@ -82,13 +90,13 @@ namespace QuanlyCanHoGiangTran
             string hinhThucKT = txbHTKhaiThue.Text;
             string coQuanTT = txbCQThuThue.Text;
 
-            float thue = float.Parse(txbThue.Text, CultureInfo.InvariantCulture.NumberFormat);
-            float phiKeKhaiThue = float.Parse(txbPhiKeKhaiThue.Text, CultureInfo.InvariantCulture.NumberFormat);
-            float phiQuanly = float.Parse(txbPhiQuanLy.Text, CultureInfo.InvariantCulture.NumberFormat);
-            float tienReFundKhach = float.Parse(txbTienRefund.Text, CultureInfo.InvariantCulture.NumberFormat);
-            float phiDonVeSinh = float.Parse(txbPhiDonVeSinh.Text, CultureInfo.InvariantCulture.NumberFormat);
-            float tienThu = float.Parse(txbTienThu.Text, CultureInfo.InvariantCulture.NumberFormat);
-            float tienThue1Thang = float.Parse(txbTienthue1thang.Text, CultureInfo.InvariantCulture.NumberFormat);
+            thue = float.Parse(txbThue.Text, CultureInfo.InvariantCulture.NumberFormat);
+            phiKeKhaiThue = float.Parse(txbPhiKeKhaiThue.Text, CultureInfo.InvariantCulture.NumberFormat);
+            phiQuanly = float.Parse(txbPhiQuanLy.Text, CultureInfo.InvariantCulture.NumberFormat);
+            tienReFundKhach = float.Parse(txbTienRefund.Text, CultureInfo.InvariantCulture.NumberFormat);
+            phiDonVeSinh = float.Parse(txbPhiDonVeSinh.Text, CultureInfo.InvariantCulture.NumberFormat);
+            tienThu = float.Parse(txbTienThu.Text, CultureInfo.InvariantCulture.NumberFormat);
+            tienThue1Thang = float.Parse(txbTienthue1thang.Text, CultureInfo.InvariantCulture.NumberFormat);
 
             string duAn = cbDuAn.Text;
             int chuKy = Int32.Parse(cbChuKy.Text);
