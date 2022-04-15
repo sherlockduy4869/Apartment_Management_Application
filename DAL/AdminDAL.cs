@@ -51,6 +51,13 @@ namespace QuanlyCanHoGiangTran.DAL
             return i;
         }
 
+        public int removeApartSelling(string maCanHo)
+        {
+            string query = "DELETE FROM APARTMENT_SELLING WHERE MACANHO = '" + maCanHo + "'";
+            int i = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maCanHo });
+            return i;
+        }
+
         public int markDone(string maCanHo)
         {
             string query = "UPDATE APARTMENT_MONEY SET TRANGTHAI = 'Da thu tien' WHERE MACANHO = '" + maCanHo + "'";
