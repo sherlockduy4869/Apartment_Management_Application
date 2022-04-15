@@ -53,5 +53,11 @@ namespace QuanlyCanHoGiangTran
             ShowInfoApartSelling showInfoApartSelling = new ShowInfoApartSelling();
             showInfoApartSelling.Show();
         }
+
+        private void btnApartNotRented_Click(object sender, EventArgs e)
+        {
+            ShowInfoApartNotRented showInfoApartNotRented = new ShowInfoApartNotRented();
+            showInfoApartNotRented.Show();
+        }
     }
 }
