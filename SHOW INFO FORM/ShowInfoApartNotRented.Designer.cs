@@ -57,16 +57,18 @@
             this.txbSearch.Size = new System.Drawing.Size(321, 39);
             this.txbSearch.TabIndex = 37;
             this.txbSearch.Text = "Search apartment...";
+            this.txbSearch.Click += new System.EventHandler(this.txbSearch_Click);
+            this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(506, 83);
+            this.label1.Location = new System.Drawing.Point(663, 83);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(841, 58);
+            this.label1.Size = new System.Drawing.Size(600, 58);
             this.label1.TabIndex = 36;
-            this.label1.Text = "SELLING APARTMENT INFORMATION";
+            this.label1.Text = "APARTMENT NOT RENTED";
             // 
             // btnRemove
             // 

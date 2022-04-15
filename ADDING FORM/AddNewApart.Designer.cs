@@ -164,10 +164,10 @@
             // 
             this.panel2.Controls.Add(this.txbTenChuHo);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(79, 330);
+            this.panel2.Location = new System.Drawing.Point(79, 401);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(768, 65);
-            this.panel2.TabIndex = 4;
+            this.panel2.TabIndex = 5;
             // 
             // txbTenChuHo
             // 
@@ -639,10 +639,10 @@
             // 
             this.panel19.Controls.Add(this.txbDaiLy);
             this.panel19.Controls.Add(this.label19);
-            this.panel19.Location = new System.Drawing.Point(79, 401);
+            this.panel19.Location = new System.Drawing.Point(79, 330);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(768, 65);
-            this.panel19.TabIndex = 5;
+            this.panel19.TabIndex = 4;
             // 
             // txbDaiLy
             // 

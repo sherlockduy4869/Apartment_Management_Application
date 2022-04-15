@@ -44,6 +44,14 @@ namespace QuanlyCanHoGiangTran.DAL
             return i;
         }
 
+        public int addApartmentNotRented(string maCanHo, string tenChuHo, string duAn, string tinhTrang, string daiLy)
+        {
+            string query = "Insert into APARTMENT_NOT_RENTED (MACANHO,TENCHUHO,DUAN,TINHTRANG,DAILY) VALUES(" +
+                            "'" + maCanHo + "','" + tenChuHo + "','" + duAn + "',N'" + tinhTrang + "','" + daiLy + "')";
+            int i = DataProvider.Instance.ExecuteNonQuery(query);
+            return i;
+        }
+
         public int removeApartment(string maCanHo)
         {
             string query = "EXEC dbo.DELETING_APARTMENT @macanho";
@@ -54,6 +62,13 @@ namespace QuanlyCanHoGiangTran.DAL
         public int removeApartSelling(string maCanHo)
         {
             string query = "DELETE FROM APARTMENT_SELLING WHERE MACANHO = '" + maCanHo + "'";
+            int i = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maCanHo });
+            return i;
+        }
+
+        public int removeApartNotRented(string maCanHo)
+        {
+            string query = "DELETE FROM APARTMENT_NOT_RENTED WHERE MACANHO = '" + maCanHo + "'";
             int i = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maCanHo });
             return i;
         }
@@ -91,6 +106,21 @@ namespace QuanlyCanHoGiangTran.DAL
             int i = DataProvider.Instance.ExecuteNonQuery(query);
             return i;
         }
+
+        public int reDoFee(string typeOfStatus, string maCanHo)
+        {
+            string query = "UPDATE APARTMENT_FINANCE SET " + typeOfStatus + " = 'UNCHECKED' WHERE MACANHO = '" + maCanHo + "'";
+            int i = DataProvider.Instance.ExecuteNonQuery(query);
+            return i;
+        }
+
+        public int markDoneFee(string typeOfStatus, string maCanHo)
+        {
+            string query = "UPDATE APARTMENT_FINANCE SET " + typeOfStatus + " = 'CHECKED' WHERE MACANHO = '" + maCanHo + "'";
+            int i = DataProvider.Instance.ExecuteNonQuery(query);
+            return i;
+        }
+
         public int skipNegotiation(string maCanHo)
         {
             string query = "DELETE FROM APARTMENT_CONTRACT WHERE MACANHO = '" + maCanHo + "'";
@@ -129,21 +159,6 @@ namespace QuanlyCanHoGiangTran.DAL
             }
             return null;
         }
-
-        public int markDoneFee(string typeOfStatus, string maCanHo)
-        {
-            string query = "UPDATE APARTMENT_FINANCE SET " + typeOfStatus + " = 'CHECKED' WHERE MACANHO = '" + maCanHo + "'";
-            int i = DataProvider.Instance.ExecuteNonQuery(query);
-            return i;
-        }
-
-        public int reDoFee(string typeOfStatus, string maCanHo)
-        {
-            string query = "UPDATE APARTMENT_FINANCE SET " + typeOfStatus + " = 'UNCHECKED' WHERE MACANHO = '" + maCanHo + "'";
-            int i = DataProvider.Instance.ExecuteNonQuery(query);
-            return i;
-        }
-
 
     }
 }
