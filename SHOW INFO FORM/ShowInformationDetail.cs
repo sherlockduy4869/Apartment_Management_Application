@@ -26,14 +26,14 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             txbDuAn.Text = duAn;
             txbTenChuHo.Text = tenChuHo;
             txbMaSoThue.Text = maSoThue;
-            txbThue.Text = (thue*chuKy).ToString("N");
-            txbPhiKeKhaiThue.Text = (phiKeKhaiThue).ToString("N");
-            txbPhiQuanLy.Text = (phiQuanLy*chuKy).ToString("N");
-            txbTienRefund.Text = (tienReFundKhach*chuKy).ToString("N");
-            txbPhiDonVeSinh.Text = (phiDonVeSinh*chuKy).ToString("N");
+            txbThue.Text = (thue*chuKy).ToString("N0");
+            txbPhiKeKhaiThue.Text = (phiKeKhaiThue).ToString("N0");
+            txbPhiQuanLy.Text = (phiQuanLy*chuKy).ToString("N0");
+            txbTienRefund.Text = (tienReFundKhach*chuKy).ToString("N0");
+            txbPhiDonVeSinh.Text = (phiDonVeSinh*chuKy).ToString("N0");
             tienCanThu = (tienThu - phiKeKhaiThue) * chuKy + phiKeKhaiThue;
-            txbTienThu.Text = tienCanThu.ToString("N");
-            txbChuKy.Text = chuKy.ToString("N");
+            txbTienThu.Text = tienCanThu.ToString("N0");
+            txbChuKy.Text = chuKy.ToString();
             dtpkNgaydau.Value = ngayDau;
             dtpkNgaycuoi.Value = ngayCuoi;
         }

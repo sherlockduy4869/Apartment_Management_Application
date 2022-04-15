@@ -29,12 +29,12 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             InitializeComponent();
             listFinanceCategory();
             txbMaCanHo.Text = maCanHo;
-            txbThue.Text = thue.ToString("N");
-            txbPhiKeKhaiThue.Text = phiKeKhaiThue.ToString("N");
-            txbPhiQuanLy.Text = phiQuanLy.ToString("N");
-            txbTienRefundKhach.Text = tienReFundKhach.ToString("N");
-            txbPhiDonVeSinh.Text = phiDonVeSinh.ToString("N");
-            txbTienThu.Text = tienThu.ToString("N");
+            txbThue.Text = thue.ToString("N0");
+            txbPhiKeKhaiThue.Text = phiKeKhaiThue.ToString("N0");
+            txbPhiQuanLy.Text = phiQuanLy.ToString("N0");
+            txbTienRefundKhach.Text = tienReFundKhach.ToString("N0");
+            txbPhiDonVeSinh.Text = phiDonVeSinh.ToString("N0");
+            txbTienThu.Text = tienThu.ToString("N0");
             
             //Thue
             if(statusThue == "UNCHECKED")
