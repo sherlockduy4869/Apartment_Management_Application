@@ -28,7 +28,7 @@ namespace QuanlyCanHoGiangTran.OTHERS_FUNCTION_FORM
             ShowInformationDetail showInformationDetail = new ShowInformationDetail(apartment.Macanho, apartment.Duan, apartment.Tenchuho,apartment.Masothue, apartment.Thue, apartment.Phikekhaithue, apartment.Phiquanly
                                                                                     , apartment.Tienrefundkhach, apartment.Phidonvesinh, apartment.Tienthu, apartment.Chuky, apartmentMoney.Ngaydau, apartmentMoney.Ngaycuoi);
             showInformationDetail.Show();
-            
+            this.Close();
         }
     }
 }

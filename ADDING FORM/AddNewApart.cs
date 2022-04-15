@@ -78,7 +78,7 @@ namespace QuanlyCanHoGiangTran
             txbMaSoThue.Text = string.Empty;
             txbHTKhaiThue.Text = string.Empty;
             txbCQThuThue.Text = string.Empty;
-            txbThue.Text = string.Empty;
+
         }
 
         private void btnAddNew_Click(object sender, EventArgs e)
@@ -121,8 +121,7 @@ namespace QuanlyCanHoGiangTran
                 {
                     clearInfo();
                     MessageBox.Show("Added");
-                    ShowInfoApart showInfoApart = new ShowInfoApart();
-                    showInfoApart.Show();
+                    
                 }
                 else
                 {

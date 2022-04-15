@@ -35,6 +35,7 @@
             this.dtgvApartInfo = new System.Windows.Forms.DataGridView();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txbSearch = new System.Windows.Forms.TextBox();
+            this.btnRefresh = new QuanlyCanHoGiangTran.Custom.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -119,11 +120,31 @@
             this.txbSearch.Click += new System.EventHandler(this.txbSearch_Click);
             this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnRefresh.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnRefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnRefresh.BorderRadius = 40;
+            this.btnRefresh.BorderSize = 0;
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(1650, 31);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(181, 71);
+            this.btnRefresh.TabIndex = 33;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.TextColor = System.Drawing.Color.White;
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // ShowInfoApartSelling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2161, 1127);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txbSearch);
             this.Controls.Add(this.label1);
@@ -148,5 +169,6 @@
         private DataGridView dtgvApartInfo;
         private PictureBox pictureBox1;
         private TextBox txbSearch;
+        private Custom.RJButton btnRefresh;
     }
 }

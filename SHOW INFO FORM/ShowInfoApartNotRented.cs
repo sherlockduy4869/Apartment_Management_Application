@@ -47,5 +47,12 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             txbSearch.Clear();
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            ShowInfoApartNotRented showInfoApartNotRented = new ShowInfoApartNotRented();
+            showInfoApartNotRented.Show();
+            this.Close();
+        }
     }
 }

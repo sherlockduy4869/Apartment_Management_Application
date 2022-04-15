@@ -37,6 +37,7 @@ namespace QuanlyCanHoGiangTran.OTHERS_FUNCTION_FORM
                                                                         , apartmentFinanceIncome.Statusphiquanly, apartmentFinanceIncome.Statustienrefundkhach, apartmentFinanceIncome.Statusphidonvesinh
                                                                         , apartment.Chuky, apartmentMoneyTax.Ngaydau, apartmentMoneyTax.Ngaycuoi);
             showFinanceDetail.Show();
+            this.Close();
         }
     }
 }

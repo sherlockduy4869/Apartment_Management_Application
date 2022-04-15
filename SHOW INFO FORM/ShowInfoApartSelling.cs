@@ -41,7 +41,9 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         private void btnAdd_Click(object sender, EventArgs e)
         {
             AddNewApartSelling addNewApartSelling = new AddNewApartSelling();
-            addNewApartSelling.Show();
+            this.Hide();
+            addNewApartSelling.ShowDialog();
+            this.Show();
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
@@ -53,6 +55,13 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         private void txbSearch_Click(object sender, EventArgs e)
         {
             txbSearch.Clear();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            ShowInfoApartSelling showInfoApartSelling = new ShowInfoApartSelling();
+            showInfoApartSelling.Show();
+            this.Close();
         }
     }
 }
