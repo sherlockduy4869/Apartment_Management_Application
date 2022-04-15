@@ -107,9 +107,16 @@ namespace QuanlyCanHoGiangTran.DAL
             return i;
         }
 
-        public int reDoFee(string typeOfStatus, string maCanHo)
+        public int reDoFee(string typeOfStatus, int final_status, string maCanHo)
         {
-            string query = "UPDATE APARTMENT_FINANCE SET " + typeOfStatus + " = 'UNCHECKED' WHERE MACANHO = '" + maCanHo + "'";
+            string query = "UPDATE APARTMENT_FINANCE SET " + typeOfStatus + " = '" + final_status + "' WHERE MACANHO = '" + maCanHo + "'";
+            int i = DataProvider.Instance.ExecuteNonQuery(query);
+            return i;
+        }
+
+        public int reDoFeeThu(string typeOfStatusThu, int final_status_Thu, string maCanHo)
+        {
+            string query = "UPDATE APARTMENT_FINANCE_INCOME SET " + typeOfStatusThu + " = '" + final_status_Thu + "' WHERE MACANHO = '" + maCanHo + "'";
             int i = DataProvider.Instance.ExecuteNonQuery(query);
             return i;
         }

@@ -701,6 +701,7 @@
             this.btnRedoThu.Text = "Redo Thu";
             this.btnRedoThu.TextColor = System.Drawing.Color.White;
             this.btnRedoThu.UseVisualStyleBackColor = false;
+            this.btnRedoThu.Click += new System.EventHandler(this.btnRedoThu_Click);
             // 
             // btnMarkDoneThu
             // 

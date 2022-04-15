@@ -162,50 +162,65 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         private void btnRedo_Click(object sender, EventArgs e)
         {
 
-            string typeOfFee = cbThu.Text;
+            string typeOfFee = cbFinanceCategory.Text;
 
             if (typeOfFee == "THUE")
             {
+                int status = Int32.Parse(lbThue.Text);
+                final_status = status - 1;
                 typeOfStatus = "STATUS_THUE";
             }
 
             if (typeOfFee == "PHIKEKHAITHUE")
             {
+                int status = Int32.Parse(lbPhiKeKhaiThue.Text);
+                final_status = status - 1;
                 typeOfStatus = "STATUS_PHIKEKHAITHUE";
             }
 
             if (typeOfFee == "PHIQUANLY")
             {
+                int status = Int32.Parse(lbPhiQuanLy.Text);
+                final_status = status - 1;
                 typeOfStatus = "STATUS_PHIQUANLY";
             }
 
             if (typeOfFee == "TIENREFUNDKHACH")
             {
+                int status = Int32.Parse(lbTienReFundKhach.Text);
+                final_status = status - 1;
                 typeOfStatus = "STATUS_TIENREFUNDKHACH";
             }
 
             if (typeOfFee == "PHIDONVESINH")
             {
+                int status = Int32.Parse(lbPhidonvesinh.Text);
+                final_status = status - 1;
                 typeOfStatus = "STATUS_PHIDONVESINH";
             }
 
-            if (typeOfFee == "TIENTHU")
-            {
-                typeOfStatus = "STATUS_TIENTHU";
-            }
             try
             {
-                int i = AdminDAL.Instance.reDoFee(typeOfStatus, txbMaCanHo.Text);
-
-                if (i != 0)
+                if(final_status < 0)
                 {
-
-                    MessageBox.Show("Redo");
+                    MessageBox.Show("Error");
                 }
                 else
                 {
-                    MessageBox.Show("Failed");
+                    int i = AdminDAL.Instance.reDoFee(typeOfStatus, final_status, txbMaCanHo.Text);
+
+                    if (i != 0)
+                    {
+
+                        MessageBox.Show("Done");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed");
+                    }
                 }
+                    
+                
             }
             catch (Exception ex)
             {
@@ -258,11 +273,76 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
 
                 if (i != 0)
                 {
-                    MessageBox.Show("MarkDone");
+                    MessageBox.Show("Done");
                 }
                 else
                 {
                     MessageBox.Show("Failed");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR 404");
+            }
+        }
+
+        private void btnRedoThu_Click(object sender, EventArgs e)
+        {
+            string typeOfFeeThu = cbThu.Text;
+
+            if (typeOfFeeThu == "THUE")
+            {
+                int status_thu = Int32.Parse(lbThueThu.Text);
+                final_status_thu = status_thu - 1;
+                typeOfStatusThu = "STATUS_THUE";
+            }
+
+            if (typeOfFeeThu == "PHIKEKHAITHUE")
+            {
+                int status_thu = Int32.Parse(lbPhiKeKhaiThueThu.Text);
+                final_status_thu = status_thu - 1;
+                typeOfStatusThu = "STATUS_PHIKEKHAITHUE";
+            }
+
+            if (typeOfFeeThu == "PHIQUANLY")
+            {
+                int status_thu = Int32.Parse(lbPhiQuanLyThu.Text);
+                final_status_thu = status_thu - 1;
+                typeOfStatusThu = "STATUS_PHIQUANLY";
+            }
+
+            if (typeOfFeeThu == "TIENREFUNDKHACH")
+            {
+                int status_thu = Int32.Parse(lbTienRefundKhachThu.Text);
+                final_status_thu = status_thu - 1;
+                typeOfStatusThu = "STATUS_TIENREFUNDKHACH";
+            }
+
+            if (typeOfFeeThu == "PHIDONVESINH")
+            {
+                int status_thu = Int32.Parse(lbPhiDonVeSinhThu.Text);
+                final_status_thu = status_thu - 1;
+                typeOfStatusThu = "STATUS_PHIDONVESINH";
+            }
+
+            try
+            {
+                if(final_status_thu < 0)
+                {
+                    MessageBox.Show("Error");
+                }
+                else
+                {
+                    int i = AdminDAL.Instance.reDoFeeThu(typeOfStatusThu, final_status_thu, txbMaCanHo.Text);
+
+                    if (i != 0)
+                    {
+                        MessageBox.Show("Done");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed");
+                    }
                 }
             }
             catch (Exception ex)
