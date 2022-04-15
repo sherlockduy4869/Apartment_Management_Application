@@ -183,6 +183,7 @@ BEGIN
 	SET @tiencanthu = @tienthu
 
 	INSERT INTO APARTMENT_MONEY(MACANHO, TENCHUHO, DUAN, NGAYDAU, NGAYCUOI, CHUKY, TIENCANTHU) VALUES(@macanho, @tenchuho, @duan, @ngaydau, @ngaycuoiMinus, @chuky, @tiencanthu)
+	
 END
 GO
 

@@ -19,7 +19,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         }
 
         public ShowInformationDetail(string maCanHo, string duAn, string tenChuHo, string maSoThue, double thue, double phiKeKhaiThue,
-                                    double phiQuanLy, double tienReFundKhach, double phiDonVeSinh, double tienThu, int chuKy)
+                                    double phiQuanLy, double tienReFundKhach, double phiDonVeSinh, double tienThu, int chuKy, DateTime ngayDau, DateTime ngayCuoi)
         {
             InitializeComponent();
             txbMaCanHo.Text = maCanHo;
@@ -33,6 +33,9 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             txbPhiDonVeSinh.Text = (phiDonVeSinh*chuKy).ToString("N");
             tienCanThu = (tienThu - phiKeKhaiThue) * chuKy + phiKeKhaiThue;
             txbTienThu.Text = tienCanThu.ToString("N");
+            txbChuKy.Text = chuKy.ToString("N");
+            dtpkNgaydau.Value = ngayDau;
+            dtpkNgaycuoi.Value = ngayCuoi;
         }
     }
 }

@@ -92,6 +92,16 @@ namespace QuanlyCanHoGiangTran.DAL
             return null;
         }
 
+        public ApartmentMoneyTax getApartmentMoneyByMaCanHo(string maCanHo)
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,MACANHO,DUAN, CHUKY, NGAYDAU, NGAYCUOI, TIENCANTHU FROM APARTMENT_MONEY WHERE MACANHO = '" + maCanHo + "'");
+            foreach (DataRow row in data.Rows)
+            {
+                return new ApartmentMoneyTax(row);
+            }
+            return null;
+        }
+
         public ApartmentFinance getFinanceDetailByMaCanHo(string maCanHo)
         {
             DataTable data = DataProvider.Instance.ExecuteQuery("SELECT MACANHO, THUE,PHIKEKHAITHUE,PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU, STATUS_THUE, STATUS_PHIKEKHAITHUE, STATUS_PHIQUANLY, " +
