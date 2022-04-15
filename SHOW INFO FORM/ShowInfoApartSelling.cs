@@ -1,4 +1,5 @@
 ﻿using QuanlyCanHoGiangTran.ADDING_FORM;
+using QuanlyCanHoGiangTran.DAL;
 using QuanlyCanHoGiangTran.REMOVING_FORM;
 using System;
 using System.Collections.Generic;
@@ -17,6 +18,24 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         public ShowInfoApartSelling()
         {
             InitializeComponent();
+            listApartTax();
+        }
+
+        void listApartTax()
+        {
+
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_SELLING");
+            dtgvApartInfo.Columns["GIATIENUSD"].DefaultCellStyle.Format = "N0";
+            dtgvApartInfo.Columns["GIATIENVND"].DefaultCellStyle.Format = "N0";
+            dtgvApartInfo.Columns["NGAYNHAPDATA"].DefaultCellStyle.Format = "dd-MM-yyyy";
+        }
+
+        private void txbSearch_TextChanged(object sender, EventArgs e)
+        {
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_SELLING WHERE MACANHO LIKE '" + txbSearch.Text + "%'");
+            dtgvApartInfo.Columns["GIATIENUSD"].DefaultCellStyle.Format = "N0";
+            dtgvApartInfo.Columns["GIATIENVND"].DefaultCellStyle.Format = "N0";
+            dtgvApartInfo.Columns["NGAYNHAPDATA"].DefaultCellStyle.Format = "dd-MM-yyyy";
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
@@ -29,6 +48,11 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             RemoveApartSelling removeApartSelling = new RemoveApartSelling();
             removeApartSelling.Show();
+        }
+
+        private void txbSearch_Click(object sender, EventArgs e)
+        {
+            txbSearch.Clear();
         }
     }
 }

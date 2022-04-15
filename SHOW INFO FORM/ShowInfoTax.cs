@@ -27,7 +27,7 @@ namespace QuanlyCanHoGiangTran
 
             dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE (NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
                                                                          "OR ('" + toDay + "' >= NGAYCUOI)");
-            dtgvApartTax.Columns["TIENCANTHU"].DefaultCellStyle.Format = "N2";
+            dtgvApartTax.Columns["TIENCANTHU"].DefaultCellStyle.Format = "N0";
             dtgvApartTax.Columns["NGAYDAU"].DefaultCellStyle.Format = "dd-MM-yyyy";
             dtgvApartTax.Columns["NGAYCUOI"].DefaultCellStyle.Format = "dd-MM-yyyy";
         }
@@ -39,7 +39,7 @@ namespace QuanlyCanHoGiangTran
             txbSearch.ForeColor = System.Drawing.Color.Black;
             dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE ((NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
                                                                          "OR ('" + toDay + "' >= NGAYCUOI)) AND MACANHO LIKE '" + txbSearch.Text + "%'");
-            dtgvApartTax.Columns["TIENCANTHU"].DefaultCellStyle.Format = "N2";
+            dtgvApartTax.Columns["TIENCANTHU"].DefaultCellStyle.Format = "N0";
             dtgvApartTax.Columns["NGAYDAU"].DefaultCellStyle.Format = "dd-MM-yyyy";
             dtgvApartTax.Columns["NGAYCUOI"].DefaultCellStyle.Format = "dd-MM-yyyy";
         }

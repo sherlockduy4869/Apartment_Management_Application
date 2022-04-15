@@ -28,22 +28,26 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowInfoApartSelling));
             this.label1 = new System.Windows.Forms.Label();
             this.btnRemove = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnAdd = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.dtgvApartInfo = new System.Windows.Forms.DataGridView();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.txbSearch = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(654, 33);
+            this.label1.Location = new System.Drawing.Point(652, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(645, 58);
+            this.label1.Size = new System.Drawing.Size(841, 58);
             this.label1.TabIndex = 7;
-            this.label1.Text = "APARTMENT INFORMATION";
+            this.label1.Text = "SELLING APARTMENT INFORMATION";
             // 
             // btnRemove
             // 
@@ -55,7 +59,7 @@
             this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(1116, 986);
+            this.btnRemove.Location = new System.Drawing.Point(1234, 986);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(300, 80);
             this.btnRemove.TabIndex = 6;
@@ -74,7 +78,7 @@
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(503, 986);
+            this.btnAdd.Location = new System.Drawing.Point(522, 986);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(300, 80);
             this.btnAdd.TabIndex = 5;
@@ -85,19 +89,43 @@
             // 
             // dtgvApartInfo
             // 
+            this.dtgvApartInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvApartInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvApartInfo.Location = new System.Drawing.Point(12, 124);
             this.dtgvApartInfo.Name = "dtgvApartInfo";
             this.dtgvApartInfo.RowHeadersWidth = 82;
             this.dtgvApartInfo.RowTemplate.Height = 41;
-            this.dtgvApartInfo.Size = new System.Drawing.Size(1868, 806);
+            this.dtgvApartInfo.Size = new System.Drawing.Size(2145, 806);
             this.dtgvApartInfo.TabIndex = 4;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(483, 58);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(52, 44);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 32;
+            this.pictureBox1.TabStop = false;
+            // 
+            // txbSearch
+            // 
+            this.txbSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            this.txbSearch.Location = new System.Drawing.Point(156, 58);
+            this.txbSearch.Name = "txbSearch";
+            this.txbSearch.Size = new System.Drawing.Size(321, 39);
+            this.txbSearch.TabIndex = 31;
+            this.txbSearch.Text = "Search apartment...";
+            this.txbSearch.Click += new System.EventHandler(this.txbSearch_Click);
+            this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
             // 
             // ShowInfoApartSelling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1892, 1127);
+            this.ClientSize = new System.Drawing.Size(2161, 1127);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.txbSearch);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
@@ -106,6 +134,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Info Apart Selling";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -117,5 +146,7 @@
         private Custom.RJButton btnRemove;
         private Custom.RJButton btnAdd;
         private DataGridView dtgvApartInfo;
+        private PictureBox pictureBox1;
+        private TextBox txbSearch;
     }
 }
