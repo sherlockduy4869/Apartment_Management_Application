@@ -92,6 +92,7 @@
             this.cbThu = new System.Windows.Forms.ComboBox();
             this.btnRedoThu = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnMarkDoneThu = new QuanlyCanHoGiangTran.Custom.RJButton();
+            this.btnRefresh = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -722,11 +723,31 @@
             this.btnMarkDoneThu.UseVisualStyleBackColor = false;
             this.btnMarkDoneThu.Click += new System.EventHandler(this.btnMarkDoneThu_Click);
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnRefresh.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnRefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnRefresh.BorderRadius = 40;
+            this.btnRefresh.BorderSize = 0;
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(1308, 50);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(238, 80);
+            this.btnRefresh.TabIndex = 42;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.TextColor = System.Drawing.Color.White;
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // ShowFinanceDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1558, 1133);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.cbThu);
             this.Controls.Add(this.btnRedoThu);
             this.Controls.Add(this.btnMarkDoneThu);
@@ -865,5 +886,6 @@
         private ComboBox cbThu;
         private Custom.RJButton btnRedoThu;
         private Custom.RJButton btnMarkDoneThu;
+        private Custom.RJButton btnRefresh;
     }
 }
