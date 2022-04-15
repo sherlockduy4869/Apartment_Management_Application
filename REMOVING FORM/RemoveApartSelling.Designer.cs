@@ -1,6 +1,6 @@
 ﻿namespace QuanlyCanHoGiangTran.REMOVING_FORM
 {
-    partial class RemoveApartNotRented
+    partial class RemoveApartSelling
     {
         /// <summary>
         /// Required designer variable.
@@ -48,7 +48,7 @@
             this.btnRemove.Location = new System.Drawing.Point(238, 261);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(300, 80);
-            this.btnRemove.TabIndex = 7;
+            this.btnRemove.TabIndex = 9;
             this.btnRemove.Text = "Remove";
             this.btnRemove.TextColor = System.Drawing.Color.White;
             this.btnRemove.UseVisualStyleBackColor = false;
@@ -60,7 +60,7 @@
             this.panel1.Location = new System.Drawing.Point(79, 110);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(643, 111);
-            this.panel1.TabIndex = 6;
+            this.panel1.TabIndex = 8;
             // 
             // txbMaCanHo
             // 
@@ -79,16 +79,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ma can ho";
             // 
-            // RemoveApartNotRented
+            // RemoveApartSelling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.panel1);
-            this.Name = "RemoveApartNotRented";
+            this.Name = "RemoveApartSelling";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Remove Apart Not Rented";
+            this.Text = "Remove Apart Selling";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);

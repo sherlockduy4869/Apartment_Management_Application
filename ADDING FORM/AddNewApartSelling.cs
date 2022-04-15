@@ -10,14 +10,13 @@ using System.Windows.Forms;
 
 namespace QuanlyCanHoGiangTran.ADDING_FORM
 {
-    public partial class AddNewApartNotRented : Form
+    public partial class AddNewApartSelling : Form
     {
-        public AddNewApartNotRented()
+        public AddNewApartSelling()
         {
             InitializeComponent();
             listAllComboBox();
         }
-
         void listAllComboBox()
         {
 
@@ -38,17 +37,12 @@ namespace QuanlyCanHoGiangTran.ADDING_FORM
             cbTinhTrang.DataSource = listTinhTrang;
 
             List<string> listPhongNgu = new List<string>();
-            string[] arrayListPhongNgu = { "1 PN", "2 PN", "2 PN + 1", "3 PN", "3 PN + 1", "4 PN", "4 PN + 1"};
+            string[] arrayListPhongNgu = { "1 PN", "2 PN", "2 PN + 1", "3 PN", "3 PN + 1", "4 PN", "4 PN + 1" };
             foreach (string str in arrayListPhongNgu)
             {
                 listPhongNgu.Add(str);
             }
             cbSoPhongNgu.DataSource = listPhongNgu;
-
-        }
-
-        private void AddNewApartNotRented_Load(object sender, EventArgs e)
-        {
 
         }
     }

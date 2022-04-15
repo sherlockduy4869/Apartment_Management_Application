@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace QuanlyCanHoGiangTran.REMOVING_FORM
 {
-    public partial class RemoveApartNotRented : Form
+    public partial class RemoveApartSelling : Form
     {
-        public RemoveApartNotRented()
+        public RemoveApartSelling()
         {
             InitializeComponent();
         }
