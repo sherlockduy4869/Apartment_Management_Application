@@ -71,7 +71,7 @@
             // 
             this.panel1.Controls.Add(this.txbMaCanHo);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(75, 158);
+            this.panel1.Location = new System.Drawing.Point(75, 37);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(659, 87);
             this.panel1.TabIndex = 0;
@@ -80,6 +80,7 @@
             // 
             this.txbMaCanHo.Location = new System.Drawing.Point(234, 31);
             this.txbMaCanHo.Name = "txbMaCanHo";
+            this.txbMaCanHo.ReadOnly = true;
             this.txbMaCanHo.Size = new System.Drawing.Size(405, 39);
             this.txbMaCanHo.TabIndex = 1;
             // 
@@ -105,6 +106,7 @@
             // 
             this.txbThue.Location = new System.Drawing.Point(234, 27);
             this.txbThue.Name = "txbThue";
+            this.txbThue.ReadOnly = true;
             this.txbThue.Size = new System.Drawing.Size(405, 39);
             this.txbThue.TabIndex = 1;
             // 
@@ -130,6 +132,7 @@
             // 
             this.txbPhiKeKhaiThue.Location = new System.Drawing.Point(234, 27);
             this.txbPhiKeKhaiThue.Name = "txbPhiKeKhaiThue";
+            this.txbPhiKeKhaiThue.ReadOnly = true;
             this.txbPhiKeKhaiThue.Size = new System.Drawing.Size(405, 39);
             this.txbPhiKeKhaiThue.TabIndex = 1;
             // 
@@ -155,6 +158,7 @@
             // 
             this.txbPhiQuanLy.Location = new System.Drawing.Point(234, 34);
             this.txbPhiQuanLy.Name = "txbPhiQuanLy";
+            this.txbPhiQuanLy.ReadOnly = true;
             this.txbPhiQuanLy.Size = new System.Drawing.Size(405, 39);
             this.txbPhiQuanLy.TabIndex = 1;
             // 
@@ -180,6 +184,7 @@
             // 
             this.txbTienRefundKhach.Location = new System.Drawing.Point(234, 27);
             this.txbTienRefundKhach.Name = "txbTienRefundKhach";
+            this.txbTienRefundKhach.ReadOnly = true;
             this.txbTienRefundKhach.Size = new System.Drawing.Size(405, 39);
             this.txbTienRefundKhach.TabIndex = 1;
             // 
@@ -205,6 +210,7 @@
             // 
             this.txbPhiDonVeSinh.Location = new System.Drawing.Point(234, 27);
             this.txbPhiDonVeSinh.Name = "txbPhiDonVeSinh";
+            this.txbPhiDonVeSinh.ReadOnly = true;
             this.txbPhiDonVeSinh.Size = new System.Drawing.Size(405, 39);
             this.txbPhiDonVeSinh.TabIndex = 1;
             // 
@@ -230,6 +236,7 @@
             // 
             this.txbTienThu.Location = new System.Drawing.Point(230, 27);
             this.txbTienThu.Name = "txbTienThu";
+            this.txbTienThu.ReadOnly = true;
             this.txbTienThu.Size = new System.Drawing.Size(405, 39);
             this.txbTienThu.TabIndex = 1;
             // 

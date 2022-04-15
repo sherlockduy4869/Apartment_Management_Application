@@ -40,7 +40,7 @@ namespace QuanlyCanHoGiangTran
             cbChuKy.DataSource = listChuKy;
 
             List<string> listTinhTrang = new List<string>();
-            string[] arrayListTinhTrang = { "Mới bán", "Chưa nhận bàn giao nhà", "Đã nhận bàn giao nhà", "Đang cho thuê", "Đang available cho thuê" };
+            string[] arrayListTinhTrang = { "Chưa nhận bàn giao nhà", "Đã nhận bàn giao nhà", "Đang cho thuê", "Đang available cho thuê" };
             foreach (string str in arrayListTinhTrang)
             {
                 listTinhTrang.Add(str);

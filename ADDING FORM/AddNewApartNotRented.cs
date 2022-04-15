@@ -46,5 +46,10 @@ namespace QuanlyCanHoGiangTran.ADDING_FORM
             cbSoPhongNgu.DataSource = listPhongNgu;
 
         }
+
+        private void AddNewApartNotRented_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

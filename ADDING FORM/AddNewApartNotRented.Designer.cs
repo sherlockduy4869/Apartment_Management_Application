@@ -434,6 +434,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "AddNewApartNotRented";
             this.Text = "Add New Apart Not Rented";
+            this.Load += new System.EventHandler(this.AddNewApartNotRented_Load);
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
             this.panel15.ResumeLayout(false);
