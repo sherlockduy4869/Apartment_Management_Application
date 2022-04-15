@@ -34,6 +34,16 @@ namespace QuanlyCanHoGiangTran.DAL
             return i;
         }
 
+        public int addApartmentSelling(string maCanHo, string tenChuHo, string duAn, string tinhTrang, string daiLy, string email, string phone,
+                                       string soPhongNgu, string dienTich, double vndPrice, double usdPrice, string ngayNhapData, string ghiChu)
+        {
+            string query = "Insert into APARTMENT_SELLING (MACANHO,TENCHUHO,DUAN,TINHTRANG,DAILY,EMAIL,PHONE,SOPHONGNGU,DIENTICH,GIATIENVND,GIATIENUSD,NGAYNHAPDATA,GHICHU) VALUES(" +
+                            "'" + maCanHo + "','" + tenChuHo + "','" + duAn + "',N'" + tinhTrang + "','" + daiLy + "','" + email + "','" + phone + "','" + soPhongNgu + "','" + dienTich + "','" + vndPrice + "','" + usdPrice + "'," +
+                             "'" + ngayNhapData + "','" + ghiChu + "')";
+            int i = DataProvider.Instance.ExecuteNonQuery(query);
+            return i;
+        }
+
         public int removeApartment(string maCanHo)
         {
             string query = "EXEC dbo.DELETING_APARTMENT @macanho";
@@ -126,5 +136,7 @@ namespace QuanlyCanHoGiangTran.DAL
             int i = DataProvider.Instance.ExecuteNonQuery(query);
             return i;
         }
+
+
     }
 }

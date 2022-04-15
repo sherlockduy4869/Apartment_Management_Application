@@ -48,7 +48,7 @@
             this.cbSoPhongNgu = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.txbThongTinLienHe = new System.Windows.Forms.TextBox();
+            this.txbEmail = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.txbDaiLy = new System.Windows.Forms.TextBox();
@@ -65,6 +65,9 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txbMaCanHo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panel11 = new System.Windows.Forms.Panel();
+            this.txbPhone = new System.Windows.Forms.TextBox();
+            this.label11 = new System.Windows.Forms.Label();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -77,6 +80,7 @@
             this.panel15.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel11.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel10
@@ -117,13 +121,14 @@
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(683, 707);
+            this.btnAdd.Location = new System.Drawing.Point(683, 740);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(300, 80);
             this.btnAdd.TabIndex = 26;
             this.btnAdd.Text = "Add New";
             this.btnAdd.TextColor = System.Drawing.Color.White;
             this.btnAdd.UseVisualStyleBackColor = false;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // panel9
             // 
@@ -140,6 +145,9 @@
             this.txbGiaTienUSD.Name = "txbGiaTienUSD";
             this.txbGiaTienUSD.Size = new System.Drawing.Size(428, 39);
             this.txbGiaTienUSD.TabIndex = 2;
+            this.txbGiaTienUSD.Click += new System.EventHandler(this.txbGiaTienUSD_Click);
+            this.txbGiaTienUSD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbGiaTienUSD_KeyPress);
+            this.txbGiaTienUSD.Leave += new System.EventHandler(this.txbGiaTienUSD_Leave);
             // 
             // label9
             // 
@@ -166,6 +174,9 @@
             this.txbGiaTienVND.Name = "txbGiaTienVND";
             this.txbGiaTienVND.Size = new System.Drawing.Size(428, 39);
             this.txbGiaTienVND.TabIndex = 2;
+            this.txbGiaTienVND.Click += new System.EventHandler(this.txbGiaTienVND_Click);
+            this.txbGiaTienVND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbGiaTienVND_KeyPress);
+            this.txbGiaTienVND.Leave += new System.EventHandler(this.txbGiaTienVND_Leave);
             // 
             // label8
             // 
@@ -258,19 +269,19 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.txbThongTinLienHe);
+            this.panel4.Controls.Add(this.txbEmail);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(53, 560);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(768, 65);
             this.panel4.TabIndex = 19;
             // 
-            // txbThongTinLienHe
+            // txbEmail
             // 
-            this.txbThongTinLienHe.Location = new System.Drawing.Point(320, 9);
-            this.txbThongTinLienHe.Name = "txbThongTinLienHe";
-            this.txbThongTinLienHe.Size = new System.Drawing.Size(428, 39);
-            this.txbThongTinLienHe.TabIndex = 2;
+            this.txbEmail.Location = new System.Drawing.Point(320, 9);
+            this.txbEmail.Name = "txbEmail";
+            this.txbEmail.Size = new System.Drawing.Size(428, 39);
+            this.txbEmail.TabIndex = 2;
             // 
             // label4
             // 
@@ -278,9 +289,9 @@
             this.label4.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(14, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(249, 36);
+            this.label4.Size = new System.Drawing.Size(92, 36);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Thong tin lien he";
+            this.label4.Text = "Email";
             // 
             // panel3
             // 
@@ -414,11 +425,38 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Ma can ho";
             // 
+            // panel11
+            // 
+            this.panel11.Controls.Add(this.txbPhone);
+            this.panel11.Controls.Add(this.label11);
+            this.panel11.Location = new System.Drawing.Point(53, 636);
+            this.panel11.Name = "panel11";
+            this.panel11.Size = new System.Drawing.Size(768, 65);
+            this.panel11.TabIndex = 20;
+            // 
+            // txbPhone
+            // 
+            this.txbPhone.Location = new System.Drawing.Point(320, 9);
+            this.txbPhone.Name = "txbPhone";
+            this.txbPhone.Size = new System.Drawing.Size(428, 39);
+            this.txbPhone.TabIndex = 2;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.Location = new System.Drawing.Point(14, 12);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(106, 36);
+            this.label11.TabIndex = 0;
+            this.label11.Text = "Phone";
+            // 
             // AddNewApartSelling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1663, 858);
+            this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.panel9);
@@ -459,6 +497,8 @@
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel11.ResumeLayout(false);
+            this.panel11.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -485,7 +525,7 @@
         private ComboBox cbSoPhongNgu;
         private Label label5;
         private Panel panel4;
-        private TextBox txbThongTinLienHe;
+        private TextBox txbEmail;
         private Label label4;
         private Panel panel3;
         private TextBox txbDaiLy;
@@ -502,5 +542,8 @@
         private Panel panel1;
         private TextBox txbMaCanHo;
         private Label label1;
+        private Panel panel11;
+        private TextBox txbPhone;
+        private Label label11;
     }
 }

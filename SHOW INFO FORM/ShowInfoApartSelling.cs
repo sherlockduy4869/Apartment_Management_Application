@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QuanlyCanHoGiangTran.ADDING_FORM;
+using QuanlyCanHoGiangTran.REMOVING_FORM;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,12 +21,14 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-
+            AddNewApartSelling addNewApartSelling = new AddNewApartSelling();
+            addNewApartSelling.Show();
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
         {
-            
+            RemoveApartSelling removeApartSelling = new RemoveApartSelling();
+            removeApartSelling.Show();
         }
     }
 }

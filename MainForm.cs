@@ -42,5 +42,16 @@ namespace QuanlyCanHoGiangTran
             Negotiation negotiation = new Negotiation();
             negotiation.Show();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnApartSelling_Click(object sender, EventArgs e)
+        {
+            ShowInfoApartSelling showInfoApartSelling = new ShowInfoApartSelling();
+            showInfoApartSelling.Show();
+        }
     }
 }
