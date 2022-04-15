@@ -276,7 +276,7 @@
             this.btnMarkDone.FlatAppearance.BorderSize = 0;
             this.btnMarkDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMarkDone.ForeColor = System.Drawing.Color.White;
-            this.btnMarkDone.Location = new System.Drawing.Point(475, 926);
+            this.btnMarkDone.Location = new System.Drawing.Point(386, 926);
             this.btnMarkDone.Name = "btnMarkDone";
             this.btnMarkDone.Size = new System.Drawing.Size(300, 80);
             this.btnMarkDone.TabIndex = 14;
@@ -295,7 +295,7 @@
             this.btnRedo.FlatAppearance.BorderSize = 0;
             this.btnRedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRedo.ForeColor = System.Drawing.Color.White;
-            this.btnRedo.Location = new System.Drawing.Point(475, 1012);
+            this.btnRedo.Location = new System.Drawing.Point(386, 1012);
             this.btnRedo.Name = "btnRedo";
             this.btnRedo.Size = new System.Drawing.Size(300, 80);
             this.btnRedo.TabIndex = 15;
@@ -307,7 +307,7 @@
             // cbFinanceCategory
             // 
             this.cbFinanceCategory.FormattingEnabled = true;
-            this.cbFinanceCategory.Location = new System.Drawing.Point(444, 861);
+            this.cbFinanceCategory.Location = new System.Drawing.Point(355, 861);
             this.cbFinanceCategory.Name = "cbFinanceCategory";
             this.cbFinanceCategory.Size = new System.Drawing.Size(363, 40);
             this.cbFinanceCategory.TabIndex = 17;
@@ -679,7 +679,7 @@
             // cbThu
             // 
             this.cbThu.FormattingEnabled = true;
-            this.cbThu.Location = new System.Drawing.Point(869, 861);
+            this.cbThu.Location = new System.Drawing.Point(780, 861);
             this.cbThu.Name = "cbThu";
             this.cbThu.Size = new System.Drawing.Size(363, 40);
             this.cbThu.TabIndex = 41;
@@ -694,7 +694,7 @@
             this.btnRedoThu.FlatAppearance.BorderSize = 0;
             this.btnRedoThu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRedoThu.ForeColor = System.Drawing.Color.White;
-            this.btnRedoThu.Location = new System.Drawing.Point(900, 1012);
+            this.btnRedoThu.Location = new System.Drawing.Point(811, 1012);
             this.btnRedoThu.Name = "btnRedoThu";
             this.btnRedoThu.Size = new System.Drawing.Size(300, 80);
             this.btnRedoThu.TabIndex = 40;
@@ -712,7 +712,7 @@
             this.btnMarkDoneThu.FlatAppearance.BorderSize = 0;
             this.btnMarkDoneThu.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMarkDoneThu.ForeColor = System.Drawing.Color.White;
-            this.btnMarkDoneThu.Location = new System.Drawing.Point(900, 926);
+            this.btnMarkDoneThu.Location = new System.Drawing.Point(811, 926);
             this.btnMarkDoneThu.Name = "btnMarkDoneThu";
             this.btnMarkDoneThu.Size = new System.Drawing.Size(300, 80);
             this.btnMarkDoneThu.TabIndex = 39;
@@ -725,7 +725,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1659, 1133);
+            this.ClientSize = new System.Drawing.Size(1558, 1133);
             this.Controls.Add(this.cbThu);
             this.Controls.Add(this.btnRedoThu);
             this.Controls.Add(this.btnMarkDoneThu);

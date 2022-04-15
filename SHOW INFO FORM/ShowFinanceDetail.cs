@@ -15,9 +15,10 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
     public partial class ShowFinanceDetail : Form
     {
         private string typeOfStatus = "";
+        private string typeOfStatusThu = "";
         private int status = 0;
+        private int statusThu = 0;
         private int final_status = 0;
-        private int status_thu = 0;
         private int final_status_thu = 0;
 
         public ShowFinanceDetail()
@@ -65,12 +66,13 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             lbTienRefundKhachThu.Text = statusTienReFundKhachIncome;
             lbPhiDonVeSinhThu.Text = statusPhiDonVeSinhIncome;
 
+
             txbChuKy.Text = chuKy.ToString("N0");
             dtpkNgayDau.Value = ngayDau;
             dtpkNgayCuoi.Value = ngayCuoi;
 
-            txbTongChi.Text = ((thue * Int32.Parse(statusThue))+ (phiKeKhaiThue * Int32.Parse(statusPhiKeKhaiThue))+ (phiQuanLy * Int32.Parse(statusPhiQuanLy))+ 
-                              (tienReFundKhach * Int32.Parse(statusTienReFundKhach))+ (phiDonVeSinh * Int32.Parse(statusPhiDonVeSinh))).ToString("N0");
+            txbTongChi.Text = ((thue * Int32.Parse(statusThue)) + (phiKeKhaiThue * Int32.Parse(statusPhiKeKhaiThue)) + (phiQuanLy * Int32.Parse(statusPhiQuanLy)) +
+                              (tienReFundKhach * Int32.Parse(statusTienReFundKhach)) + (phiDonVeSinh * Int32.Parse(statusPhiDonVeSinh))).ToString("N0");
 
             txbTongThu.Text = ((thueIncome * Int32.Parse(statusThueIncome)) + (phiKeKhaiThueIncome * Int32.Parse(statusPhiKeKhaiThueIncome)) + (phiQuanLyIncome * Int32.Parse(statusPhiQuanLyIncome)) +
                               (tienReFundKhachIncome * Int32.Parse(statusTienReFundKhachIncome)) + (phiDonVeSinhIncome * Int32.Parse(statusPhiDonVeSinhIncome))).ToString("N0");
@@ -159,10 +161,10 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
 
         private void btnRedo_Click(object sender, EventArgs e)
         {
-            
-            string typeOfFee = cbFinanceCategory.Text;
 
-            if(typeOfFee == "THUE")
+            string typeOfFee = cbThu.Text;
+
+            if (typeOfFee == "THUE")
             {
                 typeOfStatus = "STATUS_THUE";
             }
@@ -213,50 +215,49 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
 
         private void btnMarkDoneThu_Click(object sender, EventArgs e)
         {
-            string typeOfFeeThu = cbFinanceCategory.Text;
+            string typeOfFeeThu = cbThu.Text;
 
             if (typeOfFeeThu == "THUE")
             {
                 int status_thu = Int32.Parse(lbThueThu.Text);
-                final_status_thu = status + 1;
-                typeOfStatus = "STATUS_THUE";
+                final_status_thu = status_thu + 1;
+                typeOfStatusThu = "STATUS_THUE";
             }
 
             if (typeOfFeeThu == "PHIKEKHAITHUE")
             {
                 int status_thu = Int32.Parse(lbPhiKeKhaiThueThu.Text);
-                final_status_thu = status + 1;
-                typeOfStatus = "STATUS_PHIKEKHAITHUE";
+                final_status_thu = status_thu + 1;
+                typeOfStatusThu = "STATUS_PHIKEKHAITHUE";
             }
 
             if (typeOfFeeThu == "PHIQUANLY")
             {
                 int status_thu = Int32.Parse(lbPhiQuanLyThu.Text);
-                final_status_thu = status + 1;
-                typeOfStatus = "STATUS_PHIQUANLY";
+                final_status_thu = status_thu + 1;
+                typeOfStatusThu = "STATUS_PHIQUANLY";
             }
 
             if (typeOfFeeThu == "TIENREFUNDKHACH")
             {
                 int status_thu = Int32.Parse(lbTienRefundKhachThu.Text);
-                final_status_thu = status + 1;
-                typeOfStatus = "STATUS_TIENREFUNDKHACH";
+                final_status_thu = status_thu + 1;
+                typeOfStatusThu = "STATUS_TIENREFUNDKHACH";
             }
 
             if (typeOfFeeThu == "PHIDONVESINH")
             {
                 int status_thu = Int32.Parse(lbPhiDonVeSinhThu.Text);
-                final_status_thu = status + 1;
-                typeOfStatus = "STATUS_PHIDONVESINH";
+                final_status_thu = status_thu + 1;
+                typeOfStatusThu = "STATUS_PHIDONVESINH";
             }
 
             try
             {
-                int i = AdminDAL.Instance.markDoneFee(typeOfStatus, final_status, txbMaCanHo.Text);
+                int i = AdminDAL.Instance.markDoneFeeThu(typeOfStatusThu, final_status_thu, txbMaCanHo.Text);
 
                 if (i != 0)
                 {
-
                     MessageBox.Show("MarkDone");
                 }
                 else
@@ -269,4 +270,5 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
                 MessageBox.Show("ERROR 404");
             }
         }
+    }
 }

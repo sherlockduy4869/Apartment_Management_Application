@@ -121,6 +121,13 @@ namespace QuanlyCanHoGiangTran.DAL
             return i;
         }
 
+        public int markDoneFeeThu(string typeOfStatusThu, int final_status_thu, string maCanHo)
+        {
+            string query = "UPDATE APARTMENT_FINANCE_INCOME SET " + typeOfStatusThu + " = '" + final_status_thu + "' WHERE MACANHO = '" + maCanHo + "'";
+            int i = DataProvider.Instance.ExecuteNonQuery(query);
+            return i;
+        }
+
         public int skipNegotiation(string maCanHo)
         {
             string query = "DELETE FROM APARTMENT_CONTRACT WHERE MACANHO = '" + maCanHo + "'";
