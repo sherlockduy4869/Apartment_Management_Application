@@ -16,6 +16,9 @@ namespace QuanlyCanHoGiangTran.DTO
         private string _coquanthuthue;
         private string _tinhtrang;
         private string _duan;
+        private string _daily;
+        private string _email;
+        private string _phone;
 
         private double _thue;
         private double _phikekhaithue;
@@ -52,6 +55,9 @@ namespace QuanlyCanHoGiangTran.DTO
             _ngaybatdau = (DateTime)row["NGAYBATDAU"];
             _ngayketthuc = (DateTime)row["NGAYKETTHUC"];
             _songaynhacnho = (int)row["SONGAYNHACNHO"];
+            _daily = (string)row["DAILY"];
+            _email = (string)row["EMAIL"];
+            _phone = (string)row["PHONE"];
         }
         public string Macanho
         {
@@ -146,9 +152,28 @@ namespace QuanlyCanHoGiangTran.DTO
             set { _songaynhacnho = value; }
         }
 
-        public double Tienthuemotthang { 
+        public double Tienthuemotthang
+        {
             get { return _tienthuemotthang; }
             set { _tienthuemotthang = value; }
+        }
+
+        public string Daily
+        {
+            get { return _daily; }
+            set { _daily = value; }
+        }
+
+        public string Email
+        {
+            get { return _email; }
+            set { _email = value; }
+        }
+
+        public string Phone
+        {
+            get { return _phone; }
+            set { _phone = value; }
         }
 
     }

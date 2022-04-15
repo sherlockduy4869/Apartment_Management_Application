@@ -18,6 +18,9 @@ CREATE TABLE APARTMENT_INFO
 (
 	STT INT IDENTITY,
 	TENCHUHO NVARCHAR(40),
+	DAILY NVARCHAR(40),
+	EMAIL NVARCHAR(40),
+	PHONE NVARCHAR(40),
 	MACANHO NVARCHAR(25),
 	DUAN NVARCHAR(50),
 	TINHTRANG NVARCHAR(100),
@@ -43,6 +46,9 @@ CREATE TABLE APARTMENT_MONEY
 (
 	STT INT IDENTITY,
 	TENCHUHO NVARCHAR(40),
+	DAILY NVARCHAR(40),
+	EMAIL NVARCHAR(40),
+	PHONE NVARCHAR(40),
 	MACANHO NVARCHAR(25),
 	DUAN NVARCHAR(50),
 	NGAYDAU DATE,
@@ -58,6 +64,9 @@ CREATE TABLE APARTMENT_CONTRACT
 (
 	STT INT IDENTITY,
 	TENCHUHO NVARCHAR(40),
+	DAILY NVARCHAR(40),
+	EMAIL NVARCHAR(40),
+	PHONE NVARCHAR(40),
 	MACANHO NVARCHAR(25),
 	DUAN NVARCHAR(50),
 	TINHTRANG NVARCHAR(100),
@@ -161,6 +170,9 @@ AS
 BEGIN
 	DECLARE @macanho NVARCHAR(25)
 	DECLARE @tenchuho NVARCHAR(40)
+	DECLARE @daily NVARCHAR(30)
+	DECLARE @email NVARCHAR(30)
+	DECLARE @phone NVARCHAR(30)
 	DECLARE @duan NVARCHAR(50)
 	DECLARE @ngaycanthu DATE
 	DECLARE @chuky INT
@@ -173,6 +185,9 @@ BEGIN
 	
 	SELECT @macanho = MACANHO FROM inserted
 	SELECT @tenchuho = TENCHUHO FROM inserted
+	SELECT @daily = DAILY FROM inserted
+	SELECT @email = EMAIL FROM inserted
+	SELECT @phone = PHONE FROM inserted
 	SELECT @duan = DUAN FROM inserted
 	SELECT @ngaydau = NGAYBATDAU FROM inserted
 	SELECT @chuky = CHUKY FROM inserted
@@ -182,7 +197,7 @@ BEGIN
 	SET @ngaycuoiMinus = DATEADD(DAY, -1, @ngaycuoi)
 	SET @tiencanthu = @tienthu
 
-	INSERT INTO APARTMENT_MONEY(MACANHO, TENCHUHO, DUAN, NGAYDAU, NGAYCUOI, CHUKY, TIENCANTHU) VALUES(@macanho, @tenchuho, @duan, @ngaydau, @ngaycuoiMinus, @chuky, @tiencanthu)
+	INSERT INTO APARTMENT_MONEY(MACANHO, TENCHUHO, DAILY, EMAIL, PHONE, DUAN, NGAYDAU, NGAYCUOI, CHUKY, TIENCANTHU) VALUES(@macanho, @tenchuho,@daily,@email,@phone, @duan, @ngaydau, @ngaycuoiMinus, @chuky, @tiencanthu)
 	
 END
 GO
@@ -195,6 +210,9 @@ AS
 BEGIN
 	DECLARE @macanho NVARCHAR(25)
 	DECLARE @tenchuho NVARCHAR(40)
+	DECLARE @daily NVARCHAR(30)
+	DECLARE @email NVARCHAR(30)
+	DECLARE @phone NVARCHAR(30)
 	DECLARE @duan NVARCHAR(50)
 	DECLARE @tinhtrang NVARCHAR(100)
 	DECLARE @masothue NVARCHAR(25)
@@ -214,6 +232,9 @@ BEGIN
 
 	SELECT @macanho = MACANHO FROM inserted
 	SELECT @tenchuho = TENCHUHO FROM inserted
+	SELECT @daily = DAILY FROM inserted
+	SELECT @email = EMAIL FROM inserted
+	SELECT @phone = PHONE FROM inserted
 	SELECT @duan = DUAN FROM inserted
 	SELECT @tinhtrang = TINHTRANG FROM inserted
 	SELECT @masothue = MASOTHUE FROM inserted
@@ -232,8 +253,8 @@ BEGIN
 
 	SET @ngaynhac = DATEADD(DAY, -@songaynhacnho, @ngayketthuc)
 
-	INSERT INTO APARTMENT_CONTRACT(MACANHO, TENCHUHO, DUAN, TINHTRANG, MASOTHUE, HINHTHUCKHAITHUE, COQUANTHUTHUE, THUE, PHIKEKHAITHUE, PHIQUANLY, TIENREFUNDKHACH, PHIDONVESINH, NGAYBATDAU, NGAYKETTHUC, NGAYNHAC, SONGAYNHACNHO, TIENTHU, TIENTHUEMOTTHANG) 
-	VALUES(@macanho, @tenchuho,@duan,@tinhtrang,@masothue,@hinhthuckhaithue,@coquanthuthue,@thue,@phikekhaithue,@phiquanly,@tienrefundkhach,@phidonvesinh,@ngaybatdau, @ngayketthuc, @ngaynhac, @songaynhacnho, @tienthu, @tienthuemotthang)
+	INSERT INTO APARTMENT_CONTRACT(MACANHO, TENCHUHO, DAILY, EMAIL, PHONE, DUAN, TINHTRANG, MASOTHUE, HINHTHUCKHAITHUE, COQUANTHUTHUE, THUE, PHIKEKHAITHUE, PHIQUANLY, TIENREFUNDKHACH, PHIDONVESINH, NGAYBATDAU, NGAYKETTHUC, NGAYNHAC, SONGAYNHACNHO, TIENTHU, TIENTHUEMOTTHANG) 
+	VALUES(@macanho, @tenchuho, @daily,@email,@phone, @duan,@tinhtrang,@masothue,@hinhthuckhaithue,@coquanthuthue,@thue,@phikekhaithue,@phiquanly,@tienrefundkhach,@phidonvesinh,@ngaybatdau, @ngayketthuc, @ngaynhac, @songaynhacnho, @tienthu, @tienthuemotthang)
 END
 GO
 

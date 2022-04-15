@@ -86,6 +86,9 @@ namespace QuanlyCanHoGiangTran
             string maCanHo = txbMaCanHo.Text;
             string tinhTrang = cbTinhTrang.Text;
             string tenChuHo = txbTenChuHo.Text;
+            string daiLy = txbDaiLy.Text;
+            string email = txbEmail.Text;
+            string phone = txbPhone.Text;
             string maSoThue = txbMaSoThue.Text;
             string hinhThucKT = txbHTKhaiThue.Text;
             string coQuanTT = txbCQThuThue.Text;
@@ -110,7 +113,7 @@ namespace QuanlyCanHoGiangTran
 
             int i = AdminDAL.Instance.addApartment(maCanHo, duAn, tenChuHo, maSoThue, hinhThucKT, coQuanTT, tinhTrang,
                                                     thue, phiKeKhaiThue, phiQuanly, tienReFundKhach, phiDonVeSinh,
-                                                    tienThu, tienThue1Thang, chuKy, ngayStart, ngayEnd, soNgayNhacNho);
+                                                    tienThu, tienThue1Thang, chuKy, ngayStart, ngayEnd, soNgayNhacNho, daiLy, email, phone);
 
             try
             {
