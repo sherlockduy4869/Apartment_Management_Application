@@ -15,6 +15,9 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
     public partial class ShowFinanceDetail : Form
     {
         private string typeOfStatus = "";
+        private int status = 0;
+        private int final_status = 0;
+        
         public ShowFinanceDetail()
         {
             InitializeComponent();
@@ -24,7 +27,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         public ShowFinanceDetail(string maCanHo, double thue, double phiKeKhaiThue,
                                 double phiQuanLy, double tienReFundKhach, double phiDonVeSinh, double tienThu, 
                                 string statusThue, string statusPhiKeKhaiThue, string statusPhiQuanLy, string statusTienReFundKhach
-                                , string statusPhiDonVeSinh, string statusTienThu)
+                                , string statusPhiDonVeSinh, string statusTienThu, int chuKy, DateTime ngayDau, DateTime ngayCuoi)
         {
             InitializeComponent();
             listFinanceCategory();
@@ -36,60 +39,17 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             txbPhiDonVeSinh.Text = phiDonVeSinh.ToString("N0");
             txbTienThu.Text = tienThu.ToString("N0");
             
-            //Thue
-            if(statusThue == "UNCHECKED")
-            {
-                lbThue.Text = "unchecked";
-            }
-            else
-            {
-                lbThue.Text = "checked";
-            }
-            //PhiKeKhaiThue
-            if (statusPhiKeKhaiThue == "UNCHECKED")
-            {
-                lbPhiKeKhaiThue.Text = "unchecked";
-            }
-            else
-            {
-                lbPhiKeKhaiThue.Text = "checked";
-            }
-            //Phiquanly
-            if (statusPhiQuanLy == "UNCHECKED")
-            {
-                lbPhiQuanLy.Text = "unchecked";
-            }
-            else
-            {
-                lbPhiQuanLy.Text = "checked";
-            }
-            //Tienrefundkhach
-            if (statusTienReFundKhach == "UNCHECKED")
-            {
-                lbTienReFundKhach.Text = "unchecked";
-            }
-            else
-            {
-                lbTienReFundKhach.Text = "checked";
-            }
-            //Phidonvesinh
-            if (statusPhiDonVeSinh == "UNCHECKED")
-            {
-                lbPhidonvesinh.Text = "unchecked";
-            }
-            else
-            {
-                lbPhidonvesinh.Text = "checked";
-            }
-            //Tienthu
-            if (statusTienThu == "UNCHECKED")
-            {
-                lbTienThu.Text = "unchecked";
-            }
-            else
-            {
-                lbTienThu.Text = "checked";
-            }
+
+            lbThue.Text = statusThue;
+            lbPhiKeKhaiThue.Text = statusPhiKeKhaiThue;
+            lbPhiQuanLy.Text = statusPhiQuanLy;
+            lbTienReFundKhach.Text = statusTienReFundKhach;
+            lbPhidonvesinh.Text = statusPhiDonVeSinh;
+            lbTienThu.Text = statusTienThu;
+
+            txbChuKy.Text = chuKy.ToString("N0");
+            dtpkNgayDau.Value = ngayDau;
+            dtpkNgayCuoi.Value = ngayCuoi;
         }
 
         void listFinanceCategory()
@@ -111,36 +71,48 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
 
             if (typeOfFee == "THUE")
             {
+                int status = Int32.Parse(lbThue.Text);
+                final_status = status + 1;
                 typeOfStatus = "STATUS_THUE";
             }
 
             if (typeOfFee == "PHIKEKHAITHUE")
             {
+                int status = Int32.Parse(lbPhiKeKhaiThue.Text);
+                final_status = status + 1;
                 typeOfStatus = "STATUS_PHIKEKHAITHUE";
             }
 
             if (typeOfFee == "PHIQUANLY")
             {
+                int status = Int32.Parse(lbPhiQuanLy.Text);
+                final_status = status + 1;
                 typeOfStatus = "STATUS_PHIQUANLY";
             }
 
             if (typeOfFee == "TIENREFUNDKHACH")
             {
+                int status = Int32.Parse(lbTienReFundKhach.Text);
+                final_status = status + 1;
                 typeOfStatus = "STATUS_TIENREFUNDKHACH";
             }
 
             if (typeOfFee == "PHIDONVESINH")
             {
+                int status = Int32.Parse(lbPhidonvesinh.Text);
+                final_status = status + 1;
                 typeOfStatus = "STATUS_PHIDONVESINH";
             }
 
             if (typeOfFee == "TIENTHU")
             {
+                int status = Int32.Parse(lbTienThu.Text);
+                final_status = status + 1;
                 typeOfStatus = "STATUS_TIENTHU";
             }
             try
             {
-                int i = AdminDAL.Instance.markDoneFee(typeOfStatus, txbMaCanHo.Text);
+                int i = AdminDAL.Instance.markDoneFee(typeOfStatus, final_status, txbMaCanHo.Text);
 
                 if (i != 0)
                 {

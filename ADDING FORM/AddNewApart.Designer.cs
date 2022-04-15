@@ -125,7 +125,7 @@
             this.btnAddNew.FlatAppearance.BorderSize = 0;
             this.btnAddNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddNew.ForeColor = System.Drawing.Color.White;
-            this.btnAddNew.Location = new System.Drawing.Point(1136, 890);
+            this.btnAddNew.Location = new System.Drawing.Point(1136, 901);
             this.btnAddNew.Name = "btnAddNew";
             this.btnAddNew.Size = new System.Drawing.Size(300, 80);
             this.btnAddNew.TabIndex = 22;

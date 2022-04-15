@@ -21,7 +21,7 @@ namespace QuanlyCanHoGiangTran
 
         void showInforAllApart()
         {
-            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,DAILY,EMAIL,PHONE,MACANHO,DUAN,TINHTRANG,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,TINHTRANG,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
                                                                          "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU,NGAYBATDAU,NGAYKETTHUC FROM APARTMENT_INFO");
             //this.dtgvApartInfo.Sort(this.dtgvApartInfo.Columns["STT"], ListSortDirection.Ascending);
             dtgvApartInfo.Columns["THUE"].DefaultCellStyle.Format = "N0";
