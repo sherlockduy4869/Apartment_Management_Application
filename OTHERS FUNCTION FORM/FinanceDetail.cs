@@ -25,12 +25,17 @@ namespace QuanlyCanHoGiangTran.OTHERS_FUNCTION_FORM
             ApartmentFinance apartmentFinance = AdminDAL.Instance.getFinanceDetailByMaCanHo(txbMaCanHo.Text);
             Apartment apartment = AdminDAL.Instance.getApartmentByMaCanHo(txbMaCanHo.Text);
             ApartmentMoneyTax apartmentMoneyTax = AdminDAL.Instance.getApartmentMoneyByMaCanHo(txbMaCanHo.Text);
+            ApartmentFinanceIncome apartmentFinanceIncome = AdminDAL.Instance.getFinanceDetailPayByMaCanHo(txbMaCanHo.Text);
 
-            ShowFinanceDetail showFinanceDetail = new ShowFinanceDetail(apartmentFinance.Macanho, apartmentFinance.Thue, apartmentFinance.Phikekhaithue
+            ShowFinanceDetail showFinanceDetail = new ShowFinanceDetail(txbMaCanHo.Text, apartmentFinance.Thue, apartmentFinance.Phikekhaithue
                                                                         , apartmentFinance.Phiquanly, apartmentFinance.Tienrefundkhach, apartmentFinance.Phidonvesinh
-                                                                        , apartmentFinance.Tienthu, apartmentFinance.Statusthue, apartmentFinance.Statusphikekhaithue
+                                                                        , apartmentFinance.Statusthue, apartmentFinance.Statusphikekhaithue
                                                                         , apartmentFinance.Statusphiquanly, apartmentFinance.Statustienrefundkhach, apartmentFinance.Statusphidonvesinh
-                                                                        , apartmentFinance.Statustienthu, apartment.Chuky, apartmentMoneyTax.Ngaydau, apartmentMoneyTax.Ngaycuoi);
+                                                                        , apartmentFinanceIncome.Thue, apartmentFinanceIncome.Phikekhaithue
+                                                                        , apartmentFinanceIncome.Phiquanly, apartmentFinanceIncome.Tienrefundkhach, apartmentFinanceIncome.Phidonvesinh
+                                                                        , apartmentFinanceIncome.Statusthue, apartmentFinanceIncome.Statusphikekhaithue
+                                                                        , apartmentFinanceIncome.Statusphiquanly, apartmentFinanceIncome.Statustienrefundkhach, apartmentFinanceIncome.Statusphidonvesinh
+                                                                        , apartment.Chuky, apartmentMoneyTax.Ngaydau, apartmentMoneyTax.Ngaycuoi);
             showFinanceDetail.Show();
         }
     }
