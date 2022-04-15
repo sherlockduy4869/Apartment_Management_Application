@@ -22,8 +22,8 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
 
         void listApartNegotiate()
         {
-            string toDay = DateTime.UtcNow.Date.ToString();
-            //string toDay = "2022-12-15";
+            //string toDay = DateTime.UtcNow.Date.ToString();
+            string toDay = "2022-12-15";
 
             dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,DAILY,EMAIL,PHONE,MACANHO,DUAN,TIENTHUEMOTTHANG,NGAYBATDAU,NGAYKETTHUC,STATUS FROM APARTMENT_CONTRACT " +
                                                                                 "WHERE NGAYNHAC <= '" + toDay + "' AND '" + toDay + "' <= NGAYKETTHUC");
@@ -32,8 +32,8 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         }
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
-            string toDay = DateTime.UtcNow.Date.ToString();
-            //string toDay = "2022-12-15";
+            //string toDay = DateTime.UtcNow.Date.ToString();
+            string toDay = "2022-12-15";
 
             txbSearch.ForeColor = System.Drawing.Color.Black;
             dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,DAILY,EMAIL,PHONE,MACANHO,DUAN,TIENTHUEMOTTHANG,NGAYBATDAU,NGAYKETTHUC,STATUS FROM APARTMENT_CONTRACT " +

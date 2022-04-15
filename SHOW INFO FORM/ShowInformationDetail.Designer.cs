@@ -70,9 +70,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.txbChuKy = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.dtpkNgaydau = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
@@ -91,7 +88,6 @@
             this.panel1.SuspendLayout();
             this.panel17.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
@@ -101,7 +97,7 @@
             this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel16.Controls.Add(this.txbDuAn);
             this.panel16.Controls.Add(this.label16);
-            this.panel16.Location = new System.Drawing.Point(43, 247);
+            this.panel16.Location = new System.Drawing.Point(43, 352);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(768, 65);
             this.panel16.TabIndex = 18;
@@ -129,7 +125,7 @@
             this.panel14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel14.Controls.Add(this.txbTienThu);
             this.panel14.Controls.Add(this.label14);
-            this.panel14.Location = new System.Drawing.Point(843, 460);
+            this.panel14.Location = new System.Drawing.Point(843, 565);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(768, 65);
             this.panel14.TabIndex = 30;
@@ -157,7 +153,7 @@
             this.panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel13.Controls.Add(this.txbPhiDonVeSinh);
             this.panel13.Controls.Add(this.label13);
-            this.panel13.Location = new System.Drawing.Point(843, 389);
+            this.panel13.Location = new System.Drawing.Point(843, 494);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(768, 65);
             this.panel13.TabIndex = 29;
@@ -185,7 +181,7 @@
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.txbTienRefund);
             this.panel12.Controls.Add(this.label12);
-            this.panel12.Location = new System.Drawing.Point(843, 318);
+            this.panel12.Location = new System.Drawing.Point(843, 423);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(768, 65);
             this.panel12.TabIndex = 28;
@@ -213,7 +209,7 @@
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.txbPhiQuanLy);
             this.panel11.Controls.Add(this.label11);
-            this.panel11.Location = new System.Drawing.Point(843, 247);
+            this.panel11.Location = new System.Drawing.Point(843, 352);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(768, 65);
             this.panel11.TabIndex = 27;
@@ -241,7 +237,7 @@
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.txbPhiKeKhaiThue);
             this.panel10.Controls.Add(this.label10);
-            this.panel10.Location = new System.Drawing.Point(843, 176);
+            this.panel10.Location = new System.Drawing.Point(843, 281);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(768, 65);
             this.panel10.TabIndex = 26;
@@ -269,7 +265,7 @@
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.txbThue);
             this.panel6.Controls.Add(this.label6);
-            this.panel6.Location = new System.Drawing.Point(43, 460);
+            this.panel6.Location = new System.Drawing.Point(43, 565);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(768, 65);
             this.panel6.TabIndex = 25;
@@ -297,7 +293,7 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.txbMaSoThue);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(43, 389);
+            this.panel3.Location = new System.Drawing.Point(43, 494);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(768, 65);
             this.panel3.TabIndex = 21;
@@ -325,7 +321,7 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.txbTenChuHo);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(43, 318);
+            this.panel2.Location = new System.Drawing.Point(43, 423);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(768, 65);
             this.panel2.TabIndex = 20;
@@ -353,7 +349,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txbMaCanHo);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(43, 176);
+            this.panel1.Location = new System.Drawing.Point(43, 281);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(768, 65);
             this.panel1.TabIndex = 17;
@@ -380,7 +376,7 @@
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label17.Location = new System.Drawing.Point(616, 73);
+            this.label17.Location = new System.Drawing.Point(614, 99);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(456, 58);
             this.label17.TabIndex = 33;
@@ -398,7 +394,7 @@
             this.panel17.Controls.Add(this.label19);
             this.panel17.Controls.Add(this.label18);
             this.panel17.Controls.Add(this.pictureBox1);
-            this.panel17.Location = new System.Drawing.Point(140, 766);
+            this.panel17.Location = new System.Drawing.Point(143, 660);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(1352, 358);
             this.panel17.TabIndex = 34;
@@ -493,42 +489,14 @@
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // panel4
-            // 
-            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.txbChuKy);
-            this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(43, 531);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(768, 65);
-            this.panel4.TabIndex = 26;
-            // 
-            // txbChuKy
-            // 
-            this.txbChuKy.Location = new System.Drawing.Point(320, 9);
-            this.txbChuKy.Name = "txbChuKy";
-            this.txbChuKy.ReadOnly = true;
-            this.txbChuKy.Size = new System.Drawing.Size(428, 39);
-            this.txbChuKy.TabIndex = 7;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(14, 12);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 36);
-            this.label4.TabIndex = 0;
-            this.label4.Text = "Chu ky";
-            // 
             // panel5
             // 
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.dtpkNgaydau);
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(843, 531);
+            this.panel5.Location = new System.Drawing.Point(280, 210);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(768, 65);
+            this.panel5.Size = new System.Drawing.Size(531, 65);
             this.panel5.TabIndex = 35;
             // 
             // dtpkNgaydau
@@ -538,7 +506,7 @@
             this.dtpkNgaydau.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpkNgaydau.Location = new System.Drawing.Point(320, 11);
             this.dtpkNgaydau.Name = "dtpkNgaydau";
-            this.dtpkNgaydau.Size = new System.Drawing.Size(428, 39);
+            this.dtpkNgaydau.Size = new System.Drawing.Size(189, 39);
             this.dtpkNgaydau.TabIndex = 1;
             // 
             // label5
@@ -547,18 +515,18 @@
             this.label5.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(14, 12);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(258, 36);
+            this.label5.Size = new System.Drawing.Size(202, 36);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Ngay dau chu ky";
+            this.label5.Text = "Starting Date";
             // 
             // panel7
             // 
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.dtpkNgaycuoi);
             this.panel7.Controls.Add(this.label7);
-            this.panel7.Location = new System.Drawing.Point(843, 602);
+            this.panel7.Location = new System.Drawing.Point(843, 210);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(768, 65);
+            this.panel7.Size = new System.Drawing.Size(531, 65);
             this.panel7.TabIndex = 36;
             // 
             // dtpkNgaycuoi
@@ -568,7 +536,7 @@
             this.dtpkNgaycuoi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.dtpkNgaycuoi.Location = new System.Drawing.Point(320, 11);
             this.dtpkNgaycuoi.Name = "dtpkNgaycuoi";
-            this.dtpkNgaycuoi.Size = new System.Drawing.Size(428, 39);
+            this.dtpkNgaycuoi.Size = new System.Drawing.Size(189, 39);
             this.dtpkNgaycuoi.TabIndex = 1;
             // 
             // label7
@@ -577,18 +545,17 @@
             this.label7.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(14, 12);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(263, 36);
+            this.label7.Size = new System.Drawing.Size(193, 36);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Ngay cuoi chu ky";
+            this.label7.Text = "Ending Date";
             // 
             // ShowInformationDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1658, 1136);
+            this.ClientSize = new System.Drawing.Size(1658, 1111);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel17);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.panel16);
@@ -627,8 +594,6 @@
             this.panel17.ResumeLayout(false);
             this.panel17.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel7.ResumeLayout(false);
@@ -681,9 +646,6 @@
         private Label label24;
         private Label label25;
         private Label label26;
-        private Panel panel4;
-        private TextBox txbChuKy;
-        private Label label4;
         private Panel panel5;
         private DateTimePicker dtpkNgaydau;
         private Label label5;

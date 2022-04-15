@@ -23,7 +23,7 @@ namespace QuanlyCanHoGiangTran
         void listApartTax()
         {
             //string toDay = DateTime.UtcNow.Date.ToString();
-            string toDay = "2022-07-10";
+            string toDay = "2022-06-10";
 
             dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE (NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
                                                                          "OR ('" + toDay + "' >= NGAYCUOI)");
@@ -34,7 +34,7 @@ namespace QuanlyCanHoGiangTran
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
             //string toDay = DateTime.UtcNow.Date.ToString();
-            string toDay = "2022-07-10";
+            string toDay = "2022-06-10";
 
             txbSearch.ForeColor = System.Drawing.Color.Black;
             dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE ((NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +

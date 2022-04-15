@@ -40,7 +40,7 @@ namespace QuanlyCanHoGiangTran
             cbChuKy.DataSource = listChuKy;
 
             List<string> listTinhTrang = new List<string>();
-            string[] arrayListTinhTrang = { "Chưa nhận bàn giao nhà", "Đã nhận bàn giao nhà", "Đang cho thuê", "Đang available cho thuê" };
+            string[] arrayListTinhTrang = { "Đang cho thuê", "Đang available cho thuê" };
             foreach (string str in arrayListTinhTrang)
             {
                 listTinhTrang.Add(str);
@@ -93,6 +93,8 @@ namespace QuanlyCanHoGiangTran
             string hinhThucKT = txbHTKhaiThue.Text;
             string coQuanTT = txbCQThuThue.Text;
 
+            
+
             thue = float.Parse(txbThue.Text, CultureInfo.InvariantCulture.NumberFormat);
             phiKeKhaiThue = float.Parse(txbPhiKeKhaiThue.Text, CultureInfo.InvariantCulture.NumberFormat);
             phiQuanly = float.Parse(txbPhiQuanLy.Text, CultureInfo.InvariantCulture.NumberFormat);
@@ -110,6 +112,14 @@ namespace QuanlyCanHoGiangTran
 
             int soNgayNhacNho = Int32.Parse(cbSoNgayNhac.Text);
 
+
+            if (tinhTrang == "Đang available cho thuê")
+            {
+                chuKy = 0;
+                ngayStart = "1111-01-01";
+                ngayEnd = "11111-01-01";
+                soNgayNhacNho = 0;
+            }
 
             int i = AdminDAL.Instance.addApartment(maCanHo, duAn, tenChuHo, maSoThue, hinhThucKT, coQuanTT, tinhTrang,
                                                     thue, phiKeKhaiThue, phiQuanly, tienReFundKhach, phiDonVeSinh,

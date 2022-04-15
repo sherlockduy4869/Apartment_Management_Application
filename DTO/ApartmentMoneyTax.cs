@@ -12,6 +12,7 @@ namespace QuanlyCanHoGiangTran.DTO
         private string _tenchuho;
         private string _macanho;
         private string _duan;
+        private string _trangthai;
         private DateTime _ngaydau;
         private DateTime _ngaycuoi;
         private int _chuky;
@@ -27,6 +28,7 @@ namespace QuanlyCanHoGiangTran.DTO
             _tiencanthu = (double)row["TIENCANTHU"];
             _ngaydau = (DateTime)row["NGAYDAU"];
             _ngaycuoi = (DateTime)row["NGAYCUOI"];
+            _trangthai = (string)row["TRANGTHAI"];
         }
 
         public string Tenchuho
@@ -71,5 +73,10 @@ namespace QuanlyCanHoGiangTran.DTO
             set { _tiencanthu = value;}
         }
 
+        public string Trangthai
+        {
+            get { return _trangthai; }
+            set { _trangthai = value; }
+        }
     }
 }

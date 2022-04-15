@@ -63,5 +63,10 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             showInfoApartSelling.Show();
             this.Close();
         }
+
+        private void ShowInfoApartSelling_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

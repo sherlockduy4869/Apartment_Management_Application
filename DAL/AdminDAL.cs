@@ -114,13 +114,6 @@ namespace QuanlyCanHoGiangTran.DAL
             return i;
         }
 
-        public int reDoFeeThu(string typeOfStatusThu, int final_status_Thu, string maCanHo)
-        {
-            string query = "UPDATE APARTMENT_FINANCE_INCOME SET " + typeOfStatusThu + " = '" + final_status_Thu + "' WHERE MACANHO = '" + maCanHo + "'";
-            int i = DataProvider.Instance.ExecuteNonQuery(query);
-            return i;
-        }
-
         public int markDoneFee(string typeOfStatus, int final_status, string maCanHo)
         {
             string query = "UPDATE APARTMENT_FINANCE SET " + typeOfStatus + " = '" + final_status + "' WHERE MACANHO = '" + maCanHo + "'";
@@ -128,12 +121,6 @@ namespace QuanlyCanHoGiangTran.DAL
             return i;
         }
 
-        public int markDoneFeeThu(string typeOfStatusThu, int final_status_thu, string maCanHo)
-        {
-            string query = "UPDATE APARTMENT_FINANCE_INCOME SET " + typeOfStatusThu + " = '" + final_status_thu + "' WHERE MACANHO = '" + maCanHo + "'";
-            int i = DataProvider.Instance.ExecuteNonQuery(query);
-            return i;
-        }
 
         public int skipNegotiation(string maCanHo)
         {
@@ -156,7 +143,7 @@ namespace QuanlyCanHoGiangTran.DAL
 
         public ApartmentMoneyTax getApartmentMoneyByMaCanHo(string maCanHo)
         {
-            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,MACANHO,DUAN, CHUKY, NGAYDAU, NGAYCUOI, TIENCANTHU FROM APARTMENT_MONEY WHERE MACANHO = '" + maCanHo + "'");
+            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,MACANHO,DUAN, CHUKY, NGAYDAU, NGAYCUOI, TIENCANTHU, TRANGTHAI FROM APARTMENT_MONEY WHERE MACANHO = '" + maCanHo + "'");
             foreach (DataRow row in data.Rows)
             {
                 return new ApartmentMoneyTax(row);
@@ -171,17 +158,6 @@ namespace QuanlyCanHoGiangTran.DAL
             foreach (DataRow row in data.Rows)
             {
                 return new ApartmentFinance(row);
-            }
-            return null;
-        }
-
-        public ApartmentFinanceIncome getFinanceDetailPayByMaCanHo(string maCanHo)
-        {
-            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT MACANHO, THUE,PHIKEKHAITHUE,PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU, STATUS_THUE, STATUS_PHIKEKHAITHUE, STATUS_PHIQUANLY, " +
-                                                                "STATUS_TIENREFUNDKHACH, STATUS_PHIDONVESINH, STATUS_TIENTHU FROM APARTMENT_FINANCE_INCOME WHERE MACANHO = '" + maCanHo + "'");
-            foreach (DataRow row in data.Rows)
-            {
-                return new ApartmentFinanceIncome(row);
             }
             return null;
         }

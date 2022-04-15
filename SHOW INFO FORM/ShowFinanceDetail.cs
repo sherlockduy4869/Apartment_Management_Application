@@ -15,11 +15,9 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
     public partial class ShowFinanceDetail : Form
     {
         private string typeOfStatus = "";
-        private string typeOfStatusThu = "";
         private int status = 0;
-        private int statusThu = 0;
         private int final_status = 0;
-        private int final_status_thu = 0;
+        private double tongThu = 0;
 
         public ShowFinanceDetail()
         {
@@ -31,10 +29,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
                                 double phiQuanLy, double tienReFundKhach, double phiDonVeSinh,
                                 string statusThue, string statusPhiKeKhaiThue, string statusPhiQuanLy, string statusTienReFundKhach
                                 , string statusPhiDonVeSinh
-                                , double thueIncome, double phiKeKhaiThueIncome,
-                                double phiQuanLyIncome, double tienReFundKhachIncome, double phiDonVeSinhIncome,
-                                string statusThueIncome, string statusPhiKeKhaiThueIncome, string statusPhiQuanLyIncome, string statusTienReFundKhachIncome
-                                , string statusPhiDonVeSinhIncome, int chuKy, DateTime ngayDau, DateTime ngayCuoi)
+                                , int chuKy, DateTime ngayDau, DateTime ngayCuoi, string trangThai)
         {
             InitializeComponent();
             listFinanceCategory();
@@ -48,23 +43,11 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             txbPhiDonVeSinh.Text = phiDonVeSinh.ToString("N0");
 
 
-            txbThueThu.Text = thueIncome.ToString("N0");
-            txbPhiKeKhaiThueThu.Text = phiKeKhaiThueIncome.ToString("N0");
-            txbPhiQuanLyThu.Text = phiQuanLyIncome.ToString("N0");
-            txbTienReFundKhachThu.Text = tienReFundKhachIncome.ToString("N0");
-            txbPhiDonVeSinhThu.Text = phiDonVeSinhIncome.ToString("N0");
-
             lbThue.Text = statusThue;
             lbPhiKeKhaiThue.Text = statusPhiKeKhaiThue;
             lbPhiQuanLy.Text = statusPhiQuanLy;
             lbTienReFundKhach.Text = statusTienReFundKhach;
             lbPhidonvesinh.Text = statusPhiDonVeSinh;
-
-            lbThueThu.Text = statusThueIncome;
-            lbPhiKeKhaiThueThu.Text = statusPhiKeKhaiThueIncome;
-            lbPhiQuanLyThu.Text = statusPhiQuanLyIncome;
-            lbTienRefundKhachThu.Text = statusTienReFundKhachIncome;
-            lbPhiDonVeSinhThu.Text = statusPhiDonVeSinhIncome;
 
 
             txbChuKy.Text = chuKy.ToString("N0");
@@ -73,9 +56,16 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
 
             txbTongChi.Text = ((thue * Int32.Parse(statusThue)) + (phiKeKhaiThue * Int32.Parse(statusPhiKeKhaiThue)) + (phiQuanLy * Int32.Parse(statusPhiQuanLy)) +
                               (tienReFundKhach * Int32.Parse(statusTienReFundKhach)) + (phiDonVeSinh * Int32.Parse(statusPhiDonVeSinh))).ToString("N0");
+            
+            if(trangThai != "Chua thu tien")
+            {
+                tongThu = (thue + phiQuanLy + tienReFundKhach + phiDonVeSinh) * chuKy + phiKeKhaiThue;
+            }
+            
+            txbTongThu.Text = tongThu.ToString("N0");
 
-            txbTongThu.Text = ((thueIncome * Int32.Parse(statusThueIncome)) + (phiKeKhaiThueIncome * Int32.Parse(statusPhiKeKhaiThueIncome)) + (phiQuanLyIncome * Int32.Parse(statusPhiQuanLyIncome)) +
-                              (tienReFundKhachIncome * Int32.Parse(statusTienReFundKhachIncome)) + (phiDonVeSinhIncome * Int32.Parse(statusPhiDonVeSinhIncome))).ToString("N0");
+            txbBalance.Text = (double.Parse(txbTongThu.Text) - double.Parse(txbTongChi.Text)).ToString("N0");
+
         }
 
         void listFinanceCategory()
@@ -87,14 +77,6 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
                 listFinanceCategory.Add(str);
             }
             cbFinanceCategory.DataSource = listFinanceCategory;
-
-            List<string> listThu = new List<string>();
-            string[] arrayListThu = { "THUE", "PHIKEKHAITHUE", "PHIQUANLY", "TIENREFUNDKHACH", "PHIDONVESINH", "TIENTHU" };
-            foreach (string str in arrayListThu)
-            {
-                listThu.Add(str);
-            }
-            cbThu.DataSource = listThu;
 
 
         }
@@ -228,146 +210,19 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             }
         }
 
-        private void btnMarkDoneThu_Click(object sender, EventArgs e)
-        {
-            string typeOfFeeThu = cbThu.Text;
-
-            if (typeOfFeeThu == "THUE")
-            {
-                int status_thu = Int32.Parse(lbThueThu.Text);
-                final_status_thu = status_thu + 1;
-                typeOfStatusThu = "STATUS_THUE";
-            }
-
-            if (typeOfFeeThu == "PHIKEKHAITHUE")
-            {
-                int status_thu = Int32.Parse(lbPhiKeKhaiThueThu.Text);
-                final_status_thu = status_thu + 1;
-                typeOfStatusThu = "STATUS_PHIKEKHAITHUE";
-            }
-
-            if (typeOfFeeThu == "PHIQUANLY")
-            {
-                int status_thu = Int32.Parse(lbPhiQuanLyThu.Text);
-                final_status_thu = status_thu + 1;
-                typeOfStatusThu = "STATUS_PHIQUANLY";
-            }
-
-            if (typeOfFeeThu == "TIENREFUNDKHACH")
-            {
-                int status_thu = Int32.Parse(lbTienRefundKhachThu.Text);
-                final_status_thu = status_thu + 1;
-                typeOfStatusThu = "STATUS_TIENREFUNDKHACH";
-            }
-
-            if (typeOfFeeThu == "PHIDONVESINH")
-            {
-                int status_thu = Int32.Parse(lbPhiDonVeSinhThu.Text);
-                final_status_thu = status_thu + 1;
-                typeOfStatusThu = "STATUS_PHIDONVESINH";
-            }
-
-            try
-            {
-                int i = AdminDAL.Instance.markDoneFeeThu(typeOfStatusThu, final_status_thu, txbMaCanHo.Text);
-
-                if (i != 0)
-                {
-                    MessageBox.Show("Done");
-                }
-                else
-                {
-                    MessageBox.Show("Failed");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("ERROR 404");
-            }
-        }
-
-        private void btnRedoThu_Click(object sender, EventArgs e)
-        {
-            string typeOfFeeThu = cbThu.Text;
-
-            if (typeOfFeeThu == "THUE")
-            {
-                int status_thu = Int32.Parse(lbThueThu.Text);
-                final_status_thu = status_thu - 1;
-                typeOfStatusThu = "STATUS_THUE";
-            }
-
-            if (typeOfFeeThu == "PHIKEKHAITHUE")
-            {
-                int status_thu = Int32.Parse(lbPhiKeKhaiThueThu.Text);
-                final_status_thu = status_thu - 1;
-                typeOfStatusThu = "STATUS_PHIKEKHAITHUE";
-            }
-
-            if (typeOfFeeThu == "PHIQUANLY")
-            {
-                int status_thu = Int32.Parse(lbPhiQuanLyThu.Text);
-                final_status_thu = status_thu - 1;
-                typeOfStatusThu = "STATUS_PHIQUANLY";
-            }
-
-            if (typeOfFeeThu == "TIENREFUNDKHACH")
-            {
-                int status_thu = Int32.Parse(lbTienRefundKhachThu.Text);
-                final_status_thu = status_thu - 1;
-                typeOfStatusThu = "STATUS_TIENREFUNDKHACH";
-            }
-
-            if (typeOfFeeThu == "PHIDONVESINH")
-            {
-                int status_thu = Int32.Parse(lbPhiDonVeSinhThu.Text);
-                final_status_thu = status_thu - 1;
-                typeOfStatusThu = "STATUS_PHIDONVESINH";
-            }
-
-            try
-            {
-                if(final_status_thu < 0)
-                {
-                    MessageBox.Show("Error");
-                }
-                else
-                {
-                    int i = AdminDAL.Instance.reDoFeeThu(typeOfStatusThu, final_status_thu, txbMaCanHo.Text);
-
-                    if (i != 0)
-                    {
-                        MessageBox.Show("Done");
-                    }
-                    else
-                    {
-                        MessageBox.Show("Failed");
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("ERROR 404");
-            }
-        }
-
         private void btnRefresh_Click(object sender, EventArgs e)
         {
             
             ApartmentFinance apartmentFinance = AdminDAL.Instance.getFinanceDetailByMaCanHo(txbMaCanHo.Text);
             Apartment apartment = AdminDAL.Instance.getApartmentByMaCanHo(txbMaCanHo.Text);
             ApartmentMoneyTax apartmentMoneyTax = AdminDAL.Instance.getApartmentMoneyByMaCanHo(txbMaCanHo.Text);
-            ApartmentFinanceIncome apartmentFinanceIncome = AdminDAL.Instance.getFinanceDetailPayByMaCanHo(txbMaCanHo.Text);
+
 
             ShowFinanceDetail showFinanceDetail = new ShowFinanceDetail(txbMaCanHo.Text, apartmentFinance.Thue, apartmentFinance.Phikekhaithue
                                                                         , apartmentFinance.Phiquanly, apartmentFinance.Tienrefundkhach, apartmentFinance.Phidonvesinh
                                                                         , apartmentFinance.Statusthue, apartmentFinance.Statusphikekhaithue
                                                                         , apartmentFinance.Statusphiquanly, apartmentFinance.Statustienrefundkhach, apartmentFinance.Statusphidonvesinh
-                                                                        , apartmentFinanceIncome.Thue, apartmentFinanceIncome.Phikekhaithue
-                                                                        , apartmentFinanceIncome.Phiquanly, apartmentFinanceIncome.Tienrefundkhach, apartmentFinanceIncome.Phidonvesinh
-                                                                        , apartmentFinanceIncome.Statusthue, apartmentFinanceIncome.Statusphikekhaithue
-                                                                        , apartmentFinanceIncome.Statusphiquanly, apartmentFinanceIncome.Statustienrefundkhach, apartmentFinanceIncome.Statusphidonvesinh
-                                                                        , apartment.Chuky, apartmentMoneyTax.Ngaydau, apartmentMoneyTax.Ngaycuoi);
+                                                                        , apartment.Chuky, apartmentMoneyTax.Ngaydau, apartmentMoneyTax.Ngaycuoi, apartmentMoneyTax.Trangthai);
             showFinanceDetail.Show();
             this.Close();
         }

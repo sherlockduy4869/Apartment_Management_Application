@@ -154,6 +154,7 @@
             this.Name = "ShowInfoApartSelling";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Info Apart Selling";
+            this.Load += new System.EventHandler(this.ShowInfoApartSelling_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

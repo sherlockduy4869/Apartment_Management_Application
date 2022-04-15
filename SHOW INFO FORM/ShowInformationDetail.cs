@@ -33,7 +33,6 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             txbPhiDonVeSinh.Text = (phiDonVeSinh*chuKy).ToString("N0");
             tienCanThu = (tienThu - phiKeKhaiThue) * chuKy + phiKeKhaiThue;
             txbTienThu.Text = tienCanThu.ToString("N0");
-            txbChuKy.Text = chuKy.ToString();
             dtpkNgaydau.Value = ngayDau;
             dtpkNgaycuoi.Value = ngayCuoi;
         }
