@@ -93,7 +93,5 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             txbSearch.Clear();
         }
-
-        
     }
 }

@@ -26,7 +26,6 @@ namespace QuanlyCanHoGiangTran
         {
             dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,TINHTRANG,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
                                                                          "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU,NGAYBATDAU,NGAYKETTHUC FROM APARTMENT_INFO");
-            
         }
 
         void designDatagridview()

@@ -39,6 +39,8 @@
             this.btnPrint = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
+            this.btnBack = new QuanlyCanHoGiangTran.Custom.RJButton();
+            this.btnNext = new QuanlyCanHoGiangTran.Custom.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -176,11 +178,51 @@
             // 
             this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
             // 
+            // btnBack
+            // 
+            this.btnBack.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnBack.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnBack.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnBack.BorderRadius = 40;
+            this.btnBack.BorderSize = 0;
+            this.btnBack.FlatAppearance.BorderSize = 0;
+            this.btnBack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBack.ForeColor = System.Drawing.Color.White;
+            this.btnBack.Location = new System.Drawing.Point(1650, 997);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(129, 58);
+            this.btnBack.TabIndex = 35;
+            this.btnBack.Text = "<";
+            this.btnBack.TextColor = System.Drawing.Color.White;
+            this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
+            // 
+            // btnNext
+            // 
+            this.btnNext.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnNext.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnNext.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnNext.BorderRadius = 40;
+            this.btnNext.BorderSize = 0;
+            this.btnNext.FlatAppearance.BorderSize = 0;
+            this.btnNext.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNext.ForeColor = System.Drawing.Color.White;
+            this.btnNext.Location = new System.Drawing.Point(1795, 997);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(129, 58);
+            this.btnNext.TabIndex = 36;
+            this.btnNext.Text = ">";
+            this.btnNext.TextColor = System.Drawing.Color.White;
+            this.btnNext.UseVisualStyleBackColor = false;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
+            // 
             // ShowInfoApartSelling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2161, 1127);
+            this.Controls.Add(this.btnNext);
+            this.Controls.Add(this.btnBack);
             this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.pictureBox1);
@@ -212,5 +254,7 @@
         private Custom.RJButton btnPrint;
         private PrintPreviewDialog printPreviewDialog1;
         private System.Drawing.Printing.PrintDocument printDocument1;
+        private Custom.RJButton btnBack;
+        private Custom.RJButton btnNext;
     }
 }

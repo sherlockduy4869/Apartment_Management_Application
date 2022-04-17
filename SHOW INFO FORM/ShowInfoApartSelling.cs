@@ -1,4 +1,5 @@
-﻿using QuanlyCanHoGiangTran.ADDING_FORM;
+﻿using PagedList;
+using QuanlyCanHoGiangTran.ADDING_FORM;
 using QuanlyCanHoGiangTran.DAL;
 using QuanlyCanHoGiangTran.REMOVING_FORM;
 using System;
@@ -15,6 +16,9 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
 {
     public partial class ShowInfoApartSelling : Form
     {
+        private int start = 1;
+        private int end = 2;
+
         public ShowInfoApartSelling()
         {
             InitializeComponent();
@@ -22,15 +26,31 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             designDatagridview();
         }
 
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            if(start != 1 && end != 2)
+            {
+                start = start - 2;
+                end = end - 2;
+                dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (ORDER BY STT) AS row FROM APARTMENT_SELLING) temp WHERE row >= '" + start + "'  AND row <= '" + end + "'");
+            }
+        }
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            start = start + 2;
+            end = end + 2;
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (ORDER BY STT) AS row FROM APARTMENT_SELLING) temp WHERE row >= '" + start + "'  AND row <= '" + end + "'");
+        }
+
         void listApartTax()
         {
-            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_SELLING");
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (ORDER BY STT) AS row FROM APARTMENT_SELLING) temp WHERE row >= '" + start + "'  AND row <= '" + end + "'");
         }
 
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
             txbSearch.ForeColor = System.Drawing.Color.Black;
-            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_SELLING WHERE MACANHO LIKE '" + txbSearch.Text + "%'");
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM ( SELECT *, ROW_NUMBER() OVER (ORDER BY STT) AS row FROM APARTMENT_SELLING) temp WHERE row >= '" + start + "'  AND row <= '" + end + "' AND MACANHO LIKE '" + txbSearch.Text + "%'");
         }
 
         void designDatagridview()
@@ -117,11 +137,11 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             printPreviewDialog1.ShowDialog();
         }
 
-        
-
         private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         {
             e.Graphics.DrawImage(bitmap, 0, 0);
         }
+
+        
     }
 }
