@@ -248,7 +248,11 @@ namespace QuanlyCanHoGiangTran
 
         private void txbTienthue1thang_Leave(object sender, EventArgs e)
         {
+            
+            
             txbTienthue1thang.Text = double.Parse(txbTienthue1thang.Text).ToString("N0");
+            
+            
         }
 
         private void txbTienthue1thang_Click(object sender, EventArgs e)

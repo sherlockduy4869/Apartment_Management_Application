@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowInfoApart));
             this.label1 = new System.Windows.Forms.Label();
             this.dtgvApartInfo = new System.Windows.Forms.DataGridView();
@@ -36,8 +37,10 @@
             this.btnRefresh = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.txbSearch = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.apartmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.apartmentBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -52,10 +55,13 @@
             // 
             // dtgvApartInfo
             // 
+            this.dtgvApartInfo.AllowUserToAddRows = false;
+            this.dtgvApartInfo.AllowUserToDeleteRows = false;
             this.dtgvApartInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvApartInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvApartInfo.Location = new System.Drawing.Point(3, 198);
             this.dtgvApartInfo.Name = "dtgvApartInfo";
+            this.dtgvApartInfo.ReadOnly = true;
             this.dtgvApartInfo.RowHeadersWidth = 82;
             this.dtgvApartInfo.RowTemplate.Height = 41;
             this.dtgvApartInfo.Size = new System.Drawing.Size(2446, 680);
@@ -139,6 +145,10 @@
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
             // 
+            // apartmentBindingSource
+            // 
+            this.apartmentBindingSource.DataSource = typeof(QuanlyCanHoGiangTran.DTO.Apartment);
+            // 
             // ShowInfoApart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
@@ -156,6 +166,7 @@
             this.Text = "Show Info Apart";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.apartmentBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,5 +181,6 @@
         private Custom.RJButton btnRefresh;
         private TextBox txbSearch;
         private PictureBox pictureBox1;
+        private BindingSource apartmentBindingSource;
     }
 }

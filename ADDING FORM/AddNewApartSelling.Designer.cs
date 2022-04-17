@@ -145,6 +145,7 @@
             this.txbGiaTienUSD.Name = "txbGiaTienUSD";
             this.txbGiaTienUSD.Size = new System.Drawing.Size(428, 39);
             this.txbGiaTienUSD.TabIndex = 2;
+            this.txbGiaTienUSD.Text = "0";
             this.txbGiaTienUSD.Click += new System.EventHandler(this.txbGiaTienUSD_Click);
             this.txbGiaTienUSD.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbGiaTienUSD_KeyPress);
             this.txbGiaTienUSD.Leave += new System.EventHandler(this.txbGiaTienUSD_Leave);
@@ -174,6 +175,7 @@
             this.txbGiaTienVND.Name = "txbGiaTienVND";
             this.txbGiaTienVND.Size = new System.Drawing.Size(428, 39);
             this.txbGiaTienVND.TabIndex = 2;
+            this.txbGiaTienVND.Text = "0";
             this.txbGiaTienVND.Click += new System.EventHandler(this.txbGiaTienVND_Click);
             this.txbGiaTienVND.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbGiaTienVND_KeyPress);
             this.txbGiaTienVND.Leave += new System.EventHandler(this.txbGiaTienVND_Leave);

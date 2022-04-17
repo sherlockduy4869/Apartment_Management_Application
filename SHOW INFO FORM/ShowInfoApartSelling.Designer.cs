@@ -36,6 +36,9 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txbSearch = new System.Windows.Forms.TextBox();
             this.btnRefresh = new QuanlyCanHoGiangTran.Custom.RJButton();
+            this.btnPrint = new QuanlyCanHoGiangTran.Custom.RJButton();
+            this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -139,11 +142,46 @@
             this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
+            // btnPrint
+            // 
+            this.btnPrint.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnPrint.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnPrint.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnPrint.BorderRadius = 40;
+            this.btnPrint.BorderSize = 0;
+            this.btnPrint.FlatAppearance.BorderSize = 0;
+            this.btnPrint.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPrint.ForeColor = System.Drawing.Color.White;
+            this.btnPrint.Location = new System.Drawing.Point(1837, 31);
+            this.btnPrint.Name = "btnPrint";
+            this.btnPrint.Size = new System.Drawing.Size(152, 71);
+            this.btnPrint.TabIndex = 34;
+            this.btnPrint.Text = "Print";
+            this.btnPrint.TextColor = System.Drawing.Color.White;
+            this.btnPrint.UseVisualStyleBackColor = false;
+            this.btnPrint.Click += new System.EventHandler(this.btnPrint_Click);
+            // 
+            // printPreviewDialog1
+            // 
+            this.printPreviewDialog1.AutoScrollMargin = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.AutoScrollMinSize = new System.Drawing.Size(0, 0);
+            this.printPreviewDialog1.ClientSize = new System.Drawing.Size(400, 300);
+            this.printPreviewDialog1.Document = this.printDocument1;
+            this.printPreviewDialog1.Enabled = true;
+            this.printPreviewDialog1.Icon = ((System.Drawing.Icon)(resources.GetObject("printPreviewDialog1.Icon")));
+            this.printPreviewDialog1.Name = "printPreviewDialog1";
+            this.printPreviewDialog1.Visible = false;
+            // 
+            // printDocument1
+            // 
+            this.printDocument1.PrintPage += new System.Drawing.Printing.PrintPageEventHandler(this.printDocument1_PrintPage);
+            // 
             // ShowInfoApartSelling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(2161, 1127);
+            this.Controls.Add(this.btnPrint);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txbSearch);
@@ -171,5 +209,8 @@
         private PictureBox pictureBox1;
         private TextBox txbSearch;
         private Custom.RJButton btnRefresh;
+        private Custom.RJButton btnPrint;
+        private PrintPreviewDialog printPreviewDialog1;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
