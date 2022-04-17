@@ -19,6 +19,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             InitializeComponent();
             listApartTax();
+            designDatagridview();
         }
 
         void listApartTax()
@@ -28,7 +29,25 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
 
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
+            txbSearch.ForeColor = System.Drawing.Color.Black;
             dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_NOT_RENTED WHERE MACANHO LIKE '" + txbSearch.Text + "%' ");
+        }
+
+        void designDatagridview()
+        {
+            //Change column's name for datagridview
+            dtgvApartInfo.Columns["MACANHO"].HeaderText = "APARTMENT CODE";
+            dtgvApartInfo.Columns["TENCHUHO"].HeaderText = "HOUSE OWNER ";
+            dtgvApartInfo.Columns["DAILY"].HeaderText = "AGENT NAME";
+            dtgvApartInfo.Columns["DUAN"].HeaderText = "AREA";
+            dtgvApartInfo.Columns["TINHTRANG"].HeaderText = "STATUS";
+            
+            //Edit colums style for datagridview
+            foreach (DataGridViewColumn col in dtgvApartInfo.Columns)
+            {
+                col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                col.HeaderCell.Style.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Pixel);
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)

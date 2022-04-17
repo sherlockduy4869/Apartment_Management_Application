@@ -18,6 +18,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             InitializeComponent();
             listApartNegotiate();
+            designDatagridview();
         }
 
         void listApartNegotiate()
@@ -27,8 +28,6 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
 
             dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,DAILY,EMAIL,PHONE,MACANHO,DUAN,TIENTHUEMOTTHANG,NGAYBATDAU,NGAYKETTHUC,STATUS FROM APARTMENT_CONTRACT " +
                                                                                 "WHERE NGAYNHAC <= '" + toDay + "' AND '" + toDay + "' <= NGAYKETTHUC");
-            dtgvNegotiateApart.Columns["NGAYBATDAU"].DefaultCellStyle.Format = "dd-MM-yyyy";
-            dtgvNegotiateApart.Columns["NGAYKETTHUC"].DefaultCellStyle.Format = "dd-MM-yyyy";
         }
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
@@ -36,11 +35,35 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             string toDay = "2022-12-15";
 
             txbSearch.ForeColor = System.Drawing.Color.Black;
-            dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,DAILY,EMAIL,PHONE,MACANHO,DUAN,TIENTHUEMOTTHANG,NGAYBATDAU,NGAYKETTHUC,STATUS FROM APARTMENT_CONTRACT " +
+            dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,TIENTHUEMOTTHANG,NGAYBATDAU,NGAYKETTHUC,STATUS FROM APARTMENT_CONTRACT " +
                                                                                 "WHERE NGAYNHAC <= '" + toDay + "' AND '" + toDay + "' <= NGAYKETTHUC AND MACANHO LIKE '" + txbSearch.Text + "%'");
+        }
+
+        void designDatagridview()
+        {
+            //Formart data showing for datagridview
             dtgvNegotiateApart.Columns["NGAYBATDAU"].DefaultCellStyle.Format = "dd-MM-yyyy";
             dtgvNegotiateApart.Columns["NGAYKETTHUC"].DefaultCellStyle.Format = "dd-MM-yyyy";
+
+            //Change column's name for datagridview
+            dtgvNegotiateApart.Columns["MACANHO"].HeaderText = "APARTMENT CODE";
+            dtgvNegotiateApart.Columns["TENCHUHO"].HeaderText = "HOUSE OWNER ";
+            dtgvNegotiateApart.Columns["EMAIL"].HeaderText = "EMAIL";
+            dtgvNegotiateApart.Columns["PHONE"].HeaderText = "PHONE";
+            dtgvNegotiateApart.Columns["DAILY"].HeaderText = "AGENT NAME";
+            dtgvNegotiateApart.Columns["DUAN"].HeaderText = "AREA";
+            dtgvNegotiateApart.Columns["TIENTHUEMOTTHANG"].HeaderText = "FEE PER MONTH";
+            dtgvNegotiateApart.Columns["NGAYBATDAU"].HeaderText = "FROM";
+            dtgvNegotiateApart.Columns["NGAYKETTHUC"].HeaderText = "TO";
+
+            //Edit colums style for datagridview
+            foreach (DataGridViewColumn col in dtgvNegotiateApart.Columns)
+            {
+                col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                col.HeaderCell.Style.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Pixel);
+            }
         }
+
         private void btnDone_Click(object sender, EventArgs e)
         {
             DoneNegotiation doneNegotiation = new DoneNegotiation();

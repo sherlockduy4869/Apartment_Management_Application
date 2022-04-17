@@ -18,6 +18,7 @@ namespace QuanlyCanHoGiangTran
         {
             InitializeComponent();
             listApartTax();
+            designDatagridview();
         }
 
         void listApartTax()
@@ -27,10 +28,36 @@ namespace QuanlyCanHoGiangTran
 
             dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE (NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
                                                                          "OR ('" + toDay + "' >= NGAYCUOI)");
+        }
+
+        void designDatagridview()
+        {
+            //Formart data showing for datagridview
             dtgvApartTax.Columns["TIENCANTHU"].DefaultCellStyle.Format = "N0";
             dtgvApartTax.Columns["NGAYDAU"].DefaultCellStyle.Format = "dd-MM-yyyy";
             dtgvApartTax.Columns["NGAYCUOI"].DefaultCellStyle.Format = "dd-MM-yyyy";
+
+            //Change column's name for datagridview
+            dtgvApartTax.Columns["MACANHO"].HeaderText = "APARTMENT CODE";
+            dtgvApartTax.Columns["TENCHUHO"].HeaderText = "HOUSE OWNER ";
+            dtgvApartTax.Columns["EMAIL"].HeaderText = "EMAIL";
+            dtgvApartTax.Columns["PHONE"].HeaderText = "PHONE";
+            dtgvApartTax.Columns["DAILY"].HeaderText = "AGENT NAME";
+            dtgvApartTax.Columns["DUAN"].HeaderText = "AREA";
+            dtgvApartTax.Columns["NGAYDAU"].HeaderText = "FROM";
+            dtgvApartTax.Columns["NGAYCUOI"].HeaderText = "TO";
+            dtgvApartTax.Columns["CHUKY"].HeaderText = "PAYMENT TERM";
+            dtgvApartTax.Columns["TIENCANTHU"].HeaderText = "TOTAL AMOUNT";
+            dtgvApartTax.Columns["TRANGTHAI"].HeaderText = "STATUS";
+
+            //Edit colums style for datagridview
+            foreach (DataGridViewColumn col in dtgvApartTax.Columns)
+            {
+                col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                col.HeaderCell.Style.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Pixel);
+            }
         }
+
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
             //string toDay = DateTime.UtcNow.Date.ToString();
@@ -39,9 +66,6 @@ namespace QuanlyCanHoGiangTran
             txbSearch.ForeColor = System.Drawing.Color.Black;
             dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE ((NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
                                                                          "OR ('" + toDay + "' >= NGAYCUOI)) AND MACANHO LIKE '" + txbSearch.Text + "%'");
-            dtgvApartTax.Columns["TIENCANTHU"].DefaultCellStyle.Format = "N0";
-            dtgvApartTax.Columns["NGAYDAU"].DefaultCellStyle.Format = "dd-MM-yyyy";
-            dtgvApartTax.Columns["NGAYCUOI"].DefaultCellStyle.Format = "dd-MM-yyyy";
         }
         private void btnMarkDone_Click(object sender, EventArgs e)
         {

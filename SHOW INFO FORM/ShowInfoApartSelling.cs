@@ -19,23 +19,48 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             InitializeComponent();
             listApartTax();
+            designDatagridview();
         }
 
         void listApartTax()
         {
-
             dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_SELLING");
-            dtgvApartInfo.Columns["GIATIENUSD"].DefaultCellStyle.Format = "N0";
-            dtgvApartInfo.Columns["GIATIENVND"].DefaultCellStyle.Format = "N0";
-            dtgvApartInfo.Columns["NGAYNHAPDATA"].DefaultCellStyle.Format = "dd-MM-yyyy";
         }
 
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
+            txbSearch.ForeColor = System.Drawing.Color.Black;
             dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_SELLING WHERE MACANHO LIKE '" + txbSearch.Text + "%'");
+        }
+
+        void designDatagridview()
+        {
+            //Formart data showing for datagridview
             dtgvApartInfo.Columns["GIATIENUSD"].DefaultCellStyle.Format = "N0";
             dtgvApartInfo.Columns["GIATIENVND"].DefaultCellStyle.Format = "N0";
             dtgvApartInfo.Columns["NGAYNHAPDATA"].DefaultCellStyle.Format = "dd-MM-yyyy";
+
+            //Change column's name for datagridview
+            dtgvApartInfo.Columns["MACANHO"].HeaderText = "APARTMENT CODE";
+            dtgvApartInfo.Columns["TENCHUHO"].HeaderText = "HOUSE OWNER ";
+            dtgvApartInfo.Columns["EMAIL"].HeaderText = "EMAIL";
+            dtgvApartInfo.Columns["PHONE"].HeaderText = "PHONE";
+            dtgvApartInfo.Columns["DAILY"].HeaderText = "AGENT NAME";
+            dtgvApartInfo.Columns["DUAN"].HeaderText = "AREA";
+            dtgvApartInfo.Columns["TINHTRANG"].HeaderText = "STATUS";
+            dtgvApartInfo.Columns["SOPHONGNGU"].HeaderText = "BEDROOM";
+            dtgvApartInfo.Columns["DIENTICH"].HeaderText = "SQM";
+            dtgvApartInfo.Columns["GIATIENUSD"].HeaderText = "USD PRICE ";
+            dtgvApartInfo.Columns["GIATIENVND"].HeaderText = "VND PRICE ";
+            dtgvApartInfo.Columns["NGAYNHAPDATA"].HeaderText = "DATA ENTRY DATE";
+            dtgvApartInfo.Columns["GHICHU"].HeaderText = "NOTE";
+
+            //Edit colums style for datagridview
+            foreach (DataGridViewColumn col in dtgvApartInfo.Columns)
+            {
+                col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
+                col.HeaderCell.Style.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Pixel);
+            }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
