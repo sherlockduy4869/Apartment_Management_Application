@@ -50,9 +50,9 @@ namespace QuanlyCanHoGiangTran
             dtgvApartInfo.Columns["DUAN"].HeaderText = "AREA";
             dtgvApartInfo.Columns["TINHTRANG"].HeaderText = "STATUS";
             dtgvApartInfo.Columns["MASOTHUE"].HeaderText = "TAX CODE";
-            dtgvApartInfo.Columns["HINHTHUCKHAITHUE"].HeaderText = "TAX DECLARATION FORM ";
+            dtgvApartInfo.Columns["HINHTHUCKHAITHUE"].HeaderText = "TAX DECLARATION FORM";
             dtgvApartInfo.Columns["COQUANTHUTHUE"].HeaderText = "TAX DEPARTMENT";
-            dtgvApartInfo.Columns["THUE"].HeaderText = "TAX";
+            dtgvApartInfo.Columns["THUE"].HeaderText = "TAX AMOUNT";
             dtgvApartInfo.Columns["PHIKEKHAITHUE"].HeaderText = "TAX DECLARE FEES";
             dtgvApartInfo.Columns["PHIQUANLY"].HeaderText = "MANAGEMENT FEE";
             dtgvApartInfo.Columns["TIENREFUNDKHACH"].HeaderText = "REFUND FOR TENANT";

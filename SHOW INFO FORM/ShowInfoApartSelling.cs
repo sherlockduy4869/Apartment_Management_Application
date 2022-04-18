@@ -72,7 +72,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             dtgvApartInfo.Columns["DIENTICH"].HeaderText = "SQM";
             dtgvApartInfo.Columns["GIATIENUSD"].HeaderText = "USD PRICE ";
             dtgvApartInfo.Columns["GIATIENVND"].HeaderText = "VND PRICE ";
-            dtgvApartInfo.Columns["NGAYNHAPDATA"].HeaderText = "DATA ENTRY DATE";
+            dtgvApartInfo.Columns["NGAYNHAPDATA"].HeaderText = "DATE";
             dtgvApartInfo.Columns["GHICHU"].HeaderText = "NOTE";
 
             //Edit colums style for datagridview

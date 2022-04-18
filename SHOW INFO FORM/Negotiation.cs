@@ -52,7 +52,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             dtgvNegotiateApart.Columns["PHONE"].HeaderText = "PHONE";
             dtgvNegotiateApart.Columns["DAILY"].HeaderText = "AGENT NAME";
             dtgvNegotiateApart.Columns["DUAN"].HeaderText = "AREA";
-            dtgvNegotiateApart.Columns["TIENTHUEMOTTHANG"].HeaderText = "FEE PER MONTH";
+            dtgvNegotiateApart.Columns["TIENTHUEMOTTHANG"].HeaderText = "RENTING FEE PER MONTH";
             dtgvNegotiateApart.Columns["NGAYBATDAU"].HeaderText = "FROM";
             dtgvNegotiateApart.Columns["NGAYKETTHUC"].HeaderText = "TO";
 
