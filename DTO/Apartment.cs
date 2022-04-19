@@ -14,7 +14,6 @@ namespace QuanlyCanHoGiangTran.DTO
         private string _masothue;
         private string _hinhthucthuthue;
         private string _coquanthuthue;
-        private string _tinhtrang;
         private string _duan;
         private string _daily;
         private string _email;
@@ -43,7 +42,6 @@ namespace QuanlyCanHoGiangTran.DTO
             _masothue = (string)row["MASOTHUE"];
             _hinhthucthuthue = (string)row["HINHTHUCKHAITHUE"];
             _coquanthuthue = (string)row["COQUANTHUTHUE"];
-            _tinhtrang = (string)row["TINHTRANG"];
             _thue = (double)row["THUE"];
             _phikekhaithue = (double)row["PHIKEKHAITHUE"];
             _phiquanly = (double)row["PHIQUANLY"];
@@ -93,11 +91,6 @@ namespace QuanlyCanHoGiangTran.DTO
         {
             get { return _duan; }
             set { _duan = value; }
-        }
-        public string Tinhtrang
-        {
-            get { return _tinhtrang; }
-            set { _tinhtrang = value; }
         }
         public DateTime Ngaybatdau
         {

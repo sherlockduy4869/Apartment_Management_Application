@@ -39,14 +39,6 @@ namespace QuanlyCanHoGiangTran
             }
             cbChuKy.DataSource = listChuKy;
 
-            List<string> listTinhTrang = new List<string>();
-            string[] arrayListTinhTrang = { "Đang cho thuê", "Đang available cho thuê" };
-            foreach (string str in arrayListTinhTrang)
-            {
-                listTinhTrang.Add(str);
-            }
-            cbTinhTrang.DataSource = listTinhTrang;
-
             List<string> listDuAn = new List<string>();
             string[] arrayListDuAn = { "Vinhomes Golden River", "Vinhomes Central Park", "Estella Height", "Estella", "The Vista", "Celesta" };
             foreach (string str in arrayListDuAn)
@@ -84,7 +76,6 @@ namespace QuanlyCanHoGiangTran
         private void btnAddNew_Click(object sender, EventArgs e)
         {
             string maCanHo = txbMaCanHo.Text;
-            string tinhTrang = cbTinhTrang.Text;
             string tenChuHo = txbTenChuHo.Text;
             string daiLy = txbDaiLy.Text;
             string email = txbEmail.Text;
@@ -113,15 +104,8 @@ namespace QuanlyCanHoGiangTran
             int soNgayNhacNho = Int32.Parse(cbSoNgayNhac.Text);
 
 
-            if (tinhTrang == "Đang available cho thuê")
-            {
-                chuKy = 0;
-                ngayStart = "1111-01-01";
-                ngayEnd = "11111-01-01";
-                soNgayNhacNho = 0;
-            }
 
-            int i = AdminDAL.Instance.addApartment(maCanHo, duAn, tenChuHo, maSoThue, hinhThucKT, coQuanTT, tinhTrang,
+            int i = AdminDAL.Instance.addApartment(maCanHo, duAn, tenChuHo, maSoThue, hinhThucKT, coQuanTT, 
                                                     thue, phiKeKhaiThue, phiQuanly, tienReFundKhach, phiDonVeSinh,
                                                     tienThu, tienThue1Thang, chuKy, ngayStart, ngayEnd, soNgayNhacNho, daiLy, email, phone);
 

@@ -62,5 +62,11 @@ namespace QuanlyCanHoGiangTran
             ShowInfoApartNotRented showInfoApartNotRented = new ShowInfoApartNotRented();
             showInfoApartNotRented.Show();
         }
+
+        private void btnCart_Click(object sender, EventArgs e)
+        {
+            ShowInfoApartCart showInfoApartCart = new ShowInfoApartCart();
+            showInfoApartCart.Show();
+        }
     }
 }

@@ -104,6 +104,7 @@
             this.btnCart.TabIndex = 81;
             this.btnCart.Text = "Cart";
             this.btnCart.UseVisualStyleBackColor = true;
+            this.btnCart.Click += new System.EventHandler(this.btnCart_Click);
             // 
             // btnApartNotRented
             // 

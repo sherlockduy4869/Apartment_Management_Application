@@ -24,7 +24,7 @@ namespace QuanlyCanHoGiangTran
 
         void showInforAllApart()
         {
-            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,TINHTRANG,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
                                                                          "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU,NGAYBATDAU,NGAYKETTHUC FROM APARTMENT_INFO");
         }
 
@@ -48,7 +48,6 @@ namespace QuanlyCanHoGiangTran
             dtgvApartInfo.Columns["PHONE"].HeaderText = "PHONE";
             dtgvApartInfo.Columns["DAILY"].HeaderText = "AGENT NAME";
             dtgvApartInfo.Columns["DUAN"].HeaderText = "AREA";
-            dtgvApartInfo.Columns["TINHTRANG"].HeaderText = "STATUS";
             dtgvApartInfo.Columns["MASOTHUE"].HeaderText = "TAX CODE";
             dtgvApartInfo.Columns["HINHTHUCKHAITHUE"].HeaderText = "TAX DECLARATION FORM";
             dtgvApartInfo.Columns["COQUANTHUTHUE"].HeaderText = "TAX DEPARTMENT";
@@ -72,7 +71,7 @@ namespace QuanlyCanHoGiangTran
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
             txbSearch.ForeColor = System.Drawing.Color.Black;
-            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,TINHTRANG,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
                                                                          "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU,NGAYBATDAU,NGAYKETTHUC FROM APARTMENT_INFO WHERE MACANHO LIKE '" + txbSearch.Text + "%'");
         }
 
