@@ -52,6 +52,14 @@ namespace QuanlyCanHoGiangTran.DAL
             return i;
         }
 
+        public int addApartmentCart(string maCanHo, string tenChuHo, string duAn, string daiLy)
+        {
+            string query = "Insert into APARTMENT_CART (MACANHO,TENCHUHO,DUAN,DAILY) VALUES(" +
+                            "'" + maCanHo + "','" + tenChuHo + "','" + duAn + "','" + daiLy + "')";
+            int i = DataProvider.Instance.ExecuteNonQuery(query);
+            return i;
+        }
+
         public int removeApartment(string maCanHo)
         {
             string query = "EXEC dbo.DELETING_APARTMENT @macanho";
@@ -69,6 +77,13 @@ namespace QuanlyCanHoGiangTran.DAL
         public int removeApartNotRented(string maCanHo)
         {
             string query = "DELETE FROM APARTMENT_NOT_RENTED WHERE MACANHO = '" + maCanHo + "'";
+            int i = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maCanHo });
+            return i;
+        }
+
+        public int removeApartmentCart(string maCanHo)
+        {
+            string query = "DELETE FROM APARTMENT_CART WHERE MACANHO = '" + maCanHo + "'";
             int i = DataProvider.Instance.ExecuteNonQuery(query, new object[] { maCanHo });
             return i;
         }

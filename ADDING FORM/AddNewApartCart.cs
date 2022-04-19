@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanlyCanHoGiangTran.DAL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,41 @@ namespace QuanlyCanHoGiangTran.ADDING_FORM
         public AddNewApartCart()
         {
             InitializeComponent();
+        }
+
+        void clearInfo()
+        {
+            txbMaCanHo.Clear();
+            txbTenChuHo.Clear();
+            txbDaiLy.Clear();
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            string maCanHo = txbMaCanHo.Text;
+            string duan = cbDuAn.Text;
+            string tenChuHo = txbTenChuHo.Text;
+            string daiLy = txbDaiLy.Text;
+
+            int i = AdminDAL.Instance.addApartmentCart(maCanHo, tenChuHo, duan, daiLy);
+
+            try
+            {
+                if (i != 0)
+                {
+                    clearInfo();
+                    MessageBox.Show("Added");
+
+                }
+                else
+                {
+                    MessageBox.Show("Failed");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR 404");
+            }
         }
     }
 }
