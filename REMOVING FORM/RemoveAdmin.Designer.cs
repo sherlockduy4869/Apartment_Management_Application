@@ -37,6 +37,7 @@
             // 
             // btnMarkDone
             // 
+            this.btnMarkDone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMarkDone.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btnMarkDone.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.btnMarkDone.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -45,7 +46,7 @@
             this.btnMarkDone.FlatAppearance.BorderSize = 0;
             this.btnMarkDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMarkDone.ForeColor = System.Drawing.Color.White;
-            this.btnMarkDone.Location = new System.Drawing.Point(226, 261);
+            this.btnMarkDone.Location = new System.Drawing.Point(231, 303);
             this.btnMarkDone.Name = "btnMarkDone";
             this.btnMarkDone.Size = new System.Drawing.Size(300, 80);
             this.btnMarkDone.TabIndex = 3;
@@ -55,23 +56,32 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.txbMaAdmin);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(79, 110);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(643, 111);
+            this.panel1.Size = new System.Drawing.Size(622, 137);
             this.panel1.TabIndex = 2;
             // 
             // txbMaAdmin
             // 
+            this.txbMaAdmin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txbMaAdmin.ForeColor = System.Drawing.Color.Black;
             this.txbMaAdmin.Location = new System.Drawing.Point(194, 45);
             this.txbMaAdmin.Name = "txbMaAdmin";
-            this.txbMaAdmin.Size = new System.Drawing.Size(428, 39);
+            this.txbMaAdmin.Size = new System.Drawing.Size(391, 39);
             this.txbMaAdmin.TabIndex = 1;
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(14, 48);
@@ -84,9 +94,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(779, 476);
             this.Controls.Add(this.btnMarkDone);
             this.Controls.Add(this.panel1);
+            this.MinimumSize = new System.Drawing.Size(805, 547);
             this.Name = "RemoveAdmin";
             this.Text = "RemoveAdmin";
             this.panel1.ResumeLayout(false);

@@ -45,7 +45,7 @@
             this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(238, 261);
+            this.btnRemove.Location = new System.Drawing.Point(231, 303);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(300, 80);
             this.btnRemove.TabIndex = 9;
@@ -84,9 +84,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(779, 476);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(805, 547);
             this.Name = "RemoveApartSelling";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Remove Apart Selling";

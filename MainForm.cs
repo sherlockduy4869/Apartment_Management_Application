@@ -18,11 +18,25 @@ namespace QuanlyCanHoGiangTran
             InitializeComponent();
         }
 
+        private void btnAdmin_Click(object sender, EventArgs e)
+        {
+            Admin admin = new Admin();
+            admin.Show();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            int w = Screen.PrimaryScreen.Bounds.Width;
+            int h = Screen.PrimaryScreen.Bounds.Height;
+            this.Location = new Point(0, 0);
+            this.Size = new Size(w, h);
+            WindowState = FormWindowState.Maximized;
+        }
+
         private void btnApart_Click(object sender, EventArgs e)
         {
             ShowInfoApart showInfoApart = new ShowInfoApart();
             showInfoApart.Show();
-;
         }
 
         private void btnTax_Click(object sender, EventArgs e)
@@ -31,21 +45,10 @@ namespace QuanlyCanHoGiangTran
             showInfoTax.Show();
         }
 
-        private void btnAdmin_Click(object sender, EventArgs e)
-        {
-            Admin admin = new Admin();
-            admin.Show();
-        }
-
         private void btnNegotiation_Click(object sender, EventArgs e)
         {
             Negotiation negotiation = new Negotiation();
             negotiation.Show();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-
         }
 
         private void btnApartSelling_Click(object sender, EventArgs e)
