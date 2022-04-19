@@ -37,6 +37,7 @@
             // 
             // btnDoneNegotiation
             // 
+            this.btnDoneNegotiation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnDoneNegotiation.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btnDoneNegotiation.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.btnDoneNegotiation.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -45,7 +46,7 @@
             this.btnDoneNegotiation.FlatAppearance.BorderSize = 0;
             this.btnDoneNegotiation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDoneNegotiation.ForeColor = System.Drawing.Color.White;
-            this.btnDoneNegotiation.Location = new System.Drawing.Point(226, 261);
+            this.btnDoneNegotiation.Location = new System.Drawing.Point(231, 303);
             this.btnDoneNegotiation.Name = "btnDoneNegotiation";
             this.btnDoneNegotiation.Size = new System.Drawing.Size(300, 80);
             this.btnDoneNegotiation.TabIndex = 3;
@@ -56,23 +57,32 @@
             // 
             // panel1
             // 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.txbMaCanHo);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(79, 110);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(643, 111);
+            this.panel1.Size = new System.Drawing.Size(622, 137);
             this.panel1.TabIndex = 2;
             // 
             // txbMaCanHo
             // 
+            this.txbMaCanHo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txbMaCanHo.ForeColor = System.Drawing.Color.Black;
             this.txbMaCanHo.Location = new System.Drawing.Point(194, 45);
             this.txbMaCanHo.Name = "txbMaCanHo";
-            this.txbMaCanHo.Size = new System.Drawing.Size(428, 39);
+            this.txbMaCanHo.Size = new System.Drawing.Size(391, 39);
             this.txbMaCanHo.TabIndex = 1;
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(14, 48);
@@ -85,9 +95,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(779, 476);
             this.Controls.Add(this.btnDoneNegotiation);
             this.Controls.Add(this.panel1);
+            this.MaximumSize = new System.Drawing.Size(805, 547);
             this.Name = "DoneNegotiation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Done Negotiation";
