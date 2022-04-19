@@ -58,6 +58,7 @@
             this.txbSearch.Size = new System.Drawing.Size(321, 39);
             this.txbSearch.TabIndex = 32;
             this.txbSearch.Text = "Search apartment...";
+            this.txbSearch.Click += new System.EventHandler(this.txbSearch_Click);
             this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
             // 
             // btnRefresh

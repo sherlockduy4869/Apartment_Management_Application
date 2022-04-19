@@ -182,6 +182,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "AddNewApartCart";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add New Apart Cart";
             this.panel19.ResumeLayout(false);
             this.panel19.PerformLayout();

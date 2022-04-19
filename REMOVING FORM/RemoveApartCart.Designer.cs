@@ -46,14 +46,13 @@
             this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(220, 308);
+            this.btnRemove.Location = new System.Drawing.Point(230, 295);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(300, 80);
             this.btnRemove.TabIndex = 7;
             this.btnRemove.Text = "Remove";
             this.btnRemove.TextColor = System.Drawing.Color.White;
             this.btnRemove.UseVisualStyleBackColor = false;
-            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // panel1
             // 
@@ -62,9 +61,9 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.txbMaCanHo);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(89, 89);
+            this.panel1.Location = new System.Drawing.Point(79, 110);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(601, 163);
+            this.panel1.Size = new System.Drawing.Size(622, 137);
             this.panel1.TabIndex = 6;
             // 
             // txbMaCanHo
@@ -74,7 +73,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbMaCanHo.Location = new System.Drawing.Point(194, 45);
             this.txbMaCanHo.Name = "txbMaCanHo";
-            this.txbMaCanHo.Size = new System.Drawing.Size(792, 39);
+            this.txbMaCanHo.Size = new System.Drawing.Size(391, 39);
             this.txbMaCanHo.TabIndex = 1;
             // 
             // label1
