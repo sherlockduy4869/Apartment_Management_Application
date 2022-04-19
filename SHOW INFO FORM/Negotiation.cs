@@ -38,7 +38,14 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,TIENTHUEMOTTHANG,NGAYBATDAU,NGAYKETTHUC,STATUS FROM APARTMENT_CONTRACT " +
                                                                                 "WHERE NGAYNHAC <= '" + toDay + "' AND '" + toDay + "' <= NGAYKETTHUC AND MACANHO LIKE '" + txbSearch.Text + "%'");
         }
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            //string toDay = DateTime.UtcNow.Date.ToString();
+            string toDay = "2022-12-15";
 
+            dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,DAILY,EMAIL,PHONE,MACANHO,DUAN,TIENTHUEMOTTHANG,NGAYBATDAU,NGAYKETTHUC,STATUS FROM APARTMENT_CONTRACT " +
+                                                                                "WHERE NGAYNHAC <= '" + toDay + "' AND '" + toDay + "' <= NGAYKETTHUC");
+        }
         void designDatagridview()
         {
             //Formart data showing for datagridview
@@ -80,13 +87,6 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             SkipNegotiation skipNegotiation = new SkipNegotiation();
             skipNegotiation.Show();
-        }
-
-        private void btnRefresh_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Negotiation negotiation = new Negotiation();
-            negotiation.Show();
         }
 
         private void txbSearch_Click(object sender, EventArgs e)

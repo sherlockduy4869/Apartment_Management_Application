@@ -61,7 +61,7 @@
             this.pnLeft.Dock = System.Windows.Forms.DockStyle.Left;
             this.pnLeft.Location = new System.Drawing.Point(0, 0);
             this.pnLeft.Name = "pnLeft";
-            this.pnLeft.Size = new System.Drawing.Size(450, 1215);
+            this.pnLeft.Size = new System.Drawing.Size(450, 1441);
             this.pnLeft.TabIndex = 0;
             // 
             // pnCick
@@ -70,7 +70,7 @@
             this.pnCick.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pnCick.Location = new System.Drawing.Point(422, 194);
             this.pnCick.Name = "pnCick";
-            this.pnCick.Size = new System.Drawing.Size(25, 110);
+            this.pnCick.Size = new System.Drawing.Size(28, 155);
             this.pnCick.TabIndex = 73;
             // 
             // btnAdmin
@@ -82,12 +82,13 @@
             this.btnAdmin.ForeColor = System.Drawing.Color.White;
             this.btnAdmin.Image = ((System.Drawing.Image)(resources.GetObject("btnAdmin.Image")));
             this.btnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdmin.Location = new System.Drawing.Point(0, 1069);
+            this.btnAdmin.Location = new System.Drawing.Point(0, 1279);
             this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(450, 125);
+            this.btnAdmin.Size = new System.Drawing.Size(450, 155);
             this.btnAdmin.TabIndex = 82;
             this.btnAdmin.Text = "Admin";
             this.btnAdmin.UseVisualStyleBackColor = true;
+            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click_1);
             // 
             // btnCart
             // 
@@ -98,9 +99,9 @@
             this.btnCart.ForeColor = System.Drawing.Color.White;
             this.btnCart.Image = ((System.Drawing.Image)(resources.GetObject("btnCart.Image")));
             this.btnCart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCart.Location = new System.Drawing.Point(0, 944);
+            this.btnCart.Location = new System.Drawing.Point(0, 1124);
             this.btnCart.Name = "btnCart";
-            this.btnCart.Size = new System.Drawing.Size(450, 125);
+            this.btnCart.Size = new System.Drawing.Size(450, 155);
             this.btnCart.TabIndex = 81;
             this.btnCart.Text = "Cart";
             this.btnCart.UseVisualStyleBackColor = true;
@@ -115,9 +116,9 @@
             this.btnApartNotRented.ForeColor = System.Drawing.Color.White;
             this.btnApartNotRented.Image = ((System.Drawing.Image)(resources.GetObject("btnApartNotRented.Image")));
             this.btnApartNotRented.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnApartNotRented.Location = new System.Drawing.Point(0, 819);
+            this.btnApartNotRented.Location = new System.Drawing.Point(0, 969);
             this.btnApartNotRented.Name = "btnApartNotRented";
-            this.btnApartNotRented.Size = new System.Drawing.Size(450, 125);
+            this.btnApartNotRented.Size = new System.Drawing.Size(450, 155);
             this.btnApartNotRented.TabIndex = 80;
             this.btnApartNotRented.Text = "Apart Not Rented";
             this.btnApartNotRented.UseVisualStyleBackColor = true;
@@ -132,9 +133,9 @@
             this.btnApartSelling.ForeColor = System.Drawing.Color.White;
             this.btnApartSelling.Image = ((System.Drawing.Image)(resources.GetObject("btnApartSelling.Image")));
             this.btnApartSelling.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnApartSelling.Location = new System.Drawing.Point(0, 694);
+            this.btnApartSelling.Location = new System.Drawing.Point(0, 814);
             this.btnApartSelling.Name = "btnApartSelling";
-            this.btnApartSelling.Size = new System.Drawing.Size(450, 125);
+            this.btnApartSelling.Size = new System.Drawing.Size(450, 155);
             this.btnApartSelling.TabIndex = 79;
             this.btnApartSelling.Text = "Apart Selling";
             this.btnApartSelling.UseVisualStyleBackColor = true;
@@ -149,9 +150,9 @@
             this.btnNegotiation.ForeColor = System.Drawing.Color.White;
             this.btnNegotiation.Image = ((System.Drawing.Image)(resources.GetObject("btnNegotiation.Image")));
             this.btnNegotiation.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNegotiation.Location = new System.Drawing.Point(0, 569);
+            this.btnNegotiation.Location = new System.Drawing.Point(0, 659);
             this.btnNegotiation.Name = "btnNegotiation";
-            this.btnNegotiation.Size = new System.Drawing.Size(450, 125);
+            this.btnNegotiation.Size = new System.Drawing.Size(450, 155);
             this.btnNegotiation.TabIndex = 78;
             this.btnNegotiation.Text = "Negotiation";
             this.btnNegotiation.UseVisualStyleBackColor = true;
@@ -166,9 +167,9 @@
             this.btnTax.ForeColor = System.Drawing.Color.White;
             this.btnTax.Image = ((System.Drawing.Image)(resources.GetObject("btnTax.Image")));
             this.btnTax.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnTax.Location = new System.Drawing.Point(0, 444);
+            this.btnTax.Location = new System.Drawing.Point(0, 504);
             this.btnTax.Name = "btnTax";
-            this.btnTax.Size = new System.Drawing.Size(450, 125);
+            this.btnTax.Size = new System.Drawing.Size(450, 155);
             this.btnTax.TabIndex = 77;
             this.btnTax.Text = "Taxes";
             this.btnTax.UseVisualStyleBackColor = true;
@@ -183,9 +184,9 @@
             this.btnApart.ForeColor = System.Drawing.Color.White;
             this.btnApart.Image = ((System.Drawing.Image)(resources.GetObject("btnApart.Image")));
             this.btnApart.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnApart.Location = new System.Drawing.Point(0, 319);
+            this.btnApart.Location = new System.Drawing.Point(0, 349);
             this.btnApart.Name = "btnApart";
-            this.btnApart.Size = new System.Drawing.Size(450, 125);
+            this.btnApart.Size = new System.Drawing.Size(450, 155);
             this.btnApart.TabIndex = 75;
             this.btnApart.Text = "Apart Rented";
             this.btnApart.UseVisualStyleBackColor = true;
@@ -202,10 +203,11 @@
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.Location = new System.Drawing.Point(0, 194);
             this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(450, 125);
+            this.btnHome.Size = new System.Drawing.Size(450, 155);
             this.btnHome.TabIndex = 76;
             this.btnHome.Text = "Home";
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // pictureBox1
             // 
@@ -224,14 +226,14 @@
             this.pnMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnMain.Location = new System.Drawing.Point(450, 0);
             this.pnMain.Name = "pnMain";
-            this.pnMain.Size = new System.Drawing.Size(1185, 1215);
+            this.pnMain.Size = new System.Drawing.Size(1185, 1441);
             this.pnMain.TabIndex = 1;
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1635, 1215);
+            this.ClientSize = new System.Drawing.Size(1635, 1441);
             this.Controls.Add(this.pnMain);
             this.Controls.Add(this.pnLeft);
             this.Name = "MainForm";

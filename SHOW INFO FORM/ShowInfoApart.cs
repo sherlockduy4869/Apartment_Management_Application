@@ -91,9 +91,8 @@ namespace QuanlyCanHoGiangTran
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            this.Close();
-            ShowInfoApart showInfoApart = new ShowInfoApart();
-            showInfoApart.Show();
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
+                                                                         "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU,NGAYBATDAU,NGAYKETTHUC FROM APARTMENT_INFO");
         }
 
         private void txbSearch_Click(object sender, EventArgs e)

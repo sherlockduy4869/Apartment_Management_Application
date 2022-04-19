@@ -67,6 +67,16 @@ namespace QuanlyCanHoGiangTran
             dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE ((NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
                                                                          "OR ('" + toDay + "' >= NGAYCUOI)) AND MACANHO LIKE '" + txbSearch.Text + "%'");
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            //string toDay = DateTime.UtcNow.Date.ToString();
+            string toDay = "2022-06-10";
+
+            dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE (NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
+                                                                         "OR ('" + toDay + "' >= NGAYCUOI)");
+        }
+
         private void btnMarkDone_Click(object sender, EventArgs e)
         {
             MarkDone markDone = new MarkDone();
@@ -97,14 +107,6 @@ namespace QuanlyCanHoGiangTran
                 }
 
             }
-        }
-
-        private void btnRefresh_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            ShowInfoTax showInfoTax = new ShowInfoTax();
-            showInfoTax.Show();
-            
         }
 
         private void btnFinanceDetail_Click(object sender, EventArgs e)

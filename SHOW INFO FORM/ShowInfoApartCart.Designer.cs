@@ -31,11 +31,11 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowInfoApartCart));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txbSearch = new System.Windows.Forms.TextBox();
-            this.btnRefresh = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnRemove = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnAdd = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.dtgvApartInfo = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
+            this.btnRefresh = new QuanlyCanHoGiangTran.Custom.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).BeginInit();
             this.SuspendLayout();
@@ -60,24 +60,6 @@
             this.txbSearch.Text = "Search apartment...";
             this.txbSearch.Click += new System.EventHandler(this.txbSearch_Click);
             this.txbSearch.TextChanged += new System.EventHandler(this.txbSearch_TextChanged);
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnRefresh.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnRefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnRefresh.BorderRadius = 40;
-            this.btnRefresh.BorderSize = 0;
-            this.btnRefresh.FlatAppearance.BorderSize = 0;
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(-283, 48);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(149, 60);
-            this.btnRefresh.TabIndex = 31;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.TextColor = System.Drawing.Color.White;
-            this.btnRefresh.UseVisualStyleBackColor = false;
             // 
             // btnRemove
             // 
@@ -141,14 +123,33 @@
             this.label1.TabIndex = 27;
             this.label1.Text = "AVAILABLE FOR RENT APARTMENT";
             // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnRefresh.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnRefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnRefresh.BorderRadius = 40;
+            this.btnRefresh.BorderSize = 0;
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(1439, 58);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(149, 60);
+            this.btnRefresh.TabIndex = 34;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.TextColor = System.Drawing.Color.White;
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // ShowInfoApartCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1613, 1008);
+            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txbSearch);
-            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.dtgvApartInfo);
@@ -167,10 +168,10 @@
 
         private PictureBox pictureBox1;
         private TextBox txbSearch;
-        private Custom.RJButton btnRefresh;
         private Custom.RJButton btnRemove;
         private Custom.RJButton btnAdd;
         private DataGridView dtgvApartInfo;
         private Label label1;
+        private Custom.RJButton btnRefresh;
     }
 }

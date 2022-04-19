@@ -24,7 +24,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
 
         void listApartTax()
         {
-            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_CART WHERER STATUS = 'AVAILABLE'");
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_CART WHERE STATUS = 'AVAILABLE'");
         }
 
         void designDatagridview()
@@ -41,7 +41,10 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
                 col.HeaderCell.Style.Font = new Font("Arial", 28F, FontStyle.Bold, GraphicsUnit.Pixel);
             }
         }
-
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_CART WHERE STATUS = 'AVAILABLE'");
+        }
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
             txbSearch.ForeColor = System.Drawing.Color.Black;
@@ -64,5 +67,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             txbSearch.Clear();
         }
+
+        
     }
 }
