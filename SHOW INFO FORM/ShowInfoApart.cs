@@ -78,9 +78,7 @@ namespace QuanlyCanHoGiangTran
         private void btnAdd_Click(object sender, EventArgs e)
         {
             AddNewApart addNewApart = new AddNewApart();
-            this.Hide();
-            addNewApart.ShowDialog();
-            this.Show();
+            addNewApart.Show();
         }
 
         private void btnRemove_Click(object sender, EventArgs e)

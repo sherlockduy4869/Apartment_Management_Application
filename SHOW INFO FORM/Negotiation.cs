@@ -38,7 +38,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,TIENTHUEMOTTHANG,NGAYBATDAU,NGAYKETTHUC,STATUS FROM APARTMENT_CONTRACT " +
                                                                                 "WHERE NGAYNHAC <= '" + toDay + "' AND '" + toDay + "' <= NGAYKETTHUC AND MACANHO LIKE '" + txbSearch.Text + "%'");
         }
-        private void btnRefresh_Click(object sender, EventArgs e)
+        private void btnRefresh_Click_1(object sender, EventArgs e)
         {
             //string toDay = DateTime.UtcNow.Date.ToString();
             string toDay = "2022-12-15";
@@ -98,5 +98,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             Application.Exit();
         }
+
+        
     }
 }

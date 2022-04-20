@@ -19,6 +19,9 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         private int final_status = 0;
         private double tongThu = 0;
 
+        private bool _dragging = false;
+        private Point _offset;
+        private Point _start_point = new Point(0, 0);
         public ShowFinanceDetail()
         {
             InitializeComponent();
@@ -225,6 +228,26 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
                                                                         , apartment.Chuky, apartmentMoneyTax.Ngaydau, apartmentMoneyTax.Ngaycuoi, apartmentMoneyTax.Trangthai);
             showFinanceDetail.Show();
             this.Close();
+        }
+
+        private void ShowFinanceDetail_MouseDown(object sender, MouseEventArgs e)
+        {
+            _dragging = true;
+            _start_point = new Point(e.X, e.Y);
+        }
+
+        private void ShowFinanceDetail_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (_dragging)
+            {
+                Point p = PointToScreen(e.Location);
+                Location = new Point(p.X - this._start_point.X, p.Y - this._start_point.Y);
+            }
+        }
+
+        private void ShowFinanceDetail_MouseUp(object sender, MouseEventArgs e)
+        {
+            _dragging = false;
         }
     }
 }

@@ -34,5 +34,6 @@ namespace QuanlyCanHoGiangTran.OTHERS_FUNCTION_FORM
             showFinanceDetail.Show();
             this.Close();
         }
+
     }
 }

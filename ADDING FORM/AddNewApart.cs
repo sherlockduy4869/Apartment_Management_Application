@@ -23,6 +23,10 @@ namespace QuanlyCanHoGiangTran
         private float phiDonVeSinh = 0;
         private float tienThue1Thang = 0;
 
+        private bool _dragging = false;
+        private Point _offset;
+        private Point _start_point = new Point(0,0);
+
         public AddNewApart()
         {
             InitializeComponent();
@@ -242,6 +246,31 @@ namespace QuanlyCanHoGiangTran
         private void txbTienthue1thang_Click(object sender, EventArgs e)
         {
             txbTienthue1thang.Clear();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void AddNewApart_MouseDown(object sender, MouseEventArgs e)
+        {
+            _dragging = true;
+            _start_point = new Point(e.X, e.Y);
+        }
+
+        private void AddNewApart_MouseMove(object sender, MouseEventArgs e)
+        {
+            if(_dragging)
+            {
+                Point p = PointToScreen(e.Location);
+                Location = new Point(p.X - this._start_point.X, p.Y-this._start_point.Y);
+            }
+        }
+
+        private void AddNewApart_MouseUp(object sender, MouseEventArgs e)
+        {
+            _dragging = false;
         }
     }
 

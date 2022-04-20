@@ -76,6 +76,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.dtpkNgaycuoi = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             this.panel16.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel13.SuspendLayout();
@@ -549,11 +550,27 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Ending Date";
             // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(1567, 2);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(90, 84);
+            this.btnExit.TabIndex = 55;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // ShowInformationDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1658, 1111);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel17);
@@ -568,9 +585,13 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ShowInformationDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Information Detail";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ShowInformationDetail_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ShowInformationDetail_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ShowInformationDetail_MouseUp);
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
             this.panel14.ResumeLayout(false);
@@ -652,5 +673,6 @@
         private Panel panel7;
         private DateTimePicker dtpkNgaycuoi;
         private Label label7;
+        private Button btnExit;
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddNewApart));
             this.btnAddNew = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.txbMaCanHo = new System.Windows.Forms.TextBox();
@@ -89,6 +90,8 @@
             this.panel21 = new System.Windows.Forms.Panel();
             this.txbEmail = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -113,6 +116,7 @@
             // 
             // btnAddNew
             // 
+            this.btnAddNew.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAddNew.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btnAddNew.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.btnAddNew.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -121,7 +125,7 @@
             this.btnAddNew.FlatAppearance.BorderSize = 0;
             this.btnAddNew.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddNew.ForeColor = System.Drawing.Color.White;
-            this.btnAddNew.Location = new System.Drawing.Point(705, 864);
+            this.btnAddNew.Location = new System.Drawing.Point(656, 937);
             this.btnAddNew.Name = "btnAddNew";
             this.btnAddNew.Size = new System.Drawing.Size(300, 80);
             this.btnAddNew.TabIndex = 22;
@@ -134,7 +138,7 @@
             // 
             this.panel1.Controls.Add(this.txbMaCanHo);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(79, 117);
+            this.panel1.Location = new System.Drawing.Point(24, 193);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(768, 65);
             this.panel1.TabIndex = 1;
@@ -160,7 +164,7 @@
             // 
             this.panel2.Controls.Add(this.txbTenChuHo);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(79, 330);
+            this.panel2.Location = new System.Drawing.Point(24, 406);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(768, 65);
             this.panel2.TabIndex = 5;
@@ -186,7 +190,7 @@
             // 
             this.panel3.Controls.Add(this.txbMaSoThue);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(79, 545);
+            this.panel3.Location = new System.Drawing.Point(24, 621);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(768, 65);
             this.panel3.TabIndex = 8;
@@ -212,7 +216,7 @@
             // 
             this.panel4.Controls.Add(this.txbHTKhaiThue);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(79, 616);
+            this.panel4.Location = new System.Drawing.Point(24, 692);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(768, 65);
             this.panel4.TabIndex = 9;
@@ -238,7 +242,7 @@
             // 
             this.panel5.Controls.Add(this.txbCQThuThue);
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(79, 689);
+            this.panel5.Location = new System.Drawing.Point(24, 765);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(768, 65);
             this.panel5.TabIndex = 10;
@@ -264,7 +268,7 @@
             // 
             this.panel6.Controls.Add(this.txbThue);
             this.panel6.Controls.Add(this.label6);
-            this.panel6.Location = new System.Drawing.Point(879, 190);
+            this.panel6.Location = new System.Drawing.Point(824, 266);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(768, 65);
             this.panel6.TabIndex = 13;
@@ -294,7 +298,7 @@
             // 
             this.panel7.Controls.Add(this.dtpkStart);
             this.panel7.Controls.Add(this.label7);
-            this.panel7.Location = new System.Drawing.Point(879, 616);
+            this.panel7.Location = new System.Drawing.Point(824, 692);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(768, 65);
             this.panel7.TabIndex = 19;
@@ -322,7 +326,7 @@
             // 
             this.panel8.Controls.Add(this.dtpkEnd);
             this.panel8.Controls.Add(this.label8);
-            this.panel8.Location = new System.Drawing.Point(879, 689);
+            this.panel8.Location = new System.Drawing.Point(824, 765);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(768, 65);
             this.panel8.TabIndex = 20;
@@ -350,7 +354,7 @@
             // 
             this.panel9.Controls.Add(this.cbChuKy);
             this.panel9.Controls.Add(this.label9);
-            this.panel9.Location = new System.Drawing.Point(79, 760);
+            this.panel9.Location = new System.Drawing.Point(24, 836);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(768, 65);
             this.panel9.TabIndex = 11;
@@ -377,7 +381,7 @@
             // 
             this.panel10.Controls.Add(this.txbPhiKeKhaiThue);
             this.panel10.Controls.Add(this.label10);
-            this.panel10.Location = new System.Drawing.Point(879, 261);
+            this.panel10.Location = new System.Drawing.Point(824, 337);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(768, 65);
             this.panel10.TabIndex = 14;
@@ -407,7 +411,7 @@
             // 
             this.panel11.Controls.Add(this.txbPhiQuanLy);
             this.panel11.Controls.Add(this.label11);
-            this.panel11.Location = new System.Drawing.Point(879, 332);
+            this.panel11.Location = new System.Drawing.Point(824, 408);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(768, 65);
             this.panel11.TabIndex = 15;
@@ -437,7 +441,7 @@
             // 
             this.panel12.Controls.Add(this.txbTienRefund);
             this.panel12.Controls.Add(this.label12);
-            this.panel12.Location = new System.Drawing.Point(879, 403);
+            this.panel12.Location = new System.Drawing.Point(824, 479);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(768, 65);
             this.panel12.TabIndex = 16;
@@ -467,7 +471,7 @@
             // 
             this.panel13.Controls.Add(this.txbPhiDonVeSinh);
             this.panel13.Controls.Add(this.label13);
-            this.panel13.Location = new System.Drawing.Point(879, 474);
+            this.panel13.Location = new System.Drawing.Point(824, 550);
             this.panel13.Name = "panel13";
             this.panel13.Size = new System.Drawing.Size(768, 65);
             this.panel13.TabIndex = 17;
@@ -497,7 +501,7 @@
             // 
             this.panel14.Controls.Add(this.txbTienThu);
             this.panel14.Controls.Add(this.label14);
-            this.panel14.Location = new System.Drawing.Point(879, 545);
+            this.panel14.Location = new System.Drawing.Point(824, 621);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(768, 65);
             this.panel14.TabIndex = 18;
@@ -524,7 +528,7 @@
             // 
             this.panel16.Controls.Add(this.cbDuAn);
             this.panel16.Controls.Add(this.label16);
-            this.panel16.Location = new System.Drawing.Point(79, 188);
+            this.panel16.Location = new System.Drawing.Point(24, 264);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(768, 65);
             this.panel16.TabIndex = 2;
@@ -551,7 +555,7 @@
             // 
             this.panel17.Controls.Add(this.cbSoNgayNhac);
             this.panel17.Controls.Add(this.label17);
-            this.panel17.Location = new System.Drawing.Point(879, 760);
+            this.panel17.Location = new System.Drawing.Point(824, 836);
             this.panel17.Name = "panel17";
             this.panel17.Size = new System.Drawing.Size(768, 65);
             this.panel17.TabIndex = 21;
@@ -578,7 +582,7 @@
             // 
             this.panel18.Controls.Add(this.txbTienthue1thang);
             this.panel18.Controls.Add(this.label18);
-            this.panel18.Location = new System.Drawing.Point(879, 117);
+            this.panel18.Location = new System.Drawing.Point(824, 193);
             this.panel18.Name = "panel18";
             this.panel18.Size = new System.Drawing.Size(768, 65);
             this.panel18.TabIndex = 12;
@@ -608,7 +612,7 @@
             // 
             this.panel19.Controls.Add(this.txbDaiLy);
             this.panel19.Controls.Add(this.label19);
-            this.panel19.Location = new System.Drawing.Point(79, 259);
+            this.panel19.Location = new System.Drawing.Point(24, 335);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(768, 65);
             this.panel19.TabIndex = 4;
@@ -634,7 +638,7 @@
             // 
             this.panel20.Controls.Add(this.txbPhone);
             this.panel20.Controls.Add(this.label20);
-            this.panel20.Location = new System.Drawing.Point(79, 403);
+            this.panel20.Location = new System.Drawing.Point(24, 479);
             this.panel20.Name = "panel20";
             this.panel20.Size = new System.Drawing.Size(768, 65);
             this.panel20.TabIndex = 6;
@@ -660,7 +664,7 @@
             // 
             this.panel21.Controls.Add(this.txbEmail);
             this.panel21.Controls.Add(this.label21);
-            this.panel21.Location = new System.Drawing.Point(79, 474);
+            this.panel21.Location = new System.Drawing.Point(24, 550);
             this.panel21.Name = "panel21";
             this.panel21.Size = new System.Drawing.Size(768, 65);
             this.panel21.TabIndex = 7;
@@ -682,11 +686,40 @@
             this.label21.TabIndex = 0;
             this.label21.Text = "Email";
             // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label22.Location = new System.Drawing.Point(400, 87);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(888, 63);
+            this.label22.TabIndex = 24;
+            this.label22.Text = "ADDING NEW RENTED APARTMENT";
+            // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(1526, -1);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(90, 84);
+            this.btnExit.TabIndex = 54;
+            this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
             // AddNewApart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1729, 993);
+            this.ClientSize = new System.Drawing.Size(1616, 1047);
+            this.Controls.Add(this.btnExit);
+            this.Controls.Add(this.label22);
             this.Controls.Add(this.panel21);
             this.Controls.Add(this.panel20);
             this.Controls.Add(this.panel19);
@@ -708,9 +741,13 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.btnAddNew);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AddNewApart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add New Apart";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.AddNewApart_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.AddNewApart_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.AddNewApart_MouseUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -752,6 +789,7 @@
             this.panel21.ResumeLayout(false);
             this.panel21.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -818,5 +856,7 @@
         private Panel panel21;
         private TextBox txbEmail;
         private Label label21;
+        private Label label22;
+        private Button btnExit;
     }
 }

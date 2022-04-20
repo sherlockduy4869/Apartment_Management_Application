@@ -49,7 +49,8 @@
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(370, 83);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label1.Location = new System.Drawing.Point(291, 54);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(1111, 63);
             this.label1.TabIndex = 0;
@@ -62,30 +63,35 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgvApartTax.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvApartTax.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvApartTax.Location = new System.Drawing.Point(12, 192);
+            this.dtgvApartTax.Location = new System.Drawing.Point(12, 272);
             this.dtgvApartTax.Name = "dtgvApartTax";
             this.dtgvApartTax.RowHeadersWidth = 82;
             this.dtgvApartTax.RowTemplate.Height = 41;
-            this.dtgvApartTax.Size = new System.Drawing.Size(1759, 744);
+            this.dtgvApartTax.Size = new System.Drawing.Size(1759, 595);
             this.dtgvApartTax.TabIndex = 1;
             this.dtgvApartTax.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dtgvApartTax_CellFormatting);
             // 
             // btnMarkDone
             // 
             this.btnMarkDone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMarkDone.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnMarkDone.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnMarkDone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnMarkDone.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.btnMarkDone.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnMarkDone.BorderRadius = 40;
             this.btnMarkDone.BorderSize = 0;
+            this.btnMarkDone.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMarkDone.FlatAppearance.BorderSize = 0;
             this.btnMarkDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMarkDone.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMarkDone.ForeColor = System.Drawing.Color.White;
-            this.btnMarkDone.Location = new System.Drawing.Point(179, 1020);
+            this.btnMarkDone.Image = ((System.Drawing.Image)(resources.GetObject("btnMarkDone.Image")));
+            this.btnMarkDone.Location = new System.Drawing.Point(143, 936);
             this.btnMarkDone.Name = "btnMarkDone";
-            this.btnMarkDone.Size = new System.Drawing.Size(300, 80);
+            this.btnMarkDone.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.btnMarkDone.Size = new System.Drawing.Size(231, 191);
             this.btnMarkDone.TabIndex = 2;
             this.btnMarkDone.Text = "Mark Done";
+            this.btnMarkDone.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMarkDone.TextColor = System.Drawing.Color.White;
             this.btnMarkDone.UseVisualStyleBackColor = false;
             this.btnMarkDone.Click += new System.EventHandler(this.btnMarkDone_Click);
@@ -93,57 +99,70 @@
             // btnReDo
             // 
             this.btnReDo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnReDo.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnReDo.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnReDo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnReDo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.btnReDo.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnReDo.BorderRadius = 40;
             this.btnReDo.BorderSize = 0;
+            this.btnReDo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReDo.FlatAppearance.BorderSize = 0;
             this.btnReDo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReDo.ForeColor = System.Drawing.Color.White;
-            this.btnReDo.Location = new System.Drawing.Point(756, 1020);
+            this.btnReDo.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnReDo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.btnReDo.Image = ((System.Drawing.Image)(resources.GetObject("btnReDo.Image")));
+            this.btnReDo.Location = new System.Drawing.Point(703, 936);
             this.btnReDo.Name = "btnReDo";
-            this.btnReDo.Size = new System.Drawing.Size(300, 80);
+            this.btnReDo.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.btnReDo.Size = new System.Drawing.Size(231, 191);
             this.btnReDo.TabIndex = 3;
             this.btnReDo.Text = "Redo";
-            this.btnReDo.TextColor = System.Drawing.Color.White;
+            this.btnReDo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnReDo.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.btnReDo.UseVisualStyleBackColor = false;
             this.btnReDo.Click += new System.EventHandler(this.btnReDo_Click);
             // 
             // btnNextCycle
             // 
             this.btnNextCycle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnNextCycle.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnNextCycle.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnNextCycle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnNextCycle.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.btnNextCycle.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnNextCycle.BorderRadius = 40;
             this.btnNextCycle.BorderSize = 0;
+            this.btnNextCycle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNextCycle.FlatAppearance.BorderSize = 0;
             this.btnNextCycle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNextCycle.ForeColor = System.Drawing.Color.White;
-            this.btnNextCycle.Location = new System.Drawing.Point(1304, 1020);
+            this.btnNextCycle.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnNextCycle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnNextCycle.Image = ((System.Drawing.Image)(resources.GetObject("btnNextCycle.Image")));
+            this.btnNextCycle.Location = new System.Drawing.Point(1245, 936);
             this.btnNextCycle.Name = "btnNextCycle";
-            this.btnNextCycle.Size = new System.Drawing.Size(300, 80);
+            this.btnNextCycle.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.btnNextCycle.Size = new System.Drawing.Size(231, 191);
             this.btnNextCycle.TabIndex = 4;
             this.btnNextCycle.Text = "Next Cycle";
-            this.btnNextCycle.TextColor = System.Drawing.Color.White;
+            this.btnNextCycle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnNextCycle.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btnNextCycle.UseVisualStyleBackColor = false;
             this.btnNextCycle.Click += new System.EventHandler(this.btnNextCycle_Click);
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRefresh.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnRefresh.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnRefresh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btnRefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnRefresh.BorderRadius = 40;
             this.btnRefresh.BorderSize = 0;
             this.btnRefresh.FlatAppearance.BorderSize = 0;
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(1582, 86);
+            this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
+            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRefresh.Location = new System.Drawing.Point(12, 204);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(149, 60);
+            this.btnRefresh.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnRefresh.Size = new System.Drawing.Size(173, 62);
             this.btnRefresh.TabIndex = 5;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.TextColor = System.Drawing.Color.White;
@@ -153,17 +172,21 @@
             // btnFinanceDetail
             // 
             this.btnFinanceDetail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnFinanceDetail.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnFinanceDetail.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnFinanceDetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnFinanceDetail.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btnFinanceDetail.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnFinanceDetail.BorderRadius = 40;
             this.btnFinanceDetail.BorderSize = 0;
             this.btnFinanceDetail.FlatAppearance.BorderSize = 0;
             this.btnFinanceDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFinanceDetail.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnFinanceDetail.ForeColor = System.Drawing.Color.White;
-            this.btnFinanceDetail.Location = new System.Drawing.Point(74, 22);
+            this.btnFinanceDetail.Image = ((System.Drawing.Image)(resources.GetObject("btnFinanceDetail.Image")));
+            this.btnFinanceDetail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnFinanceDetail.Location = new System.Drawing.Point(1530, 191);
             this.btnFinanceDetail.Name = "btnFinanceDetail";
-            this.btnFinanceDetail.Size = new System.Drawing.Size(227, 79);
+            this.btnFinanceDetail.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnFinanceDetail.Size = new System.Drawing.Size(241, 75);
             this.btnFinanceDetail.TabIndex = 6;
             this.btnFinanceDetail.Text = "Finance Detail";
             this.btnFinanceDetail.TextColor = System.Drawing.Color.White;
@@ -173,19 +196,24 @@
             // btnInformationDetail
             // 
             this.btnInformationDetail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnInformationDetail.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnInformationDetail.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnInformationDetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnInformationDetail.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btnInformationDetail.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnInformationDetail.BorderRadius = 40;
             this.btnInformationDetail.BorderSize = 0;
             this.btnInformationDetail.FlatAppearance.BorderSize = 0;
             this.btnInformationDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInformationDetail.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnInformationDetail.ForeColor = System.Drawing.Color.White;
-            this.btnInformationDetail.Location = new System.Drawing.Point(74, 107);
+            this.btnInformationDetail.Image = ((System.Drawing.Image)(resources.GetObject("btnInformationDetail.Image")));
+            this.btnInformationDetail.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnInformationDetail.Location = new System.Drawing.Point(1286, 191);
             this.btnInformationDetail.Name = "btnInformationDetail";
-            this.btnInformationDetail.Size = new System.Drawing.Size(227, 79);
+            this.btnInformationDetail.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnInformationDetail.Size = new System.Drawing.Size(241, 75);
             this.btnInformationDetail.TabIndex = 7;
             this.btnInformationDetail.Text = "Information Detail";
+            this.btnInformationDetail.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnInformationDetail.TextColor = System.Drawing.Color.White;
             this.btnInformationDetail.UseVisualStyleBackColor = false;
             this.btnInformationDetail.Click += new System.EventHandler(this.btnInformationDetail_Click);
@@ -194,9 +222,9 @@
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(1083, 32);
+            this.pictureBox1.Location = new System.Drawing.Point(1074, 178);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(52, 44);
+            this.pictureBox1.Size = new System.Drawing.Size(47, 39);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 30;
             this.pictureBox1.TabStop = false;
@@ -204,10 +232,11 @@
             // txbSearch
             // 
             this.txbSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbSearch.Font = new System.Drawing.Font("Arial Narrow", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txbSearch.Location = new System.Drawing.Point(756, 32);
+            this.txbSearch.Location = new System.Drawing.Point(496, 178);
             this.txbSearch.Name = "txbSearch";
-            this.txbSearch.Size = new System.Drawing.Size(321, 39);
+            this.txbSearch.Size = new System.Drawing.Size(572, 38);
             this.txbSearch.TabIndex = 29;
             this.txbSearch.Text = "Search apartment...";
             this.txbSearch.Click += new System.EventHandler(this.txbSearch_Click);
@@ -232,7 +261,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1783, 1142);
+            this.ClientSize = new System.Drawing.Size(1783, 1193);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txbSearch);

@@ -36,7 +36,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             txbSearch.ForeColor = System.Drawing.Color.Black;
             dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_SELLING WHERE MACANHO LIKE '" + txbSearch.Text + "%'");
         }
-        private void btnRefresh_Click(object sender, EventArgs e)
+        private void btnRefresh_Click_1(object sender, EventArgs e)
         {
             dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_SELLING");
         }
@@ -106,6 +106,8 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             Application.Exit();
         }
+
+        
         //private void btnPrint_Click(object sender, EventArgs e)
         //{
         //Panel panel = new Panel();

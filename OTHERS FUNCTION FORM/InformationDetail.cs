@@ -15,6 +15,7 @@ namespace QuanlyCanHoGiangTran.OTHERS_FUNCTION_FORM
 {
     public partial class InformationDetail : Form
     {
+
         public InformationDetail()
         {
             InitializeComponent();
@@ -30,5 +31,6 @@ namespace QuanlyCanHoGiangTran.OTHERS_FUNCTION_FORM
             showInformationDetail.Show();
             this.Close();
         }
+
     }
 }

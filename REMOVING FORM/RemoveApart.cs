@@ -13,6 +13,7 @@ namespace QuanlyCanHoGiangTran
 {
     public partial class RemoveApart : Form
     {
+
         public RemoveApart()
         {
             InitializeComponent();
@@ -43,6 +44,7 @@ namespace QuanlyCanHoGiangTran
                 MessageBox.Show("ERROR 404");
             }
         }
+        
     }
     
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowFinanceDetail));
             this.panel1 = new System.Windows.Forms.Panel();
             this.txbMaCanHo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -73,6 +74,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.txbBalance = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.btnExit = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -91,7 +93,7 @@
             // 
             this.panel1.Controls.Add(this.txbMaCanHo);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(483, 50);
+            this.panel1.Location = new System.Drawing.Point(483, 113);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(538, 87);
             this.panel1.TabIndex = 0;
@@ -117,7 +119,7 @@
             // 
             this.panel2.Controls.Add(this.txbThue);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(447, 457);
+            this.panel2.Location = new System.Drawing.Point(447, 520);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(595, 87);
             this.panel2.TabIndex = 1;
@@ -143,7 +145,7 @@
             // 
             this.panel3.Controls.Add(this.txbPhiKeKhaiThue);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(447, 550);
+            this.panel3.Location = new System.Drawing.Point(447, 613);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(595, 87);
             this.panel3.TabIndex = 2;
@@ -169,7 +171,7 @@
             // 
             this.panel4.Controls.Add(this.txbPhiQuanLy);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(447, 643);
+            this.panel4.Location = new System.Drawing.Point(447, 706);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(595, 87);
             this.panel4.TabIndex = 3;
@@ -195,7 +197,7 @@
             // 
             this.panel5.Controls.Add(this.txbTienRefundKhach);
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(447, 736);
+            this.panel5.Location = new System.Drawing.Point(447, 799);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(595, 87);
             this.panel5.TabIndex = 4;
@@ -221,7 +223,7 @@
             // 
             this.panel6.Controls.Add(this.txbPhiDonVeSinh);
             this.panel6.Controls.Add(this.label6);
-            this.panel6.Location = new System.Drawing.Point(447, 829);
+            this.panel6.Location = new System.Drawing.Point(447, 892);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(595, 87);
             this.panel6.TabIndex = 5;
@@ -253,7 +255,7 @@
             this.btnMarkDone.FlatAppearance.BorderSize = 0;
             this.btnMarkDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMarkDone.ForeColor = System.Drawing.Color.White;
-            this.btnMarkDone.Location = new System.Drawing.Point(355, 995);
+            this.btnMarkDone.Location = new System.Drawing.Point(355, 1058);
             this.btnMarkDone.Name = "btnMarkDone";
             this.btnMarkDone.Size = new System.Drawing.Size(300, 80);
             this.btnMarkDone.TabIndex = 14;
@@ -272,7 +274,7 @@
             this.btnRedo.FlatAppearance.BorderSize = 0;
             this.btnRedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRedo.ForeColor = System.Drawing.Color.White;
-            this.btnRedo.Location = new System.Drawing.Point(791, 995);
+            this.btnRedo.Location = new System.Drawing.Point(791, 1058);
             this.btnRedo.Name = "btnRedo";
             this.btnRedo.Size = new System.Drawing.Size(300, 80);
             this.btnRedo.TabIndex = 15;
@@ -284,7 +286,7 @@
             // cbFinanceCategory
             // 
             this.cbFinanceCategory.FormattingEnabled = true;
-            this.cbFinanceCategory.Location = new System.Drawing.Point(577, 931);
+            this.cbFinanceCategory.Location = new System.Drawing.Point(577, 994);
             this.cbFinanceCategory.Name = "cbFinanceCategory";
             this.cbFinanceCategory.Size = new System.Drawing.Size(363, 40);
             this.cbFinanceCategory.TabIndex = 17;
@@ -293,7 +295,7 @@
             // 
             this.lbThue.AutoSize = true;
             this.lbThue.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbThue.Location = new System.Drawing.Point(1061, 486);
+            this.lbThue.Location = new System.Drawing.Point(1061, 549);
             this.lbThue.Name = "lbThue";
             this.lbThue.Size = new System.Drawing.Size(30, 33);
             this.lbThue.TabIndex = 18;
@@ -303,7 +305,7 @@
             // 
             this.lbPhiKeKhaiThue.AutoSize = true;
             this.lbPhiKeKhaiThue.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbPhiKeKhaiThue.Location = new System.Drawing.Point(1061, 583);
+            this.lbPhiKeKhaiThue.Location = new System.Drawing.Point(1061, 646);
             this.lbPhiKeKhaiThue.Name = "lbPhiKeKhaiThue";
             this.lbPhiKeKhaiThue.Size = new System.Drawing.Size(30, 33);
             this.lbPhiKeKhaiThue.TabIndex = 19;
@@ -313,7 +315,7 @@
             // 
             this.lbPhiQuanLy.AutoSize = true;
             this.lbPhiQuanLy.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbPhiQuanLy.Location = new System.Drawing.Point(1061, 679);
+            this.lbPhiQuanLy.Location = new System.Drawing.Point(1061, 742);
             this.lbPhiQuanLy.Name = "lbPhiQuanLy";
             this.lbPhiQuanLy.Size = new System.Drawing.Size(30, 33);
             this.lbPhiQuanLy.TabIndex = 20;
@@ -323,7 +325,7 @@
             // 
             this.lbTienReFundKhach.AutoSize = true;
             this.lbTienReFundKhach.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbTienReFundKhach.Location = new System.Drawing.Point(1061, 765);
+            this.lbTienReFundKhach.Location = new System.Drawing.Point(1061, 828);
             this.lbTienReFundKhach.Name = "lbTienReFundKhach";
             this.lbTienReFundKhach.Size = new System.Drawing.Size(30, 33);
             this.lbTienReFundKhach.TabIndex = 21;
@@ -333,7 +335,7 @@
             // 
             this.lbPhidonvesinh.AutoSize = true;
             this.lbPhidonvesinh.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbPhidonvesinh.Location = new System.Drawing.Point(1061, 858);
+            this.lbPhidonvesinh.Location = new System.Drawing.Point(1061, 921);
             this.lbPhidonvesinh.Name = "lbPhidonvesinh";
             this.lbPhidonvesinh.Size = new System.Drawing.Size(30, 33);
             this.lbPhidonvesinh.TabIndex = 22;
@@ -343,7 +345,7 @@
             // 
             this.panel8.Controls.Add(this.txbTongThu);
             this.panel8.Controls.Add(this.lbTongThu);
-            this.panel8.Location = new System.Drawing.Point(931, 264);
+            this.panel8.Location = new System.Drawing.Point(931, 327);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(440, 87);
             this.panel8.TabIndex = 24;
@@ -370,7 +372,7 @@
             // 
             this.panel9.Controls.Add(this.txbTongChi);
             this.panel9.Controls.Add(this.lbTongChi);
-            this.panel9.Location = new System.Drawing.Point(144, 264);
+            this.panel9.Location = new System.Drawing.Point(144, 327);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(440, 87);
             this.panel9.TabIndex = 25;
@@ -396,7 +398,7 @@
             // 
             this.panel10.Controls.Add(this.txbChuKy);
             this.panel10.Controls.Add(this.label8);
-            this.panel10.Location = new System.Drawing.Point(239, 158);
+            this.panel10.Location = new System.Drawing.Point(239, 221);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(331, 87);
             this.panel10.TabIndex = 26;
@@ -422,7 +424,7 @@
             // 
             this.panel11.Controls.Add(this.dtpkNgayDau);
             this.panel11.Controls.Add(this.label9);
-            this.panel11.Location = new System.Drawing.Point(577, 158);
+            this.panel11.Location = new System.Drawing.Point(577, 221);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(363, 87);
             this.panel11.TabIndex = 27;
@@ -450,7 +452,7 @@
             // 
             this.panel12.Controls.Add(this.dtpkNgayCuoi);
             this.panel12.Controls.Add(this.label10);
-            this.panel12.Location = new System.Drawing.Point(946, 158);
+            this.panel12.Location = new System.Drawing.Point(946, 221);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(363, 87);
             this.panel12.TabIndex = 28;
@@ -484,7 +486,7 @@
             this.btnRefresh.FlatAppearance.BorderSize = 0;
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(1331, 67);
+            this.btnRefresh.Location = new System.Drawing.Point(1331, 130);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(129, 70);
             this.btnRefresh.TabIndex = 42;
@@ -497,7 +499,7 @@
             // 
             this.panel7.Controls.Add(this.txbBalance);
             this.panel7.Controls.Add(this.label7);
-            this.panel7.Location = new System.Drawing.Point(540, 357);
+            this.panel7.Location = new System.Drawing.Point(540, 420);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(440, 87);
             this.panel7.TabIndex = 43;
@@ -519,11 +521,26 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Balance";
             // 
+            // btnExit
+            // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnExit.ForeColor = System.Drawing.Color.White;
+            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
+            this.btnExit.Location = new System.Drawing.Point(1468, 1);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(90, 84);
+            this.btnExit.TabIndex = 56;
+            this.btnExit.UseVisualStyleBackColor = true;
+            // 
             // ShowFinanceDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1558, 1176);
+            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.panel11);
@@ -545,9 +562,13 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ShowFinanceDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Finance Detail";
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ShowFinanceDetail_MouseDown);
+            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ShowFinanceDetail_MouseMove);
+            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ShowFinanceDetail_MouseUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -624,5 +645,6 @@
         private Panel panel7;
         private TextBox txbBalance;
         private Label label7;
+        private Button btnExit;
     }
 }

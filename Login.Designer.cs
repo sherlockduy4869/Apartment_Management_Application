@@ -49,8 +49,11 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(477, 200);
+            this.pictureBox1.Location = new System.Drawing.Point(405, 200);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(177, 186);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -59,12 +62,15 @@
             // 
             // btnExit
             // 
+            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnExit.FlatAppearance.BorderSize = 0;
             this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnExit.ForeColor = System.Drawing.Color.White;
             this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(1017, 4);
+            this.btnExit.Location = new System.Drawing.Point(891, -1);
             this.btnExit.Name = "btnExit";
             this.btnExit.Size = new System.Drawing.Size(90, 84);
             this.btnExit.TabIndex = 12;
@@ -72,16 +78,22 @@
             // 
             // pnUserName
             // 
+            this.pnUserName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnUserName.Controls.Add(this.pnUnderUserName);
             this.pnUserName.Controls.Add(this.picUserName);
             this.pnUserName.Controls.Add(this.txbUserName);
-            this.pnUserName.Location = new System.Drawing.Point(151, 438);
+            this.pnUserName.Location = new System.Drawing.Point(79, 474);
             this.pnUserName.Name = "pnUserName";
             this.pnUserName.Size = new System.Drawing.Size(805, 98);
             this.pnUserName.TabIndex = 13;
             // 
             // pnUnderUserName
             // 
+            this.pnUnderUserName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnUnderUserName.BackColor = System.Drawing.Color.White;
             this.pnUnderUserName.Location = new System.Drawing.Point(16, 73);
             this.pnUnderUserName.Name = "pnUnderUserName";
@@ -90,6 +102,9 @@
             // 
             // picUserName
             // 
+            this.picUserName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.picUserName.Image = ((System.Drawing.Image)(resources.GetObject("picUserName.Image")));
             this.picUserName.Location = new System.Drawing.Point(16, 14);
             this.picUserName.Name = "picUserName";
@@ -100,6 +115,9 @@
             // 
             // txbUserName
             // 
+            this.txbUserName.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txbUserName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.txbUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbUserName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -113,16 +131,22 @@
             // 
             // pnPassword
             // 
+            this.pnPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnPassword.Controls.Add(this.pnUnderPassword);
             this.pnPassword.Controls.Add(this.picPassword);
             this.pnPassword.Controls.Add(this.txbPassWord);
-            this.pnPassword.Location = new System.Drawing.Point(151, 579);
+            this.pnPassword.Location = new System.Drawing.Point(79, 615);
             this.pnPassword.Name = "pnPassword";
             this.pnPassword.Size = new System.Drawing.Size(805, 91);
             this.pnPassword.TabIndex = 14;
             // 
             // pnUnderPassword
             // 
+            this.pnUnderPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.pnUnderPassword.BackColor = System.Drawing.Color.White;
             this.pnUnderPassword.Location = new System.Drawing.Point(16, 68);
             this.pnUnderPassword.Name = "pnUnderPassword";
@@ -131,6 +155,9 @@
             // 
             // picPassword
             // 
+            this.picPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.picPassword.Image = ((System.Drawing.Image)(resources.GetObject("picPassword.Image")));
             this.picPassword.Location = new System.Drawing.Point(16, 11);
             this.picPassword.Name = "picPassword";
@@ -141,6 +168,9 @@
             // 
             // txbPassWord
             // 
+            this.txbPassWord.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.txbPassWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.txbPassWord.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txbPassWord.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -155,6 +185,9 @@
             // 
             // btnLogin
             // 
+            this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.btnLogin.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.btnLogin.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -163,7 +196,7 @@
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.ForeColor = System.Drawing.Color.WhiteSmoke;
-            this.btnLogin.Location = new System.Drawing.Point(397, 739);
+            this.btnLogin.Location = new System.Drawing.Point(327, 843);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(300, 80);
             this.btnLogin.TabIndex = 15;
@@ -177,13 +210,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(1107, 1109);
+            this.ClientSize = new System.Drawing.Size(986, 1109);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.pnUserName);
             this.Controls.Add(this.pnPassword);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(986, 1109);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
