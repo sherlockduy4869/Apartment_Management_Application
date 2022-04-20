@@ -42,6 +42,7 @@ namespace QuanlyCanHoGiangTran
             this.Location = new Point(0, 0);
             this.Size = new Size(w, h);
             WindowState = FormWindowState.Maximized;
+            timer.Start();
         }
         private void btnHome_Click(object sender, EventArgs e)
         {
@@ -119,6 +120,14 @@ namespace QuanlyCanHoGiangTran
         private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void timer_Tick(object sender, EventArgs e)
+        {
+            lbTime.Text = DateTime.Now.ToString("HH:mm");
+            lbSecond.Text = DateTime.Now.ToString("ss");
+            lbDate.Text = DateTime.Now.ToString("MMM dd yyyy");
+            lbDay.Text = DateTime.Now.ToString("dddd");
         }
     }
 }
