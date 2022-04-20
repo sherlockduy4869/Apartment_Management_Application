@@ -101,28 +101,33 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             
         }
         Bitmap bitmap;
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
         //private void btnPrint_Click(object sender, EventArgs e)
         //{
-            //Panel panel = new Panel();
-            //this.Controls.Add(panel);
+        //Panel panel = new Panel();
+        //this.Controls.Add(panel);
 
-            //Graphics g = panel.CreateGraphics();
-            //Size size = this.ClientSize;
-            //bitmap = new Bitmap(size.Width, size.Height, g);
-            //g = Graphics.FromImage(bitmap);
+        //Graphics g = panel.CreateGraphics();
+        //Size size = this.ClientSize;
+        //bitmap = new Bitmap(size.Width, size.Height, g);
+        //g = Graphics.FromImage(bitmap);
 
-            //Point point = PointToScreen(panel.Location);
-            //g.CopyFromScreen(point.X, point.Y, 0, 0, size);
+        //Point point = PointToScreen(panel.Location);
+        //g.CopyFromScreen(point.X, point.Y, 0, 0, size);
 
-            //printPreviewDialog1.Document = printDocument1;
-            //printPreviewDialog1.ShowDialog();
+        //printPreviewDialog1.Document = printDocument1;
+        //printPreviewDialog1.ShowDialog();
         //}
 
         //private void printDocument1_PrintPage(object sender, System.Drawing.Printing.PrintPageEventArgs e)
         //{
-            //e.Graphics.DrawImage(bitmap, 0, 0);
+        //e.Graphics.DrawImage(bitmap, 0, 0);
         //}
 
-        
+
     }
 }

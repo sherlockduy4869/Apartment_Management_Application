@@ -113,5 +113,9 @@ namespace QuanlyCanHoGiangTran
             openChildForm(admin);
         }
 
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

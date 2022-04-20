@@ -68,6 +68,9 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             txbSearch.Clear();
         }
 
-        
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
