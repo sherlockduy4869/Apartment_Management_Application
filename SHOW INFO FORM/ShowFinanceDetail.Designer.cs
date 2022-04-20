@@ -534,6 +534,7 @@
             this.btnExit.Size = new System.Drawing.Size(90, 84);
             this.btnExit.TabIndex = 56;
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // ShowFinanceDetail
             // 

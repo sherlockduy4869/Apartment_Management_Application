@@ -67,16 +67,14 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             foreach (DataGridViewColumn col in dtgvApartInfo.Columns)
             {
                 col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                col.HeaderCell.Style.Font = new Font("Arial", 18F, FontStyle.Bold, GraphicsUnit.Pixel);
+                col.HeaderCell.Style.Font = new Font("Arial", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             }
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
             AddNewApartSelling addNewApartSelling = new AddNewApartSelling();
-            this.Hide();
-            addNewApartSelling.ShowDialog();
-            this.Show();
+            addNewApartSelling.Show();
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
@@ -90,16 +88,6 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             txbSearch.Clear();
         }
 
-        private void ShowInfoApartSelling_Load(object sender, EventArgs e)
-        {
-            int w = Screen.PrimaryScreen.Bounds.Width;
-            int h = Screen.PrimaryScreen.Bounds.Height;
-            this.Location = new Point(0, 0);
-            this.Size = new Size(w, h);
-            dtgvApartInfo.Size = new Size(w,h/2);
-
-            
-        }
         Bitmap bitmap;
 
         private void btnExit_Click(object sender, EventArgs e)

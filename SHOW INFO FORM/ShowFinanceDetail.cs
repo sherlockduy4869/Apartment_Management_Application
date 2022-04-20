@@ -249,5 +249,10 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             _dragging = false;
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

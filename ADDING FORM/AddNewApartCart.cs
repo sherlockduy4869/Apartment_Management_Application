@@ -16,6 +16,7 @@ namespace QuanlyCanHoGiangTran.ADDING_FORM
         public AddNewApartCart()
         {
             InitializeComponent();
+            listAllComboBox();
         }
 
         void clearInfo()
@@ -24,7 +25,16 @@ namespace QuanlyCanHoGiangTran.ADDING_FORM
             txbTenChuHo.Clear();
             txbDaiLy.Clear();
         }
-
+        void listAllComboBox()
+        {
+            List<string> listDuAn = new List<string>();
+            string[] arrayListDuAn = { "Vinhomes Golden River", "Vinhomes Central Park", "Estella Height", "Estella", "The Vista", "Celesta" };
+            foreach (string str in arrayListDuAn)
+            {
+                listDuAn.Add(str);
+            }
+            cbDuAn.DataSource = listDuAn;
+        }
         private void btnAdd_Click(object sender, EventArgs e)
         {
             string maCanHo = txbMaCanHo.Text;
