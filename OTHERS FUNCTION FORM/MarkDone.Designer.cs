@@ -81,6 +81,7 @@
             this.btnMarkDone.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnMarkDone.BorderRadius = 40;
             this.btnMarkDone.BorderSize = 0;
+            this.btnMarkDone.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMarkDone.FlatAppearance.BorderSize = 0;
             this.btnMarkDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMarkDone.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

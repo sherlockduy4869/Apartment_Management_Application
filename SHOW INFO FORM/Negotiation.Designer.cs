@@ -177,6 +177,7 @@
             this.btnRefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnRefresh.BorderRadius = 40;
             this.btnRefresh.BorderSize = 0;
+            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRefresh.FlatAppearance.BorderSize = 0;
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

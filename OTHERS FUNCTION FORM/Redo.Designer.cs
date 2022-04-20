@@ -43,6 +43,7 @@
             this.btnReDo.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnReDo.BorderRadius = 40;
             this.btnReDo.BorderSize = 0;
+            this.btnReDo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReDo.FlatAppearance.BorderSize = 0;
             this.btnReDo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnReDo.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

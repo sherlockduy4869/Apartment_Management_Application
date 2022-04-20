@@ -43,6 +43,7 @@
             this.btnNextCyle.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnNextCyle.BorderRadius = 40;
             this.btnNextCyle.BorderSize = 0;
+            this.btnNextCyle.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnNextCyle.FlatAppearance.BorderSize = 0;
             this.btnNextCyle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnNextCyle.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

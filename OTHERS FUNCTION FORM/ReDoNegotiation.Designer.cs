@@ -43,6 +43,7 @@
             this.btnRedoNegotiation.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnRedoNegotiation.BorderRadius = 40;
             this.btnRedoNegotiation.BorderSize = 0;
+            this.btnRedoNegotiation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRedoNegotiation.FlatAppearance.BorderSize = 0;
             this.btnRedoNegotiation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRedoNegotiation.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

@@ -201,6 +201,7 @@
             this.btnAdd.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnAdd.BorderRadius = 40;
             this.btnAdd.BorderSize = 0;
+            this.btnAdd.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

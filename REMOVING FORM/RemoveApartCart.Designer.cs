@@ -43,6 +43,7 @@
             this.btnRemove.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnRemove.BorderRadius = 40;
             this.btnRemove.BorderSize = 0;
+            this.btnRemove.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

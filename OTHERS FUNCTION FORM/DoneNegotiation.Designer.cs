@@ -43,6 +43,7 @@
             this.btnDoneNegotiation.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnDoneNegotiation.BorderRadius = 40;
             this.btnDoneNegotiation.BorderSize = 0;
+            this.btnDoneNegotiation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDoneNegotiation.FlatAppearance.BorderSize = 0;
             this.btnDoneNegotiation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDoneNegotiation.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

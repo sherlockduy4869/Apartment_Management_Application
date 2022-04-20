@@ -43,6 +43,7 @@
             this.btnSkipNegotiation.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnSkipNegotiation.BorderRadius = 40;
             this.btnSkipNegotiation.BorderSize = 0;
+            this.btnSkipNegotiation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnSkipNegotiation.FlatAppearance.BorderSize = 0;
             this.btnSkipNegotiation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSkipNegotiation.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

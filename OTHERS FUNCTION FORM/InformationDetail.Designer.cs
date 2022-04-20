@@ -43,6 +43,7 @@
             this.btnDetailInformation.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnDetailInformation.BorderRadius = 40;
             this.btnDetailInformation.BorderSize = 0;
+            this.btnDetailInformation.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDetailInformation.FlatAppearance.BorderSize = 0;
             this.btnDetailInformation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDetailInformation.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

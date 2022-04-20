@@ -155,6 +155,7 @@
             this.btnRefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnRefresh.BorderRadius = 40;
             this.btnRefresh.BorderSize = 0;
+            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRefresh.FlatAppearance.BorderSize = 0;
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -179,6 +180,7 @@
             this.btnFinanceDetail.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnFinanceDetail.BorderRadius = 40;
             this.btnFinanceDetail.BorderSize = 0;
+            this.btnFinanceDetail.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFinanceDetail.FlatAppearance.BorderSize = 0;
             this.btnFinanceDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnFinanceDetail.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -203,6 +205,7 @@
             this.btnInformationDetail.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnInformationDetail.BorderRadius = 40;
             this.btnInformationDetail.BorderSize = 0;
+            this.btnInformationDetail.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInformationDetail.FlatAppearance.BorderSize = 0;
             this.btnInformationDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInformationDetail.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
