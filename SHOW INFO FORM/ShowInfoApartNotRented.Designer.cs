@@ -42,6 +42,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(406, 102);
             this.pictureBox1.Name = "pictureBox1";
@@ -52,6 +53,7 @@
             // 
             // txbSearch
             // 
+            this.txbSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txbSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.txbSearch.Location = new System.Drawing.Point(79, 102);
             this.txbSearch.Name = "txbSearch";
@@ -63,6 +65,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(663, 83);
@@ -73,6 +76,7 @@
             // 
             // btnRemove
             // 
+            this.btnRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRemove.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btnRemove.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.btnRemove.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -92,6 +96,7 @@
             // 
             // btnAdd
             // 
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btnAdd.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.btnAdd.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -111,6 +116,9 @@
             // 
             // dtgvApartInfo
             // 
+            this.dtgvApartInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgvApartInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvApartInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvApartInfo.Location = new System.Drawing.Point(12, 168);
@@ -122,6 +130,7 @@
             // 
             // btnRefresh
             // 
+            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRefresh.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btnRefresh.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.btnRefresh.BorderColor = System.Drawing.Color.PaleVioletRed;

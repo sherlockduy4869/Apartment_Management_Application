@@ -1,4 +1,13 @@
-using QuanlyCanHoGiangTran.DAL;
+﻿using QuanlyCanHoGiangTran.DAL;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QuanlyCanHoGiangTran
 {
@@ -16,8 +25,7 @@ namespace QuanlyCanHoGiangTran
         {
 
         }
-
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click_1(object sender, EventArgs e)
         {
             string userName = txbUserName.Text;
             string passWord = txbPassWord.Text;
@@ -34,12 +42,12 @@ namespace QuanlyCanHoGiangTran
             }
         }
 
-        private void txbUserName_Click(object sender, EventArgs e)
+        private void txbUserName_Click_1(object sender, EventArgs e)
         {
             txbUserName.Clear();
         }
 
-        private void txbPassWord_Click(object sender, EventArgs e)
+        private void txbPassWord_Click_1(object sender, EventArgs e)
         {
             txbPassWord.Clear();
         }

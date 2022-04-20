@@ -68,9 +68,9 @@
             // 
             this.pnCick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.pnCick.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pnCick.Location = new System.Drawing.Point(422, 194);
+            this.pnCick.Location = new System.Drawing.Point(432, 194);
             this.pnCick.Name = "pnCick";
-            this.pnCick.Size = new System.Drawing.Size(28, 155);
+            this.pnCick.Size = new System.Drawing.Size(18, 155);
             this.pnCick.TabIndex = 73;
             // 
             // btnAdmin

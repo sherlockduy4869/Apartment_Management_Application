@@ -45,9 +45,10 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(1059, 102);
+            this.label1.Location = new System.Drawing.Point(637, 56);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(527, 63);
             this.label1.TabIndex = 0;
@@ -57,6 +58,9 @@
             // 
             this.dtgvApartInfo.AllowUserToAddRows = false;
             this.dtgvApartInfo.AllowUserToDeleteRows = false;
+            this.dtgvApartInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgvApartInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvApartInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvApartInfo.Location = new System.Drawing.Point(3, 198);
@@ -64,11 +68,12 @@
             this.dtgvApartInfo.ReadOnly = true;
             this.dtgvApartInfo.RowHeadersWidth = 82;
             this.dtgvApartInfo.RowTemplate.Height = 41;
-            this.dtgvApartInfo.Size = new System.Drawing.Size(2446, 680);
+            this.dtgvApartInfo.Size = new System.Drawing.Size(1712, 970);
             this.dtgvApartInfo.TabIndex = 1;
             // 
             // btnAdd
             // 
+            this.btnAdd.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAdd.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btnAdd.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.btnAdd.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -77,7 +82,7 @@
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(611, 960);
+            this.btnAdd.Location = new System.Drawing.Point(425, 1207);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(300, 80);
             this.btnAdd.TabIndex = 2;
@@ -88,6 +93,7 @@
             // 
             // btnRemove
             // 
+            this.btnRemove.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRemove.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btnRemove.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.btnRemove.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -96,7 +102,7 @@
             this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(1860, 960);
+            this.btnRemove.Location = new System.Drawing.Point(888, 1207);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(300, 80);
             this.btnRemove.TabIndex = 3;
@@ -107,6 +113,7 @@
             // 
             // btnRefresh
             // 
+            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRefresh.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btnRefresh.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.btnRefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -115,7 +122,7 @@
             this.btnRefresh.FlatAppearance.BorderSize = 0;
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(137, 115);
+            this.btnRefresh.Location = new System.Drawing.Point(68, 110);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(149, 60);
             this.btnRefresh.TabIndex = 6;
@@ -126,8 +133,9 @@
             // 
             // txbSearch
             // 
+            this.txbSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txbSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.txbSearch.Location = new System.Drawing.Point(431, 136);
+            this.txbSearch.Location = new System.Drawing.Point(233, 121);
             this.txbSearch.Name = "txbSearch";
             this.txbSearch.Size = new System.Drawing.Size(321, 39);
             this.txbSearch.TabIndex = 7;
@@ -137,8 +145,9 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(758, 136);
+            this.pictureBox1.Location = new System.Drawing.Point(560, 116);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(52, 44);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -153,7 +162,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2461, 1205);
+            this.ClientSize = new System.Drawing.Size(1722, 1370);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txbSearch);
             this.Controls.Add(this.btnRefresh);

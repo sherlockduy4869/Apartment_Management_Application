@@ -55,10 +55,14 @@ namespace QuanlyCanHoGiangTran
 
         private void btnApart_Click(object sender, EventArgs e)
         {
+            
+
             pnCick.Height = btnApart.Height; //UI design
             pnCick.Top = btnApart.Top; //UI design
             ShowInfoApart showInfoApart = new ShowInfoApart();
             openChildForm(showInfoApart);
+
+            
         }
 
         private void btnTax_Click(object sender, EventArgs e)

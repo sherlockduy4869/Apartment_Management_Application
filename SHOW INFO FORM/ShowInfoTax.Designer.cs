@@ -45,6 +45,7 @@
             // 
             // label1
             // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(370, 83);
@@ -55,6 +56,9 @@
             // 
             // dtgvApartTax
             // 
+            this.dtgvApartTax.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgvApartTax.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvApartTax.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvApartTax.Location = new System.Drawing.Point(12, 192);
@@ -67,6 +71,7 @@
             // 
             // btnMarkDone
             // 
+            this.btnMarkDone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMarkDone.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btnMarkDone.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.btnMarkDone.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -86,6 +91,7 @@
             // 
             // btnReDo
             // 
+            this.btnReDo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnReDo.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btnReDo.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.btnReDo.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -105,6 +111,7 @@
             // 
             // btnNextCycle
             // 
+            this.btnNextCycle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNextCycle.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btnNextCycle.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.btnNextCycle.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -124,6 +131,7 @@
             // 
             // btnRefresh
             // 
+            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnRefresh.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btnRefresh.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.btnRefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -143,6 +151,7 @@
             // 
             // btnFinanceDetail
             // 
+            this.btnFinanceDetail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnFinanceDetail.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btnFinanceDetail.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.btnFinanceDetail.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -162,6 +171,7 @@
             // 
             // btnInformationDetail
             // 
+            this.btnInformationDetail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnInformationDetail.BackColor = System.Drawing.Color.MediumSlateBlue;
             this.btnInformationDetail.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
             this.btnInformationDetail.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -181,6 +191,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1083, 32);
             this.pictureBox1.Name = "pictureBox1";
@@ -191,6 +202,7 @@
             // 
             // txbSearch
             // 
+            this.txbSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.txbSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.txbSearch.Location = new System.Drawing.Point(756, 32);
             this.txbSearch.Name = "txbSearch";
