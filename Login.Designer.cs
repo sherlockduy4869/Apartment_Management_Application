@@ -75,6 +75,7 @@
             this.btnExit.Size = new System.Drawing.Size(90, 84);
             this.btnExit.TabIndex = 12;
             this.btnExit.UseVisualStyleBackColor = true;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // pnUserName
             // 
@@ -120,11 +121,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbUserName.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.txbUserName.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbUserName.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbUserName.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbUserName.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.txbUserName.Location = new System.Drawing.Point(83, 28);
             this.txbUserName.Name = "txbUserName";
-            this.txbUserName.Size = new System.Drawing.Size(703, 37);
+            this.txbUserName.Size = new System.Drawing.Size(703, 39);
             this.txbUserName.TabIndex = 1;
             this.txbUserName.Text = "admin1";
             this.txbUserName.Click += new System.EventHandler(this.txbUserName_Click);
@@ -173,11 +174,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbPassWord.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.txbPassWord.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txbPassWord.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbPassWord.Font = new System.Drawing.Font("Century", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbPassWord.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.txbPassWord.Location = new System.Drawing.Point(82, 25);
             this.txbPassWord.Name = "txbPassWord";
-            this.txbPassWord.Size = new System.Drawing.Size(704, 37);
+            this.txbPassWord.Size = new System.Drawing.Size(704, 39);
             this.txbPassWord.TabIndex = 1;
             this.txbPassWord.Text = "123456";
             this.txbPassWord.UseSystemPasswordChar = true;
@@ -195,6 +196,7 @@
             this.btnLogin.BorderSize = 0;
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogin.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.btnLogin.Location = new System.Drawing.Point(327, 843);
             this.btnLogin.Name = "btnLogin";

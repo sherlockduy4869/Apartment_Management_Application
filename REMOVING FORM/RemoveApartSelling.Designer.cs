@@ -37,17 +37,18 @@
             // 
             // btnRemove
             // 
-            this.btnRemove.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnRemove.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnRemove.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btnRemove.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnRemove.BorderRadius = 40;
             this.btnRemove.BorderSize = 0;
             this.btnRemove.FlatAppearance.BorderSize = 0;
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRemove.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(231, 303);
+            this.btnRemove.Location = new System.Drawing.Point(264, 297);
             this.btnRemove.Name = "btnRemove";
-            this.btnRemove.Size = new System.Drawing.Size(300, 80);
+            this.btnRemove.Size = new System.Drawing.Size(239, 76);
             this.btnRemove.TabIndex = 9;
             this.btnRemove.Text = "Remove";
             this.btnRemove.TextColor = System.Drawing.Color.White;
@@ -61,23 +62,24 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(79, 110);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(643, 111);
+            this.panel1.Size = new System.Drawing.Size(622, 137);
             this.panel1.TabIndex = 8;
             // 
             // txbMaCanHo
             // 
+            this.txbMaCanHo.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbMaCanHo.Location = new System.Drawing.Point(194, 45);
             this.txbMaCanHo.Name = "txbMaCanHo";
-            this.txbMaCanHo.Size = new System.Drawing.Size(428, 39);
+            this.txbMaCanHo.Size = new System.Drawing.Size(428, 40);
             this.txbMaCanHo.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(14, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 36);
+            this.label1.Size = new System.Drawing.Size(146, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ma can ho";
             // 

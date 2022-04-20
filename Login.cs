@@ -48,5 +48,10 @@ namespace QuanlyCanHoGiangTran
         {
             txbPassWord.Clear();
         }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

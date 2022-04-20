@@ -35,7 +35,6 @@
             this.btnRemove = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnAdd = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.dtgvApartInfo = new System.Windows.Forms.DataGridView();
-            this.btnExit = new System.Windows.Forms.Button();
             this.btnRefresh = new QuanlyCanHoGiangTran.Custom.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).BeginInit();
@@ -47,7 +46,7 @@
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(1074, 151);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(45, 39);
+            this.pictureBox1.Size = new System.Drawing.Size(47, 40);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 38;
             this.pictureBox1.TabStop = false;
@@ -55,11 +54,11 @@
             // txbSearch
             // 
             this.txbSearch.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.txbSearch.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbSearch.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbSearch.ForeColor = System.Drawing.SystemColors.ScrollBar;
             this.txbSearch.Location = new System.Drawing.Point(496, 151);
             this.txbSearch.Name = "txbSearch";
-            this.txbSearch.Size = new System.Drawing.Size(572, 37);
+            this.txbSearch.Size = new System.Drawing.Size(572, 40);
             this.txbSearch.TabIndex = 37;
             this.txbSearch.Text = "Search apartment...";
             this.txbSearch.Click += new System.EventHandler(this.txbSearch_Click);
@@ -144,21 +143,6 @@
             this.dtgvApartInfo.Size = new System.Drawing.Size(1759, 595);
             this.dtgvApartInfo.TabIndex = 33;
             // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(1691, 3);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(90, 84);
-            this.btnExit.TabIndex = 53;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // btnRefresh
             // 
             this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
@@ -188,7 +172,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1783, 1193);
             this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txbSearch);
             this.Controls.Add(this.label1);
@@ -214,7 +197,6 @@
         private Custom.RJButton btnRemove;
         private Custom.RJButton btnAdd;
         private DataGridView dtgvApartInfo;
-        private Button btnExit;
         private Custom.RJButton btnRefresh;
     }
 }

@@ -90,12 +90,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
 
         Bitmap bitmap;
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
-        
         //private void btnPrint_Click(object sender, EventArgs e)
         //{
         //Panel panel = new Panel();

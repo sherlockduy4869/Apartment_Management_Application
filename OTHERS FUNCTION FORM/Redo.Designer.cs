@@ -38,17 +38,18 @@
             // btnReDo
             // 
             this.btnReDo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnReDo.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnReDo.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnReDo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnReDo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btnReDo.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnReDo.BorderRadius = 40;
             this.btnReDo.BorderSize = 0;
             this.btnReDo.FlatAppearance.BorderSize = 0;
             this.btnReDo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReDo.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnReDo.ForeColor = System.Drawing.Color.White;
-            this.btnReDo.Location = new System.Drawing.Point(210, 329);
+            this.btnReDo.Location = new System.Drawing.Point(274, 319);
             this.btnReDo.Name = "btnReDo";
-            this.btnReDo.Size = new System.Drawing.Size(300, 80);
+            this.btnReDo.Size = new System.Drawing.Size(239, 76);
             this.btnReDo.TabIndex = 3;
             this.btnReDo.Text = "ReDo";
             this.btnReDo.TextColor = System.Drawing.Color.White;
@@ -73,9 +74,10 @@
             this.txbMaCanHo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbMaCanHo.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbMaCanHo.Location = new System.Drawing.Point(194, 45);
             this.txbMaCanHo.Name = "txbMaCanHo";
-            this.txbMaCanHo.Size = new System.Drawing.Size(389, 39);
+            this.txbMaCanHo.Size = new System.Drawing.Size(389, 40);
             this.txbMaCanHo.TabIndex = 1;
             // 
             // label1
@@ -84,10 +86,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(14, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 36);
+            this.label1.Size = new System.Drawing.Size(146, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ma can ho";
             // 

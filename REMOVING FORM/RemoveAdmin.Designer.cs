@@ -38,17 +38,18 @@
             // btnMarkDone
             // 
             this.btnMarkDone.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnMarkDone.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnMarkDone.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnMarkDone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnMarkDone.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btnMarkDone.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnMarkDone.BorderRadius = 40;
             this.btnMarkDone.BorderSize = 0;
             this.btnMarkDone.FlatAppearance.BorderSize = 0;
             this.btnMarkDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMarkDone.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnMarkDone.ForeColor = System.Drawing.Color.White;
-            this.btnMarkDone.Location = new System.Drawing.Point(231, 303);
+            this.btnMarkDone.Location = new System.Drawing.Point(274, 293);
             this.btnMarkDone.Name = "btnMarkDone";
-            this.btnMarkDone.Size = new System.Drawing.Size(300, 80);
+            this.btnMarkDone.Size = new System.Drawing.Size(239, 76);
             this.btnMarkDone.TabIndex = 3;
             this.btnMarkDone.Text = "Remove";
             this.btnMarkDone.TextColor = System.Drawing.Color.White;
@@ -72,10 +73,11 @@
             this.txbMaAdmin.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbMaAdmin.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbMaAdmin.ForeColor = System.Drawing.Color.Black;
             this.txbMaAdmin.Location = new System.Drawing.Point(194, 45);
             this.txbMaAdmin.Name = "txbMaAdmin";
-            this.txbMaAdmin.Size = new System.Drawing.Size(389, 39);
+            this.txbMaAdmin.Size = new System.Drawing.Size(389, 40);
             this.txbMaAdmin.TabIndex = 1;
             // 
             // label1
@@ -84,10 +86,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(14, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 36);
+            this.label1.Size = new System.Drawing.Size(149, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ma Admin";
             // 

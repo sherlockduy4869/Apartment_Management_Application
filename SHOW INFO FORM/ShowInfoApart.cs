@@ -102,5 +102,10 @@ namespace QuanlyCanHoGiangTran
         {
             Application.Exit();
         }
+
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

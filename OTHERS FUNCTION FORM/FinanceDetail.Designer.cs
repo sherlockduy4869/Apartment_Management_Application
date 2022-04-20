@@ -38,17 +38,18 @@
             // btnDetail
             // 
             this.btnDetail.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDetail.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnDetail.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnDetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnDetail.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btnDetail.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnDetail.BorderRadius = 40;
             this.btnDetail.BorderSize = 0;
             this.btnDetail.FlatAppearance.BorderSize = 0;
             this.btnDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDetail.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDetail.ForeColor = System.Drawing.Color.White;
-            this.btnDetail.Location = new System.Drawing.Point(232, 303);
+            this.btnDetail.Location = new System.Drawing.Point(255, 300);
             this.btnDetail.Name = "btnDetail";
-            this.btnDetail.Size = new System.Drawing.Size(300, 80);
+            this.btnDetail.Size = new System.Drawing.Size(239, 76);
             this.btnDetail.TabIndex = 5;
             this.btnDetail.Text = "Detail Finance";
             this.btnDetail.TextColor = System.Drawing.Color.White;
@@ -73,10 +74,11 @@
             this.txbMaCanHo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbMaCanHo.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbMaCanHo.ForeColor = System.Drawing.Color.Black;
             this.txbMaCanHo.Location = new System.Drawing.Point(194, 45);
             this.txbMaCanHo.Name = "txbMaCanHo";
-            this.txbMaCanHo.Size = new System.Drawing.Size(368, 39);
+            this.txbMaCanHo.Size = new System.Drawing.Size(368, 40);
             this.txbMaCanHo.TabIndex = 1;
             // 
             // label1
@@ -85,10 +87,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(14, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 36);
+            this.label1.Size = new System.Drawing.Size(146, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ma can ho";
             // 

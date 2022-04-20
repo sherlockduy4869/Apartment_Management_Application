@@ -38,17 +38,18 @@
             // btnSkipNegotiation
             // 
             this.btnSkipNegotiation.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSkipNegotiation.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnSkipNegotiation.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnSkipNegotiation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnSkipNegotiation.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btnSkipNegotiation.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnSkipNegotiation.BorderRadius = 40;
             this.btnSkipNegotiation.BorderSize = 0;
             this.btnSkipNegotiation.FlatAppearance.BorderSize = 0;
             this.btnSkipNegotiation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSkipNegotiation.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSkipNegotiation.ForeColor = System.Drawing.Color.White;
-            this.btnSkipNegotiation.Location = new System.Drawing.Point(231, 303);
+            this.btnSkipNegotiation.Location = new System.Drawing.Point(274, 303);
             this.btnSkipNegotiation.Name = "btnSkipNegotiation";
-            this.btnSkipNegotiation.Size = new System.Drawing.Size(300, 80);
+            this.btnSkipNegotiation.Size = new System.Drawing.Size(239, 76);
             this.btnSkipNegotiation.TabIndex = 7;
             this.btnSkipNegotiation.Text = "Skip Negotiation";
             this.btnSkipNegotiation.TextColor = System.Drawing.Color.White;
@@ -73,10 +74,11 @@
             this.txbMaCanHo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.txbMaCanHo.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbMaCanHo.ForeColor = System.Drawing.Color.Black;
             this.txbMaCanHo.Location = new System.Drawing.Point(194, 45);
             this.txbMaCanHo.Name = "txbMaCanHo";
-            this.txbMaCanHo.Size = new System.Drawing.Size(389, 39);
+            this.txbMaCanHo.Size = new System.Drawing.Size(389, 40);
             this.txbMaCanHo.TabIndex = 1;
             // 
             // label1
@@ -85,10 +87,10 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(14, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(174, 36);
+            this.label1.Size = new System.Drawing.Size(146, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ma can ho";
             // 

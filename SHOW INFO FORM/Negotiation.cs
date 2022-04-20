@@ -98,7 +98,5 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             Application.Exit();
         }
-
-        
     }
 }

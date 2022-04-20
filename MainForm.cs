@@ -112,8 +112,11 @@ namespace QuanlyCanHoGiangTran
             Admin admin = new Admin();
             openChildForm(admin);
         }
-
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnMinimize_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+        private void button1_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }

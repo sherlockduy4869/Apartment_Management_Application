@@ -93,25 +93,30 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txbMaCanHo);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(588, 61);
+            this.panel1.Location = new System.Drawing.Point(679, 53);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(538, 87);
+            this.panel1.Size = new System.Drawing.Size(621, 77);
             this.panel1.TabIndex = 0;
             // 
             // txbMaCanHo
             // 
-            this.txbMaCanHo.Location = new System.Drawing.Point(241, 20);
+            this.txbMaCanHo.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbMaCanHo.Location = new System.Drawing.Point(278, 18);
+            this.txbMaCanHo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbMaCanHo.Name = "txbMaCanHo";
             this.txbMaCanHo.ReadOnly = true;
-            this.txbMaCanHo.Size = new System.Drawing.Size(242, 39);
+            this.txbMaCanHo.Size = new System.Drawing.Size(278, 36);
             this.txbMaCanHo.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(19, 27);
+            this.label1.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(22, 24);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 32);
+            this.label1.Size = new System.Drawing.Size(139, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Ma Can Ho";
             // 
@@ -120,25 +125,30 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.txbThue);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(482, 260);
+            this.panel2.Location = new System.Drawing.Point(556, 227);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(732, 87);
+            this.panel2.Size = new System.Drawing.Size(845, 77);
             this.panel2.TabIndex = 1;
             // 
             // txbThue
             // 
-            this.txbThue.Location = new System.Drawing.Point(283, 23);
+            this.txbThue.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbThue.Location = new System.Drawing.Point(326, 20);
+            this.txbThue.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbThue.Name = "txbThue";
             this.txbThue.ReadOnly = true;
-            this.txbThue.Size = new System.Drawing.Size(327, 39);
+            this.txbThue.Size = new System.Drawing.Size(376, 36);
             this.txbThue.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(13, 34);
+            this.label2.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(15, 30);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(68, 32);
+            this.label2.Size = new System.Drawing.Size(70, 28);
             this.label2.TabIndex = 0;
             this.label2.Text = "Thue";
             // 
@@ -147,25 +157,30 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.txbPhiKeKhaiThue);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(482, 353);
+            this.panel3.Location = new System.Drawing.Point(556, 309);
+            this.panel3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(732, 87);
+            this.panel3.Size = new System.Drawing.Size(845, 77);
             this.panel3.TabIndex = 2;
             // 
             // txbPhiKeKhaiThue
             // 
-            this.txbPhiKeKhaiThue.Location = new System.Drawing.Point(283, 27);
+            this.txbPhiKeKhaiThue.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbPhiKeKhaiThue.Location = new System.Drawing.Point(326, 24);
+            this.txbPhiKeKhaiThue.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbPhiKeKhaiThue.Name = "txbPhiKeKhaiThue";
             this.txbPhiKeKhaiThue.ReadOnly = true;
-            this.txbPhiKeKhaiThue.Size = new System.Drawing.Size(327, 39);
+            this.txbPhiKeKhaiThue.Size = new System.Drawing.Size(376, 36);
             this.txbPhiKeKhaiThue.TabIndex = 1;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 34);
+            this.label3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(15, 30);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(195, 32);
+            this.label3.Size = new System.Drawing.Size(216, 28);
             this.label3.TabIndex = 0;
             this.label3.Text = "Phi Ke Khai Thue";
             // 
@@ -174,25 +189,30 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.txbPhiQuanLy);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(482, 446);
+            this.panel4.Location = new System.Drawing.Point(556, 390);
+            this.panel4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(732, 87);
+            this.panel4.Size = new System.Drawing.Size(845, 77);
             this.panel4.TabIndex = 3;
             // 
             // txbPhiQuanLy
             // 
-            this.txbPhiQuanLy.Location = new System.Drawing.Point(283, 27);
+            this.txbPhiQuanLy.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbPhiQuanLy.Location = new System.Drawing.Point(326, 24);
+            this.txbPhiQuanLy.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbPhiQuanLy.Name = "txbPhiQuanLy";
             this.txbPhiQuanLy.ReadOnly = true;
-            this.txbPhiQuanLy.Size = new System.Drawing.Size(327, 39);
+            this.txbPhiQuanLy.Size = new System.Drawing.Size(376, 36);
             this.txbPhiQuanLy.TabIndex = 1;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 34);
+            this.label4.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(15, 30);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(141, 32);
+            this.label4.Size = new System.Drawing.Size(156, 28);
             this.label4.TabIndex = 0;
             this.label4.Text = "Phi Quan Ly";
             // 
@@ -201,25 +221,30 @@
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.txbTienRefundKhach);
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(482, 539);
+            this.panel5.Location = new System.Drawing.Point(556, 472);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(732, 87);
+            this.panel5.Size = new System.Drawing.Size(845, 77);
             this.panel5.TabIndex = 4;
             // 
             // txbTienRefundKhach
             // 
-            this.txbTienRefundKhach.Location = new System.Drawing.Point(283, 27);
+            this.txbTienRefundKhach.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbTienRefundKhach.Location = new System.Drawing.Point(326, 24);
+            this.txbTienRefundKhach.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbTienRefundKhach.Name = "txbTienRefundKhach";
             this.txbTienRefundKhach.ReadOnly = true;
-            this.txbTienRefundKhach.Size = new System.Drawing.Size(327, 39);
+            this.txbTienRefundKhach.Size = new System.Drawing.Size(376, 36);
             this.txbTienRefundKhach.TabIndex = 1;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(13, 34);
+            this.label5.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(15, 30);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(215, 32);
+            this.label5.Size = new System.Drawing.Size(231, 28);
             this.label5.TabIndex = 0;
             this.label5.Text = "Tien Refund Khach";
             // 
@@ -228,25 +253,30 @@
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.txbPhiDonVeSinh);
             this.panel6.Controls.Add(this.label6);
-            this.panel6.Location = new System.Drawing.Point(482, 632);
+            this.panel6.Location = new System.Drawing.Point(556, 553);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(732, 87);
+            this.panel6.Size = new System.Drawing.Size(845, 77);
             this.panel6.TabIndex = 5;
             // 
             // txbPhiDonVeSinh
             // 
-            this.txbPhiDonVeSinh.Location = new System.Drawing.Point(283, 27);
+            this.txbPhiDonVeSinh.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbPhiDonVeSinh.Location = new System.Drawing.Point(326, 24);
+            this.txbPhiDonVeSinh.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbPhiDonVeSinh.Name = "txbPhiDonVeSinh";
             this.txbPhiDonVeSinh.ReadOnly = true;
-            this.txbPhiDonVeSinh.Size = new System.Drawing.Size(327, 39);
+            this.txbPhiDonVeSinh.Size = new System.Drawing.Size(376, 36);
             this.txbPhiDonVeSinh.TabIndex = 1;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 34);
+            this.label6.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label6.Location = new System.Drawing.Point(15, 30);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(186, 32);
+            this.label6.Size = new System.Drawing.Size(200, 28);
             this.label6.TabIndex = 0;
             this.label6.Text = "Phi Don Ve Sinh";
             // 
@@ -261,10 +291,11 @@
             this.btnMarkDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMarkDone.ForeColor = System.Drawing.Color.White;
             this.btnMarkDone.Image = ((System.Drawing.Image)(resources.GetObject("btnMarkDone.Image")));
-            this.btnMarkDone.Location = new System.Drawing.Point(482, 831);
+            this.btnMarkDone.Location = new System.Drawing.Point(556, 727);
+            this.btnMarkDone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnMarkDone.Name = "btnMarkDone";
-            this.btnMarkDone.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.btnMarkDone.Size = new System.Drawing.Size(231, 191);
+            this.btnMarkDone.Padding = new System.Windows.Forms.Padding(0, 0, 0, 18);
+            this.btnMarkDone.Size = new System.Drawing.Size(266, 167);
             this.btnMarkDone.TabIndex = 14;
             this.btnMarkDone.Text = "Mark Done Chi";
             this.btnMarkDone.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -283,10 +314,11 @@
             this.btnRedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRedo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.btnRedo.Image = ((System.Drawing.Image)(resources.GetObject("btnRedo.Image")));
-            this.btnRedo.Location = new System.Drawing.Point(983, 831);
+            this.btnRedo.Location = new System.Drawing.Point(1134, 727);
+            this.btnRedo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnRedo.Name = "btnRedo";
-            this.btnRedo.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
-            this.btnRedo.Size = new System.Drawing.Size(231, 191);
+            this.btnRedo.Padding = new System.Windows.Forms.Padding(0, 0, 0, 18);
+            this.btnRedo.Size = new System.Drawing.Size(266, 167);
             this.btnRedo.TabIndex = 15;
             this.btnRedo.Text = "Redo Chi";
             this.btnRedo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -296,17 +328,20 @@
             // 
             // cbFinanceCategory
             // 
+            this.cbFinanceCategory.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbFinanceCategory.FormattingEnabled = true;
-            this.cbFinanceCategory.Location = new System.Drawing.Point(684, 753);
+            this.cbFinanceCategory.Location = new System.Drawing.Point(789, 659);
+            this.cbFinanceCategory.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbFinanceCategory.Name = "cbFinanceCategory";
-            this.cbFinanceCategory.Size = new System.Drawing.Size(363, 40);
+            this.cbFinanceCategory.Size = new System.Drawing.Size(418, 36);
             this.cbFinanceCategory.TabIndex = 17;
             // 
             // lbThue
             // 
             this.lbThue.AutoSize = true;
             this.lbThue.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbThue.Location = new System.Drawing.Point(1230, 289);
+            this.lbThue.Location = new System.Drawing.Point(1419, 253);
+            this.lbThue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbThue.Name = "lbThue";
             this.lbThue.Size = new System.Drawing.Size(30, 33);
             this.lbThue.TabIndex = 18;
@@ -316,7 +351,8 @@
             // 
             this.lbPhiKeKhaiThue.AutoSize = true;
             this.lbPhiKeKhaiThue.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbPhiKeKhaiThue.Location = new System.Drawing.Point(1230, 386);
+            this.lbPhiKeKhaiThue.Location = new System.Drawing.Point(1419, 338);
+            this.lbPhiKeKhaiThue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPhiKeKhaiThue.Name = "lbPhiKeKhaiThue";
             this.lbPhiKeKhaiThue.Size = new System.Drawing.Size(30, 33);
             this.lbPhiKeKhaiThue.TabIndex = 19;
@@ -326,7 +362,8 @@
             // 
             this.lbPhiQuanLy.AutoSize = true;
             this.lbPhiQuanLy.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbPhiQuanLy.Location = new System.Drawing.Point(1230, 486);
+            this.lbPhiQuanLy.Location = new System.Drawing.Point(1419, 425);
+            this.lbPhiQuanLy.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPhiQuanLy.Name = "lbPhiQuanLy";
             this.lbPhiQuanLy.Size = new System.Drawing.Size(30, 33);
             this.lbPhiQuanLy.TabIndex = 20;
@@ -336,7 +373,8 @@
             // 
             this.lbTienReFundKhach.AutoSize = true;
             this.lbTienReFundKhach.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbTienReFundKhach.Location = new System.Drawing.Point(1230, 572);
+            this.lbTienReFundKhach.Location = new System.Drawing.Point(1419, 501);
+            this.lbTienReFundKhach.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTienReFundKhach.Name = "lbTienReFundKhach";
             this.lbTienReFundKhach.Size = new System.Drawing.Size(30, 33);
             this.lbTienReFundKhach.TabIndex = 21;
@@ -346,7 +384,8 @@
             // 
             this.lbPhidonvesinh.AutoSize = true;
             this.lbPhidonvesinh.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbPhidonvesinh.Location = new System.Drawing.Point(1230, 665);
+            this.lbPhidonvesinh.Location = new System.Drawing.Point(1419, 582);
+            this.lbPhidonvesinh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPhidonvesinh.Name = "lbPhidonvesinh";
             this.lbPhidonvesinh.Size = new System.Drawing.Size(30, 33);
             this.lbPhidonvesinh.TabIndex = 22;
@@ -357,26 +396,31 @@
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.txbTongThu);
             this.panel8.Controls.Add(this.lbTongThu);
-            this.panel8.Location = new System.Drawing.Point(30, 260);
+            this.panel8.Location = new System.Drawing.Point(34, 227);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(440, 87);
+            this.panel8.Size = new System.Drawing.Size(508, 77);
             this.panel8.TabIndex = 24;
             // 
             // txbTongThu
             // 
-            this.txbTongThu.Location = new System.Drawing.Point(145, 31);
+            this.txbTongThu.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbTongThu.Location = new System.Drawing.Point(168, 27);
+            this.txbTongThu.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbTongThu.Name = "txbTongThu";
             this.txbTongThu.ReadOnly = true;
-            this.txbTongThu.Size = new System.Drawing.Size(276, 39);
+            this.txbTongThu.Size = new System.Drawing.Size(318, 36);
             this.txbTongThu.TabIndex = 1;
             this.txbTongThu.Text = "0";
             // 
             // lbTongThu
             // 
             this.lbTongThu.AutoSize = true;
-            this.lbTongThu.Location = new System.Drawing.Point(13, 34);
+            this.lbTongThu.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbTongThu.Location = new System.Drawing.Point(15, 30);
+            this.lbTongThu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTongThu.Name = "lbTongThu";
-            this.lbTongThu.Size = new System.Drawing.Size(115, 32);
+            this.lbTongThu.Size = new System.Drawing.Size(121, 28);
             this.lbTongThu.TabIndex = 0;
             this.lbTongThu.Text = "Tong Thu";
             // 
@@ -385,25 +429,30 @@
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.txbTongChi);
             this.panel9.Controls.Add(this.lbTongChi);
-            this.panel9.Location = new System.Drawing.Point(30, 353);
+            this.panel9.Location = new System.Drawing.Point(34, 309);
+            this.panel9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(440, 87);
+            this.panel9.Size = new System.Drawing.Size(508, 77);
             this.panel9.TabIndex = 25;
             // 
             // txbTongChi
             // 
-            this.txbTongChi.Location = new System.Drawing.Point(145, 27);
+            this.txbTongChi.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbTongChi.Location = new System.Drawing.Point(168, 24);
+            this.txbTongChi.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbTongChi.Name = "txbTongChi";
             this.txbTongChi.ReadOnly = true;
-            this.txbTongChi.Size = new System.Drawing.Size(276, 39);
+            this.txbTongChi.Size = new System.Drawing.Size(318, 36);
             this.txbTongChi.TabIndex = 1;
             // 
             // lbTongChi
             // 
             this.lbTongChi.AutoSize = true;
-            this.lbTongChi.Location = new System.Drawing.Point(13, 34);
+            this.lbTongChi.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbTongChi.Location = new System.Drawing.Point(15, 30);
+            this.lbTongChi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTongChi.Name = "lbTongChi";
-            this.lbTongChi.Size = new System.Drawing.Size(109, 32);
+            this.lbTongChi.Size = new System.Drawing.Size(115, 28);
             this.lbTongChi.TabIndex = 0;
             this.lbTongChi.Text = "Tong Chi";
             // 
@@ -412,25 +461,30 @@
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.txbChuKy);
             this.panel10.Controls.Add(this.label8);
-            this.panel10.Location = new System.Drawing.Point(30, 167);
+            this.panel10.Location = new System.Drawing.Point(34, 146);
+            this.panel10.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(440, 87);
+            this.panel10.Size = new System.Drawing.Size(508, 77);
             this.panel10.TabIndex = 26;
             // 
             // txbChuKy
             // 
-            this.txbChuKy.Location = new System.Drawing.Point(145, 27);
+            this.txbChuKy.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbChuKy.Location = new System.Drawing.Point(168, 24);
+            this.txbChuKy.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbChuKy.Name = "txbChuKy";
             this.txbChuKy.ReadOnly = true;
-            this.txbChuKy.Size = new System.Drawing.Size(276, 39);
+            this.txbChuKy.Size = new System.Drawing.Size(318, 36);
             this.txbChuKy.TabIndex = 1;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(13, 34);
+            this.label8.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(15, 30);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(88, 32);
+            this.label8.Size = new System.Drawing.Size(93, 28);
             this.label8.TabIndex = 0;
             this.label8.Text = "Chu ky";
             // 
@@ -439,27 +493,32 @@
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.dtpkNgayDau);
             this.panel11.Controls.Add(this.label9);
-            this.panel11.Location = new System.Drawing.Point(482, 167);
+            this.panel11.Location = new System.Drawing.Point(556, 146);
+            this.panel11.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(363, 87);
+            this.panel11.Size = new System.Drawing.Size(418, 77);
             this.panel11.TabIndex = 27;
             // 
             // dtpkNgayDau
             // 
             this.dtpkNgayDau.CustomFormat = "dd/MM/yyyy";
             this.dtpkNgayDau.Enabled = false;
+            this.dtpkNgayDau.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpkNgayDau.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpkNgayDau.Location = new System.Drawing.Point(172, 25);
+            this.dtpkNgayDau.Location = new System.Drawing.Point(199, 22);
+            this.dtpkNgayDau.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpkNgayDau.Name = "dtpkNgayDau";
-            this.dtpkNgayDau.Size = new System.Drawing.Size(179, 39);
+            this.dtpkNgayDau.Size = new System.Drawing.Size(206, 36);
             this.dtpkNgayDau.TabIndex = 1;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(13, 34);
+            this.label9.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label9.Location = new System.Drawing.Point(15, 30);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(153, 32);
+            this.label9.Size = new System.Drawing.Size(165, 28);
             this.label9.TabIndex = 0;
             this.label9.Text = "Starting Date";
             // 
@@ -468,27 +527,32 @@
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.dtpkNgayCuoi);
             this.panel12.Controls.Add(this.label10);
-            this.panel12.Location = new System.Drawing.Point(851, 167);
+            this.panel12.Location = new System.Drawing.Point(982, 146);
+            this.panel12.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(363, 87);
+            this.panel12.Size = new System.Drawing.Size(418, 77);
             this.panel12.TabIndex = 28;
             // 
             // dtpkNgayCuoi
             // 
             this.dtpkNgayCuoi.CustomFormat = "dd/MM/yyyy";
             this.dtpkNgayCuoi.Enabled = false;
+            this.dtpkNgayCuoi.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpkNgayCuoi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpkNgayCuoi.Location = new System.Drawing.Point(172, 29);
+            this.dtpkNgayCuoi.Location = new System.Drawing.Point(199, 25);
+            this.dtpkNgayCuoi.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpkNgayCuoi.Name = "dtpkNgayCuoi";
-            this.dtpkNgayCuoi.Size = new System.Drawing.Size(179, 39);
+            this.dtpkNgayCuoi.Size = new System.Drawing.Size(206, 36);
             this.dtpkNgayCuoi.TabIndex = 2;
             // 
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(13, 34);
+            this.label10.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label10.Location = new System.Drawing.Point(15, 30);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(145, 32);
+            this.label10.Size = new System.Drawing.Size(154, 28);
             this.label10.TabIndex = 0;
             this.label10.Text = "Ending Date";
             // 
@@ -497,25 +561,30 @@
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.txbBalance);
             this.panel7.Controls.Add(this.label7);
-            this.panel7.Location = new System.Drawing.Point(30, 446);
+            this.panel7.Location = new System.Drawing.Point(34, 390);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(440, 87);
+            this.panel7.Size = new System.Drawing.Size(508, 77);
             this.panel7.TabIndex = 43;
             // 
             // txbBalance
             // 
-            this.txbBalance.Location = new System.Drawing.Point(145, 31);
+            this.txbBalance.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbBalance.Location = new System.Drawing.Point(168, 27);
+            this.txbBalance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbBalance.Name = "txbBalance";
             this.txbBalance.ReadOnly = true;
-            this.txbBalance.Size = new System.Drawing.Size(276, 39);
+            this.txbBalance.Size = new System.Drawing.Size(318, 36);
             this.txbBalance.TabIndex = 1;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(13, 34);
+            this.label7.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(15, 30);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 32);
+            this.label7.Size = new System.Drawing.Size(101, 28);
             this.label7.TabIndex = 0;
             this.label7.Text = "Balance";
             // 
@@ -532,10 +601,11 @@
             this.btnRefresh.ForeColor = System.Drawing.Color.White;
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefresh.Location = new System.Drawing.Point(30, 86);
+            this.btnRefresh.Location = new System.Drawing.Point(34, 76);
+            this.btnRefresh.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
-            this.btnRefresh.Size = new System.Drawing.Size(173, 62);
+            this.btnRefresh.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
+            this.btnRefresh.Size = new System.Drawing.Size(199, 54);
             this.btnRefresh.TabIndex = 6;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.TextColor = System.Drawing.Color.White;
@@ -544,10 +614,10 @@
             // 
             // ShowFinanceDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1512, 1034);
+            this.ClientSize = new System.Drawing.Size(1744, 921);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel11);
@@ -569,6 +639,8 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "ShowFinanceDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Finance Detail";
