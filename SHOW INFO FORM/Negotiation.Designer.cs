@@ -44,6 +44,8 @@
             // 
             // dtgvNegotiateApart
             // 
+            this.dtgvNegotiateApart.AllowUserToAddRows = false;
+            this.dtgvNegotiateApart.AllowUserToDeleteRows = false;
             this.dtgvNegotiateApart.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -51,6 +53,7 @@
             this.dtgvNegotiateApart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvNegotiateApart.Location = new System.Drawing.Point(12, 272);
             this.dtgvNegotiateApart.Name = "dtgvNegotiateApart";
+            this.dtgvNegotiateApart.ReadOnly = true;
             this.dtgvNegotiateApart.RowHeadersWidth = 82;
             this.dtgvNegotiateApart.RowTemplate.Height = 41;
             this.dtgvNegotiateApart.Size = new System.Drawing.Size(1759, 595);
@@ -209,6 +212,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1783, 1193);
             this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.btnExit);

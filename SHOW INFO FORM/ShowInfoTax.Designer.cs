@@ -58,6 +58,8 @@
             // 
             // dtgvApartTax
             // 
+            this.dtgvApartTax.AllowUserToAddRows = false;
+            this.dtgvApartTax.AllowUserToDeleteRows = false;
             this.dtgvApartTax.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
@@ -65,6 +67,7 @@
             this.dtgvApartTax.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgvApartTax.Location = new System.Drawing.Point(12, 272);
             this.dtgvApartTax.Name = "dtgvApartTax";
+            this.dtgvApartTax.ReadOnly = true;
             this.dtgvApartTax.RowHeadersWidth = 82;
             this.dtgvApartTax.RowTemplate.Height = 41;
             this.dtgvApartTax.Size = new System.Drawing.Size(1759, 595);
@@ -261,6 +264,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1783, 1193);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.pictureBox1);

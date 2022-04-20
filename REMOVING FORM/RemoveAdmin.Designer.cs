@@ -97,7 +97,7 @@
             this.ClientSize = new System.Drawing.Size(779, 476);
             this.Controls.Add(this.btnMarkDone);
             this.Controls.Add(this.panel1);
-            this.MinimumSize = new System.Drawing.Size(805, 547);
+            this.MaximumSize = new System.Drawing.Size(805, 547);
             this.Name = "RemoveAdmin";
             this.Text = "RemoveAdmin";
             this.panel1.ResumeLayout(false);

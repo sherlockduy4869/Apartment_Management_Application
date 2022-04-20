@@ -46,7 +46,7 @@
             this.btnDetail.FlatAppearance.BorderSize = 0;
             this.btnDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDetail.ForeColor = System.Drawing.Color.White;
-            this.btnDetail.Location = new System.Drawing.Point(210, 303);
+            this.btnDetail.Location = new System.Drawing.Point(232, 303);
             this.btnDetail.Name = "btnDetail";
             this.btnDetail.Size = new System.Drawing.Size(300, 80);
             this.btnDetail.TabIndex = 5;

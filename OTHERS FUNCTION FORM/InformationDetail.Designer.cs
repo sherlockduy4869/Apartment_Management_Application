@@ -46,7 +46,7 @@
             this.btnDetailInformation.FlatAppearance.BorderSize = 0;
             this.btnDetailInformation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDetailInformation.ForeColor = System.Drawing.Color.White;
-            this.btnDetailInformation.Location = new System.Drawing.Point(210, 329);
+            this.btnDetailInformation.Location = new System.Drawing.Point(228, 330);
             this.btnDetailInformation.Name = "btnDetailInformation";
             this.btnDetailInformation.Size = new System.Drawing.Size(300, 80);
             this.btnDetailInformation.TabIndex = 7;
@@ -57,8 +57,7 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.Controls.Add(this.txbMaCanHo);
             this.panel1.Controls.Add(this.label1);
@@ -69,8 +68,7 @@
             // 
             // txbMaCanHo
             // 
-            this.txbMaCanHo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.txbMaCanHo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbMaCanHo.ForeColor = System.Drawing.Color.Black;
             this.txbMaCanHo.Location = new System.Drawing.Point(194, 45);
@@ -80,8 +78,7 @@
             // 
             // label1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);

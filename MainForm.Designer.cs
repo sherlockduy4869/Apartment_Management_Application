@@ -41,10 +41,8 @@
             this.btnHome = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnMain = new System.Windows.Forms.Panel();
-            this.btnExit = new System.Windows.Forms.Button();
             this.pnLeft.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.pnMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnLeft
@@ -225,32 +223,17 @@
             // 
             // pnMain
             // 
-            this.pnMain.Controls.Add(this.btnExit);
             this.pnMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnMain.Location = new System.Drawing.Point(450, 0);
             this.pnMain.Name = "pnMain";
             this.pnMain.Size = new System.Drawing.Size(1185, 1441);
             this.pnMain.TabIndex = 1;
             // 
-            // btnExit
-            // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(1095, 0);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(90, 84);
-            this.btnExit.TabIndex = 52;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1635, 1441);
             this.Controls.Add(this.pnMain);
             this.Controls.Add(this.pnLeft);
@@ -261,7 +244,6 @@
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.pnLeft.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.pnMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -269,7 +251,6 @@
         #endregion
 
         private Panel pnLeft;
-        private Panel pnMain;
         private Panel pnCick;
         private Button btnAdmin;
         private Button btnCart;
@@ -280,6 +261,6 @@
         private Button btnApart;
         private Button btnHome;
         private PictureBox pictureBox1;
-        private Button btnExit;
+        private Panel pnMain;
     }
 }
