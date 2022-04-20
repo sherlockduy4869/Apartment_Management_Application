@@ -120,9 +120,9 @@
             this.label16.Location = new System.Drawing.Point(16, 10);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(85, 28);
+            this.label16.Size = new System.Drawing.Size(65, 28);
             this.label16.TabIndex = 0;
-            this.label16.Text = "Du An";
+            this.label16.Text = "Area";
             // 
             // panel14
             // 
@@ -152,9 +152,9 @@
             this.label14.Location = new System.Drawing.Point(16, 10);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(114, 28);
+            this.label14.Size = new System.Drawing.Size(162, 28);
             this.label14.TabIndex = 0;
-            this.label14.Text = "Tong thu";
+            this.label14.Text = "Total amount";
             // 
             // panel13
             // 
@@ -184,9 +184,9 @@
             this.label13.Location = new System.Drawing.Point(16, 10);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(187, 28);
+            this.label13.Size = new System.Drawing.Size(152, 28);
             this.label13.TabIndex = 0;
-            this.label13.Text = "Phi don ve sinh";
+            this.label13.Text = "Cleaning fee";
             // 
             // panel12
             // 
@@ -216,9 +216,9 @@
             this.label12.Location = new System.Drawing.Point(16, 10);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(231, 28);
+            this.label12.Size = new System.Drawing.Size(211, 28);
             this.label12.TabIndex = 0;
-            this.label12.Text = "Tien Refund Khach";
+            this.label12.Text = "Refund for tenant";
             // 
             // panel11
             // 
@@ -248,9 +248,9 @@
             this.label11.Location = new System.Drawing.Point(16, 10);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(156, 28);
+            this.label11.Size = new System.Drawing.Size(197, 28);
             this.label11.TabIndex = 0;
-            this.label11.Text = "Phi Quan Ly";
+            this.label11.Text = "Management fee";
             // 
             // panel10
             // 
@@ -280,9 +280,9 @@
             this.label10.Location = new System.Drawing.Point(16, 10);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(216, 28);
+            this.label10.Size = new System.Drawing.Size(181, 28);
             this.label10.TabIndex = 0;
-            this.label10.Text = "Phi Ke Khai Thue";
+            this.label10.Text = "Tax declare fee";
             // 
             // panel6
             // 
@@ -312,9 +312,9 @@
             this.label6.Location = new System.Drawing.Point(16, 10);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 28);
+            this.label6.Size = new System.Drawing.Size(54, 28);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Thue";
+            this.label6.Text = "Tax";
             // 
             // panel3
             // 
@@ -344,9 +344,9 @@
             this.label3.Location = new System.Drawing.Point(16, 10);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(136, 28);
+            this.label3.Size = new System.Drawing.Size(110, 28);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Ma so thue";
+            this.label3.Text = "Tax code";
             // 
             // panel2
             // 
@@ -376,9 +376,9 @@
             this.label2.Location = new System.Drawing.Point(16, 10);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(137, 28);
+            this.label2.Size = new System.Drawing.Size(158, 28);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Ten chu ho";
+            this.label2.Text = "House owner";
             // 
             // panel1
             // 
@@ -408,9 +408,9 @@
             this.label1.Location = new System.Drawing.Point(16, 10);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(128, 28);
+            this.label1.Size = new System.Drawing.Size(189, 28);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Ma can ho";
+            this.label1.Text = "Apartment code";
             // 
             // label17
             // 

@@ -92,9 +92,9 @@
             this.label19.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label19.Location = new System.Drawing.Point(14, 12);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(92, 33);
+            this.label19.Size = new System.Drawing.Size(170, 33);
             this.label19.TabIndex = 0;
-            this.label19.Text = "Dai ly";
+            this.label19.Text = "Agent name";
             // 
             // panel16
             // 
@@ -121,9 +121,9 @@
             this.label16.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label16.Location = new System.Drawing.Point(14, 12);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(98, 33);
+            this.label16.Size = new System.Drawing.Size(76, 33);
             this.label16.TabIndex = 0;
-            this.label16.Text = "Du An";
+            this.label16.Text = "Area";
             // 
             // panel2
             // 
@@ -149,9 +149,9 @@
             this.label2.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(14, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 33);
+            this.label2.Size = new System.Drawing.Size(181, 33);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Ten chu ho";
+            this.label2.Text = "House owner";
             // 
             // panel1
             // 
@@ -177,9 +177,9 @@
             this.label1.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(14, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 33);
+            this.label1.Size = new System.Drawing.Size(219, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Ma can ho";
+            this.label1.Text = "Apartment code";
             // 
             // label22
             // 

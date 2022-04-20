@@ -75,9 +75,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbMaCanHo.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbMaCanHo.Location = new System.Drawing.Point(194, 45);
+            this.txbMaCanHo.Location = new System.Drawing.Point(234, 45);
             this.txbMaCanHo.Name = "txbMaCanHo";
-            this.txbMaCanHo.Size = new System.Drawing.Size(405, 40);
+            this.txbMaCanHo.Size = new System.Drawing.Size(383, 40);
             this.txbMaCanHo.TabIndex = 1;
             // 
             // label1
@@ -89,9 +89,9 @@
             this.label1.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(14, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 33);
+            this.label1.Size = new System.Drawing.Size(219, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Ma can ho";
+            this.label1.Text = "Apartment code";
             // 
             // RemoveApartNotRented
             // 

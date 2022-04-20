@@ -157,9 +157,9 @@
             this.label1.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(14, 12);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 33);
+            this.label1.Size = new System.Drawing.Size(219, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Ma can ho";
+            this.label1.Text = "Apartment code";
             // 
             // panel2
             // 
@@ -185,9 +185,9 @@
             this.label2.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label2.Location = new System.Drawing.Point(14, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(157, 33);
+            this.label2.Size = new System.Drawing.Size(181, 33);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Ten chu ho";
+            this.label2.Text = "House owner";
             // 
             // panel3
             // 
@@ -213,9 +213,9 @@
             this.label3.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.Location = new System.Drawing.Point(14, 12);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(157, 33);
+            this.label3.Size = new System.Drawing.Size(127, 33);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Ma so thue";
+            this.label3.Text = "Tax code";
             // 
             // panel4
             // 
@@ -241,9 +241,9 @@
             this.label4.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label4.Location = new System.Drawing.Point(14, 12);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(296, 33);
+            this.label4.Size = new System.Drawing.Size(282, 33);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Hinh Thuc Khai Thue";
+            this.label4.Text = "Tax declaration form";
             // 
             // panel5
             // 
@@ -269,9 +269,9 @@
             this.label5.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label5.Location = new System.Drawing.Point(14, 12);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(261, 33);
+            this.label5.Size = new System.Drawing.Size(221, 33);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Co Quan Thu Thue";
+            this.label5.Text = "Tax department";
             // 
             // panel6
             // 
@@ -301,9 +301,9 @@
             this.label6.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.Location = new System.Drawing.Point(14, 12);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 33);
+            this.label6.Size = new System.Drawing.Size(63, 33);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Thue";
+            this.label6.Text = "Tax";
             // 
             // panel7
             // 
@@ -331,9 +331,9 @@
             this.label7.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.Location = new System.Drawing.Point(14, 12);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(197, 33);
+            this.label7.Size = new System.Drawing.Size(83, 33);
             this.label7.TabIndex = 0;
-            this.label7.Text = "Ngay Bat Dau";
+            this.label7.Text = "From";
             // 
             // panel8
             // 
@@ -361,9 +361,9 @@
             this.label8.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.Location = new System.Drawing.Point(14, 12);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(208, 33);
+            this.label8.Size = new System.Drawing.Size(47, 33);
             this.label8.TabIndex = 0;
-            this.label8.Text = "Ngay Ket Thuc";
+            this.label8.Text = "To";
             // 
             // panel9
             // 
@@ -390,9 +390,9 @@
             this.label9.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label9.Location = new System.Drawing.Point(14, 12);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(113, 33);
+            this.label9.Size = new System.Drawing.Size(198, 33);
             this.label9.TabIndex = 0;
-            this.label9.Text = "Chu Ky";
+            this.label9.Text = "Payment term";
             // 
             // panel10
             // 
@@ -422,9 +422,9 @@
             this.label10.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label10.Location = new System.Drawing.Point(14, 12);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(246, 33);
+            this.label10.Size = new System.Drawing.Size(221, 33);
             this.label10.TabIndex = 0;
-            this.label10.Text = "Phi Ke Khai Thue";
+            this.label10.Text = "Tax declare fees";
             // 
             // panel11
             // 
@@ -454,9 +454,9 @@
             this.label11.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label11.Location = new System.Drawing.Point(14, 12);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(178, 33);
+            this.label11.Size = new System.Drawing.Size(227, 33);
             this.label11.TabIndex = 0;
-            this.label11.Text = "Phi Quan Ly";
+            this.label11.Text = "Management fee";
             // 
             // panel12
             // 
@@ -486,9 +486,9 @@
             this.label12.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label12.Location = new System.Drawing.Point(14, 12);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(264, 33);
+            this.label12.Size = new System.Drawing.Size(244, 33);
             this.label12.TabIndex = 0;
-            this.label12.Text = "Tien Refund Khach";
+            this.label12.Text = "Refund for tenant";
             // 
             // panel13
             // 
@@ -518,9 +518,9 @@
             this.label13.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label13.Location = new System.Drawing.Point(14, 12);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(215, 33);
+            this.label13.Size = new System.Drawing.Size(176, 33);
             this.label13.TabIndex = 0;
-            this.label13.Text = "Phi don ve sinh";
+            this.label13.Text = "Cleaning fee";
             // 
             // panel14
             // 
@@ -547,9 +547,9 @@
             this.label14.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label14.Location = new System.Drawing.Point(14, 12);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(132, 33);
+            this.label14.Size = new System.Drawing.Size(188, 33);
             this.label14.TabIndex = 0;
-            this.label14.Text = "Tong thu";
+            this.label14.Text = "Total amount";
             // 
             // panel16
             // 
@@ -576,9 +576,9 @@
             this.label16.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label16.Location = new System.Drawing.Point(14, 12);
             this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(98, 33);
+            this.label16.Size = new System.Drawing.Size(76, 33);
             this.label16.TabIndex = 0;
-            this.label16.Text = "Du An";
+            this.label16.Text = "Area";
             // 
             // panel17
             // 
@@ -605,9 +605,9 @@
             this.label17.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label17.Location = new System.Drawing.Point(14, 12);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(195, 33);
+            this.label17.Size = new System.Drawing.Size(230, 33);
             this.label17.TabIndex = 0;
-            this.label17.Text = "So Ngay Nhac";
+            this.label17.Text = "Negotiation date";
             // 
             // panel18
             // 
@@ -637,9 +637,9 @@
             this.label18.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label18.Location = new System.Drawing.Point(14, 12);
             this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(260, 33);
+            this.label18.Size = new System.Drawing.Size(304, 33);
             this.label18.TabIndex = 0;
-            this.label18.Text = "Tien Thue 1 Thang";
+            this.label18.Text = "Renting fee per month";
             // 
             // panel19
             // 
@@ -665,9 +665,9 @@
             this.label19.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label19.Location = new System.Drawing.Point(14, 12);
             this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(92, 33);
+            this.label19.Size = new System.Drawing.Size(170, 33);
             this.label19.TabIndex = 0;
-            this.label19.Text = "Dai ly";
+            this.label19.Text = "Agent name";
             // 
             // panel20
             // 

@@ -116,9 +116,9 @@
             this.label1.Location = new System.Drawing.Point(22, 24);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 28);
+            this.label1.Size = new System.Drawing.Size(189, 28);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Ma Can Ho";
+            this.label1.Text = "Apartment code";
             // 
             // panel2
             // 
@@ -148,9 +148,9 @@
             this.label2.Location = new System.Drawing.Point(15, 30);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(70, 28);
+            this.label2.Size = new System.Drawing.Size(54, 28);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Thue";
+            this.label2.Text = "Tax";
             // 
             // panel3
             // 
@@ -180,9 +180,9 @@
             this.label3.Location = new System.Drawing.Point(15, 30);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(216, 28);
+            this.label3.Size = new System.Drawing.Size(181, 28);
             this.label3.TabIndex = 0;
-            this.label3.Text = "Phi Ke Khai Thue";
+            this.label3.Text = "Tax declare fee";
             // 
             // panel4
             // 
@@ -212,9 +212,9 @@
             this.label4.Location = new System.Drawing.Point(15, 30);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(156, 28);
+            this.label4.Size = new System.Drawing.Size(197, 28);
             this.label4.TabIndex = 0;
-            this.label4.Text = "Phi Quan Ly";
+            this.label4.Text = "Management fee";
             // 
             // panel5
             // 
@@ -244,9 +244,9 @@
             this.label5.Location = new System.Drawing.Point(15, 30);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(231, 28);
+            this.label5.Size = new System.Drawing.Size(211, 28);
             this.label5.TabIndex = 0;
-            this.label5.Text = "Tien Refund Khach";
+            this.label5.Text = "Refund for tenant";
             // 
             // panel6
             // 
@@ -276,9 +276,9 @@
             this.label6.Location = new System.Drawing.Point(15, 30);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(200, 28);
+            this.label6.Size = new System.Drawing.Size(152, 28);
             this.label6.TabIndex = 0;
-            this.label6.Text = "Phi Don Ve Sinh";
+            this.label6.Text = "Cleaning fee";
             // 
             // btnMarkDone
             // 
@@ -297,7 +297,7 @@
             this.btnMarkDone.Padding = new System.Windows.Forms.Padding(0, 0, 0, 18);
             this.btnMarkDone.Size = new System.Drawing.Size(266, 167);
             this.btnMarkDone.TabIndex = 14;
-            this.btnMarkDone.Text = "Mark Done Chi";
+            this.btnMarkDone.Text = "Mark Done Outcome";
             this.btnMarkDone.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMarkDone.TextColor = System.Drawing.Color.White;
             this.btnMarkDone.UseVisualStyleBackColor = false;
@@ -320,7 +320,7 @@
             this.btnRedo.Padding = new System.Windows.Forms.Padding(0, 0, 0, 18);
             this.btnRedo.Size = new System.Drawing.Size(266, 167);
             this.btnRedo.TabIndex = 15;
-            this.btnRedo.Text = "Redo Chi";
+            this.btnRedo.Text = "Redo Outcome";
             this.btnRedo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnRedo.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.btnRedo.UseVisualStyleBackColor = false;
@@ -405,11 +405,11 @@
             // txbTongThu
             // 
             this.txbTongThu.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbTongThu.Location = new System.Drawing.Point(168, 27);
+            this.txbTongThu.Location = new System.Drawing.Point(201, 27);
             this.txbTongThu.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbTongThu.Name = "txbTongThu";
             this.txbTongThu.ReadOnly = true;
-            this.txbTongThu.Size = new System.Drawing.Size(318, 36);
+            this.txbTongThu.Size = new System.Drawing.Size(297, 36);
             this.txbTongThu.TabIndex = 1;
             this.txbTongThu.Text = "0";
             // 
@@ -420,9 +420,9 @@
             this.lbTongThu.Location = new System.Drawing.Point(15, 30);
             this.lbTongThu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTongThu.Name = "lbTongThu";
-            this.lbTongThu.Size = new System.Drawing.Size(121, 28);
+            this.lbTongThu.Size = new System.Drawing.Size(93, 28);
             this.lbTongThu.TabIndex = 0;
-            this.lbTongThu.Text = "Tong Thu";
+            this.lbTongThu.Text = "Income";
             // 
             // panel9
             // 
@@ -438,11 +438,11 @@
             // txbTongChi
             // 
             this.txbTongChi.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbTongChi.Location = new System.Drawing.Point(168, 24);
+            this.txbTongChi.Location = new System.Drawing.Point(201, 24);
             this.txbTongChi.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbTongChi.Name = "txbTongChi";
             this.txbTongChi.ReadOnly = true;
-            this.txbTongChi.Size = new System.Drawing.Size(318, 36);
+            this.txbTongChi.Size = new System.Drawing.Size(297, 36);
             this.txbTongChi.TabIndex = 1;
             // 
             // lbTongChi
@@ -452,9 +452,9 @@
             this.lbTongChi.Location = new System.Drawing.Point(15, 30);
             this.lbTongChi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTongChi.Name = "lbTongChi";
-            this.lbTongChi.Size = new System.Drawing.Size(115, 28);
+            this.lbTongChi.Size = new System.Drawing.Size(111, 28);
             this.lbTongChi.TabIndex = 0;
-            this.lbTongChi.Text = "Tong Chi";
+            this.lbTongChi.Text = "Outcome";
             // 
             // panel10
             // 
@@ -470,11 +470,11 @@
             // txbChuKy
             // 
             this.txbChuKy.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbChuKy.Location = new System.Drawing.Point(168, 24);
+            this.txbChuKy.Location = new System.Drawing.Point(201, 25);
             this.txbChuKy.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbChuKy.Name = "txbChuKy";
             this.txbChuKy.ReadOnly = true;
-            this.txbChuKy.Size = new System.Drawing.Size(318, 36);
+            this.txbChuKy.Size = new System.Drawing.Size(297, 36);
             this.txbChuKy.TabIndex = 1;
             // 
             // label8
@@ -484,9 +484,9 @@
             this.label8.Location = new System.Drawing.Point(15, 30);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(93, 28);
+            this.label8.Size = new System.Drawing.Size(178, 28);
             this.label8.TabIndex = 0;
-            this.label8.Text = "Chu ky";
+            this.label8.Text = "Payment Term";
             // 
             // panel11
             // 
@@ -570,11 +570,11 @@
             // txbBalance
             // 
             this.txbBalance.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbBalance.Location = new System.Drawing.Point(168, 27);
+            this.txbBalance.Location = new System.Drawing.Point(201, 27);
             this.txbBalance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbBalance.Name = "txbBalance";
             this.txbBalance.ReadOnly = true;
-            this.txbBalance.Size = new System.Drawing.Size(318, 36);
+            this.txbBalance.Size = new System.Drawing.Size(297, 36);
             this.txbBalance.TabIndex = 1;
             // 
             // label7

@@ -65,7 +65,7 @@
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(79, 110);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(601, 163);
+            this.panel1.Size = new System.Drawing.Size(601, 137);
             this.panel1.TabIndex = 6;
             // 
             // txbMaCanHo
@@ -74,7 +74,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbMaCanHo.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbMaCanHo.ForeColor = System.Drawing.Color.Black;
-            this.txbMaCanHo.Location = new System.Drawing.Point(194, 45);
+            this.txbMaCanHo.Location = new System.Drawing.Point(228, 45);
             this.txbMaCanHo.Name = "txbMaCanHo";
             this.txbMaCanHo.Size = new System.Drawing.Size(368, 40);
             this.txbMaCanHo.TabIndex = 1;
@@ -87,9 +87,9 @@
             this.label1.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.Location = new System.Drawing.Point(14, 48);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(146, 33);
+            this.label1.Size = new System.Drawing.Size(208, 33);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Ma can ho";
+            this.label1.Text = "Aparment code";
             // 
             // InformationDetail
             // 
