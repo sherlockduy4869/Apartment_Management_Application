@@ -105,14 +105,6 @@ namespace QuanlyCanHoGiangTran
             ShowInfoApartCart showInfoApartCart = new ShowInfoApartCart();
             openChildForm(showInfoApartCart);
         }
-
-        private void btnAdmin_Click_1(object sender, EventArgs e)
-        {
-            pnCick.Height = btnAdmin.Height; //UI design
-            pnCick.Top = btnAdmin.Top; //UI design
-            Admin admin = new Admin();
-            openChildForm(admin);
-        }
         private void btnMinimize_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;

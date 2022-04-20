@@ -98,5 +98,19 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             Application.Exit();
         }
+
+        private void dtgvNegotiateApart_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            foreach (DataGridViewRow row in dtgvNegotiateApart.Rows)
+            {
+                string trangThai = Convert.ToString(row.Cells["STATUS"].Value);
+
+                if (trangThai == "DONE")
+                {
+                    row.DefaultCellStyle.ForeColor = Color.FromArgb(0, 174, 114);
+                }
+
+            }
+        }
     }
 }

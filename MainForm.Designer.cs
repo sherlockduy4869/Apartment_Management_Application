@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.pnLeft = new System.Windows.Forms.Panel();
             this.pnCick = new System.Windows.Forms.Panel();
-            this.btnAdmin = new System.Windows.Forms.Button();
             this.btnCart = new System.Windows.Forms.Button();
             this.btnApartNotRented = new System.Windows.Forms.Button();
             this.btnApartSelling = new System.Windows.Forms.Button();
@@ -66,7 +65,6 @@
             // 
             this.pnLeft.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.pnLeft.Controls.Add(this.pnCick);
-            this.pnLeft.Controls.Add(this.btnAdmin);
             this.pnLeft.Controls.Add(this.btnCart);
             this.pnLeft.Controls.Add(this.btnApartNotRented);
             this.pnLeft.Controls.Add(this.btnApartSelling);
@@ -89,23 +87,6 @@
             this.pnCick.Name = "pnCick";
             this.pnCick.Size = new System.Drawing.Size(22, 123);
             this.pnCick.TabIndex = 73;
-            // 
-            // btnAdmin
-            // 
-            this.btnAdmin.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnAdmin.FlatAppearance.BorderSize = 0;
-            this.btnAdmin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAdmin.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnAdmin.ForeColor = System.Drawing.Color.White;
-            this.btnAdmin.Image = ((System.Drawing.Image)(resources.GetObject("btnAdmin.Image")));
-            this.btnAdmin.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAdmin.Location = new System.Drawing.Point(0, 1139);
-            this.btnAdmin.Name = "btnAdmin";
-            this.btnAdmin.Size = new System.Drawing.Size(450, 135);
-            this.btnAdmin.TabIndex = 82;
-            this.btnAdmin.Text = "Admin";
-            this.btnAdmin.UseVisualStyleBackColor = true;
-            this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click_1);
             // 
             // btnCart
             // 
@@ -282,40 +263,40 @@
             // lbDay
             // 
             this.lbDay.AutoSize = true;
-            this.lbDay.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbDay.Location = new System.Drawing.Point(411, 163);
+            this.lbDay.Font = new System.Drawing.Font("Segoe UI", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbDay.Location = new System.Drawing.Point(389, 168);
             this.lbDay.Name = "lbDay";
-            this.lbDay.Size = new System.Drawing.Size(257, 65);
+            this.lbDay.Size = new System.Drawing.Size(279, 71);
             this.lbDay.TabIndex = 3;
             this.lbDay.Text = "SATURDAY";
             // 
             // lbSecond
             // 
             this.lbSecond.AutoSize = true;
-            this.lbSecond.Font = new System.Drawing.Font("Segoe UI", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbSecond.Location = new System.Drawing.Point(420, 73);
+            this.lbSecond.Font = new System.Drawing.Font("Segoe UI", 22.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbSecond.Location = new System.Drawing.Point(409, 73);
             this.lbSecond.Name = "lbSecond";
-            this.lbSecond.Size = new System.Drawing.Size(88, 71);
+            this.lbSecond.Size = new System.Drawing.Size(97, 78);
             this.lbSecond.TabIndex = 2;
             this.lbSecond.Text = "22";
             // 
             // lbDate
             // 
             this.lbDate.AutoSize = true;
-            this.lbDate.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbDate.Font = new System.Drawing.Font("Segoe UI", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbDate.Location = new System.Drawing.Point(3, 163);
             this.lbDate.Name = "lbDate";
-            this.lbDate.Size = new System.Drawing.Size(320, 65);
+            this.lbDate.Size = new System.Drawing.Size(356, 71);
             this.lbDate.TabIndex = 1;
             this.lbDate.Text = "JUNE 25 2022";
             // 
             // lbTime
             // 
             this.lbTime.AutoSize = true;
-            this.lbTime.Font = new System.Drawing.Font("Segoe UI", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbTime.Font = new System.Drawing.Font("Segoe UI", 37.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lbTime.Location = new System.Drawing.Point(131, 27);
             this.lbTime.Name = "lbTime";
-            this.lbTime.Size = new System.Drawing.Size(283, 128);
+            this.lbTime.Size = new System.Drawing.Size(295, 135);
             this.lbTime.TabIndex = 0;
             this.lbTime.Text = "22:22";
             // 
@@ -325,11 +306,11 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(233, 126);
+            this.label1.Location = new System.Drawing.Point(220, 126);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(713, 52);
+            this.label1.Size = new System.Drawing.Size(739, 52);
             this.label1.TabIndex = 61;
-            this.label1.Text = "SEARCH FOR YOUR DEAM HOME !";
+            this.label1.Text = "SEARCH FOR YOUR DREAM HOME !";
             // 
             // label2
             // 
@@ -420,7 +401,6 @@
 
         private Panel pnLeft;
         private Panel pnCick;
-        private Button btnAdmin;
         private Button btnCart;
         private Button btnApartNotRented;
         private Button btnApartSelling;

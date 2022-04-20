@@ -57,6 +57,7 @@
             this.dtgvNegotiateApart.RowTemplate.Height = 41;
             this.dtgvNegotiateApart.Size = new System.Drawing.Size(1759, 595);
             this.dtgvNegotiateApart.TabIndex = 0;
+            this.dtgvNegotiateApart.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dtgvNegotiateApart_CellFormatting);
             // 
             // btnDone
             // 
