@@ -21,11 +21,8 @@ namespace QuanlyCanHoGiangTran
         {
             return AccountDAL.Instance.Login(userName, passWord);
         }
-        private void Form1_Load(object sender, EventArgs e)
-        {
 
-        }
-        private void btnLogin_Click_1(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
             string userName = txbUserName.Text;
             string passWord = txbPassWord.Text;
@@ -42,12 +39,12 @@ namespace QuanlyCanHoGiangTran
             }
         }
 
-        private void txbUserName_Click_1(object sender, EventArgs e)
+        private void txbUserName_Click(object sender, EventArgs e)
         {
             txbUserName.Clear();
         }
 
-        private void txbPassWord_Click_1(object sender, EventArgs e)
+        private void txbPassWord_Click(object sender, EventArgs e)
         {
             txbPassWord.Clear();
         }
