@@ -44,6 +44,7 @@
             this.txbMaCanHo = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btnAdd = new QuanlyCanHoGiangTran.Custom.RJButton();
+            this.label22 = new System.Windows.Forms.Label();
             this.panel19.SuspendLayout();
             this.panel16.SuspendLayout();
             this.panel15.SuspendLayout();
@@ -53,9 +54,10 @@
             // 
             // panel19
             // 
+            this.panel19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel19.Controls.Add(this.txbDaiLy);
             this.panel19.Controls.Add(this.label19);
-            this.panel19.Location = new System.Drawing.Point(51, 275);
+            this.panel19.Location = new System.Drawing.Point(51, 322);
             this.panel19.Name = "panel19";
             this.panel19.Size = new System.Drawing.Size(768, 65);
             this.panel19.TabIndex = 4;
@@ -79,9 +81,10 @@
             // 
             // panel16
             // 
+            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel16.Controls.Add(this.cbDuAn);
             this.panel16.Controls.Add(this.label16);
-            this.panel16.Location = new System.Drawing.Point(51, 133);
+            this.panel16.Location = new System.Drawing.Point(51, 180);
             this.panel16.Name = "panel16";
             this.panel16.Size = new System.Drawing.Size(768, 65);
             this.panel16.TabIndex = 2;
@@ -106,9 +109,10 @@
             // 
             // panel15
             // 
+            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel15.Controls.Add(this.cbTinhTrang);
             this.panel15.Controls.Add(this.label15);
-            this.panel15.Location = new System.Drawing.Point(51, 204);
+            this.panel15.Location = new System.Drawing.Point(51, 251);
             this.panel15.Name = "panel15";
             this.panel15.Size = new System.Drawing.Size(768, 65);
             this.panel15.TabIndex = 3;
@@ -133,9 +137,10 @@
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.txbTenChuHo);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(51, 346);
+            this.panel2.Location = new System.Drawing.Point(51, 393);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(768, 65);
             this.panel2.TabIndex = 5;
@@ -159,9 +164,10 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txbMaCanHo);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(51, 62);
+            this.panel1.Location = new System.Drawing.Point(51, 109);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(768, 65);
             this.panel1.TabIndex = 1;
@@ -193,7 +199,7 @@
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(266, 475);
+            this.btnAdd.Location = new System.Drawing.Point(266, 522);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(300, 80);
             this.btnAdd.TabIndex = 6;
@@ -202,11 +208,25 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label22.Location = new System.Drawing.Point(75, 41);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(713, 52);
+            this.label22.TabIndex = 26;
+            this.label22.Text = "ADDING APARTMENT NOT RENTED";
+            // 
             // AddNewApartNotRented
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(875, 605);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(872, 618);
+            this.Controls.Add(this.label22);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.panel19);
             this.Controls.Add(this.panel16);
@@ -227,6 +247,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -248,5 +269,6 @@
         private TextBox txbMaCanHo;
         private Label label1;
         private Custom.RJButton btnAdd;
+        private Label label22;
     }
 }

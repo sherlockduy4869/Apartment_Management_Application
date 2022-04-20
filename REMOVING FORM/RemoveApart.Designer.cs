@@ -53,7 +53,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txbMaCanHo.Location = new System.Drawing.Point(194, 45);
             this.txbMaCanHo.Name = "txbMaCanHo";
-            this.txbMaCanHo.Size = new System.Drawing.Size(387, 39);
+            this.txbMaCanHo.Size = new System.Drawing.Size(385, 39);
             this.txbMaCanHo.TabIndex = 1;
             // 
             // btnRemove
@@ -81,6 +81,7 @@
             // 
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txbMaCanHo);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(79, 110);
@@ -92,6 +93,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(779, 476);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.panel1);

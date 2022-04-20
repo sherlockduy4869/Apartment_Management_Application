@@ -68,6 +68,7 @@
             this.panel11 = new System.Windows.Forms.Panel();
             this.txbPhone = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.label22 = new System.Windows.Forms.Label();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -85,6 +86,7 @@
             // 
             // panel10
             // 
+            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.dtpkNgayNhapData);
             this.panel10.Controls.Add(this.label10);
             this.panel10.Location = new System.Drawing.Point(841, 489);
@@ -121,7 +123,7 @@
             this.btnAdd.FlatAppearance.BorderSize = 0;
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(683, 740);
+            this.btnAdd.Location = new System.Drawing.Point(724, 720);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(300, 80);
             this.btnAdd.TabIndex = 26;
@@ -132,6 +134,7 @@
             // 
             // panel9
             // 
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.txbGiaTienUSD);
             this.panel9.Controls.Add(this.label9);
             this.panel9.Location = new System.Drawing.Point(841, 418);
@@ -162,6 +165,7 @@
             // 
             // panel8
             // 
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.txbGiaTienVND);
             this.panel8.Controls.Add(this.label8);
             this.panel8.Location = new System.Drawing.Point(841, 347);
@@ -192,6 +196,7 @@
             // 
             // panel7
             // 
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.txbGhiChu);
             this.panel7.Controls.Add(this.label7);
             this.panel7.Location = new System.Drawing.Point(841, 560);
@@ -218,6 +223,7 @@
             // 
             // panel6
             // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.txbDienTich);
             this.panel6.Controls.Add(this.label6);
             this.panel6.Location = new System.Drawing.Point(841, 276);
@@ -244,6 +250,7 @@
             // 
             // panel5
             // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.cbSoPhongNgu);
             this.panel5.Controls.Add(this.label5);
             this.panel5.Location = new System.Drawing.Point(841, 205);
@@ -271,6 +278,7 @@
             // 
             // panel4
             // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.txbEmail);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(53, 560);
@@ -297,6 +305,7 @@
             // 
             // panel3
             // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.txbDaiLy);
             this.panel3.Controls.Add(this.label3);
             this.panel3.Location = new System.Drawing.Point(53, 489);
@@ -323,6 +332,7 @@
             // 
             // panel16
             // 
+            this.panel16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel16.Controls.Add(this.cbDuAn);
             this.panel16.Controls.Add(this.label16);
             this.panel16.Location = new System.Drawing.Point(53, 276);
@@ -350,6 +360,7 @@
             // 
             // panel15
             // 
+            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel15.Controls.Add(this.cbTinhTrang);
             this.panel15.Controls.Add(this.label15);
             this.panel15.Location = new System.Drawing.Point(53, 347);
@@ -377,6 +388,7 @@
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.txbTenChuHo);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(53, 418);
@@ -403,6 +415,7 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txbMaCanHo);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(53, 205);
@@ -429,6 +442,7 @@
             // 
             // panel11
             // 
+            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.txbPhone);
             this.panel11.Controls.Add(this.label11);
             this.panel11.Location = new System.Drawing.Point(53, 636);
@@ -453,11 +467,25 @@
             this.label11.TabIndex = 0;
             this.label11.Text = "Phone";
             // 
+            // label22
+            // 
+            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Century Gothic", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label22.Location = new System.Drawing.Point(505, 108);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(720, 52);
+            this.label22.TabIndex = 27;
+            this.label22.Text = "ADDING APARTMENT FOR SELLING";
+            // 
             // AddNewApartSelling
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1663, 858);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(1663, 847);
+            this.Controls.Add(this.label22);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
             this.Controls.Add(this.btnAdd);
@@ -502,6 +530,7 @@
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -547,5 +576,6 @@
         private Panel panel11;
         private TextBox txbPhone;
         private Label label11;
+        private Label label22;
     }
 }

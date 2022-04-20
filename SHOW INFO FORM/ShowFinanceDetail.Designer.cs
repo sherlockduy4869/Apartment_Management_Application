@@ -70,11 +70,10 @@
             this.panel12 = new System.Windows.Forms.Panel();
             this.dtpkNgayCuoi = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
-            this.btnRefresh = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.panel7 = new System.Windows.Forms.Panel();
             this.txbBalance = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnExit = new System.Windows.Forms.Button();
+            this.btnRefresh = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -91,16 +90,17 @@
             // 
             // panel1
             // 
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txbMaCanHo);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(483, 113);
+            this.panel1.Location = new System.Drawing.Point(588, 61);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(538, 87);
             this.panel1.TabIndex = 0;
             // 
             // txbMaCanHo
             // 
-            this.txbMaCanHo.Location = new System.Drawing.Point(234, 31);
+            this.txbMaCanHo.Location = new System.Drawing.Point(241, 20);
             this.txbMaCanHo.Name = "txbMaCanHo";
             this.txbMaCanHo.ReadOnly = true;
             this.txbMaCanHo.Size = new System.Drawing.Size(242, 39);
@@ -109,7 +109,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(13, 34);
+            this.label1.Location = new System.Drawing.Point(19, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(134, 32);
             this.label1.TabIndex = 0;
@@ -117,16 +117,17 @@
             // 
             // panel2
             // 
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.txbThue);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(447, 520);
+            this.panel2.Location = new System.Drawing.Point(482, 260);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(595, 87);
+            this.panel2.Size = new System.Drawing.Size(732, 87);
             this.panel2.TabIndex = 1;
             // 
             // txbThue
             // 
-            this.txbThue.Location = new System.Drawing.Point(234, 27);
+            this.txbThue.Location = new System.Drawing.Point(283, 23);
             this.txbThue.Name = "txbThue";
             this.txbThue.ReadOnly = true;
             this.txbThue.Size = new System.Drawing.Size(327, 39);
@@ -143,16 +144,17 @@
             // 
             // panel3
             // 
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.txbPhiKeKhaiThue);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(447, 613);
+            this.panel3.Location = new System.Drawing.Point(482, 353);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(595, 87);
+            this.panel3.Size = new System.Drawing.Size(732, 87);
             this.panel3.TabIndex = 2;
             // 
             // txbPhiKeKhaiThue
             // 
-            this.txbPhiKeKhaiThue.Location = new System.Drawing.Point(234, 27);
+            this.txbPhiKeKhaiThue.Location = new System.Drawing.Point(283, 27);
             this.txbPhiKeKhaiThue.Name = "txbPhiKeKhaiThue";
             this.txbPhiKeKhaiThue.ReadOnly = true;
             this.txbPhiKeKhaiThue.Size = new System.Drawing.Size(327, 39);
@@ -169,16 +171,17 @@
             // 
             // panel4
             // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.txbPhiQuanLy);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(447, 706);
+            this.panel4.Location = new System.Drawing.Point(482, 446);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(595, 87);
+            this.panel4.Size = new System.Drawing.Size(732, 87);
             this.panel4.TabIndex = 3;
             // 
             // txbPhiQuanLy
             // 
-            this.txbPhiQuanLy.Location = new System.Drawing.Point(234, 34);
+            this.txbPhiQuanLy.Location = new System.Drawing.Point(283, 27);
             this.txbPhiQuanLy.Name = "txbPhiQuanLy";
             this.txbPhiQuanLy.ReadOnly = true;
             this.txbPhiQuanLy.Size = new System.Drawing.Size(327, 39);
@@ -195,16 +198,17 @@
             // 
             // panel5
             // 
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.txbTienRefundKhach);
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(447, 799);
+            this.panel5.Location = new System.Drawing.Point(482, 539);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(595, 87);
+            this.panel5.Size = new System.Drawing.Size(732, 87);
             this.panel5.TabIndex = 4;
             // 
             // txbTienRefundKhach
             // 
-            this.txbTienRefundKhach.Location = new System.Drawing.Point(234, 27);
+            this.txbTienRefundKhach.Location = new System.Drawing.Point(283, 27);
             this.txbTienRefundKhach.Name = "txbTienRefundKhach";
             this.txbTienRefundKhach.ReadOnly = true;
             this.txbTienRefundKhach.Size = new System.Drawing.Size(327, 39);
@@ -221,16 +225,17 @@
             // 
             // panel6
             // 
+            this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.txbPhiDonVeSinh);
             this.panel6.Controls.Add(this.label6);
-            this.panel6.Location = new System.Drawing.Point(447, 892);
+            this.panel6.Location = new System.Drawing.Point(482, 632);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(595, 87);
+            this.panel6.Size = new System.Drawing.Size(732, 87);
             this.panel6.TabIndex = 5;
             // 
             // txbPhiDonVeSinh
             // 
-            this.txbPhiDonVeSinh.Location = new System.Drawing.Point(234, 27);
+            this.txbPhiDonVeSinh.Location = new System.Drawing.Point(283, 27);
             this.txbPhiDonVeSinh.Name = "txbPhiDonVeSinh";
             this.txbPhiDonVeSinh.ReadOnly = true;
             this.txbPhiDonVeSinh.Size = new System.Drawing.Size(327, 39);
@@ -247,46 +252,52 @@
             // 
             // btnMarkDone
             // 
-            this.btnMarkDone.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnMarkDone.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnMarkDone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnMarkDone.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.btnMarkDone.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnMarkDone.BorderRadius = 40;
             this.btnMarkDone.BorderSize = 0;
             this.btnMarkDone.FlatAppearance.BorderSize = 0;
             this.btnMarkDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMarkDone.ForeColor = System.Drawing.Color.White;
-            this.btnMarkDone.Location = new System.Drawing.Point(355, 1058);
+            this.btnMarkDone.Image = ((System.Drawing.Image)(resources.GetObject("btnMarkDone.Image")));
+            this.btnMarkDone.Location = new System.Drawing.Point(482, 831);
             this.btnMarkDone.Name = "btnMarkDone";
-            this.btnMarkDone.Size = new System.Drawing.Size(300, 80);
+            this.btnMarkDone.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.btnMarkDone.Size = new System.Drawing.Size(231, 191);
             this.btnMarkDone.TabIndex = 14;
             this.btnMarkDone.Text = "Mark Done Chi";
+            this.btnMarkDone.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.btnMarkDone.TextColor = System.Drawing.Color.White;
             this.btnMarkDone.UseVisualStyleBackColor = false;
             this.btnMarkDone.Click += new System.EventHandler(this.btnMarkDone_Click);
             // 
             // btnRedo
             // 
-            this.btnRedo.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnRedo.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.btnRedo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.btnRedo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.btnRedo.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnRedo.BorderRadius = 40;
             this.btnRedo.BorderSize = 0;
             this.btnRedo.FlatAppearance.BorderSize = 0;
             this.btnRedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRedo.ForeColor = System.Drawing.Color.White;
-            this.btnRedo.Location = new System.Drawing.Point(791, 1058);
+            this.btnRedo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
+            this.btnRedo.Image = ((System.Drawing.Image)(resources.GetObject("btnRedo.Image")));
+            this.btnRedo.Location = new System.Drawing.Point(983, 831);
             this.btnRedo.Name = "btnRedo";
-            this.btnRedo.Size = new System.Drawing.Size(300, 80);
+            this.btnRedo.Padding = new System.Windows.Forms.Padding(0, 0, 0, 20);
+            this.btnRedo.Size = new System.Drawing.Size(231, 191);
             this.btnRedo.TabIndex = 15;
             this.btnRedo.Text = "Redo Chi";
-            this.btnRedo.TextColor = System.Drawing.Color.White;
+            this.btnRedo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnRedo.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.btnRedo.UseVisualStyleBackColor = false;
             this.btnRedo.Click += new System.EventHandler(this.btnRedo_Click);
             // 
             // cbFinanceCategory
             // 
             this.cbFinanceCategory.FormattingEnabled = true;
-            this.cbFinanceCategory.Location = new System.Drawing.Point(577, 994);
+            this.cbFinanceCategory.Location = new System.Drawing.Point(684, 753);
             this.cbFinanceCategory.Name = "cbFinanceCategory";
             this.cbFinanceCategory.Size = new System.Drawing.Size(363, 40);
             this.cbFinanceCategory.TabIndex = 17;
@@ -295,7 +306,7 @@
             // 
             this.lbThue.AutoSize = true;
             this.lbThue.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbThue.Location = new System.Drawing.Point(1061, 549);
+            this.lbThue.Location = new System.Drawing.Point(1230, 289);
             this.lbThue.Name = "lbThue";
             this.lbThue.Size = new System.Drawing.Size(30, 33);
             this.lbThue.TabIndex = 18;
@@ -305,7 +316,7 @@
             // 
             this.lbPhiKeKhaiThue.AutoSize = true;
             this.lbPhiKeKhaiThue.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbPhiKeKhaiThue.Location = new System.Drawing.Point(1061, 646);
+            this.lbPhiKeKhaiThue.Location = new System.Drawing.Point(1230, 386);
             this.lbPhiKeKhaiThue.Name = "lbPhiKeKhaiThue";
             this.lbPhiKeKhaiThue.Size = new System.Drawing.Size(30, 33);
             this.lbPhiKeKhaiThue.TabIndex = 19;
@@ -315,7 +326,7 @@
             // 
             this.lbPhiQuanLy.AutoSize = true;
             this.lbPhiQuanLy.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbPhiQuanLy.Location = new System.Drawing.Point(1061, 742);
+            this.lbPhiQuanLy.Location = new System.Drawing.Point(1230, 486);
             this.lbPhiQuanLy.Name = "lbPhiQuanLy";
             this.lbPhiQuanLy.Size = new System.Drawing.Size(30, 33);
             this.lbPhiQuanLy.TabIndex = 20;
@@ -325,7 +336,7 @@
             // 
             this.lbTienReFundKhach.AutoSize = true;
             this.lbTienReFundKhach.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbTienReFundKhach.Location = new System.Drawing.Point(1061, 828);
+            this.lbTienReFundKhach.Location = new System.Drawing.Point(1230, 572);
             this.lbTienReFundKhach.Name = "lbTienReFundKhach";
             this.lbTienReFundKhach.Size = new System.Drawing.Size(30, 33);
             this.lbTienReFundKhach.TabIndex = 21;
@@ -335,7 +346,7 @@
             // 
             this.lbPhidonvesinh.AutoSize = true;
             this.lbPhidonvesinh.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbPhidonvesinh.Location = new System.Drawing.Point(1061, 921);
+            this.lbPhidonvesinh.Location = new System.Drawing.Point(1230, 665);
             this.lbPhidonvesinh.Name = "lbPhidonvesinh";
             this.lbPhidonvesinh.Size = new System.Drawing.Size(30, 33);
             this.lbPhidonvesinh.TabIndex = 22;
@@ -343,9 +354,10 @@
             // 
             // panel8
             // 
+            this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.txbTongThu);
             this.panel8.Controls.Add(this.lbTongThu);
-            this.panel8.Location = new System.Drawing.Point(931, 327);
+            this.panel8.Location = new System.Drawing.Point(30, 260);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(440, 87);
             this.panel8.TabIndex = 24;
@@ -370,9 +382,10 @@
             // 
             // panel9
             // 
+            this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.txbTongChi);
             this.panel9.Controls.Add(this.lbTongChi);
-            this.panel9.Location = new System.Drawing.Point(144, 327);
+            this.panel9.Location = new System.Drawing.Point(30, 353);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(440, 87);
             this.panel9.TabIndex = 25;
@@ -396,19 +409,20 @@
             // 
             // panel10
             // 
+            this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.txbChuKy);
             this.panel10.Controls.Add(this.label8);
-            this.panel10.Location = new System.Drawing.Point(239, 221);
+            this.panel10.Location = new System.Drawing.Point(30, 167);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(331, 87);
+            this.panel10.Size = new System.Drawing.Size(440, 87);
             this.panel10.TabIndex = 26;
             // 
             // txbChuKy
             // 
-            this.txbChuKy.Location = new System.Drawing.Point(109, 27);
+            this.txbChuKy.Location = new System.Drawing.Point(145, 27);
             this.txbChuKy.Name = "txbChuKy";
             this.txbChuKy.ReadOnly = true;
-            this.txbChuKy.Size = new System.Drawing.Size(182, 39);
+            this.txbChuKy.Size = new System.Drawing.Size(276, 39);
             this.txbChuKy.TabIndex = 1;
             // 
             // label8
@@ -422,9 +436,10 @@
             // 
             // panel11
             // 
+            this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.dtpkNgayDau);
             this.panel11.Controls.Add(this.label9);
-            this.panel11.Location = new System.Drawing.Point(577, 221);
+            this.panel11.Location = new System.Drawing.Point(482, 167);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(363, 87);
             this.panel11.TabIndex = 27;
@@ -450,9 +465,10 @@
             // 
             // panel12
             // 
+            this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.dtpkNgayCuoi);
             this.panel12.Controls.Add(this.label10);
-            this.panel12.Location = new System.Drawing.Point(946, 221);
+            this.panel12.Location = new System.Drawing.Point(851, 167);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(363, 87);
             this.panel12.TabIndex = 28;
@@ -476,30 +492,12 @@
             this.label10.TabIndex = 0;
             this.label10.Text = "Ending Date";
             // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnRefresh.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
-            this.btnRefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.btnRefresh.BorderRadius = 40;
-            this.btnRefresh.BorderSize = 0;
-            this.btnRefresh.FlatAppearance.BorderSize = 0;
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(1331, 130);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(129, 70);
-            this.btnRefresh.TabIndex = 42;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.TextColor = System.Drawing.Color.White;
-            this.btnRefresh.UseVisualStyleBackColor = false;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
             // panel7
             // 
+            this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.txbBalance);
             this.panel7.Controls.Add(this.label7);
-            this.panel7.Location = new System.Drawing.Point(540, 420);
+            this.panel7.Location = new System.Drawing.Point(30, 446);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(440, 87);
             this.panel7.TabIndex = 43;
@@ -521,30 +519,37 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Balance";
             // 
-            // btnExit
+            // btnRefresh
             // 
-            this.btnExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Century Gothic", 10.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnExit.ForeColor = System.Drawing.Color.White;
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.Location = new System.Drawing.Point(1468, 1);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(90, 84);
-            this.btnExit.TabIndex = 56;
-            this.btnExit.UseVisualStyleBackColor = true;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnRefresh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnRefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.btnRefresh.BorderRadius = 40;
+            this.btnRefresh.BorderSize = 0;
+            this.btnRefresh.FlatAppearance.BorderSize = 0;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.Font = new System.Drawing.Font("Century Gothic", 7.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
+            this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRefresh.Location = new System.Drawing.Point(30, 86);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Padding = new System.Windows.Forms.Padding(10, 0, 0, 0);
+            this.btnRefresh.Size = new System.Drawing.Size(173, 62);
+            this.btnRefresh.TabIndex = 6;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.TextColor = System.Drawing.Color.White;
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click_1);
             // 
             // ShowFinanceDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1558, 1176);
-            this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.panel7);
+            this.ClientSize = new System.Drawing.Size(1512, 1034);
             this.Controls.Add(this.btnRefresh);
+            this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel12);
             this.Controls.Add(this.panel10);
@@ -564,13 +569,9 @@
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ShowFinanceDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Show Finance Detail";
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.ShowFinanceDetail_MouseDown);
-            this.MouseMove += new System.Windows.Forms.MouseEventHandler(this.ShowFinanceDetail_MouseMove);
-            this.MouseUp += new System.Windows.Forms.MouseEventHandler(this.ShowFinanceDetail_MouseUp);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -643,10 +644,9 @@
         private Panel panel12;
         private DateTimePicker dtpkNgayCuoi;
         private Label label10;
-        private Custom.RJButton btnRefresh;
         private Panel panel7;
         private TextBox txbBalance;
         private Label label7;
-        private Button btnExit;
+        private Custom.RJButton btnRefresh;
     }
 }
