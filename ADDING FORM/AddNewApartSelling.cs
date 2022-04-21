@@ -32,14 +32,6 @@ namespace QuanlyCanHoGiangTran.ADDING_FORM
             }
             cbDuAn.DataSource = listDuAn;
 
-            List<string> listTinhTrang = new List<string>();
-            string[] arrayListTinhTrang = { "Đang bán", "Đã bán" };
-            foreach (string str in arrayListTinhTrang)
-            {
-                listTinhTrang.Add(str);
-            }
-            cbTinhTrang.DataSource = listTinhTrang;
-
             List<string> listPhongNgu = new List<string>();
             string[] arrayListPhongNgu = { "1 PN", "2 PN", "2 PN + 1", "3 PN", "3 PN + 1", "4 PN", "4 PN + 1" };
             foreach (string str in arrayListPhongNgu)
@@ -69,7 +61,6 @@ namespace QuanlyCanHoGiangTran.ADDING_FORM
 
             string maCanHo = txbMaCanHo.Text;
             string duan = cbDuAn.Text;
-            string tinhTrang = cbTinhTrang.Text;
             string tenChuHo = txbTenChuHo.Text;
             string daiLy = txbDaiLy.Text;
             string email = txbEmail.Text;
@@ -81,7 +72,7 @@ namespace QuanlyCanHoGiangTran.ADDING_FORM
             string ngayNhapData = dtpkNgayNhapData.Value.ToString();
             string ghiChu = txbGhiChu.Text;
 
-            int i = AdminDAL.Instance.addApartmentSelling(maCanHo, tenChuHo, duan, tinhTrang, daiLy, email, phone,
+            int i = AdminDAL.Instance.addApartmentSelling(maCanHo, tenChuHo, duan, daiLy, email, phone,
                                                     soPhongNgu, dienTich, vndPrice, usdPrice, ngayNhapData, ghiChu);
 
             try

@@ -55,7 +55,6 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             dtgvApartInfo.Columns["PHONE"].HeaderText = "PHONE";
             dtgvApartInfo.Columns["DAILY"].HeaderText = "AGENT NAME";
             dtgvApartInfo.Columns["DUAN"].HeaderText = "AREA";
-            dtgvApartInfo.Columns["TINHTRANG"].HeaderText = "STATUS";
             dtgvApartInfo.Columns["SOPHONGNGU"].HeaderText = "BEDROOM";
             dtgvApartInfo.Columns["DIENTICH"].HeaderText = "SQM";
             dtgvApartInfo.Columns["GIATIENUSD"].HeaderText = "USD PRICE ";
@@ -88,7 +87,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             txbSearch.Clear();
         }
 
-        Bitmap bitmap;
+        //Bitmap bitmap;
 
 
         //private void btnPrint_Click(object sender, EventArgs e)

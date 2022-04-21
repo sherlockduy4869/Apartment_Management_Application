@@ -56,9 +56,6 @@
             this.panel16 = new System.Windows.Forms.Panel();
             this.cbDuAn = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.cbTinhTrang = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.txbTenChuHo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -78,7 +75,6 @@
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel16.SuspendLayout();
-            this.panel15.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -126,7 +122,7 @@
             this.btnAdd.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAdd.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnAdd.ForeColor = System.Drawing.Color.White;
-            this.btnAdd.Location = new System.Drawing.Point(745, 742);
+            this.btnAdd.Location = new System.Drawing.Point(716, 664);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(239, 76);
             this.btnAdd.TabIndex = 26;
@@ -289,7 +285,7 @@
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.txbEmail);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(53, 560);
+            this.panel4.Location = new System.Drawing.Point(53, 489);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(768, 65);
             this.panel4.TabIndex = 19;
@@ -317,7 +313,7 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.txbDaiLy);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(53, 489);
+            this.panel3.Location = new System.Drawing.Point(53, 418);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(768, 65);
             this.panel3.TabIndex = 18;
@@ -369,41 +365,12 @@
             this.label16.TabIndex = 0;
             this.label16.Text = "Area";
             // 
-            // panel15
-            // 
-            this.panel15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel15.Controls.Add(this.cbTinhTrang);
-            this.panel15.Controls.Add(this.label15);
-            this.panel15.Location = new System.Drawing.Point(53, 347);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(768, 65);
-            this.panel15.TabIndex = 16;
-            // 
-            // cbTinhTrang
-            // 
-            this.cbTinhTrang.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cbTinhTrang.FormattingEnabled = true;
-            this.cbTinhTrang.Location = new System.Drawing.Point(320, 13);
-            this.cbTinhTrang.Name = "cbTinhTrang";
-            this.cbTinhTrang.Size = new System.Drawing.Size(428, 41);
-            this.cbTinhTrang.TabIndex = 9;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label15.Location = new System.Drawing.Point(14, 12);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(99, 33);
-            this.label15.TabIndex = 0;
-            this.label15.Text = "Status";
-            // 
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.txbTenChuHo);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(53, 418);
+            this.panel2.Location = new System.Drawing.Point(53, 347);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(768, 65);
             this.panel2.TabIndex = 17;
@@ -459,7 +426,7 @@
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.txbPhone);
             this.panel11.Controls.Add(this.label11);
-            this.panel11.Location = new System.Drawing.Point(53, 636);
+            this.panel11.Location = new System.Drawing.Point(53, 560);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(768, 65);
             this.panel11.TabIndex = 20;
@@ -499,7 +466,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1663, 847);
+            this.ClientSize = new System.Drawing.Size(1663, 797);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.panel11);
             this.Controls.Add(this.panel10);
@@ -512,7 +479,6 @@
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel16);
-            this.Controls.Add(this.panel15);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Name = "AddNewApartSelling";
@@ -536,8 +502,6 @@
             this.panel3.PerformLayout();
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            this.panel15.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
@@ -579,9 +543,6 @@
         private Panel panel16;
         private ComboBox cbDuAn;
         private Label label16;
-        private Panel panel15;
-        private ComboBox cbTinhTrang;
-        private Label label15;
         private Panel panel2;
         private TextBox txbTenChuHo;
         private Label label2;
