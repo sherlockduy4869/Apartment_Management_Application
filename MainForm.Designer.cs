@@ -255,16 +255,16 @@
             this.panel1.Controls.Add(this.lbSecond);
             this.panel1.Controls.Add(this.lbDate);
             this.panel1.Controls.Add(this.lbTime);
-            this.panel1.Location = new System.Drawing.Point(254, 194);
+            this.panel1.Location = new System.Drawing.Point(238, 194);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(671, 255);
+            this.panel1.Size = new System.Drawing.Size(702, 255);
             this.panel1.TabIndex = 61;
             // 
             // lbDay
             // 
             this.lbDay.AutoSize = true;
             this.lbDay.Font = new System.Drawing.Font("Segoe UI", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbDay.Location = new System.Drawing.Point(389, 168);
+            this.lbDay.Location = new System.Drawing.Point(414, 163);
             this.lbDay.Name = "lbDay";
             this.lbDay.Size = new System.Drawing.Size(279, 71);
             this.lbDay.TabIndex = 3;

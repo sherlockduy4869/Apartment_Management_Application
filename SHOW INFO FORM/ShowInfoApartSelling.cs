@@ -16,8 +16,8 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
 {
     public partial class ShowInfoApartSelling : Form
     {
-        private int start = 1;
-        private int end = 2;
+        //private int start = 1;
+        //private int end = 2;
 
         public ShowInfoApartSelling()
         {
