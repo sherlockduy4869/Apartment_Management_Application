@@ -31,7 +31,7 @@
             this.btnNextCyle = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbMaCanHo = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -78,22 +78,22 @@
             // 
             this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.txbMaCanHo);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(72, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(622, 109);
             this.panel2.TabIndex = 5;
             // 
-            // textBox1
+            // txbMaCanHo
             // 
-            this.textBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.textBox1.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(228, 45);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(370, 40);
-            this.textBox1.TabIndex = 1;
+            this.txbMaCanHo.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.txbMaCanHo.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbMaCanHo.ForeColor = System.Drawing.Color.Black;
+            this.txbMaCanHo.Location = new System.Drawing.Point(228, 45);
+            this.txbMaCanHo.Name = "txbMaCanHo";
+            this.txbMaCanHo.Size = new System.Drawing.Size(370, 40);
+            this.txbMaCanHo.TabIndex = 1;
             // 
             // label2
             // 
@@ -129,7 +129,7 @@
         private Custom.RJButton btnNextCyle;
         private TableLayoutPanel tableLayoutPanel1;
         private Panel panel2;
-        private TextBox textBox1;
+        private TextBox txbMaCanHo;
         private Label label2;
     }
 }
