@@ -26,13 +26,27 @@ namespace QuanlyCanHoGiangTran.OTHERS_FUNCTION_FORM
             Apartment apartment = AdminDAL.Instance.getApartmentByMaCanHo(txbMaCanHo.Text);
             ApartmentMoneyTax apartmentMoneyTax = AdminDAL.Instance.getApartmentMoneyByMaCanHo(txbMaCanHo.Text);
 
-            ShowFinanceDetail showFinanceDetail = new ShowFinanceDetail(txbMaCanHo.Text, apartmentFinance.Thue, apartmentFinance.Phikekhaithue
+            try
+            {
+                if(apartmentFinance != null && apartment != null && apartmentMoneyTax != null)
+                {
+                    ShowFinanceDetail showFinanceDetail = new ShowFinanceDetail(txbMaCanHo.Text, apartmentFinance.Thue, apartmentFinance.Phikekhaithue
                                                                         , apartmentFinance.Phiquanly, apartmentFinance.Tienrefundkhach, apartmentFinance.Phidonvesinh
                                                                         , apartmentFinance.Statusthue, apartmentFinance.Statusphikekhaithue
                                                                         , apartmentFinance.Statusphiquanly, apartmentFinance.Statustienrefundkhach, apartmentFinance.Statusphidonvesinh
                                                                         , apartment.Chuky, apartmentMoneyTax.Ngaydau, apartmentMoneyTax.Ngaycuoi, apartmentMoneyTax.Trangthai);
-            showFinanceDetail.Show();
-            this.Close();
+                    showFinanceDetail.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("ERROR 404");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR 404");
+            }
         }
 
     }

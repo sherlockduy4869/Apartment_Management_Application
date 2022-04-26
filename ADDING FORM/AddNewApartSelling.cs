@@ -118,12 +118,27 @@ namespace QuanlyCanHoGiangTran.ADDING_FORM
 
         private void txbGiaTienVND_Leave(object sender, EventArgs e)
         {
-            txbGiaTienVND.Text = double.Parse(txbGiaTienVND.Text).ToString("N0");
+            if(txbGiaTienVND.Text == "")
+            {
+                txbGiaTienVND.Text = double.Parse("0").ToString("N0");
+            }
+            else
+            {
+                txbGiaTienVND.Text = double.Parse(txbGiaTienVND.Text).ToString("N0");
+            }
+            
         }
 
         private void txbGiaTienUSD_Leave(object sender, EventArgs e)
         {
-            txbGiaTienUSD.Text = double.Parse(txbGiaTienUSD.Text).ToString("N0");
+            if (txbGiaTienUSD.Text == "")
+            {
+                txbGiaTienUSD.Text = double.Parse("0").ToString("N0");
+            }
+            else
+            {
+                txbGiaTienUSD.Text = double.Parse(txbGiaTienUSD.Text).ToString("N0");
+            }
         }
     }
 }
