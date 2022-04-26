@@ -246,7 +246,6 @@
             this.ClientSize = new System.Drawing.Size(1020, 737);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
-            this.MaximumSize = new System.Drawing.Size(1046, 808);
             this.Name = "AddNewApartCart";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Add New Apart Cart";
