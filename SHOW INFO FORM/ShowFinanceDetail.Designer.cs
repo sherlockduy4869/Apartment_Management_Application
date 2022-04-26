@@ -74,6 +74,12 @@
             this.txbBalance = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnRefresh = new QuanlyCanHoGiangTran.Custom.RJButton();
+            this.panel13 = new System.Windows.Forms.Panel();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label11 = new System.Windows.Forms.Label();
+            this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel14 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -86,34 +92,40 @@
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel7.SuspendLayout();
+            this.panel13.SuspendLayout();
+            this.tableLayoutPanel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
+            this.tableLayoutPanel3.SuspendLayout();
+            this.panel14.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txbMaCanHo);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(679, 53);
+            this.panel1.Location = new System.Drawing.Point(10, 16);
             this.panel1.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(621, 77);
+            this.panel1.Size = new System.Drawing.Size(508, 77);
             this.panel1.TabIndex = 0;
             // 
             // txbMaCanHo
             // 
             this.txbMaCanHo.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbMaCanHo.Location = new System.Drawing.Point(278, 18);
+            this.txbMaCanHo.Location = new System.Drawing.Point(212, 16);
             this.txbMaCanHo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbMaCanHo.Name = "txbMaCanHo";
             this.txbMaCanHo.ReadOnly = true;
-            this.txbMaCanHo.Size = new System.Drawing.Size(278, 36);
+            this.txbMaCanHo.Size = new System.Drawing.Size(286, 36);
             this.txbMaCanHo.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(22, 24);
+            this.label1.Location = new System.Drawing.Point(15, 24);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(189, 28);
@@ -122,13 +134,14 @@
             // 
             // panel2
             // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.txbThue);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(556, 227);
+            this.panel2.Location = new System.Drawing.Point(542, 123);
             this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(845, 77);
+            this.panel2.Size = new System.Drawing.Size(820, 77);
             this.panel2.TabIndex = 1;
             // 
             // txbThue
@@ -154,13 +167,14 @@
             // 
             // panel3
             // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.txbPhiKeKhaiThue);
             this.panel3.Controls.Add(this.label3);
-            this.panel3.Location = new System.Drawing.Point(556, 309);
+            this.panel3.Location = new System.Drawing.Point(542, 229);
             this.panel3.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(845, 77);
+            this.panel3.Size = new System.Drawing.Size(820, 77);
             this.panel3.TabIndex = 2;
             // 
             // txbPhiKeKhaiThue
@@ -186,13 +200,14 @@
             // 
             // panel4
             // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel4.Controls.Add(this.txbPhiQuanLy);
             this.panel4.Controls.Add(this.label4);
-            this.panel4.Location = new System.Drawing.Point(556, 390);
+            this.panel4.Location = new System.Drawing.Point(542, 339);
             this.panel4.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(845, 77);
+            this.panel4.Size = new System.Drawing.Size(820, 77);
             this.panel4.TabIndex = 3;
             // 
             // txbPhiQuanLy
@@ -218,13 +233,14 @@
             // 
             // panel5
             // 
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel5.Controls.Add(this.txbTienRefundKhach);
             this.panel5.Controls.Add(this.label5);
-            this.panel5.Location = new System.Drawing.Point(556, 472);
+            this.panel5.Location = new System.Drawing.Point(542, 448);
             this.panel5.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(845, 77);
+            this.panel5.Size = new System.Drawing.Size(820, 77);
             this.panel5.TabIndex = 4;
             // 
             // txbTienRefundKhach
@@ -250,13 +266,14 @@
             // 
             // panel6
             // 
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel6.Controls.Add(this.txbPhiDonVeSinh);
             this.panel6.Controls.Add(this.label6);
-            this.panel6.Location = new System.Drawing.Point(556, 553);
+            this.panel6.Location = new System.Drawing.Point(542, 557);
             this.panel6.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(845, 77);
+            this.panel6.Size = new System.Drawing.Size(820, 77);
             this.panel6.TabIndex = 5;
             // 
             // txbPhiDonVeSinh
@@ -291,11 +308,11 @@
             this.btnMarkDone.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMarkDone.ForeColor = System.Drawing.Color.White;
             this.btnMarkDone.Image = ((System.Drawing.Image)(resources.GetObject("btnMarkDone.Image")));
-            this.btnMarkDone.Location = new System.Drawing.Point(556, 727);
+            this.btnMarkDone.Location = new System.Drawing.Point(166, 6);
             this.btnMarkDone.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnMarkDone.Name = "btnMarkDone";
             this.btnMarkDone.Padding = new System.Windows.Forms.Padding(0, 0, 0, 18);
-            this.btnMarkDone.Size = new System.Drawing.Size(266, 167);
+            this.btnMarkDone.Size = new System.Drawing.Size(231, 191);
             this.btnMarkDone.TabIndex = 14;
             this.btnMarkDone.Text = "Mark Done Outcome";
             this.btnMarkDone.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -314,11 +331,11 @@
             this.btnRedo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRedo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(178)))), ((int)(((byte)(8)))), ((int)(((byte)(55)))));
             this.btnRedo.Image = ((System.Drawing.Image)(resources.GetObject("btnRedo.Image")));
-            this.btnRedo.Location = new System.Drawing.Point(1134, 727);
+            this.btnRedo.Location = new System.Drawing.Point(777, 3);
             this.btnRedo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnRedo.Name = "btnRedo";
             this.btnRedo.Padding = new System.Windows.Forms.Padding(0, 0, 0, 18);
-            this.btnRedo.Size = new System.Drawing.Size(266, 167);
+            this.btnRedo.Size = new System.Drawing.Size(231, 191);
             this.btnRedo.TabIndex = 15;
             this.btnRedo.Text = "Redo Outcome";
             this.btnRedo.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
@@ -328,9 +345,10 @@
             // 
             // cbFinanceCategory
             // 
+            this.cbFinanceCategory.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbFinanceCategory.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbFinanceCategory.FormattingEnabled = true;
-            this.cbFinanceCategory.Location = new System.Drawing.Point(789, 659);
+            this.cbFinanceCategory.Location = new System.Drawing.Point(512, 38);
             this.cbFinanceCategory.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbFinanceCategory.Name = "cbFinanceCategory";
             this.cbFinanceCategory.Size = new System.Drawing.Size(418, 36);
@@ -338,9 +356,10 @@
             // 
             // lbThue
             // 
+            this.lbThue.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbThue.AutoSize = true;
             this.lbThue.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbThue.Location = new System.Drawing.Point(1419, 253);
+            this.lbThue.Location = new System.Drawing.Point(1394, 145);
             this.lbThue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbThue.Name = "lbThue";
             this.lbThue.Size = new System.Drawing.Size(30, 33);
@@ -349,9 +368,10 @@
             // 
             // lbPhiKeKhaiThue
             // 
+            this.lbPhiKeKhaiThue.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbPhiKeKhaiThue.AutoSize = true;
             this.lbPhiKeKhaiThue.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbPhiKeKhaiThue.Location = new System.Drawing.Point(1419, 338);
+            this.lbPhiKeKhaiThue.Location = new System.Drawing.Point(1394, 251);
             this.lbPhiKeKhaiThue.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPhiKeKhaiThue.Name = "lbPhiKeKhaiThue";
             this.lbPhiKeKhaiThue.Size = new System.Drawing.Size(30, 33);
@@ -360,9 +380,10 @@
             // 
             // lbPhiQuanLy
             // 
+            this.lbPhiQuanLy.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbPhiQuanLy.AutoSize = true;
             this.lbPhiQuanLy.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbPhiQuanLy.Location = new System.Drawing.Point(1419, 425);
+            this.lbPhiQuanLy.Location = new System.Drawing.Point(1394, 361);
             this.lbPhiQuanLy.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPhiQuanLy.Name = "lbPhiQuanLy";
             this.lbPhiQuanLy.Size = new System.Drawing.Size(30, 33);
@@ -371,9 +392,10 @@
             // 
             // lbTienReFundKhach
             // 
+            this.lbTienReFundKhach.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbTienReFundKhach.AutoSize = true;
             this.lbTienReFundKhach.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbTienReFundKhach.Location = new System.Drawing.Point(1419, 501);
+            this.lbTienReFundKhach.Location = new System.Drawing.Point(1394, 470);
             this.lbTienReFundKhach.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTienReFundKhach.Name = "lbTienReFundKhach";
             this.lbTienReFundKhach.Size = new System.Drawing.Size(30, 33);
@@ -382,9 +404,10 @@
             // 
             // lbPhidonvesinh
             // 
+            this.lbPhidonvesinh.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbPhidonvesinh.AutoSize = true;
             this.lbPhidonvesinh.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbPhidonvesinh.Location = new System.Drawing.Point(1419, 582);
+            this.lbPhidonvesinh.Location = new System.Drawing.Point(1394, 579);
             this.lbPhidonvesinh.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbPhidonvesinh.Name = "lbPhidonvesinh";
             this.lbPhidonvesinh.Size = new System.Drawing.Size(30, 33);
@@ -393,10 +416,11 @@
             // 
             // panel8
             // 
+            this.panel8.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel8.Controls.Add(this.txbTongThu);
             this.panel8.Controls.Add(this.lbTongThu);
-            this.panel8.Location = new System.Drawing.Point(34, 227);
+            this.panel8.Location = new System.Drawing.Point(10, 229);
             this.panel8.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(508, 77);
@@ -405,11 +429,11 @@
             // txbTongThu
             // 
             this.txbTongThu.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbTongThu.Location = new System.Drawing.Point(201, 27);
+            this.txbTongThu.Location = new System.Drawing.Point(212, 27);
             this.txbTongThu.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbTongThu.Name = "txbTongThu";
             this.txbTongThu.ReadOnly = true;
-            this.txbTongThu.Size = new System.Drawing.Size(297, 36);
+            this.txbTongThu.Size = new System.Drawing.Size(286, 36);
             this.txbTongThu.TabIndex = 1;
             this.txbTongThu.Text = "0";
             // 
@@ -426,10 +450,11 @@
             // 
             // panel9
             // 
+            this.panel9.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel9.Controls.Add(this.txbTongChi);
             this.panel9.Controls.Add(this.lbTongChi);
-            this.panel9.Location = new System.Drawing.Point(34, 309);
+            this.panel9.Location = new System.Drawing.Point(10, 339);
             this.panel9.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(508, 77);
@@ -438,11 +463,11 @@
             // txbTongChi
             // 
             this.txbTongChi.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbTongChi.Location = new System.Drawing.Point(201, 24);
+            this.txbTongChi.Location = new System.Drawing.Point(212, 24);
             this.txbTongChi.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbTongChi.Name = "txbTongChi";
             this.txbTongChi.ReadOnly = true;
-            this.txbTongChi.Size = new System.Drawing.Size(297, 36);
+            this.txbTongChi.Size = new System.Drawing.Size(286, 36);
             this.txbTongChi.TabIndex = 1;
             // 
             // lbTongChi
@@ -458,10 +483,11 @@
             // 
             // panel10
             // 
+            this.panel10.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel10.Controls.Add(this.txbChuKy);
             this.panel10.Controls.Add(this.label8);
-            this.panel10.Location = new System.Drawing.Point(34, 146);
+            this.panel10.Location = new System.Drawing.Point(10, 123);
             this.panel10.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(508, 77);
@@ -470,11 +496,11 @@
             // txbChuKy
             // 
             this.txbChuKy.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbChuKy.Location = new System.Drawing.Point(201, 25);
+            this.txbChuKy.Location = new System.Drawing.Point(212, 25);
             this.txbChuKy.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbChuKy.Name = "txbChuKy";
             this.txbChuKy.ReadOnly = true;
-            this.txbChuKy.Size = new System.Drawing.Size(297, 36);
+            this.txbChuKy.Size = new System.Drawing.Size(286, 36);
             this.txbChuKy.TabIndex = 1;
             // 
             // label8
@@ -493,10 +519,10 @@
             this.panel11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel11.Controls.Add(this.dtpkNgayDau);
             this.panel11.Controls.Add(this.label9);
-            this.panel11.Location = new System.Drawing.Point(556, 146);
+            this.panel11.Location = new System.Drawing.Point(13, 5);
             this.panel11.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(418, 77);
+            this.panel11.Size = new System.Drawing.Size(394, 62);
             this.panel11.TabIndex = 27;
             // 
             // dtpkNgayDau
@@ -505,7 +531,7 @@
             this.dtpkNgayDau.Enabled = false;
             this.dtpkNgayDau.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpkNgayDau.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpkNgayDau.Location = new System.Drawing.Point(199, 22);
+            this.dtpkNgayDau.Location = new System.Drawing.Point(182, 16);
             this.dtpkNgayDau.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpkNgayDau.Name = "dtpkNgayDau";
             this.dtpkNgayDau.Size = new System.Drawing.Size(206, 36);
@@ -515,7 +541,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(15, 30);
+            this.label9.Location = new System.Drawing.Point(15, 22);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(165, 28);
@@ -527,10 +553,10 @@
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.dtpkNgayCuoi);
             this.panel12.Controls.Add(this.label10);
-            this.panel12.Location = new System.Drawing.Point(982, 146);
+            this.panel12.Location = new System.Drawing.Point(415, 5);
             this.panel12.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(418, 77);
+            this.panel12.Size = new System.Drawing.Size(394, 62);
             this.panel12.TabIndex = 28;
             // 
             // dtpkNgayCuoi
@@ -539,7 +565,7 @@
             this.dtpkNgayCuoi.Enabled = false;
             this.dtpkNgayCuoi.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.dtpkNgayCuoi.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpkNgayCuoi.Location = new System.Drawing.Point(199, 25);
+            this.dtpkNgayCuoi.Location = new System.Drawing.Point(182, 16);
             this.dtpkNgayCuoi.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.dtpkNgayCuoi.Name = "dtpkNgayCuoi";
             this.dtpkNgayCuoi.Size = new System.Drawing.Size(206, 36);
@@ -549,7 +575,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(15, 30);
+            this.label10.Location = new System.Drawing.Point(14, 22);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(154, 28);
@@ -558,10 +584,11 @@
             // 
             // panel7
             // 
+            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel7.Controls.Add(this.txbBalance);
             this.panel7.Controls.Add(this.label7);
-            this.panel7.Location = new System.Drawing.Point(34, 390);
+            this.panel7.Location = new System.Drawing.Point(10, 448);
             this.panel7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(508, 77);
@@ -570,11 +597,11 @@
             // txbBalance
             // 
             this.txbBalance.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbBalance.Location = new System.Drawing.Point(201, 27);
+            this.txbBalance.Location = new System.Drawing.Point(212, 27);
             this.txbBalance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbBalance.Name = "txbBalance";
             this.txbBalance.ReadOnly = true;
-            this.txbBalance.Size = new System.Drawing.Size(297, 36);
+            this.txbBalance.Size = new System.Drawing.Size(286, 36);
             this.txbBalance.TabIndex = 1;
             // 
             // label7
@@ -590,6 +617,7 @@
             // 
             // btnRefresh
             // 
+            this.btnRefresh.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btnRefresh.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
             this.btnRefresh.BorderColor = System.Drawing.Color.PaleVioletRed;
@@ -602,7 +630,7 @@
             this.btnRefresh.ForeColor = System.Drawing.Color.White;
             this.btnRefresh.Image = ((System.Drawing.Image)(resources.GetObject("btnRefresh.Image")));
             this.btnRefresh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRefresh.Location = new System.Drawing.Point(34, 76);
+            this.btnRefresh.Location = new System.Drawing.Point(4, 11);
             this.btnRefresh.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Padding = new System.Windows.Forms.Padding(11, 0, 0, 0);
@@ -613,33 +641,109 @@
             this.btnRefresh.UseVisualStyleBackColor = false;
             this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click_1);
             // 
+            // panel13
+            // 
+            this.panel13.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel13.Controls.Add(this.panel12);
+            this.panel13.Controls.Add(this.panel11);
+            this.panel13.Location = new System.Drawing.Point(542, 16);
+            this.panel13.Name = "panel13";
+            this.panel13.Size = new System.Drawing.Size(820, 77);
+            this.panel13.TabIndex = 45;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 3;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.41599F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.58401F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 65F));
+            this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lbPhidonvesinh, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.panel10, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.lbTienReFundKhach, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.panel8, 0, 2);
+            this.tableLayoutPanel1.Controls.Add(this.lbPhiQuanLy, 2, 3);
+            this.tableLayoutPanel1.Controls.Add(this.panel7, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.lbPhiKeKhaiThue, 2, 2);
+            this.tableLayoutPanel1.Controls.Add(this.panel9, 0, 3);
+            this.tableLayoutPanel1.Controls.Add(this.lbThue, 2, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.panel4, 1, 3);
+            this.tableLayoutPanel1.Controls.Add(this.panel5, 1, 4);
+            this.tableLayoutPanel1.Controls.Add(this.panel6, 1, 5);
+            this.tableLayoutPanel1.Controls.Add(this.panel13, 1, 0);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(12, 135);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 6;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.30843F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.87484F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.1639F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.59749F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.01937F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.45296F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1442, 652);
+            this.tableLayoutPanel1.TabIndex = 46;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.34943F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 81.65057F));
+            this.tableLayoutPanel2.Controls.Add(this.btnRefresh, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.label11, 1, 0);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(13, 61);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 1;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1251, 68);
+            this.tableLayoutPanel2.TabIndex = 47;
+            // 
+            // label11
+            // 
+            this.label11.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Century Gothic", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label11.Location = new System.Drawing.Point(357, 8);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(765, 52);
+            this.label11.TabIndex = 7;
+            this.label11.Text = "FINANCE INFORMATION APARTMENT";
+            // 
+            // tableLayoutPanel3
+            // 
+            this.tableLayoutPanel3.ColumnCount = 1;
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanel3.Controls.Add(this.panel14, 0, 1);
+            this.tableLayoutPanel3.Controls.Add(this.cbFinanceCategory, 0, 0);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(11, 793);
+            this.tableLayoutPanel3.Name = "tableLayoutPanel3";
+            this.tableLayoutPanel3.RowCount = 2;
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34.53238F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65.46763F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(1443, 328);
+            this.tableLayoutPanel3.TabIndex = 48;
+            // 
+            // panel14
+            // 
+            this.panel14.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel14.Controls.Add(this.btnMarkDone);
+            this.panel14.Controls.Add(this.btnRedo);
+            this.panel14.Location = new System.Drawing.Point(132, 120);
+            this.panel14.Name = "panel14";
+            this.panel14.Size = new System.Drawing.Size(1178, 200);
+            this.panel14.TabIndex = 0;
+            // 
             // ShowFinanceDetail
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 28F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1744, 921);
-            this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.panel7);
-            this.Controls.Add(this.panel11);
-            this.Controls.Add(this.panel12);
-            this.Controls.Add(this.panel10);
-            this.Controls.Add(this.panel9);
-            this.Controls.Add(this.panel8);
-            this.Controls.Add(this.lbPhidonvesinh);
-            this.Controls.Add(this.lbTienReFundKhach);
-            this.Controls.Add(this.lbPhiQuanLy);
-            this.Controls.Add(this.lbPhiKeKhaiThue);
-            this.Controls.Add(this.lbThue);
-            this.Controls.Add(this.cbFinanceCategory);
-            this.Controls.Add(this.btnRedo);
-            this.Controls.Add(this.btnMarkDone);
-            this.Controls.Add(this.panel6);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1467, 1178);
+            this.Controls.Add(this.tableLayoutPanel3);
+            this.Controls.Add(this.tableLayoutPanel2);
+            this.Controls.Add(this.tableLayoutPanel1);
             this.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "ShowFinanceDetail";
@@ -669,8 +773,14 @@
             this.panel12.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.panel13.ResumeLayout(false);
+            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tableLayoutPanel1.PerformLayout();
+            this.tableLayoutPanel2.ResumeLayout(false);
+            this.tableLayoutPanel2.PerformLayout();
+            this.tableLayoutPanel3.ResumeLayout(false);
+            this.panel14.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -721,5 +831,11 @@
         private TextBox txbBalance;
         private Label label7;
         private Custom.RJButton btnRefresh;
+        private Panel panel13;
+        private TableLayoutPanel tableLayoutPanel1;
+        private TableLayoutPanel tableLayoutPanel2;
+        private Label label11;
+        private TableLayoutPanel tableLayoutPanel3;
+        private Panel panel14;
     }
 }

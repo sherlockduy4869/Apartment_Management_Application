@@ -225,5 +225,6 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             showFinanceDetail.Show();
             this.Close();
         }
+
     }
 }
