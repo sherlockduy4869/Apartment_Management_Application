@@ -14,6 +14,8 @@ namespace QuanlyCanHoGiangTran.ADDING_FORM
 {
     public partial class AddNewApartSelling : Form
     {
+        private float usdPrice = 0;
+        private float vndPrice = 0;
         public AddNewApartSelling()
         {
             InitializeComponent();
@@ -65,8 +67,8 @@ namespace QuanlyCanHoGiangTran.ADDING_FORM
             string phone = txbPhone.Text;
             string soPhongNgu = cbSoPhongNgu.Text;
             string dienTich = txbDienTich.Text;
-            float usdPrice = float.Parse(txbGiaTienUSD.Text, CultureInfo.InvariantCulture.NumberFormat);
-            float vndPrice = float.Parse(txbGiaTienVND.Text, CultureInfo.InvariantCulture.NumberFormat);
+            usdPrice = float.Parse(txbGiaTienUSD.Text, CultureInfo.InvariantCulture.NumberFormat);
+            vndPrice = float.Parse(txbGiaTienVND.Text, CultureInfo.InvariantCulture.NumberFormat);
             string ngayNhapData = dtpkNgayNhapData.Value.ToString();
             string ghiChu = txbGhiChu.Text;
 

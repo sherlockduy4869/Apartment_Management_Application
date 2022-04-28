@@ -137,18 +137,9 @@ namespace QuanlyCanHoGiangTran
 
         private void txbThue_Leave(object sender, EventArgs e)
         {
-            if (txbThue.Text == "")
-            {
-                txbThue.Text = double.Parse("0").ToString("N0");
-            }
-            else
-            {
-                txbThue.Text = double.Parse(txbThue.Text).ToString("N0");
-            }
-
+            txbThue.Text = double.Parse(txbThue.Text).ToString("N0");
             tienThu = tienThu + float.Parse(txbThue.Text);
             txbTienThu.Text = tienThu.ToString("N0");
-            
         }
 
         private void txbThue_Click(object sender, EventArgs e)
@@ -165,16 +156,7 @@ namespace QuanlyCanHoGiangTran
 
         private void txbPhiKeKhaiThue_Leave(object sender, EventArgs e)
         {
-            
-            if (txbPhiKeKhaiThue.Text == "")
-            {
-                txbPhiKeKhaiThue.Text = double.Parse("0").ToString("N0");
-            }
-            else
-            {
-                txbPhiKeKhaiThue.Text = double.Parse(txbPhiKeKhaiThue.Text).ToString("N0");
-            }
-
+            txbPhiKeKhaiThue.Text = double.Parse(txbPhiKeKhaiThue.Text).ToString("N0");
             tienThu = tienThu + float.Parse(txbPhiKeKhaiThue.Text);
             txbTienThu.Text = tienThu.ToString("N0");
         }
@@ -193,16 +175,7 @@ namespace QuanlyCanHoGiangTran
 
         private void txbPhiQuanLy_Leave(object sender, EventArgs e)
         {
-            
-            if (txbPhiQuanLy.Text == "")
-            {
-                txbPhiQuanLy.Text = double.Parse("0").ToString("N0");
-            }
-            else
-            {
-                txbPhiQuanLy.Text = double.Parse(txbPhiQuanLy.Text).ToString("N0");
-            }
-
+            txbPhiQuanLy.Text = double.Parse(txbPhiQuanLy.Text).ToString("N0");
             tienThu = tienThu + float.Parse(txbPhiQuanLy.Text);
             txbTienThu.Text = tienThu.ToString("N0");
         }
@@ -221,16 +194,7 @@ namespace QuanlyCanHoGiangTran
 
         private void txbTienRefund_Leave(object sender, EventArgs e)
         {
-            
-            if (txbTienRefund.Text == "")
-            {
-                txbTienRefund.Text = double.Parse("0").ToString("N0");
-            }
-            else
-            {
-                txbTienRefund.Text = double.Parse(txbTienRefund.Text).ToString("N0");
-            }
-
+            txbTienRefund.Text = double.Parse(txbTienRefund.Text).ToString("N0");
             tienThu = tienThu + float.Parse(txbTienRefund.Text);
             txbTienThu.Text = tienThu.ToString("N0");
         }
@@ -249,16 +213,7 @@ namespace QuanlyCanHoGiangTran
 
         private void txbPhiDonVeSinh_Leave(object sender, EventArgs e)
         {
-            
-            if (txbPhiDonVeSinh.Text == "")
-            {
-                txbPhiDonVeSinh.Text = double.Parse("0").ToString("N0");
-            }
-            else
-            {
-                txbPhiDonVeSinh.Text = double.Parse(txbPhiDonVeSinh.Text).ToString("N0");
-            }
-
+            txbPhiDonVeSinh.Text = double.Parse(txbPhiDonVeSinh.Text).ToString("N0");
             tienThu = tienThu + float.Parse(txbPhiDonVeSinh.Text);
             txbTienThu.Text = tienThu.ToString("N0");
         }
@@ -278,14 +233,10 @@ namespace QuanlyCanHoGiangTran
         private void txbTienthue1thang_Leave(object sender, EventArgs e)
         {
             
-            if (txbTienthue1thang.Text == "")
-            {
-                txbTienthue1thang.Text = double.Parse("0").ToString("N0");
-            }
-            else
-            {
-                txbTienthue1thang.Text = double.Parse(txbTienthue1thang.Text).ToString("N0");
-            }
+            
+            txbTienthue1thang.Text = double.Parse(txbTienthue1thang.Text).ToString("N0");
+            
+            
         }
 
         private void txbTienthue1thang_Click(object sender, EventArgs e)
