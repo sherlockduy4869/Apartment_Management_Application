@@ -28,13 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowInfoApart));
             this.label1 = new System.Windows.Forms.Label();
             this.dtgvApartInfo = new System.Windows.Forms.DataGridView();
             this.txbSearch = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.apartmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pbRefresh = new System.Windows.Forms.PictureBox();
@@ -50,7 +48,6 @@
             this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.apartmentBindingSource)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRefresh)).BeginInit();
@@ -116,10 +113,6 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 26;
             this.pictureBox1.TabStop = false;
-            // 
-            // apartmentBindingSource
-            // 
-            this.apartmentBindingSource.DataSource = typeof(QuanlyCanHoGiangTran.DTO.Apartment);
             // 
             // tableLayoutPanel1
             // 
@@ -325,7 +318,6 @@
             this.Text = "Show Info Apart";
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.apartmentBindingSource)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.panel2.ResumeLayout(false);
@@ -347,7 +339,6 @@
         private DataGridView dtgvApartInfo;
         private TextBox txbSearch;
         private PictureBox pictureBox1;
-        private BindingSource apartmentBindingSource;
         private TableLayoutPanel tableLayoutPanel1;
         private Panel panel1;
         private TableLayoutPanel tableLayoutPanel2;

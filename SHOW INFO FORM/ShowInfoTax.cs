@@ -68,33 +68,36 @@ namespace QuanlyCanHoGiangTran
                                                                          "OR ('" + toDay + "' >= NGAYCUOI)) AND MACANHO LIKE '" + txbSearch.Text + "%'");
         }
 
-        private void btnRefresh_Click(object sender, EventArgs e)
-        {
-            //string toDay = DateTime.UtcNow.Date.ToString();
-            string toDay = "2022-06-10";
-
-            dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE (NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
-                                                                         "OR ('" + toDay + "' >= NGAYCUOI)");
-        }
-
         private void btnMarkDone_Click(object sender, EventArgs e)
         {
             MarkDone markDone = new MarkDone();
             markDone.Show();
         }
-
+        private void pbDone_Click(object sender, EventArgs e)
+        {
+            MarkDone markDone = new MarkDone();
+            markDone.Show();
+        }
         private void btnReDo_Click(object sender, EventArgs e)
         {
             Redo redo = new Redo();
             redo.Show();
         }
-
+        private void pbRedo_Click(object sender, EventArgs e)
+        {
+            Redo redo = new Redo();
+            redo.Show();
+        }
         private void btnNextCycle_Click(object sender, EventArgs e)
         {
             NextCycle nextCycle = new NextCycle();
             nextCycle.Show();
         }
-
+        private void pbNextCycle_Click(object sender, EventArgs e)
+        {
+            NextCycle nextCycle = new NextCycle();
+            nextCycle.Show();
+        }
         private void dtgvApartTax_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
             foreach (DataGridViewRow row in dtgvApartTax.Rows)
@@ -109,10 +112,33 @@ namespace QuanlyCanHoGiangTran
             }
         }
 
-        private void btnFinanceDetail_Click(object sender, EventArgs e)
+        private void txbSearch_Click(object sender, EventArgs e)
         {
-            FinanceDetail detailFinance = new FinanceDetail();
-            detailFinance.Show();
+            txbSearch.Clear();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            //string toDay = DateTime.UtcNow.Date.ToString();
+            string toDay = "2022-06-10";
+
+            dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE (NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
+                                                                         "OR ('" + toDay + "' >= NGAYCUOI)");
+        }
+
+        private void pbRefresh_Click(object sender, EventArgs e)
+        {
+            //string toDay = DateTime.UtcNow.Date.ToString();
+            string toDay = "2022-06-10";
+
+            dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE (NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
+                                                                         "OR ('" + toDay + "' >= NGAYCUOI)");
+        }
+
+        private void pbInfoDetails_Click(object sender, EventArgs e)
+        {
+            InformationDetail informationDetail = new InformationDetail();
+            informationDetail.Show();
         }
 
         private void btnInformationDetail_Click(object sender, EventArgs e)
@@ -121,19 +147,16 @@ namespace QuanlyCanHoGiangTran
             informationDetail.Show();
         }
 
-        private void txbSearch_Click(object sender, EventArgs e)
+        private void btnFinanceDetail_Click(object sender, EventArgs e)
         {
-            txbSearch.Clear();
+            FinanceDetail detailFinance = new FinanceDetail();
+            detailFinance.Show();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void pbInfoFinance_Click(object sender, EventArgs e)
         {
-            Application.Exit();
-        }
-
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
+            FinanceDetail detailFinance = new FinanceDetail();
+            detailFinance.Show();
         }
     }
 }

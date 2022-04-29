@@ -36,10 +36,6 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             txbSearch.ForeColor = System.Drawing.Color.Black;
             dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_SELLING WHERE MACANHO LIKE '" + txbSearch.Text + "%'");
         }
-        private void btnRefresh_Click_1(object sender, EventArgs e)
-        {
-            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_SELLING");
-        }
 
         void designDatagridview()
         {
@@ -75,17 +71,39 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             AddNewApartSelling addNewApartSelling = new AddNewApartSelling();
             addNewApartSelling.Show();
         }
-
+        private void pbAdd_Click(object sender, EventArgs e)
+        {
+            AddNewApartSelling addNewApartSelling = new AddNewApartSelling();
+            addNewApartSelling.Show();
+        }
         private void btnRemove_Click(object sender, EventArgs e)
         {
             RemoveApartSelling removeApartSelling = new RemoveApartSelling();
             removeApartSelling.Show();
         }
-
+        private void pbRemove_Click(object sender, EventArgs e)
+        {
+            RemoveApartSelling removeApartSelling = new RemoveApartSelling();
+            removeApartSelling.Show();
+        }
         private void txbSearch_Click(object sender, EventArgs e)
         {
             txbSearch.Clear();
         }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_SELLING");
+        }
+
+        private void pbRefresh_Click(object sender, EventArgs e)
+        {
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_SELLING");
+        }
+
+
+
+
 
         //Bitmap bitmap;
 
