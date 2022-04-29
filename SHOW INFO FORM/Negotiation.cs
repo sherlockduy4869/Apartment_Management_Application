@@ -17,8 +17,8 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         public Negotiation()
         {
             InitializeComponent();
-            listApartNegotiate();
-            designDatagridview();
+            //listApartNegotiate();
+            //designDatagridview();
         }
 
         void listApartNegotiate()
@@ -38,14 +38,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,TIENTHUEMOTTHANG,NGAYBATDAU,NGAYKETTHUC,STATUS FROM APARTMENT_CONTRACT " +
                                                                                 "WHERE NGAYNHAC <= '" + toDay + "' AND '" + toDay + "' <= NGAYKETTHUC AND MACANHO LIKE '" + txbSearch.Text + "%'");
         }
-        private void btnRefresh_Click_1(object sender, EventArgs e)
-        {
-            //string toDay = DateTime.UtcNow.Date.ToString();
-            string toDay = "2022-12-15";
 
-            dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,DAILY,EMAIL,PHONE,MACANHO,DUAN,TIENTHUEMOTTHANG,NGAYBATDAU,NGAYKETTHUC,STATUS FROM APARTMENT_CONTRACT " +
-                                                                                "WHERE NGAYNHAC <= '" + toDay + "' AND '" + toDay + "' <= NGAYKETTHUC");
-        }
         void designDatagridview()
         {
             //Formart data showing for datagridview
@@ -111,6 +104,42 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
                 }
 
             }
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            //string toDay = DateTime.UtcNow.Date.ToString();
+            string toDay = "2022-12-15";
+
+            dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,DAILY,EMAIL,PHONE,MACANHO,DUAN,TIENTHUEMOTTHANG,NGAYBATDAU,NGAYKETTHUC,STATUS FROM APARTMENT_CONTRACT " +
+                                                                                "WHERE NGAYNHAC <= '" + toDay + "' AND '" + toDay + "' <= NGAYKETTHUC");
+        }
+
+        private void pbDone_Click(object sender, EventArgs e)
+        {
+            DoneNegotiation doneNegotiation = new DoneNegotiation();
+            doneNegotiation.Show();
+        }
+
+        private void pbRedo_Click(object sender, EventArgs e)
+        {
+            ReDoNegotiation reDoNegotiation = new ReDoNegotiation();
+            reDoNegotiation.Show();
+        }
+
+        private void pbSkip_Click(object sender, EventArgs e)
+        {
+            SkipNegotiation skipNegotiation = new SkipNegotiation();
+            skipNegotiation.Show();
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            //string toDay = DateTime.UtcNow.Date.ToString();
+            string toDay = "2022-12-15";
+
+            dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,DAILY,EMAIL,PHONE,MACANHO,DUAN,TIENTHUEMOTTHANG,NGAYBATDAU,NGAYKETTHUC,STATUS FROM APARTMENT_CONTRACT " +
+                                                                                "WHERE NGAYNHAC <= '" + toDay + "' AND '" + toDay + "' <= NGAYKETTHUC");
         }
     }
 }

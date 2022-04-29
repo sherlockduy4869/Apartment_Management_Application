@@ -18,8 +18,8 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         public ShowInfoApartNotRented()
         {
             InitializeComponent();
-            listApartTax();
-            designDatagridview();
+            //listApartTax();
+            //designDatagridview();
         }
 
         void listApartTax()

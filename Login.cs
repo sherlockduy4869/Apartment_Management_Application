@@ -22,24 +22,17 @@ namespace QuanlyCanHoGiangTran
             return AccountDAL.Instance.Login(userName, passWord);
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void Login_Load(object sender, EventArgs e)
         {
-            string userName = txbUserName.Text;
-            string passWord = txbPassWord.Text;
-
-            if (Loginn(userName, passWord) == true)
-            {
-                var mainForm = new MainForm();
-                this.Hide();
-                mainForm.ShowDialog();
-            }
-            else
-            {
-                MessageBox.Show("Wrong UserName or PassWord, please re-enter again");
-            }
+            //int w = Screen.PrimaryScreen.Bounds.Width;
+            //int h = Screen.PrimaryScreen.Bounds.Height;
+            //this.Location = new Point(0, 0);
+            //WindowState = FormWindowState.Maximized;
+            //this.Size = new Size(w, h);
         }
+       
 
-        private void txbUserName_Click(object sender, EventArgs e)
+        private void txbUserName_Click_1(object sender, EventArgs e)
         {
             txbUserName.Clear();
         }
@@ -49,9 +42,21 @@ namespace QuanlyCanHoGiangTran
             txbPassWord.Clear();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            string userName = txbUserName.Text;
+            string passWord = txbPassWord.Text;
+
+            //if (Loginn(userName, passWord) == true)
+            //{
+            var mainForm = new MainForm();
+            this.Hide();
+            mainForm.ShowDialog();
+            //}
+            //else
+            //{
+            //MessageBox.Show("Wrong UserName or PassWord, please re-enter again");
+            //}
         }
     }
 }

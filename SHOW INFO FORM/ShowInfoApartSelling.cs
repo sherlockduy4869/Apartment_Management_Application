@@ -22,8 +22,8 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         public ShowInfoApartSelling()
         {
             InitializeComponent();
-            listApartTax();
-            designDatagridview();
+            //listApartTax();
+            //designDatagridview();
         }
         void listApartTax()
         {

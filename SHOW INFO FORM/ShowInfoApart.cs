@@ -18,8 +18,8 @@ namespace QuanlyCanHoGiangTran
         public ShowInfoApart()
         {
             InitializeComponent();
-            showInforAllApart();
-            designDatagridview();
+            //showInforAllApart();
+            //designDatagridview();
         }
 
         void showInforAllApart()
@@ -75,7 +75,30 @@ namespace QuanlyCanHoGiangTran
                                                                          "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU,NGAYBATDAU,NGAYKETTHUC FROM APARTMENT_INFO WHERE MACANHO LIKE '" + txbSearch.Text + "%'");
         }
 
-        private void btnAdd_Click(object sender, EventArgs e)
+        private void txbSearch_Click(object sender, EventArgs e)
+        {
+            txbSearch.Clear();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
+                                                                         "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU,NGAYBATDAU,NGAYKETTHUC FROM APARTMENT_INFO");
+        }
+
+        private void pbRefresh_Click(object sender, EventArgs e)
+        {
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
+                                                                         "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU,NGAYBATDAU,NGAYKETTHUC FROM APARTMENT_INFO");
+        }
+
+        private void btnAdd_Click_1(object sender, EventArgs e)
+        {
+            AddNewApart addNewApart = new AddNewApart();
+            addNewApart.Show();
+        }
+
+        private void pbAdd_Click(object sender, EventArgs e)
         {
             AddNewApart addNewApart = new AddNewApart();
             addNewApart.Show();
@@ -87,25 +110,10 @@ namespace QuanlyCanHoGiangTran
             removeApart.Show();
         }
 
-        private void btnRefresh_Click(object sender, EventArgs e)
+        private void pbRemove_Click(object sender, EventArgs e)
         {
-            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
-                                                                         "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU,NGAYBATDAU,NGAYKETTHUC FROM APARTMENT_INFO");
-        }
-
-        private void txbSearch_Click(object sender, EventArgs e)
-        {
-            txbSearch.Clear();
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
+            RemoveApart removeApart = new RemoveApart();
+            removeApart.Show();
         }
     }
 }
