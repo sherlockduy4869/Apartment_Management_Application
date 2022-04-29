@@ -45,6 +45,10 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_CART WHERE STATUS = 'AVAILABLE'");
         }
+        private void pbRefresh_Click(object sender, EventArgs e)
+        {
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_CART WHERE STATUS = 'AVAILABLE'");
+        }
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
             txbSearch.ForeColor = System.Drawing.Color.Black;
@@ -56,13 +60,21 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             AddNewApartCart addNewApartCart = new AddNewApartCart();
             addNewApartCart.Show();
         }
-
+        private void pbAdd_Click(object sender, EventArgs e)
+        {
+            AddNewApartCart addNewApartCart = new AddNewApartCart();
+            addNewApartCart.Show();
+        }
         private void btnRemove_Click(object sender, EventArgs e)
         {
             RemoveApartCart removeApartCart  = new RemoveApartCart();
             removeApartCart.Show();
         }
-
+        private void pbRemove_Click(object sender, EventArgs e)
+        {
+            RemoveApartCart removeApartCart = new RemoveApartCart();
+            removeApartCart.Show();
+        }
         private void txbSearch_Click(object sender, EventArgs e)
         {
             txbSearch.Clear();

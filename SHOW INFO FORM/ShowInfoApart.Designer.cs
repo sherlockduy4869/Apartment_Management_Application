@@ -36,29 +36,29 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.apartmentBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pbRefresh = new System.Windows.Forms.PictureBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.pbRefresh = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnAdd = new QuanlyCanHoGiangTran.Custom.RJButton();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.btnRemove = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.pbAdd = new System.Windows.Forms.PictureBox();
+            this.btnAdd = new QuanlyCanHoGiangTran.Custom.RJButton();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.pbRemove = new System.Windows.Forms.PictureBox();
+            this.btnRemove = new QuanlyCanHoGiangTran.Custom.RJButton();
+            this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.apartmentBindingSource)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.tableLayoutPanel2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRefresh)).BeginInit();
+            this.panel1.SuspendLayout();
+            this.tableLayoutPanel2.SuspendLayout();
             this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).BeginInit();
+            this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbRemove)).BeginInit();
             this.SuspendLayout();
             // 
@@ -140,6 +140,43 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(571, 121);
             this.tableLayoutPanel1.TabIndex = 27;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.pbRefresh);
+            this.panel2.Controls.Add(this.btnRefresh);
+            this.panel2.Location = new System.Drawing.Point(3, 83);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(119, 35);
+            this.panel2.TabIndex = 29;
+            // 
+            // pbRefresh
+            // 
+            this.pbRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.pbRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbRefresh.Image = ((System.Drawing.Image)(resources.GetObject("pbRefresh.Image")));
+            this.pbRefresh.Location = new System.Drawing.Point(3, 3);
+            this.pbRefresh.Name = "pbRefresh";
+            this.pbRefresh.Size = new System.Drawing.Size(31, 29);
+            this.pbRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRefresh.TabIndex = 58;
+            this.pbRefresh.TabStop = false;
+            this.pbRefresh.Click += new System.EventHandler(this.pbRefresh_Click);
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(0, 0);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(119, 35);
+            this.btnRefresh.TabIndex = 59;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -167,43 +204,6 @@
             this.tableLayoutPanel2.Size = new System.Drawing.Size(572, 113);
             this.tableLayoutPanel2.TabIndex = 28;
             // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.pbRefresh);
-            this.panel2.Controls.Add(this.btnRefresh);
-            this.panel2.Location = new System.Drawing.Point(3, 83);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(119, 35);
-            this.panel2.TabIndex = 29;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(0, 0);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(119, 35);
-            this.btnRefresh.TabIndex = 59;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = false;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
-            // pbRefresh
-            // 
-            this.pbRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.pbRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbRefresh.Image = ((System.Drawing.Image)(resources.GetObject("pbRefresh.Image")));
-            this.pbRefresh.Location = new System.Drawing.Point(3, 3);
-            this.pbRefresh.Name = "pbRefresh";
-            this.pbRefresh.Size = new System.Drawing.Size(31, 29);
-            this.pbRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbRefresh.TabIndex = 58;
-            this.pbRefresh.TabStop = false;
-            this.pbRefresh.Click += new System.EventHandler(this.pbRefresh_Click);
-            // 
             // panel3
             // 
             this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -214,15 +214,18 @@
             this.panel3.Size = new System.Drawing.Size(103, 105);
             this.panel3.TabIndex = 0;
             // 
-            // panel4
+            // pbAdd
             // 
-            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel4.Controls.Add(this.pbRemove);
-            this.panel4.Controls.Add(this.btnRemove);
-            this.panel4.Location = new System.Drawing.Point(377, 4);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(103, 105);
-            this.panel4.TabIndex = 1;
+            this.pbAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.pbAdd.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbAdd.Image = ((System.Drawing.Image)(resources.GetObject("pbAdd.Image")));
+            this.pbAdd.Location = new System.Drawing.Point(33, 16);
+            this.pbAdd.Name = "pbAdd";
+            this.pbAdd.Size = new System.Drawing.Size(40, 40);
+            this.pbAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbAdd.TabIndex = 5;
+            this.pbAdd.TabStop = false;
+            this.pbAdd.Click += new System.EventHandler(this.pbAdd_Click);
             // 
             // btnAdd
             // 
@@ -249,13 +252,28 @@
             this.btnAdd.UseVisualStyleBackColor = false;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click_1);
             // 
-            // panel5
+            // panel4
             // 
-            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel5.Location = new System.Drawing.Point(244, 244);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(103, 105);
-            this.panel5.TabIndex = 29;
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel4.Controls.Add(this.pbRemove);
+            this.panel4.Controls.Add(this.btnRemove);
+            this.panel4.Location = new System.Drawing.Point(377, 4);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(103, 105);
+            this.panel4.TabIndex = 1;
+            // 
+            // pbRemove
+            // 
+            this.pbRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.pbRemove.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbRemove.Image = ((System.Drawing.Image)(resources.GetObject("pbRemove.Image")));
+            this.pbRemove.Location = new System.Drawing.Point(34, 16);
+            this.pbRemove.Name = "pbRemove";
+            this.pbRemove.Size = new System.Drawing.Size(40, 40);
+            this.pbRemove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRemove.TabIndex = 30;
+            this.pbRemove.TabStop = false;
+            this.pbRemove.Click += new System.EventHandler(this.pbRemove_Click);
             // 
             // btnRemove
             // 
@@ -282,31 +300,13 @@
             this.btnRemove.UseVisualStyleBackColor = false;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
-            // pbAdd
+            // panel5
             // 
-            this.pbAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.pbAdd.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbAdd.Image = ((System.Drawing.Image)(resources.GetObject("pbAdd.Image")));
-            this.pbAdd.Location = new System.Drawing.Point(33, 16);
-            this.pbAdd.Name = "pbAdd";
-            this.pbAdd.Size = new System.Drawing.Size(40, 40);
-            this.pbAdd.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbAdd.TabIndex = 5;
-            this.pbAdd.TabStop = false;
-            this.pbAdd.Click += new System.EventHandler(this.pbAdd_Click);
-            // 
-            // pbRemove
-            // 
-            this.pbRemove.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.pbRemove.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbRemove.Image = ((System.Drawing.Image)(resources.GetObject("pbRemove.Image")));
-            this.pbRemove.Location = new System.Drawing.Point(34, 16);
-            this.pbRemove.Name = "pbRemove";
-            this.pbRemove.Size = new System.Drawing.Size(40, 40);
-            this.pbRemove.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbRemove.TabIndex = 30;
-            this.pbRemove.TabStop = false;
-            this.pbRemove.Click += new System.EventHandler(this.pbRemove_Click);
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel5.Location = new System.Drawing.Point(244, 244);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(103, 105);
+            this.panel5.TabIndex = 29;
             // 
             // ShowInfoApart
             // 
@@ -328,14 +328,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.apartmentBindingSource)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbRefresh)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbRefresh)).EndInit();
             this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbAdd)).EndInit();
+            this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbRemove)).EndInit();
             this.ResumeLayout(false);
 

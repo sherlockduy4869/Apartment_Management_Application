@@ -32,10 +32,6 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             txbSearch.ForeColor = System.Drawing.Color.Black;
             dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_NOT_RENTED WHERE MACANHO LIKE '" + txbSearch.Text + "%' ");
         }
-        private void btnRefresh_Click(object sender, EventArgs e)
-        {
-            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_NOT_RENTED");
-        }
         void designDatagridview()
         {
             //Change column's name for datagridview
@@ -53,7 +49,28 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             }
         }
 
+        private void txbSearch_Click(object sender, EventArgs e)
+        {
+            txbSearch.Clear();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_NOT_RENTED");
+        }
+
+        private void pbRefresh_Click(object sender, EventArgs e)
+        {
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_NOT_RENTED");
+        }
+
         private void btnAdd_Click(object sender, EventArgs e)
+        {
+            AddNewApartNotRented addNewApartNotRented = new AddNewApartNotRented();
+            addNewApartNotRented.Show();
+        }
+
+        private void pbAdd_Click(object sender, EventArgs e)
         {
             AddNewApartNotRented addNewApartNotRented = new AddNewApartNotRented();
             addNewApartNotRented.Show();
@@ -65,19 +82,10 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             removeApartNotRented.Show();
         }
 
-        private void txbSearch_Click(object sender, EventArgs e)
+        private void pbRemove_Click(object sender, EventArgs e)
         {
-            txbSearch.Clear();
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
+            RemoveApartNotRented removeApartNotRented = new RemoveApartNotRented();
+            removeApartNotRented.Show();
         }
     }
 }
