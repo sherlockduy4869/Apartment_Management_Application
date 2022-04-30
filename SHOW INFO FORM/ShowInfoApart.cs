@@ -18,8 +18,8 @@ namespace QuanlyCanHoGiangTran
         public ShowInfoApart()
         {
             InitializeComponent();
-            //showInforAllApart();
-            //designDatagridview();
+            showInforAllApart();
+            designDatagridview();
         }
 
         void showInforAllApart()

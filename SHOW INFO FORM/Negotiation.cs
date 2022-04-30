@@ -17,8 +17,8 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         public Negotiation()
         {
             InitializeComponent();
-            //listApartNegotiate();
-            //designDatagridview();
+            listApartNegotiate();
+            designDatagridview();
         }
 
         void listApartNegotiate()
@@ -85,11 +85,6 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         private void txbSearch_Click(object sender, EventArgs e)
         {
             txbSearch.Clear();
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
 
         private void dtgvNegotiateApart_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)

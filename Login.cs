@@ -30,11 +30,22 @@ namespace QuanlyCanHoGiangTran
             //WindowState = FormWindowState.Maximized;
             //this.Size = new Size(w, h);
         }
-       
 
-        private void txbUserName_Click_1(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            txbUserName.Clear();
+            string userName = txbUserName.Text;
+            string passWord = txbPassWord.Text;
+
+            if (Loginn(userName, passWord) == true)
+            {
+                var mainForm = new MainForm();
+                this.Hide();
+                mainForm.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("Wrong UserName or PassWord, please re-enter again");
+            }
         }
 
         private void txbPassWord_Click(object sender, EventArgs e)
@@ -42,21 +53,9 @@ namespace QuanlyCanHoGiangTran
             txbPassWord.Clear();
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void txbUserName_Click(object sender, EventArgs e)
         {
-            string userName = txbUserName.Text;
-            string passWord = txbPassWord.Text;
-
-            //if (Loginn(userName, passWord) == true)
-            //{
-            var mainForm = new MainForm();
-            this.Hide();
-            mainForm.ShowDialog();
-            //}
-            //else
-            //{
-            //MessageBox.Show("Wrong UserName or PassWord, please re-enter again");
-            //}
+            txbUserName.Clear();
         }
     }
 }

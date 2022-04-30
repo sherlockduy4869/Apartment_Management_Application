@@ -18,8 +18,8 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         public ShowInfoApartCart()
         {
             InitializeComponent();
-            //listApartTax();
-            //designDatagridview();
+            listApartTax();
+            designDatagridview();
         }
 
         void listApartTax()
@@ -80,14 +80,6 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             txbSearch.Clear();
         }
 
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btnMinimize_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
+        
     }
 }

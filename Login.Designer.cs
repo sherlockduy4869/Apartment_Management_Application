@@ -99,6 +99,7 @@
             this.txbUserName.Size = new System.Drawing.Size(254, 19);
             this.txbUserName.TabIndex = 1;
             this.txbUserName.Text = "User Name";
+            this.txbUserName.Click += new System.EventHandler(this.txbUserName_Click);
             // 
             // pnPassword
             // 
@@ -141,6 +142,7 @@
             this.txbPassWord.TabIndex = 1;
             this.txbPassWord.Text = "Password";
             this.txbPassWord.UseSystemPasswordChar = true;
+            this.txbPassWord.Click += new System.EventHandler(this.txbPassWord_Click);
             // 
             // btnLogin
             // 

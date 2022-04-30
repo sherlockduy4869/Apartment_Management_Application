@@ -17,8 +17,8 @@ namespace QuanlyCanHoGiangTran
         public ShowInfoTax()
         {
             InitializeComponent();
-            //listApartTax();
-            //designDatagridview();
+            listApartTax();
+            designDatagridview();
         }
 
         void listApartTax()
