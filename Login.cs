@@ -40,7 +40,7 @@ namespace QuanlyCanHoGiangTran
             {
                 var mainForm = new MainForm();
                 this.Hide();
-                mainForm.ShowDialog();
+                mainForm.Show();
             }
             else
             {
