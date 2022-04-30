@@ -50,9 +50,10 @@
             this.btnDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDetail.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnDetail.ForeColor = System.Drawing.Color.White;
-            this.btnDetail.Location = new System.Drawing.Point(263, 135);
+            this.btnDetail.Location = new System.Drawing.Point(141, 63);
+            this.btnDetail.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnDetail.Name = "btnDetail";
-            this.btnDetail.Size = new System.Drawing.Size(239, 76);
+            this.btnDetail.Size = new System.Drawing.Size(129, 36);
             this.btnDetail.TabIndex = 5;
             this.btnDetail.Text = "Detail Finance";
             this.btnDetail.TextColor = System.Drawing.Color.White;
@@ -66,12 +67,13 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.panel1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnDetail, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(5, 108);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 51);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(766, 231);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(412, 108);
             this.tableLayoutPanel1.TabIndex = 6;
             // 
             // panel1
@@ -80,9 +82,10 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.txbMaCanHo);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Location = new System.Drawing.Point(72, 3);
+            this.panel1.Location = new System.Drawing.Point(38, 1);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(622, 109);
+            this.panel1.Size = new System.Drawing.Size(336, 52);
             this.panel1.TabIndex = 5;
             // 
             // txbMaCanHo
@@ -90,9 +93,10 @@
             this.txbMaCanHo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txbMaCanHo.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbMaCanHo.ForeColor = System.Drawing.Color.Black;
-            this.txbMaCanHo.Location = new System.Drawing.Point(239, 45);
+            this.txbMaCanHo.Location = new System.Drawing.Point(129, 21);
+            this.txbMaCanHo.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txbMaCanHo.Name = "txbMaCanHo";
-            this.txbMaCanHo.Size = new System.Drawing.Size(370, 40);
+            this.txbMaCanHo.Size = new System.Drawing.Size(201, 24);
             this.txbMaCanHo.TabIndex = 1;
             // 
             // label1
@@ -100,19 +104,21 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(25, 48);
+            this.label1.Location = new System.Drawing.Point(13, 22);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(208, 33);
+            this.label1.Size = new System.Drawing.Size(105, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Aparment code";
             // 
             // FinanceDetail
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(779, 450);
+            this.ClientSize = new System.Drawing.Size(419, 211);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.Name = "FinanceDetail";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Finance Detail";
