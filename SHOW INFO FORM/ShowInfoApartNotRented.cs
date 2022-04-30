@@ -45,7 +45,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             foreach (DataGridViewColumn col in dtgvApartInfo.Columns)
             {
                 col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
-                col.HeaderCell.Style.Font = new Font("Arial", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
+                //col.HeaderCell.Style.Font = new Font("Arial", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             }
         }
 
