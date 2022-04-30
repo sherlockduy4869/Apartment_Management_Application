@@ -37,42 +37,42 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.txbSearch = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.pbNextCycle = new System.Windows.Forms.PictureBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.pbDone = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.pbRedo = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.pbRefresh = new System.Windows.Forms.PictureBox();
-            this.pbDone = new System.Windows.Forms.PictureBox();
-            this.pbRedo = new System.Windows.Forms.PictureBox();
-            this.pbNextCycle = new System.Windows.Forms.PictureBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.btnInformationDetail = new System.Windows.Forms.Button();
-            this.pbInfoDetails = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.btnFinanceDetail = new System.Windows.Forms.Button();
             this.pbInfoFinance = new System.Windows.Forms.PictureBox();
+            this.btnFinanceDetail = new System.Windows.Forms.Button();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.pbInfoDetails = new System.Windows.Forms.PictureBox();
+            this.btnInformationDetail = new System.Windows.Forms.Button();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.pbRefresh = new System.Windows.Forms.PictureBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartTax)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbNextCycle)).BeginInit();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDone)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRedo)).BeginInit();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRefresh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbDone)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRedo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNextCycle)).BeginInit();
-            this.panel6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbInfoDetails)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbInfoFinance)).BeginInit();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbInfoDetails)).BeginInit();
+            this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRefresh)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -101,7 +101,7 @@
             this.dtgvApartTax.ReadOnly = true;
             this.dtgvApartTax.RowHeadersWidth = 82;
             this.dtgvApartTax.RowTemplate.Height = 41;
-            this.dtgvApartTax.Size = new System.Drawing.Size(572, 276);
+            this.dtgvApartTax.Size = new System.Drawing.Size(572, 298);
             this.dtgvApartTax.TabIndex = 1;
             this.dtgvApartTax.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dtgvApartTax_CellFormatting);
             // 
@@ -224,6 +224,75 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(572, 113);
             this.tableLayoutPanel1.TabIndex = 56;
             // 
+            // panel3
+            // 
+            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel3.Controls.Add(this.pbNextCycle);
+            this.panel3.Controls.Add(this.btnNextCycle);
+            this.panel3.Location = new System.Drawing.Point(424, 4);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(103, 105);
+            this.panel3.TabIndex = 60;
+            // 
+            // pbNextCycle
+            // 
+            this.pbNextCycle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.pbNextCycle.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbNextCycle.Image = ((System.Drawing.Image)(resources.GetObject("pbNextCycle.Image")));
+            this.pbNextCycle.Location = new System.Drawing.Point(33, 16);
+            this.pbNextCycle.Name = "pbNextCycle";
+            this.pbNextCycle.Size = new System.Drawing.Size(40, 40);
+            this.pbNextCycle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbNextCycle.TabIndex = 7;
+            this.pbNextCycle.TabStop = false;
+            this.pbNextCycle.Click += new System.EventHandler(this.pbNextCycle_Click);
+            // 
+            // panel5
+            // 
+            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel5.Controls.Add(this.pbDone);
+            this.panel5.Controls.Add(this.btnMarkDone);
+            this.panel5.Location = new System.Drawing.Point(43, 4);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(103, 105);
+            this.panel5.TabIndex = 60;
+            // 
+            // pbDone
+            // 
+            this.pbDone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.pbDone.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbDone.Image = ((System.Drawing.Image)(resources.GetObject("pbDone.Image")));
+            this.pbDone.Location = new System.Drawing.Point(33, 16);
+            this.pbDone.Name = "pbDone";
+            this.pbDone.Size = new System.Drawing.Size(40, 40);
+            this.pbDone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbDone.TabIndex = 5;
+            this.pbDone.TabStop = false;
+            this.pbDone.Click += new System.EventHandler(this.pbDone_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.Controls.Add(this.pbRedo);
+            this.panel2.Controls.Add(this.btnReDo);
+            this.panel2.Location = new System.Drawing.Point(233, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(103, 105);
+            this.panel2.TabIndex = 60;
+            // 
+            // pbRedo
+            // 
+            this.pbRedo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.pbRedo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbRedo.Image = ((System.Drawing.Image)(resources.GetObject("pbRedo.Image")));
+            this.pbRedo.Location = new System.Drawing.Point(34, 16);
+            this.pbRedo.Name = "pbRedo";
+            this.pbRedo.Size = new System.Drawing.Size(40, 40);
+            this.pbRedo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRedo.TabIndex = 6;
+            this.pbRedo.TabStop = false;
+            this.pbRedo.Click += new System.EventHandler(this.pbRedo_Click);
+            // 
             // panel1
             // 
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
@@ -255,9 +324,9 @@
             // 
             this.tableLayoutPanel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel3.ColumnCount = 3;
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 41.50613F));
-            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25.21891F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33555F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33223F));
+            this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 33.33223F));
             this.tableLayoutPanel3.Controls.Add(this.panel7, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel6, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel4, 0, 0);
@@ -269,160 +338,28 @@
             this.tableLayoutPanel3.Size = new System.Drawing.Size(571, 40);
             this.tableLayoutPanel3.TabIndex = 59;
             // 
-            // panel5
-            // 
-            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel5.Controls.Add(this.pbDone);
-            this.panel5.Controls.Add(this.btnMarkDone);
-            this.panel5.Location = new System.Drawing.Point(43, 4);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(103, 105);
-            this.panel5.TabIndex = 60;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel2.Controls.Add(this.pbRedo);
-            this.panel2.Controls.Add(this.btnReDo);
-            this.panel2.Location = new System.Drawing.Point(233, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(103, 105);
-            this.panel2.TabIndex = 60;
-            // 
-            // panel3
-            // 
-            this.panel3.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel3.Controls.Add(this.pbNextCycle);
-            this.panel3.Controls.Add(this.btnNextCycle);
-            this.panel3.Location = new System.Drawing.Point(424, 4);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(103, 105);
-            this.panel3.TabIndex = 60;
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.pbRefresh);
-            this.panel4.Controls.Add(this.btnRefresh);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(3, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(120, 34);
-            this.panel4.TabIndex = 60;
-            // 
-            // btnRefresh
-            // 
-            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(0, 0);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(120, 34);
-            this.btnRefresh.TabIndex = 60;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = false;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
-            // 
-            // pbRefresh
-            // 
-            this.pbRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.pbRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbRefresh.Image = ((System.Drawing.Image)(resources.GetObject("pbRefresh.Image")));
-            this.pbRefresh.Location = new System.Drawing.Point(3, 2);
-            this.pbRefresh.Name = "pbRefresh";
-            this.pbRefresh.Size = new System.Drawing.Size(31, 29);
-            this.pbRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbRefresh.TabIndex = 60;
-            this.pbRefresh.TabStop = false;
-            this.pbRefresh.Click += new System.EventHandler(this.pbRefresh_Click);
-            // 
-            // pbDone
-            // 
-            this.pbDone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.pbDone.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbDone.Image = ((System.Drawing.Image)(resources.GetObject("pbDone.Image")));
-            this.pbDone.Location = new System.Drawing.Point(33, 16);
-            this.pbDone.Name = "pbDone";
-            this.pbDone.Size = new System.Drawing.Size(40, 40);
-            this.pbDone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbDone.TabIndex = 5;
-            this.pbDone.TabStop = false;
-            this.pbDone.Click += new System.EventHandler(this.pbDone_Click);
-            // 
-            // pbRedo
-            // 
-            this.pbRedo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.pbRedo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbRedo.Image = ((System.Drawing.Image)(resources.GetObject("pbRedo.Image")));
-            this.pbRedo.Location = new System.Drawing.Point(34, 16);
-            this.pbRedo.Name = "pbRedo";
-            this.pbRedo.Size = new System.Drawing.Size(40, 40);
-            this.pbRedo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbRedo.TabIndex = 6;
-            this.pbRedo.TabStop = false;
-            this.pbRedo.Click += new System.EventHandler(this.pbRedo_Click);
-            // 
-            // pbNextCycle
-            // 
-            this.pbNextCycle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.pbNextCycle.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbNextCycle.Image = ((System.Drawing.Image)(resources.GetObject("pbNextCycle.Image")));
-            this.pbNextCycle.Location = new System.Drawing.Point(33, 16);
-            this.pbNextCycle.Name = "pbNextCycle";
-            this.pbNextCycle.Size = new System.Drawing.Size(40, 40);
-            this.pbNextCycle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbNextCycle.TabIndex = 7;
-            this.pbNextCycle.TabStop = false;
-            this.pbNextCycle.Click += new System.EventHandler(this.pbNextCycle_Click);
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.pbInfoDetails);
-            this.panel6.Controls.Add(this.btnInformationDetail);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel6.Location = new System.Drawing.Point(294, 3);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(129, 34);
-            this.panel6.TabIndex = 60;
-            // 
-            // btnInformationDetail
-            // 
-            this.btnInformationDetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnInformationDetail.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInformationDetail.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnInformationDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnInformationDetail.ForeColor = System.Drawing.Color.White;
-            this.btnInformationDetail.Location = new System.Drawing.Point(0, 0);
-            this.btnInformationDetail.Name = "btnInformationDetail";
-            this.btnInformationDetail.Size = new System.Drawing.Size(129, 34);
-            this.btnInformationDetail.TabIndex = 61;
-            this.btnInformationDetail.Text = "Info Details";
-            this.btnInformationDetail.UseVisualStyleBackColor = false;
-            this.btnInformationDetail.Click += new System.EventHandler(this.btnInformationDetail_Click);
-            // 
-            // pbInfoDetails
-            // 
-            this.pbInfoDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.pbInfoDetails.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbInfoDetails.Image = ((System.Drawing.Image)(resources.GetObject("pbInfoDetails.Image")));
-            this.pbInfoDetails.Location = new System.Drawing.Point(0, 2);
-            this.pbInfoDetails.Name = "pbInfoDetails";
-            this.pbInfoDetails.Size = new System.Drawing.Size(31, 29);
-            this.pbInfoDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbInfoDetails.TabIndex = 61;
-            this.pbInfoDetails.TabStop = false;
-            this.pbInfoDetails.Click += new System.EventHandler(this.pbInfoDetails_Click);
-            // 
             // panel7
             // 
+            this.panel7.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel7.Controls.Add(this.pbInfoFinance);
             this.panel7.Controls.Add(this.btnFinanceDetail);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel7.Location = new System.Drawing.Point(429, 3);
+            this.panel7.Location = new System.Drawing.Point(406, 3);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(139, 34);
             this.panel7.TabIndex = 60;
+            // 
+            // pbInfoFinance
+            // 
+            this.pbInfoFinance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.pbInfoFinance.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbInfoFinance.Image = ((System.Drawing.Image)(resources.GetObject("pbInfoFinance.Image")));
+            this.pbInfoFinance.Location = new System.Drawing.Point(0, 4);
+            this.pbInfoFinance.Name = "pbInfoFinance";
+            this.pbInfoFinance.Size = new System.Drawing.Size(31, 29);
+            this.pbInfoFinance.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbInfoFinance.TabIndex = 61;
+            this.pbInfoFinance.TabStop = false;
+            this.pbInfoFinance.Click += new System.EventHandler(this.pbInfoFinance_Click);
             // 
             // btnFinanceDetail
             // 
@@ -439,18 +376,81 @@
             this.btnFinanceDetail.UseVisualStyleBackColor = false;
             this.btnFinanceDetail.Click += new System.EventHandler(this.btnFinanceDetail_Click);
             // 
-            // pbInfoFinance
+            // panel6
             // 
-            this.pbInfoFinance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.pbInfoFinance.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbInfoFinance.Image = ((System.Drawing.Image)(resources.GetObject("pbInfoFinance.Image")));
-            this.pbInfoFinance.Location = new System.Drawing.Point(2, 2);
-            this.pbInfoFinance.Name = "pbInfoFinance";
-            this.pbInfoFinance.Size = new System.Drawing.Size(31, 29);
-            this.pbInfoFinance.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbInfoFinance.TabIndex = 61;
-            this.pbInfoFinance.TabStop = false;
-            this.pbInfoFinance.Click += new System.EventHandler(this.pbInfoFinance_Click);
+            this.panel6.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel6.Controls.Add(this.pbInfoDetails);
+            this.panel6.Controls.Add(this.btnInformationDetail);
+            this.panel6.Location = new System.Drawing.Point(220, 3);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(129, 34);
+            this.panel6.TabIndex = 60;
+            // 
+            // pbInfoDetails
+            // 
+            this.pbInfoDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.pbInfoDetails.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbInfoDetails.Image = ((System.Drawing.Image)(resources.GetObject("pbInfoDetails.Image")));
+            this.pbInfoDetails.Location = new System.Drawing.Point(0, 3);
+            this.pbInfoDetails.Name = "pbInfoDetails";
+            this.pbInfoDetails.Size = new System.Drawing.Size(31, 29);
+            this.pbInfoDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbInfoDetails.TabIndex = 61;
+            this.pbInfoDetails.TabStop = false;
+            this.pbInfoDetails.Click += new System.EventHandler(this.pbInfoDetails_Click);
+            // 
+            // btnInformationDetail
+            // 
+            this.btnInformationDetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnInformationDetail.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnInformationDetail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnInformationDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnInformationDetail.ForeColor = System.Drawing.Color.White;
+            this.btnInformationDetail.Location = new System.Drawing.Point(0, 0);
+            this.btnInformationDetail.Name = "btnInformationDetail";
+            this.btnInformationDetail.Size = new System.Drawing.Size(129, 34);
+            this.btnInformationDetail.TabIndex = 61;
+            this.btnInformationDetail.Text = "Info Details";
+            this.btnInformationDetail.UseVisualStyleBackColor = false;
+            this.btnInformationDetail.Click += new System.EventHandler(this.btnInformationDetail_Click);
+            // 
+            // panel4
+            // 
+            this.panel4.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel4.Controls.Add(this.pbRefresh);
+            this.panel4.Controls.Add(this.btnRefresh);
+            this.panel4.Location = new System.Drawing.Point(35, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(120, 34);
+            this.panel4.TabIndex = 60;
+            // 
+            // pbRefresh
+            // 
+            this.pbRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.pbRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbRefresh.Image = ((System.Drawing.Image)(resources.GetObject("pbRefresh.Image")));
+            this.pbRefresh.Location = new System.Drawing.Point(0, 3);
+            this.pbRefresh.Name = "pbRefresh";
+            this.pbRefresh.Size = new System.Drawing.Size(31, 29);
+            this.pbRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRefresh.TabIndex = 60;
+            this.pbRefresh.TabStop = false;
+            this.pbRefresh.Click += new System.EventHandler(this.pbRefresh_Click);
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(0, 0);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(120, 34);
+            this.btnRefresh.TabIndex = 60;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
             // 
             // ShowInfoTax
             // 
@@ -470,23 +470,23 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartTax)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbNextCycle)).EndInit();
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbDone)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbRedo)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
             this.tableLayoutPanel2.PerformLayout();
             this.tableLayoutPanel3.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel3.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbRefresh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbDone)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRedo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbNextCycle)).EndInit();
-            this.panel6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbInfoDetails)).EndInit();
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pbInfoFinance)).EndInit();
+            this.panel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbInfoDetails)).EndInit();
+            this.panel4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbRefresh)).EndInit();
             this.ResumeLayout(false);
 
         }

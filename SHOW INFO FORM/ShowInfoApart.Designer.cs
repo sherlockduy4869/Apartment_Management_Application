@@ -84,7 +84,7 @@
             this.dtgvApartInfo.ReadOnly = true;
             this.dtgvApartInfo.RowHeadersWidth = 82;
             this.dtgvApartInfo.RowTemplate.Height = 41;
-            this.dtgvApartInfo.Size = new System.Drawing.Size(572, 276);
+            this.dtgvApartInfo.Size = new System.Drawing.Size(572, 298);
             this.dtgvApartInfo.TabIndex = 1;
             // 
             // txbSearch

@@ -52,7 +52,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(179, 56);
+            this.pictureBox1.Location = new System.Drawing.Point(179, 42);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(80, 80);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -65,7 +65,7 @@
             this.pnUserName.Controls.Add(this.pnUnderUserName);
             this.pnUserName.Controls.Add(this.picUserName);
             this.pnUserName.Controls.Add(this.txbUserName);
-            this.pnUserName.Location = new System.Drawing.Point(44, 195);
+            this.pnUserName.Location = new System.Drawing.Point(44, 168);
             this.pnUserName.Name = "pnUserName";
             this.pnUserName.Size = new System.Drawing.Size(350, 82);
             this.pnUserName.TabIndex = 12;
@@ -106,7 +106,7 @@
             this.pnPassword.Controls.Add(this.pnUnderPassword);
             this.pnPassword.Controls.Add(this.picPassword);
             this.pnPassword.Controls.Add(this.txbPassWord);
-            this.pnPassword.Location = new System.Drawing.Point(44, 284);
+            this.pnPassword.Location = new System.Drawing.Point(44, 260);
             this.pnPassword.Name = "pnPassword";
             this.pnPassword.Size = new System.Drawing.Size(350, 82);
             this.pnPassword.TabIndex = 13;
@@ -153,7 +153,7 @@
             this.btnLogin.FlatAppearance.BorderSize = 0;
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(144, 419);
+            this.btnLogin.Location = new System.Drawing.Point(144, 407);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(150, 40);
             this.btnLogin.TabIndex = 14;
@@ -174,11 +174,11 @@
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 37.74704F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.3913F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 17.98419F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 26.48221F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(438, 507);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 32.54438F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.14596F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 18.54043F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 30.76923F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(438, 506);
             this.tableLayoutPanel1.TabIndex = 15;
             // 
             // Login
@@ -186,7 +186,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.ClientSize = new System.Drawing.Size(438, 507);
+            this.ClientSize = new System.Drawing.Size(438, 506);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(8, 13, 8, 13);
             this.Name = "Login";
