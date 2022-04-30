@@ -139,7 +139,64 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             }
 
         }
+        private void pbDone_Click(object sender, EventArgs e)
+        {
+            string typeOfFee = cbFinanceCategory.Text;
 
+            if (typeOfFee == "THUE")
+            {
+                int status = Int32.Parse(lbThue.Text);
+                final_status = status + 1;
+                typeOfStatus = "STATUS_THUE";
+            }
+
+            if (typeOfFee == "PHIKEKHAITHUE")
+            {
+                int status = Int32.Parse(lbPhiKeKhaiThue.Text);
+                final_status = status + 1;
+                typeOfStatus = "STATUS_PHIKEKHAITHUE";
+            }
+
+            if (typeOfFee == "PHIQUANLY")
+            {
+                int status = Int32.Parse(lbPhiQuanLy.Text);
+                final_status = status + 1;
+                typeOfStatus = "STATUS_PHIQUANLY";
+            }
+
+            if (typeOfFee == "TIENREFUNDKHACH")
+            {
+                int status = Int32.Parse(lbTienReFundKhach.Text);
+                final_status = status + 1;
+                typeOfStatus = "STATUS_TIENREFUNDKHACH";
+            }
+
+            if (typeOfFee == "PHIDONVESINH")
+            {
+                int status = Int32.Parse(lbPhidonvesinh.Text);
+                final_status = status + 1;
+                typeOfStatus = "STATUS_PHIDONVESINH";
+            }
+
+            try
+            {
+                int i = AdminDAL.Instance.markDoneFee(typeOfStatus, final_status, txbMaCanHo.Text);
+
+                if (i != 0)
+                {
+
+                    MessageBox.Show("MarkDone");
+                }
+                else
+                {
+                    MessageBox.Show("Failed");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR 404");
+            }
+        }
         private void btnRedo_Click(object sender, EventArgs e)
         {
 
@@ -208,10 +265,75 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
                 MessageBox.Show("ERROR 404");
             }
         }
-
-        private void btnRefresh_Click_1(object sender, EventArgs e)
+        private void pbRedo_Click(object sender, EventArgs e)
         {
+            string typeOfFee = cbFinanceCategory.Text;
 
+            if (typeOfFee == "THUE")
+            {
+                int status = Int32.Parse(lbThue.Text);
+                final_status = status - 1;
+                typeOfStatus = "STATUS_THUE";
+            }
+
+            if (typeOfFee == "PHIKEKHAITHUE")
+            {
+                int status = Int32.Parse(lbPhiKeKhaiThue.Text);
+                final_status = status - 1;
+                typeOfStatus = "STATUS_PHIKEKHAITHUE";
+            }
+
+            if (typeOfFee == "PHIQUANLY")
+            {
+                int status = Int32.Parse(lbPhiQuanLy.Text);
+                final_status = status - 1;
+                typeOfStatus = "STATUS_PHIQUANLY";
+            }
+
+            if (typeOfFee == "TIENREFUNDKHACH")
+            {
+                int status = Int32.Parse(lbTienReFundKhach.Text);
+                final_status = status - 1;
+                typeOfStatus = "STATUS_TIENREFUNDKHACH";
+            }
+
+            if (typeOfFee == "PHIDONVESINH")
+            {
+                int status = Int32.Parse(lbPhidonvesinh.Text);
+                final_status = status - 1;
+                typeOfStatus = "STATUS_PHIDONVESINH";
+            }
+
+            try
+            {
+                if (final_status < 0)
+                {
+                    MessageBox.Show("Error");
+                }
+                else
+                {
+                    int i = AdminDAL.Instance.reDoFee(typeOfStatus, final_status, txbMaCanHo.Text);
+
+                    if (i != 0)
+                    {
+
+                        MessageBox.Show("Done");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Failed");
+                    }
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR 404");
+            }
+        }
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
             ApartmentFinance apartmentFinance = AdminDAL.Instance.getFinanceDetailByMaCanHo(txbMaCanHo.Text);
             Apartment apartment = AdminDAL.Instance.getApartmentByMaCanHo(txbMaCanHo.Text);
             ApartmentMoneyTax apartmentMoneyTax = AdminDAL.Instance.getApartmentMoneyByMaCanHo(txbMaCanHo.Text);
@@ -226,5 +348,22 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             this.Close();
         }
 
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            ApartmentFinance apartmentFinance = AdminDAL.Instance.getFinanceDetailByMaCanHo(txbMaCanHo.Text);
+            Apartment apartment = AdminDAL.Instance.getApartmentByMaCanHo(txbMaCanHo.Text);
+            ApartmentMoneyTax apartmentMoneyTax = AdminDAL.Instance.getApartmentMoneyByMaCanHo(txbMaCanHo.Text);
+
+
+            ShowFinanceDetail showFinanceDetail = new ShowFinanceDetail(txbMaCanHo.Text, apartmentFinance.Thue, apartmentFinance.Phikekhaithue
+                                                                        , apartmentFinance.Phiquanly, apartmentFinance.Tienrefundkhach, apartmentFinance.Phidonvesinh
+                                                                        , apartmentFinance.Statusthue, apartmentFinance.Statusphikekhaithue
+                                                                        , apartmentFinance.Statusphiquanly, apartmentFinance.Statustienrefundkhach, apartmentFinance.Statusphidonvesinh
+                                                                        , apartment.Chuky, apartmentMoneyTax.Ngaydau, apartmentMoneyTax.Ngaycuoi, apartmentMoneyTax.Trangthai);
+            showFinanceDetail.Show();
+            this.Close();
+        }
+
+       
     }
 }

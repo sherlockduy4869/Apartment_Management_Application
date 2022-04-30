@@ -45,7 +45,6 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.pbRemove = new System.Windows.Forms.PictureBox();
             this.btnRemove = new QuanlyCanHoGiangTran.Custom.RJButton();
-            this.panel5 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dtgvApartInfo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
@@ -293,21 +292,12 @@
             this.btnRemove.UseVisualStyleBackColor = false;
             this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
-            // panel5
-            // 
-            this.panel5.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel5.Location = new System.Drawing.Point(244, 244);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(103, 105);
-            this.panel5.TabIndex = 29;
-            // 
             // ShowInfoApart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(591, 592);
-            this.Controls.Add(this.panel5);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.dtgvApartInfo);
@@ -349,7 +339,6 @@
         private Panel panel4;
         private Custom.RJButton btnAdd;
         private Custom.RJButton btnRemove;
-        private Panel panel5;
         private PictureBox pbAdd;
         private PictureBox pbRemove;
     }
