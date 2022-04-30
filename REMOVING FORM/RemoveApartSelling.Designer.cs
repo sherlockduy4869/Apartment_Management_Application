@@ -84,11 +84,11 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 65.50633F));
             this.tableLayoutPanel2.Controls.Add(this.txbMaCanHo, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 0);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(48, 4);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(19, 4);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 1;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(316, 45);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(373, 45);
             this.tableLayoutPanel2.TabIndex = 11;
             // 
             // txbMaCanHo
@@ -96,7 +96,7 @@
             this.txbMaCanHo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txbMaCanHo.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbMaCanHo.ForeColor = System.Drawing.Color.Black;
-            this.txbMaCanHo.Location = new System.Drawing.Point(112, 10);
+            this.txbMaCanHo.Location = new System.Drawing.Point(150, 10);
             this.txbMaCanHo.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txbMaCanHo.Name = "txbMaCanHo";
             this.txbMaCanHo.Size = new System.Drawing.Size(201, 24);
@@ -107,7 +107,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(2, 14);
+            this.label2.Location = new System.Drawing.Point(11, 14);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(105, 17);
