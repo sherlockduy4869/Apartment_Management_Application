@@ -50,7 +50,7 @@
             this.btnSkipNegotiation.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSkipNegotiation.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnSkipNegotiation.ForeColor = System.Drawing.Color.White;
-            this.btnSkipNegotiation.Location = new System.Drawing.Point(141, 63);
+            this.btnSkipNegotiation.Location = new System.Drawing.Point(142, 63);
             this.btnSkipNegotiation.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnSkipNegotiation.Name = "btnSkipNegotiation";
             this.btnSkipNegotiation.Size = new System.Drawing.Size(129, 36);
@@ -67,13 +67,13 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.btnSkipNegotiation, 0, 1);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 51);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 57);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(412, 108);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(414, 108);
             this.tableLayoutPanel1.TabIndex = 8;
             // 
             // panel2
@@ -82,7 +82,7 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.txbMaCanHo);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(38, 1);
+            this.panel2.Location = new System.Drawing.Point(39, 1);
             this.panel2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(336, 52);
@@ -93,7 +93,7 @@
             this.txbMaCanHo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txbMaCanHo.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbMaCanHo.ForeColor = System.Drawing.Color.Black;
-            this.txbMaCanHo.Location = new System.Drawing.Point(123, 21);
+            this.txbMaCanHo.Location = new System.Drawing.Point(117, 15);
             this.txbMaCanHo.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txbMaCanHo.Name = "txbMaCanHo";
             this.txbMaCanHo.Size = new System.Drawing.Size(201, 24);
@@ -116,10 +116,9 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(425, 238);
+            this.ClientSize = new System.Drawing.Size(419, 211);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
-            this.MinimumSize = new System.Drawing.Size(441, 277);
             this.Name = "SkipNegotiation";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SkipNegotiation";
