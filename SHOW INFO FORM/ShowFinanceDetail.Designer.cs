@@ -761,7 +761,7 @@
             this.pbDone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.pbDone.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbDone.Image = ((System.Drawing.Image)(resources.GetObject("pbDone.Image")));
-            this.pbDone.Location = new System.Drawing.Point(90, 17);
+            this.pbDone.Location = new System.Drawing.Point(90, 23);
             this.pbDone.Name = "pbDone";
             this.pbDone.Size = new System.Drawing.Size(40, 40);
             this.pbDone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -774,7 +774,7 @@
             this.pbRedo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
             this.pbRedo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbRedo.Image = ((System.Drawing.Image)(resources.GetObject("pbRedo.Image")));
-            this.pbRedo.Location = new System.Drawing.Point(322, 17);
+            this.pbRedo.Location = new System.Drawing.Point(325, 23);
             this.pbRedo.Name = "pbRedo";
             this.pbRedo.Size = new System.Drawing.Size(40, 40);
             this.pbRedo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
