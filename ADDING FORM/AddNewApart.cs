@@ -129,10 +129,9 @@ namespace QuanlyCanHoGiangTran
 
         }
 
-        private void txbThue_KeyPress(object sender, KeyPressEventArgs e)
+        private void txbThue_KeyPress_1(object sender, KeyPressEventArgs e)
         {
             e.Handled = !char.IsDigit(e.KeyChar) && e.KeyChar != (char)8;
-
         }
 
         private void txbThue_Leave(object sender, EventArgs e)
@@ -232,18 +231,13 @@ namespace QuanlyCanHoGiangTran
 
         private void txbTienthue1thang_Leave(object sender, EventArgs e)
         {
-            
-            
             txbTienthue1thang.Text = double.Parse(txbTienthue1thang.Text).ToString("N0");
-            
-            
         }
 
         private void txbTienthue1thang_Click(object sender, EventArgs e)
         {
             txbTienthue1thang.Clear();
         }
-
     }
 
 }

@@ -408,6 +408,9 @@
             this.txbPhiDonVeSinh.Size = new System.Drawing.Size(232, 24);
             this.txbPhiDonVeSinh.TabIndex = 16;
             this.txbPhiDonVeSinh.Text = "0";
+            this.txbPhiDonVeSinh.Click += new System.EventHandler(this.txbPhiDonVeSinh_Click);
+            this.txbPhiDonVeSinh.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPhiDonVeSinh_KeyPress);
+            this.txbPhiDonVeSinh.Leave += new System.EventHandler(this.txbPhiDonVeSinh_Leave);
             // 
             // label13
             // 
@@ -446,6 +449,9 @@
             this.txbTienRefund.Size = new System.Drawing.Size(232, 24);
             this.txbTienRefund.TabIndex = 15;
             this.txbTienRefund.Text = "0";
+            this.txbTienRefund.Click += new System.EventHandler(this.txbTienRefund_Click);
+            this.txbTienRefund.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbTienRefund_KeyPress);
+            this.txbTienRefund.Leave += new System.EventHandler(this.txbTienRefund_Leave);
             // 
             // label12
             // 
@@ -484,6 +490,9 @@
             this.txbPhiQuanLy.Size = new System.Drawing.Size(232, 24);
             this.txbPhiQuanLy.TabIndex = 14;
             this.txbPhiQuanLy.Text = "0";
+            this.txbPhiQuanLy.Click += new System.EventHandler(this.txbPhiQuanLy_Click);
+            this.txbPhiQuanLy.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPhiQuanLy_KeyPress);
+            this.txbPhiQuanLy.Leave += new System.EventHandler(this.txbPhiQuanLy_Leave);
             // 
             // label11
             // 
@@ -522,6 +531,9 @@
             this.txbPhiKeKhaiThue.Size = new System.Drawing.Size(232, 24);
             this.txbPhiKeKhaiThue.TabIndex = 13;
             this.txbPhiKeKhaiThue.Text = "0";
+            this.txbPhiKeKhaiThue.Click += new System.EventHandler(this.txbPhiKeKhaiThue_Click);
+            this.txbPhiKeKhaiThue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbPhiKeKhaiThue_KeyPress);
+            this.txbPhiKeKhaiThue.Leave += new System.EventHandler(this.txbPhiKeKhaiThue_Leave);
             // 
             // label10
             // 
@@ -560,6 +572,9 @@
             this.txbThue.Size = new System.Drawing.Size(232, 24);
             this.txbThue.TabIndex = 12;
             this.txbThue.Text = "0";
+            this.txbThue.Click += new System.EventHandler(this.txbThue_Click);
+            this.txbThue.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbThue_KeyPress_1);
+            this.txbThue.Leave += new System.EventHandler(this.txbThue_Leave);
             // 
             // label6
             // 
@@ -598,6 +613,9 @@
             this.txbTienthue1thang.Size = new System.Drawing.Size(232, 24);
             this.txbTienthue1thang.TabIndex = 11;
             this.txbTienthue1thang.Text = "0";
+            this.txbTienthue1thang.Click += new System.EventHandler(this.txbTienthue1thang_Click);
+            this.txbTienthue1thang.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txbTienthue1thang_KeyPress);
+            this.txbTienthue1thang.Leave += new System.EventHandler(this.txbTienthue1thang_Leave);
             // 
             // label18
             // 
