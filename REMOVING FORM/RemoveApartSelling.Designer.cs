@@ -50,7 +50,7 @@
             this.btnRemove.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnRemove.Font = new System.Drawing.Font("Century Gothic", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.btnRemove.ForeColor = System.Drawing.Color.White;
-            this.btnRemove.Location = new System.Drawing.Point(139, 63);
+            this.btnRemove.Location = new System.Drawing.Point(141, 63);
             this.btnRemove.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(129, 36);
@@ -73,7 +73,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(408, 108);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(412, 108);
             this.tableLayoutPanel1.TabIndex = 10;
             // 
             // panel2
@@ -82,7 +82,7 @@
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel2.Controls.Add(this.txbMaCanHo);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Location = new System.Drawing.Point(36, 1);
+            this.panel2.Location = new System.Drawing.Point(38, 1);
             this.panel2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(336, 52);
@@ -93,7 +93,7 @@
             this.txbMaCanHo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txbMaCanHo.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbMaCanHo.ForeColor = System.Drawing.Color.Black;
-            this.txbMaCanHo.Location = new System.Drawing.Point(123, 21);
+            this.txbMaCanHo.Location = new System.Drawing.Point(117, 15);
             this.txbMaCanHo.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txbMaCanHo.Name = "txbMaCanHo";
             this.txbMaCanHo.Size = new System.Drawing.Size(201, 24);

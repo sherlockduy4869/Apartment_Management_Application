@@ -92,7 +92,7 @@
             this.txbMaCanHo.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.txbMaCanHo.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txbMaCanHo.ForeColor = System.Drawing.Color.Black;
-            this.txbMaCanHo.Location = new System.Drawing.Point(123, 21);
+            this.txbMaCanHo.Location = new System.Drawing.Point(117, 15);
             this.txbMaCanHo.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.txbMaCanHo.Name = "txbMaCanHo";
             this.txbMaCanHo.Size = new System.Drawing.Size(201, 24);
