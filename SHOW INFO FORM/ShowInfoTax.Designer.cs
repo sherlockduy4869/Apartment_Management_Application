@@ -81,10 +81,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(6, 3);
+            this.label1.Location = new System.Drawing.Point(6, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(559, 33);
+            this.label1.Size = new System.Drawing.Size(559, 32);
             this.label1.TabIndex = 0;
             this.label1.Text = "LIST APARTMENT NEED TO COLLECT MONEY";
             // 
@@ -95,13 +95,13 @@
             this.dtgvApartTax.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgvApartTax.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvApartTax.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvApartTax.Location = new System.Drawing.Point(12, 142);
+            this.dtgvApartTax.Location = new System.Drawing.Point(12, 121);
             this.dtgvApartTax.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.dtgvApartTax.Name = "dtgvApartTax";
             this.dtgvApartTax.ReadOnly = true;
             this.dtgvApartTax.RowHeadersWidth = 82;
             this.dtgvApartTax.RowTemplate.Height = 41;
-            this.dtgvApartTax.Size = new System.Drawing.Size(572, 298);
+            this.dtgvApartTax.Size = new System.Drawing.Size(572, 355);
             this.dtgvApartTax.TabIndex = 1;
             this.dtgvApartTax.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.dtgvApartTax_CellFormatting);
             // 
@@ -216,7 +216,7 @@
             this.tableLayoutPanel1.Controls.Add(this.panel3, 2, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel5, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(11, 442);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(11, 478);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
@@ -298,7 +298,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.Controls.Add(this.txbSearch);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(108, 45);
+            this.panel1.Location = new System.Drawing.Point(108, 34);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(355, 30);
@@ -315,9 +315,9 @@
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 2;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(571, 80);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 47.76119F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 52.23881F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(571, 67);
             this.tableLayoutPanel2.TabIndex = 58;
             // 
             // tableLayoutPanel3
@@ -330,7 +330,7 @@
             this.tableLayoutPanel3.Controls.Add(this.panel7, 2, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel6, 1, 0);
             this.tableLayoutPanel3.Controls.Add(this.panel4, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(12, 92);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(12, 79);
             this.tableLayoutPanel3.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 1;

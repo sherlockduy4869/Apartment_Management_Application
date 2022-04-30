@@ -64,7 +64,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(54, 3);
+            this.label1.Location = new System.Drawing.Point(54, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(463, 33);
@@ -154,13 +154,13 @@
             this.dtgvApartInfo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.dtgvApartInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dtgvApartInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgvApartInfo.Location = new System.Drawing.Point(12, 142);
+            this.dtgvApartInfo.Location = new System.Drawing.Point(12, 115);
             this.dtgvApartInfo.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.dtgvApartInfo.Name = "dtgvApartInfo";
             this.dtgvApartInfo.ReadOnly = true;
             this.dtgvApartInfo.RowHeadersWidth = 82;
             this.dtgvApartInfo.RowTemplate.Height = 41;
-            this.dtgvApartInfo.Size = new System.Drawing.Size(572, 298);
+            this.dtgvApartInfo.Size = new System.Drawing.Size(572, 361);
             this.dtgvApartInfo.TabIndex = 56;
             // 
             // tableLayoutPanel1
@@ -171,7 +171,7 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.panel2, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel5, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(11, 442);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(11, 478);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
@@ -240,7 +240,7 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(571, 121);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(571, 101);
             this.tableLayoutPanel2.TabIndex = 59;
             // 
             // panel3
@@ -248,9 +248,9 @@
             this.panel3.Controls.Add(this.pbRefresh);
             this.panel3.Controls.Add(this.btnRefresh);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(3, 83);
+            this.panel3.Location = new System.Drawing.Point(3, 69);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(118, 35);
+            this.panel3.Size = new System.Drawing.Size(118, 29);
             this.panel3.TabIndex = 60;
             // 
             // pbRefresh
@@ -275,7 +275,7 @@
             this.btnRefresh.ForeColor = System.Drawing.Color.White;
             this.btnRefresh.Location = new System.Drawing.Point(0, 0);
             this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(119, 35);
+            this.btnRefresh.Size = new System.Drawing.Size(119, 29);
             this.btnRefresh.TabIndex = 60;
             this.btnRefresh.Text = "Refresh";
             this.btnRefresh.UseVisualStyleBackColor = false;
@@ -286,7 +286,7 @@
             this.panel1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.panel1.Controls.Add(this.txbSearch);
             this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Location = new System.Drawing.Point(110, 45);
+            this.panel1.Location = new System.Drawing.Point(110, 35);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(350, 29);
