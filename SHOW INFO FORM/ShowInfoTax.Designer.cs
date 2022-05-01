@@ -80,7 +80,7 @@
             this.lbTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.lbTitle.AutoSize = true;
             this.lbTitle.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.lbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.lbTitle.Location = new System.Drawing.Point(50, 0);
             this.lbTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbTitle.Name = "lbTitle";
@@ -350,12 +350,12 @@
             // 
             // pbInfoFinance
             // 
-            this.pbInfoFinance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.pbInfoFinance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.pbInfoFinance.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbInfoFinance.Image = ((System.Drawing.Image)(resources.GetObject("pbInfoFinance.Image")));
-            this.pbInfoFinance.Location = new System.Drawing.Point(0, 4);
+            this.pbInfoFinance.Location = new System.Drawing.Point(2, 3);
             this.pbInfoFinance.Name = "pbInfoFinance";
-            this.pbInfoFinance.Size = new System.Drawing.Size(31, 29);
+            this.pbInfoFinance.Size = new System.Drawing.Size(29, 29);
             this.pbInfoFinance.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbInfoFinance.TabIndex = 61;
             this.pbInfoFinance.TabStop = false;
@@ -363,7 +363,7 @@
             // 
             // btnFinanceDetail
             // 
-            this.btnFinanceDetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnFinanceDetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.btnFinanceDetail.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnFinanceDetail.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnFinanceDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -388,12 +388,12 @@
             // 
             // pbInfoDetails
             // 
-            this.pbInfoDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.pbInfoDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.pbInfoDetails.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbInfoDetails.Image = ((System.Drawing.Image)(resources.GetObject("pbInfoDetails.Image")));
-            this.pbInfoDetails.Location = new System.Drawing.Point(0, 3);
+            this.pbInfoDetails.Location = new System.Drawing.Point(0, 2);
             this.pbInfoDetails.Name = "pbInfoDetails";
-            this.pbInfoDetails.Size = new System.Drawing.Size(31, 29);
+            this.pbInfoDetails.Size = new System.Drawing.Size(29, 29);
             this.pbInfoDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbInfoDetails.TabIndex = 61;
             this.pbInfoDetails.TabStop = false;
@@ -401,7 +401,7 @@
             // 
             // btnInformationDetail
             // 
-            this.btnInformationDetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnInformationDetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.btnInformationDetail.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnInformationDetail.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnInformationDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -426,12 +426,12 @@
             // 
             // pbRefresh
             // 
-            this.pbRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.pbRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.pbRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbRefresh.Image = ((System.Drawing.Image)(resources.GetObject("pbRefresh.Image")));
-            this.pbRefresh.Location = new System.Drawing.Point(0, 3);
+            this.pbRefresh.Location = new System.Drawing.Point(3, 2);
             this.pbRefresh.Name = "pbRefresh";
-            this.pbRefresh.Size = new System.Drawing.Size(31, 29);
+            this.pbRefresh.Size = new System.Drawing.Size(29, 29);
             this.pbRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pbRefresh.TabIndex = 60;
             this.pbRefresh.TabStop = false;
@@ -439,7 +439,7 @@
             // 
             // btnRefresh
             // 
-            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

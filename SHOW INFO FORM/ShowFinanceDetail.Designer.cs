@@ -34,12 +34,14 @@
             this.cbFinanceCategory = new System.Windows.Forms.ComboBox();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel14 = new System.Windows.Forms.Panel();
+            this.pbRedo = new System.Windows.Forms.PictureBox();
+            this.pbDone = new System.Windows.Forms.PictureBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.panel15 = new System.Windows.Forms.Panel();
+            this.pbRefresh = new System.Windows.Forms.PictureBox();
+            this.btnRefresh = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel4 = new System.Windows.Forms.TableLayoutPanel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.txbMaCanHo = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.lbPhidonvesinh = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.txbChuKy = new System.Windows.Forms.TextBox();
@@ -79,16 +81,17 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.dtpkNgayDau = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.pbRefresh = new System.Windows.Forms.PictureBox();
-            this.pbDone = new System.Windows.Forms.PictureBox();
-            this.pbRedo = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.txbMaCanHo = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRedo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDone)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
+            this.panel15.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbRefresh)).BeginInit();
             this.tableLayoutPanel4.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
@@ -101,10 +104,7 @@
             this.panel13.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.panel15.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRefresh)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbDone)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRedo)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnMarkDone
@@ -188,6 +188,32 @@
             this.panel14.Size = new System.Drawing.Size(503, 124);
             this.panel14.TabIndex = 0;
             // 
+            // pbRedo
+            // 
+            this.pbRedo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.pbRedo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbRedo.Image = ((System.Drawing.Image)(resources.GetObject("pbRedo.Image")));
+            this.pbRedo.Location = new System.Drawing.Point(325, 23);
+            this.pbRedo.Name = "pbRedo";
+            this.pbRedo.Size = new System.Drawing.Size(40, 40);
+            this.pbRedo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRedo.TabIndex = 17;
+            this.pbRedo.TabStop = false;
+            this.pbRedo.Click += new System.EventHandler(this.pbRedo_Click);
+            // 
+            // pbDone
+            // 
+            this.pbDone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
+            this.pbDone.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbDone.Image = ((System.Drawing.Image)(resources.GetObject("pbDone.Image")));
+            this.pbDone.Location = new System.Drawing.Point(90, 23);
+            this.pbDone.Name = "pbDone";
+            this.pbDone.Size = new System.Drawing.Size(40, 40);
+            this.pbDone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbDone.TabIndex = 16;
+            this.pbDone.TabStop = false;
+            this.pbDone.Click += new System.EventHandler(this.pbDone_Click);
+            // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
@@ -202,12 +228,50 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(706, 68);
             this.tableLayoutPanel1.TabIndex = 50;
             // 
+            // panel15
+            // 
+            this.panel15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel15.Controls.Add(this.pbRefresh);
+            this.panel15.Controls.Add(this.btnRefresh);
+            this.panel15.Location = new System.Drawing.Point(3, 24);
+            this.panel15.Name = "panel15";
+            this.panel15.Size = new System.Drawing.Size(120, 41);
+            this.panel15.TabIndex = 58;
+            // 
+            // pbRefresh
+            // 
+            this.pbRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.pbRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pbRefresh.Image = ((System.Drawing.Image)(resources.GetObject("pbRefresh.Image")));
+            this.pbRefresh.Location = new System.Drawing.Point(3, 6);
+            this.pbRefresh.Name = "pbRefresh";
+            this.pbRefresh.Size = new System.Drawing.Size(31, 29);
+            this.pbRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbRefresh.TabIndex = 60;
+            this.pbRefresh.TabStop = false;
+            this.pbRefresh.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // btnRefresh
+            // 
+            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Left;
+            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRefresh.ForeColor = System.Drawing.Color.White;
+            this.btnRefresh.Location = new System.Drawing.Point(0, 0);
+            this.btnRefresh.Name = "btnRefresh";
+            this.btnRefresh.Size = new System.Drawing.Size(128, 41);
+            this.btnRefresh.TabIndex = 59;
+            this.btnRefresh.Text = "Refresh";
+            this.btnRefresh.UseVisualStyleBackColor = false;
+            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            // 
             // label2
             // 
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.label2.Location = new System.Drawing.Point(211, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(410, 25);
@@ -247,39 +311,6 @@
             this.tableLayoutPanel4.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.45296F));
             this.tableLayoutPanel4.Size = new System.Drawing.Size(905, 355);
             this.tableLayoutPanel4.TabIndex = 51;
-            // 
-            // panel2
-            // 
-            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel2.Controls.Add(this.txbMaCanHo);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(4, 3);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(305, 53);
-            this.panel2.TabIndex = 0;
-            // 
-            // txbMaCanHo
-            // 
-            this.txbMaCanHo.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbMaCanHo.Location = new System.Drawing.Point(128, 19);
-            this.txbMaCanHo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.txbMaCanHo.Name = "txbMaCanHo";
-            this.txbMaCanHo.ReadOnly = true;
-            this.txbMaCanHo.Size = new System.Drawing.Size(132, 22);
-            this.txbMaCanHo.TabIndex = 1;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(15, 24);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(96, 16);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Apartment code";
             // 
             // lbPhidonvesinh
             // 
@@ -718,69 +749,38 @@
             this.label14.TabIndex = 0;
             this.label14.Text = "Starting Date";
             // 
-            // panel15
+            // panel2
             // 
-            this.panel15.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.panel15.Controls.Add(this.pbRefresh);
-            this.panel15.Controls.Add(this.btnRefresh);
-            this.panel15.Location = new System.Drawing.Point(3, 24);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(120, 41);
-            this.panel15.TabIndex = 58;
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.txbMaCanHo);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(4, 3);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(305, 53);
+            this.panel2.TabIndex = 0;
             // 
-            // btnRefresh
+            // txbMaCanHo
             // 
-            this.btnRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnRefresh.Dock = System.Windows.Forms.DockStyle.Left;
-            this.btnRefresh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRefresh.ForeColor = System.Drawing.Color.White;
-            this.btnRefresh.Location = new System.Drawing.Point(0, 0);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(128, 41);
-            this.btnRefresh.TabIndex = 59;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = false;
-            this.btnRefresh.Click += new System.EventHandler(this.btnRefresh_Click);
+            this.txbMaCanHo.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txbMaCanHo.Location = new System.Drawing.Point(128, 19);
+            this.txbMaCanHo.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.txbMaCanHo.Name = "txbMaCanHo";
+            this.txbMaCanHo.ReadOnly = true;
+            this.txbMaCanHo.Size = new System.Drawing.Size(132, 22);
+            this.txbMaCanHo.TabIndex = 1;
             // 
-            // pbRefresh
+            // label3
             // 
-            this.pbRefresh.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.pbRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbRefresh.Image = ((System.Drawing.Image)(resources.GetObject("pbRefresh.Image")));
-            this.pbRefresh.Location = new System.Drawing.Point(3, 6);
-            this.pbRefresh.Name = "pbRefresh";
-            this.pbRefresh.Size = new System.Drawing.Size(31, 29);
-            this.pbRefresh.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbRefresh.TabIndex = 60;
-            this.pbRefresh.TabStop = false;
-            this.pbRefresh.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pbDone
-            // 
-            this.pbDone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.pbDone.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbDone.Image = ((System.Drawing.Image)(resources.GetObject("pbDone.Image")));
-            this.pbDone.Location = new System.Drawing.Point(90, 23);
-            this.pbDone.Name = "pbDone";
-            this.pbDone.Size = new System.Drawing.Size(40, 40);
-            this.pbDone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbDone.TabIndex = 16;
-            this.pbDone.TabStop = false;
-            this.pbDone.Click += new System.EventHandler(this.pbDone_Click);
-            // 
-            // pbRedo
-            // 
-            this.pbRedo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(39)))), ((int)(((byte)(40)))));
-            this.pbRedo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pbRedo.Image = ((System.Drawing.Image)(resources.GetObject("pbRedo.Image")));
-            this.pbRedo.Location = new System.Drawing.Point(325, 23);
-            this.pbRedo.Name = "pbRedo";
-            this.pbRedo.Size = new System.Drawing.Size(40, 40);
-            this.pbRedo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbRedo.TabIndex = 17;
-            this.pbRedo.TabStop = false;
-            this.pbRedo.Click += new System.EventHandler(this.pbRedo_Click);
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.Location = new System.Drawing.Point(15, 24);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(96, 16);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Apartment code";
             // 
             // ShowFinanceDetail
             // 
@@ -798,12 +798,14 @@
             this.Text = "Show Finance Detail";
             this.tableLayoutPanel3.ResumeLayout(false);
             this.panel14.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbRedo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbDone)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
+            this.panel15.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbRefresh)).EndInit();
             this.tableLayoutPanel4.ResumeLayout(false);
             this.tableLayoutPanel4.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.panel10.ResumeLayout(false);
             this.panel10.PerformLayout();
             this.panel8.ResumeLayout(false);
@@ -827,10 +829,8 @@
             this.panel12.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel15.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pbRefresh)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbDone)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pbRedo)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }

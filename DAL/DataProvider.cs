@@ -73,31 +73,6 @@ namespace QuanlyCanHoGiangTran.DAL
             }
             return dt;
         }
-        public object ExecuteScalar(string query, object[] parameter = null)
-        {
-            object dt = 0;
-
-            using (SqlConnection conn = new SqlConnection(@"Data Source=DESKTOP-PB9JJF1\DUY_SQLSEVER;Initial Catalog=QuanLyCanHo;Integrated Security=True"))
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand(query, conn);
-                if (parameter != null)
-                {
-                    string[] listPara = query.Split(' ');
-                    int i = 0;
-                    foreach (string item in listPara)
-                    {
-                        if (item.Contains('@'))
-                        {
-                            cmd.Parameters.AddWithValue(item, parameter[i]);
-                            i++;
-                        }
-                    }
-                }
-                dt = cmd.ExecuteNonQuery();
-                conn.Close();
-            }
-            return dt;
-        }
+        
     }
 }
