@@ -40,8 +40,8 @@
             // btnNextCyle
             // 
             this.btnNextCyle.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnNextCyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnNextCyle.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnNextCyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
+            this.btnNextCyle.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.btnNextCyle.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnNextCyle.BorderRadius = 40;
             this.btnNextCyle.BorderSize = 0;

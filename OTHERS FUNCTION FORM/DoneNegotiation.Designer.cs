@@ -44,8 +44,8 @@
             // btnDoneNegotiation
             // 
             this.btnDoneNegotiation.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnDoneNegotiation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnDoneNegotiation.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnDoneNegotiation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
+            this.btnDoneNegotiation.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.btnDoneNegotiation.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnDoneNegotiation.BorderRadius = 40;
             this.btnDoneNegotiation.BorderSize = 0;

@@ -44,8 +44,8 @@
             // btnReDo
             // 
             this.btnReDo.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnReDo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnReDo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnReDo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
+            this.btnReDo.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.btnReDo.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnReDo.BorderRadius = 40;
             this.btnReDo.BorderSize = 0;

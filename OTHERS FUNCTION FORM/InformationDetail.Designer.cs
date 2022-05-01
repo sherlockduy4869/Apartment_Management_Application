@@ -40,8 +40,8 @@
             // btnDetailInformation
             // 
             this.btnDetailInformation.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnDetailInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnDetailInformation.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnDetailInformation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
+            this.btnDetailInformation.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.btnDetailInformation.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnDetailInformation.BorderRadius = 40;
             this.btnDetailInformation.BorderSize = 0;

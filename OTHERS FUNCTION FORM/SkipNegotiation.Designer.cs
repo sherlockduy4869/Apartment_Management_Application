@@ -40,8 +40,8 @@
             // btnSkipNegotiation
             // 
             this.btnSkipNegotiation.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnSkipNegotiation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnSkipNegotiation.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnSkipNegotiation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
+            this.btnSkipNegotiation.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.btnSkipNegotiation.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnSkipNegotiation.BorderRadius = 40;
             this.btnSkipNegotiation.BorderSize = 0;

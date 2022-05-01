@@ -40,8 +40,8 @@
             // btnMarkDone
             // 
             this.btnMarkDone.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnMarkDone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnMarkDone.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnMarkDone.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
+            this.btnMarkDone.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.btnMarkDone.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnMarkDone.BorderRadius = 40;
             this.btnMarkDone.BorderSize = 0;

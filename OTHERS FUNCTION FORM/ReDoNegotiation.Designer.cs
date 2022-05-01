@@ -40,8 +40,8 @@
             // btnRedoNegotiation
             // 
             this.btnRedoNegotiation.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnRedoNegotiation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnRedoNegotiation.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnRedoNegotiation.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
+            this.btnRedoNegotiation.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.btnRedoNegotiation.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnRedoNegotiation.BorderRadius = 40;
             this.btnRedoNegotiation.BorderSize = 0;

@@ -89,7 +89,7 @@
             this.cbDuAn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbDuAn.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbDuAn.FormattingEnabled = true;
-            this.cbDuAn.Location = new System.Drawing.Point(209, 3);
+            this.cbDuAn.Location = new System.Drawing.Point(209, 4);
             this.cbDuAn.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.cbDuAn.Name = "cbDuAn";
             this.cbDuAn.Size = new System.Drawing.Size(203, 24);
@@ -112,7 +112,7 @@
             this.cbTinhTrang.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbTinhTrang.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbTinhTrang.FormattingEnabled = true;
-            this.cbTinhTrang.Location = new System.Drawing.Point(209, 3);
+            this.cbTinhTrang.Location = new System.Drawing.Point(209, 4);
             this.cbTinhTrang.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.cbTinhTrang.Name = "cbTinhTrang";
             this.cbTinhTrang.Size = new System.Drawing.Size(203, 24);
@@ -177,8 +177,8 @@
             // btnAdd
             // 
             this.btnAdd.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.btnAdd.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.btnAdd.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
+            this.btnAdd.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.btnAdd.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.btnAdd.BorderRadius = 40;
             this.btnAdd.BorderSize = 0;
@@ -202,7 +202,7 @@
             this.label22.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Century Gothic", 16.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.label22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.label22.Location = new System.Drawing.Point(25, 6);
             this.label22.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label22.Name = "label22";
@@ -260,7 +260,7 @@
             this.cbSoPhongNgu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbSoPhongNgu.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbSoPhongNgu.FormattingEnabled = true;
-            this.cbSoPhongNgu.Location = new System.Drawing.Point(210, 3);
+            this.cbSoPhongNgu.Location = new System.Drawing.Point(210, 4);
             this.cbSoPhongNgu.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.cbSoPhongNgu.Name = "cbSoPhongNgu";
             this.cbSoPhongNgu.Size = new System.Drawing.Size(201, 24);
