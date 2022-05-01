@@ -35,6 +35,9 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             txbTienThu.Text = tienCanThu.ToString("N0");
             dtpkNgaydau.Value = ngayDau;
             dtpkNgaycuoi.Value = ngayCuoi;
+
+            lbTotalAmount.Font = new Font(Label.DefaultFont, FontStyle.Bold);
+            txbTienThu.Font = new Font(Label.DefaultFont, FontStyle.Bold);
         }
 
     }

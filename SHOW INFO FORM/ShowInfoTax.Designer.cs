@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ShowInfoTax));
-            this.label1 = new System.Windows.Forms.Label();
+            this.lbTitle = new System.Windows.Forms.Label();
             this.dtgvApartTax = new System.Windows.Forms.DataGridView();
             this.btnMarkDone = new QuanlyCanHoGiangTran.Custom.RJButton();
             this.btnReDo = new QuanlyCanHoGiangTran.Custom.RJButton();
@@ -75,18 +75,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.pbRefresh)).BeginInit();
             this.SuspendLayout();
             // 
-            // label1
+            // lbTitle
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(6, 0);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(559, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "LIST APARTMENT NEED TO COLLECT MONEY";
+            this.lbTitle.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.lbTitle.AutoSize = true;
+            this.lbTitle.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lbTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
+            this.lbTitle.Location = new System.Drawing.Point(50, 0);
+            this.lbTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lbTitle.Name = "lbTitle";
+            this.lbTitle.Size = new System.Drawing.Size(470, 31);
+            this.lbTitle.TabIndex = 0;
+            this.lbTitle.Text = "DANH SÁCH CĂN HỘ CẦN THU TIỀN";
             // 
             // dtgvApartTax
             // 
@@ -310,7 +310,7 @@
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel2.Controls.Add(this.panel1, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.label1, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.lbTitle, 0, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 10);
             this.tableLayoutPanel2.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -493,7 +493,7 @@
 
         #endregion
 
-        private Label label1;
+        private Label lbTitle;
         private DataGridView dtgvApartTax;
         private Custom.RJButton btnMarkDone;
         private Custom.RJButton btnReDo;

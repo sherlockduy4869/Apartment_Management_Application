@@ -19,6 +19,9 @@ namespace QuanlyCanHoGiangTran
             InitializeComponent();
             listApartTax();
             designDatagridview();
+
+            string toDay = DateTime.UtcNow.Date.ToString("dd-MM-yyyy");
+            lbTitle.Text = "DANH SÁCH CĂN HỘ CẦN THU TIỀN " + toDay;
         }
 
         void listApartTax()
@@ -26,7 +29,7 @@ namespace QuanlyCanHoGiangTran
             //string toDay = DateTime.UtcNow.Date.ToString();
             string toDay = "2022-06-10";
 
-            dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE (NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
+            dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT STT,MACANHO,TENCHUHO,DUAN,NGAYDAU,NGAYCUOI,TIENCANTHU,TRANGTHAI FROM APARTMENT_MONEY WHERE (NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
                                                                          "OR ('" + toDay + "' >= NGAYCUOI)");
         }
 
@@ -40,13 +43,13 @@ namespace QuanlyCanHoGiangTran
             //Change column's name for datagridview
             dtgvApartTax.Columns["MACANHO"].HeaderText = "APARTMENT CODE";
             dtgvApartTax.Columns["TENCHUHO"].HeaderText = "HOUSE OWNER ";
-            dtgvApartTax.Columns["EMAIL"].HeaderText = "EMAIL";
-            dtgvApartTax.Columns["PHONE"].HeaderText = "PHONE";
-            dtgvApartTax.Columns["DAILY"].HeaderText = "AGENT NAME";
+            //dtgvApartTax.Columns["EMAIL"].HeaderText = "EMAIL";
+            //dtgvApartTax.Columns["PHONE"].HeaderText = "PHONE";
+            //dtgvApartTax.Columns["DAILY"].HeaderText = "AGENT NAME";
             dtgvApartTax.Columns["DUAN"].HeaderText = "AREA";
             dtgvApartTax.Columns["NGAYDAU"].HeaderText = "FROM";
             dtgvApartTax.Columns["NGAYCUOI"].HeaderText = "TO";
-            dtgvApartTax.Columns["CHUKY"].HeaderText = "PAYMENT TERM";
+            //dtgvApartTax.Columns["CHUKY"].HeaderText = "PAYMENT TERM";
             dtgvApartTax.Columns["TIENCANTHU"].HeaderText = "TOTAL AMOUNT";
             dtgvApartTax.Columns["TRANGTHAI"].HeaderText = "STATUS";
 
@@ -56,6 +59,7 @@ namespace QuanlyCanHoGiangTran
                 col.HeaderCell.Style.Alignment = DataGridViewContentAlignment.MiddleCenter;
                 //col.HeaderCell.Style.Font = new Font("Arial", 20F, FontStyle.Bold, GraphicsUnit.Pixel);
             }
+            
         }
 
         private void txbSearch_TextChanged(object sender, EventArgs e)
@@ -64,7 +68,7 @@ namespace QuanlyCanHoGiangTran
             string toDay = "2022-06-10";
 
             txbSearch.ForeColor = System.Drawing.Color.Black;
-            dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE ((NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
+            dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT STT,MACANHO,TENCHUHO,DUAN,NGAYDAU,NGAYCUOI,TIENCANTHU,TRANGTHAI FROM APARTMENT_MONEY WHERE ((NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
                                                                          "OR ('" + toDay + "' >= NGAYCUOI)) AND MACANHO LIKE '" + txbSearch.Text + "%'");
         }
 
@@ -122,7 +126,7 @@ namespace QuanlyCanHoGiangTran
             //string toDay = DateTime.UtcNow.Date.ToString();
             string toDay = "2022-06-10";
 
-            dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE (NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
+            dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT STT,MACANHO,TENCHUHO,DUAN,NGAYDAU,NGAYCUOI,TIENCANTHU,TRANGTHAI FROM APARTMENT_MONEY WHERE (NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
                                                                          "OR ('" + toDay + "' >= NGAYCUOI)");
         }
 
@@ -131,7 +135,7 @@ namespace QuanlyCanHoGiangTran
             //string toDay = DateTime.UtcNow.Date.ToString();
             string toDay = "2022-06-10";
 
-            dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_MONEY WHERE (NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
+            dtgvApartTax.DataSource = DataProvider.Instance.ExecuteQuery("SELECT STT,MACANHO,TENCHUHO,DUAN,NGAYDAU,NGAYCUOI,TIENCANTHU,TRANGTHAI FROM APARTMENT_MONEY WHERE (NGAYDAU <= '" + toDay + "' AND '" + toDay + "' <= NGAYCUOI) " +
                                                                          "OR ('" + toDay + "' >= NGAYCUOI)");
         }
 

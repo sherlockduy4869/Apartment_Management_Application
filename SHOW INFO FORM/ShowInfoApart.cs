@@ -24,8 +24,8 @@ namespace QuanlyCanHoGiangTran
 
         void showInforAllApart()
         {
-            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
-                                                                         "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU,NGAYBATDAU,NGAYKETTHUC FROM APARTMENT_INFO");
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,NGAYBATDAU,NGAYKETTHUC,EMAIL,PHONE,DUAN,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
+                                                                         "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU FROM APARTMENT_INFO");
         }
 
         void designDatagridview()
@@ -71,8 +71,8 @@ namespace QuanlyCanHoGiangTran
         private void txbSearch_TextChanged(object sender, EventArgs e)
         {
             txbSearch.ForeColor = System.Drawing.Color.Black;
-            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
-                                                                         "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU,NGAYBATDAU,NGAYKETTHUC FROM APARTMENT_INFO WHERE MACANHO LIKE '" + txbSearch.Text + "%'");
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,NGAYBATDAU,NGAYKETTHUC,EMAIL,PHONE,DUAN,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
+                                                                         "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU FROM APARTMENT_INFO WHERE MACANHO LIKE '" + txbSearch.Text + "%'");
         }
 
         private void txbSearch_Click(object sender, EventArgs e)
@@ -82,14 +82,14 @@ namespace QuanlyCanHoGiangTran
 
         private void btnRefresh_Click(object sender, EventArgs e)
         {
-            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
-                                                                         "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU,NGAYBATDAU,NGAYKETTHUC FROM APARTMENT_INFO");
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,NGAYBATDAU,NGAYKETTHUC,EMAIL,PHONE,DUAN,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
+                                                                         "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU FROM APARTMENT_INFO");
         }
 
         private void pbRefresh_Click(object sender, EventArgs e)
         {
-            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
-                                                                         "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU,NGAYBATDAU,NGAYKETTHUC FROM APARTMENT_INFO");
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,NGAYBATDAU,NGAYKETTHUC,EMAIL,PHONE,DUAN,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
+                                                                         "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU FROM APARTMENT_INFO");
         }
 
         private void btnAdd_Click_1(object sender, EventArgs e)

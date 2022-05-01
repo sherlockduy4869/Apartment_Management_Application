@@ -163,12 +163,12 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 19.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(174)))), ((int)(((byte)(0)))));
-            this.label1.Location = new System.Drawing.Point(20, 0);
+            this.label1.Location = new System.Drawing.Point(63, 0);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(530, 33);
+            this.label1.Size = new System.Drawing.Size(445, 33);
             this.label1.TabIndex = 4;
-            this.label1.Text = "LIST OF APARTMENT NEED TO NEGOTIATE CONTRACT";
+            this.label1.Text = "EXTEND CONTRACT NEGOTIATION";
             // 
             // pictureBox1
             // 
