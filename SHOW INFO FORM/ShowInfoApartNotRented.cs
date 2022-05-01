@@ -37,10 +37,12 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             //Change column's name for datagridview
             dtgvApartInfo.Columns["MACANHO"].HeaderText = "APARTMENT CODE";
             dtgvApartInfo.Columns["TENCHUHO"].HeaderText = "HOUSE OWNER ";
-            dtgvApartInfo.Columns["DAILY"].HeaderText = "AGENT NAME";
             dtgvApartInfo.Columns["DUAN"].HeaderText = "AREA";
+            dtgvApartInfo.Columns["SOPHONGNGU"].HeaderText = "BEDROOM";
+            dtgvApartInfo.Columns["DIENTICH"].HeaderText = "SQM";
             dtgvApartInfo.Columns["TINHTRANG"].HeaderText = "STATUS";
-            
+            dtgvApartInfo.Columns["DAILY"].HeaderText = "AGENT NAME";
+
             //Edit colums style for datagridview
             foreach (DataGridViewColumn col in dtgvApartInfo.Columns)
             {

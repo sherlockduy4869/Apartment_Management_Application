@@ -26,7 +26,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             //string toDay = DateTime.UtcNow.Date.ToString();
             string toDay = "2022-12-15";
 
-            dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,TIENTHUEMOTTHANG,NGAYBATDAU,NGAYKETTHUC,STATUS FROM APARTMENT_CONTRACT " +
+            dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,MACANHO,DUAN,NGAYBATDAU,NGAYKETTHUC,TIENTHUEMOTTHANG,THUE,PHIQUANLY,PHIDONVESINH,TIENREFUNDKHACH,DAILY,PHONE,STATUS FROM APARTMENT_CONTRACT " +
                                                                                 "WHERE NGAYNHAC <= '" + toDay + "' AND '" + toDay + "' <= NGAYKETTHUC");
         }
         private void txbSearch_TextChanged(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             string toDay = "2022-12-15";
 
             txbSearch.ForeColor = System.Drawing.Color.Black;
-            dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,EMAIL,PHONE,DUAN,TIENTHUEMOTTHANG,NGAYBATDAU,NGAYKETTHUC,STATUS FROM APARTMENT_CONTRACT " +
+            dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,MACANHO,DUAN,NGAYBATDAU,NGAYKETTHUC,TIENTHUEMOTTHANG,THUE,PHIQUANLY,PHIDONVESINH,TIENREFUNDKHACH,DAILY,PHONE,STATUS FROM APARTMENT_CONTRACT " +
                                                                                 "WHERE NGAYNHAC <= '" + toDay + "' AND '" + toDay + "' <= NGAYKETTHUC AND MACANHO LIKE '" + txbSearch.Text + "%'");
         }
 
@@ -46,15 +46,19 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             dtgvNegotiateApart.Columns["NGAYKETTHUC"].DefaultCellStyle.Format = "dd-MM-yyyy";
 
             //Change column's name for datagridview
-            dtgvNegotiateApart.Columns["MACANHO"].HeaderText = "APARTMENT CODE";
             dtgvNegotiateApart.Columns["TENCHUHO"].HeaderText = "HOUSE OWNER ";
-            dtgvNegotiateApart.Columns["EMAIL"].HeaderText = "EMAIL";
-            dtgvNegotiateApart.Columns["PHONE"].HeaderText = "PHONE";
-            dtgvNegotiateApart.Columns["DAILY"].HeaderText = "AGENT NAME";
+            dtgvNegotiateApart.Columns["MACANHO"].HeaderText = "APARTMENT CODE";
             dtgvNegotiateApart.Columns["DUAN"].HeaderText = "AREA";
-            dtgvNegotiateApart.Columns["TIENTHUEMOTTHANG"].HeaderText = "RENTING FEE PER MONTH";
             dtgvNegotiateApart.Columns["NGAYBATDAU"].HeaderText = "FROM";
             dtgvNegotiateApart.Columns["NGAYKETTHUC"].HeaderText = "TO";
+            dtgvNegotiateApart.Columns["TIENTHUEMOTTHANG"].HeaderText = "RENTING FEE PER MONTH";
+            //dtgvNegotiateApart.Columns["EMAIL"].HeaderText = "EMAIL";
+            dtgvNegotiateApart.Columns["THUE"].HeaderText = "TAX AMOUNT";
+            dtgvNegotiateApart.Columns["PHIQUANLY"].HeaderText = "MANAGEMENT FEE";
+            dtgvNegotiateApart.Columns["TIENREFUNDKHACH"].HeaderText = "REFUND FOR TENANT";
+            dtgvNegotiateApart.Columns["PHIDONVESINH"].HeaderText = "CLEANING FEE";
+            dtgvNegotiateApart.Columns["DAILY"].HeaderText = "AGENT NAME";
+            dtgvNegotiateApart.Columns["PHONE"].HeaderText = "PHONE";
 
             //Edit colums style for datagridview
             foreach (DataGridViewColumn col in dtgvNegotiateApart.Columns)
@@ -106,7 +110,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             //string toDay = DateTime.UtcNow.Date.ToString();
             string toDay = "2022-12-15";
 
-            dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,DAILY,EMAIL,PHONE,MACANHO,DUAN,TIENTHUEMOTTHANG,NGAYBATDAU,NGAYKETTHUC,STATUS FROM APARTMENT_CONTRACT " +
+            dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,MACANHO,DUAN,NGAYBATDAU,NGAYKETTHUC,TIENTHUEMOTTHANG,THUE,PHIQUANLY,PHIDONVESINH,TIENREFUNDKHACH,DAILY,PHONE,STATUS FROM APARTMENT_CONTRACT " +
                                                                                 "WHERE NGAYNHAC <= '" + toDay + "' AND '" + toDay + "' <= NGAYKETTHUC");
         }
 
@@ -133,7 +137,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             //string toDay = DateTime.UtcNow.Date.ToString();
             string toDay = "2022-12-15";
 
-            dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,DAILY,EMAIL,PHONE,MACANHO,DUAN,TIENTHUEMOTTHANG,NGAYBATDAU,NGAYKETTHUC,STATUS FROM APARTMENT_CONTRACT " +
+            dtgvNegotiateApart.DataSource = DataProvider.Instance.ExecuteQuery("SELECT TENCHUHO,MACANHO,DUAN,NGAYBATDAU,NGAYKETTHUC,TIENTHUEMOTTHANG,THUE,PHIQUANLY,PHIDONVESINH,TIENREFUNDKHACH,DAILY,PHONE,STATUS FROM APARTMENT_CONTRACT " +
                                                                                 "WHERE NGAYNHAC <= '" + toDay + "' AND '" + toDay + "' <= NGAYKETTHUC");
         }
     }
