@@ -34,6 +34,8 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             dtgvApartInfo.Columns["TENCHUHO"].HeaderText = "HOUSE OWNER ";
             dtgvApartInfo.Columns["DAILY"].HeaderText = "AGENT NAME";
             dtgvApartInfo.Columns["DUAN"].HeaderText = "AREA";
+            dtgvApartInfo.Columns["SOPHONGNGU"].HeaderText = "BEDROOM";
+            dtgvApartInfo.Columns["DIENTICH"].HeaderText = "SQM";
 
             foreach (DataGridViewColumn col in dtgvApartInfo.Columns)
             {

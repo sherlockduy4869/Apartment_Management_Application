@@ -37,6 +37,14 @@ namespace QuanlyCanHoGiangTran.ADDING_FORM
             }
             cbDuAn.DataSource = listDuAn;
 
+            List<string> listPhongNgu = new List<string>();
+            string[] arrayListPhongNgu = { "1 PN", "2 PN", "2 PN + 1", "3 PN", "3 PN + 1", "4 PN", "4 PN + 1" };
+            foreach (string str in arrayListPhongNgu)
+            {
+                listPhongNgu.Add(str);
+            }
+            cbSoPhongNgu.DataSource = listPhongNgu;
+
         }
 
         void clearInfo()
@@ -54,8 +62,10 @@ namespace QuanlyCanHoGiangTran.ADDING_FORM
             string tinhTrang = cbTinhTrang.Text;
             string tenChuHo = txbTenChuHo.Text;
             string daiLy = txbDaiLy.Text;
+            string soPhongNgu = cbSoPhongNgu.Text;
+            string dienTich = txbSQM.Text;
 
-            int i = AdminDAL.Instance.addApartmentNotRented(maCanHo, tenChuHo, duan, tinhTrang, daiLy);
+            int i = AdminDAL.Instance.addApartmentNotRented(maCanHo, tenChuHo, duan, tinhTrang, daiLy, soPhongNgu, dienTich);
 
             try
             {

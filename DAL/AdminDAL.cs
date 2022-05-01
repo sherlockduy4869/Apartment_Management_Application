@@ -44,10 +44,10 @@ namespace QuanlyCanHoGiangTran.DAL
             return i;
         }
 
-        public int addApartmentNotRented(string maCanHo, string tenChuHo, string duAn, string tinhTrang, string daiLy)
+        public int addApartmentNotRented(string maCanHo, string tenChuHo, string duAn, string soPhongNgu, string dienTich, string tinhTrang, string daiLy)
         {
-            string query = "Insert into APARTMENT_NOT_RENTED (MACANHO,TENCHUHO,DUAN,TINHTRANG,DAILY) VALUES(" +
-                            "'" + maCanHo + "','" + tenChuHo + "','" + duAn + "',N'" + tinhTrang + "','" + daiLy + "')";
+            string query = "Insert into APARTMENT_NOT_RENTED (MACANHO,TENCHUHO,DUAN,SOPHONGNGU,DIENTICH,TINHTRANG,DAILY) VALUES(" +
+                            "'" + maCanHo + "','" + tenChuHo + "','" + duAn + "','" + soPhongNgu + "','" + dienTich + "',N'" + tinhTrang + "','" + daiLy + "')";
             int i = DataProvider.Instance.ExecuteNonQuery(query);
             return i;
         }
