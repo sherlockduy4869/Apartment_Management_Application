@@ -39,8 +39,8 @@ namespace QuanlyCanHoGiangTran
             if (Loginn(userName, passWord) == true)
             {
                 var mainForm = new MainForm();
-                this.Hide();
                 mainForm.Show();
+                this.Hide();
             }
             else
             {
