@@ -70,7 +70,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         void listFinanceCategory()
         {
             List<string> listFinanceCategory = new List<string>();
-            string[] arrayListFinanceCategory = { "THUE", "PHIKEKHAITHUE", "PHIQUANLY", "TIENREFUNDKHACH", "PHIDONVESINH", "TIENTHU" };
+            string[] arrayListFinanceCategory = { "TAX", "TAX DECLARE FEE", "MANAGEMENT FEE", "REFUND FOR TENANT", "CLEANING FEE" };
             foreach (string str in arrayListFinanceCategory)
             {
                 listFinanceCategory.Add(str);
@@ -84,35 +84,35 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             string typeOfFee = cbFinanceCategory.Text;
 
-            if (typeOfFee == "THUE")
+            if (typeOfFee == "TAX")
             {
                 int status = Int32.Parse(lbThue.Text);
                 final_status = status + 1;
                 typeOfStatus = "STATUS_THUE";
             }
 
-            if (typeOfFee == "PHIKEKHAITHUE")
+            if (typeOfFee == "TAX DECLARE FEE")
             {
                 int status = Int32.Parse(lbPhiKeKhaiThue.Text);
                 final_status = status + 1;
                 typeOfStatus = "STATUS_PHIKEKHAITHUE";
             }
 
-            if (typeOfFee == "PHIQUANLY")
+            if (typeOfFee == "MANAGEMENT FEE")
             {
                 int status = Int32.Parse(lbPhiQuanLy.Text);
                 final_status = status + 1;
                 typeOfStatus = "STATUS_PHIQUANLY";
             }
 
-            if (typeOfFee == "TIENREFUNDKHACH")
+            if (typeOfFee == "REFUND FOR TENANT")
             {
                 int status = Int32.Parse(lbTienReFundKhach.Text);
                 final_status = status + 1;
                 typeOfStatus = "STATUS_TIENREFUNDKHACH";
             }
 
-            if (typeOfFee == "PHIDONVESINH")
+            if (typeOfFee == "CLEANING FEE")
             {
                 int status = Int32.Parse(lbPhidonvesinh.Text);
                 final_status = status + 1;
@@ -125,7 +125,6 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
 
                 if (i != 0)
                 {
-
                     MessageBox.Show("MarkDone");
                 }
                 else
@@ -143,35 +142,35 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             string typeOfFee = cbFinanceCategory.Text;
 
-            if (typeOfFee == "THUE")
+            if (typeOfFee == "TAX")
             {
                 int status = Int32.Parse(lbThue.Text);
                 final_status = status + 1;
                 typeOfStatus = "STATUS_THUE";
             }
 
-            if (typeOfFee == "PHIKEKHAITHUE")
+            if (typeOfFee == "TAX DECLARE FEE")
             {
                 int status = Int32.Parse(lbPhiKeKhaiThue.Text);
                 final_status = status + 1;
                 typeOfStatus = "STATUS_PHIKEKHAITHUE";
             }
 
-            if (typeOfFee == "PHIQUANLY")
+            if (typeOfFee == "MANAGEMENT FEE")
             {
                 int status = Int32.Parse(lbPhiQuanLy.Text);
                 final_status = status + 1;
                 typeOfStatus = "STATUS_PHIQUANLY";
             }
 
-            if (typeOfFee == "TIENREFUNDKHACH")
+            if (typeOfFee == "REFUND FOR TENANT")
             {
                 int status = Int32.Parse(lbTienReFundKhach.Text);
                 final_status = status + 1;
                 typeOfStatus = "STATUS_TIENREFUNDKHACH";
             }
 
-            if (typeOfFee == "PHIDONVESINH")
+            if (typeOfFee == "CLEANING FEE")
             {
                 int status = Int32.Parse(lbPhidonvesinh.Text);
                 final_status = status + 1;
@@ -202,35 +201,35 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
 
             string typeOfFee = cbFinanceCategory.Text;
 
-            if (typeOfFee == "THUE")
+            if (typeOfFee == "TAX")
             {
                 int status = Int32.Parse(lbThue.Text);
                 final_status = status - 1;
                 typeOfStatus = "STATUS_THUE";
             }
 
-            if (typeOfFee == "PHIKEKHAITHUE")
+            if (typeOfFee == "TAX DECLARE FEE")
             {
                 int status = Int32.Parse(lbPhiKeKhaiThue.Text);
                 final_status = status - 1;
                 typeOfStatus = "STATUS_PHIKEKHAITHUE";
             }
 
-            if (typeOfFee == "PHIQUANLY")
+            if (typeOfFee == "MANAGEMENT FEE")
             {
                 int status = Int32.Parse(lbPhiQuanLy.Text);
                 final_status = status - 1;
                 typeOfStatus = "STATUS_PHIQUANLY";
             }
 
-            if (typeOfFee == "TIENREFUNDKHACH")
+            if (typeOfFee == "REFUND FOR TENANT")
             {
                 int status = Int32.Parse(lbTienReFundKhach.Text);
                 final_status = status - 1;
                 typeOfStatus = "STATUS_TIENREFUNDKHACH";
             }
 
-            if (typeOfFee == "PHIDONVESINH")
+            if (typeOfFee == "CLEANING FEE")
             {
                 int status = Int32.Parse(lbPhidonvesinh.Text);
                 final_status = status - 1;
@@ -257,8 +256,6 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
                         MessageBox.Show("Failed");
                     }
                 }
-                    
-                
             }
             catch (Exception ex)
             {
@@ -269,35 +266,35 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             string typeOfFee = cbFinanceCategory.Text;
 
-            if (typeOfFee == "THUE")
+            if (typeOfFee == "TAX")
             {
                 int status = Int32.Parse(lbThue.Text);
                 final_status = status - 1;
                 typeOfStatus = "STATUS_THUE";
             }
 
-            if (typeOfFee == "PHIKEKHAITHUE")
+            if (typeOfFee == "TAX DECLARE FEE")
             {
                 int status = Int32.Parse(lbPhiKeKhaiThue.Text);
                 final_status = status - 1;
                 typeOfStatus = "STATUS_PHIKEKHAITHUE";
             }
 
-            if (typeOfFee == "PHIQUANLY")
+            if (typeOfFee == "MANAGEMENT FEE")
             {
                 int status = Int32.Parse(lbPhiQuanLy.Text);
                 final_status = status - 1;
                 typeOfStatus = "STATUS_PHIQUANLY";
             }
 
-            if (typeOfFee == "TIENREFUNDKHACH")
+            if (typeOfFee == "REFUND FOR TENANT")
             {
                 int status = Int32.Parse(lbTienReFundKhach.Text);
                 final_status = status - 1;
                 typeOfStatus = "STATUS_TIENREFUNDKHACH";
             }
 
-            if (typeOfFee == "PHIDONVESINH")
+            if (typeOfFee == "CLEANING FEE")
             {
                 int status = Int32.Parse(lbPhidonvesinh.Text);
                 final_status = status - 1;
@@ -324,8 +321,6 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
                         MessageBox.Show("Failed");
                     }
                 }
-
-
             }
             catch (Exception ex)
             {
@@ -348,7 +343,7 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             this.Close();
         }
 
-        private void pictureBox2_Click(object sender, EventArgs e)
+        private void pbRefresh_Click(object sender, EventArgs e)
         {
             ApartmentFinance apartmentFinance = AdminDAL.Instance.getFinanceDetailByMaCanHo(txbMaCanHo.Text);
             Apartment apartment = AdminDAL.Instance.getApartmentByMaCanHo(txbMaCanHo.Text);
@@ -364,6 +359,6 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
             this.Close();
         }
 
-       
+        
     }
 }
