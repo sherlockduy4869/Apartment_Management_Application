@@ -211,7 +211,7 @@
             this.cbSoPhongNgu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbSoPhongNgu.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbSoPhongNgu.FormattingEnabled = true;
-            this.cbSoPhongNgu.Location = new System.Drawing.Point(166, 2);
+            this.cbSoPhongNgu.Location = new System.Drawing.Point(166, 1);
             this.cbSoPhongNgu.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.cbSoPhongNgu.Name = "cbSoPhongNgu";
             this.cbSoPhongNgu.Size = new System.Drawing.Size(160, 24);
@@ -278,7 +278,7 @@
             this.cbDuAn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbDuAn.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbDuAn.FormattingEnabled = true;
-            this.cbDuAn.Location = new System.Drawing.Point(166, 2);
+            this.cbDuAn.Location = new System.Drawing.Point(166, 1);
             this.cbDuAn.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.cbDuAn.Name = "cbDuAn";
             this.cbDuAn.Size = new System.Drawing.Size(161, 24);
@@ -393,7 +393,7 @@
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel6, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel4, 0, 0);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 69);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(2, 69);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;

@@ -89,7 +89,7 @@
             this.cbDuAn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbDuAn.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbDuAn.FormattingEnabled = true;
-            this.cbDuAn.Location = new System.Drawing.Point(209, 4);
+            this.cbDuAn.Location = new System.Drawing.Point(209, 3);
             this.cbDuAn.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.cbDuAn.Name = "cbDuAn";
             this.cbDuAn.Size = new System.Drawing.Size(203, 24);
@@ -112,7 +112,7 @@
             this.cbTinhTrang.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbTinhTrang.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbTinhTrang.FormattingEnabled = true;
-            this.cbTinhTrang.Location = new System.Drawing.Point(209, 4);
+            this.cbTinhTrang.Location = new System.Drawing.Point(209, 3);
             this.cbTinhTrang.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.cbTinhTrang.Name = "cbTinhTrang";
             this.cbTinhTrang.Size = new System.Drawing.Size(203, 24);
@@ -260,7 +260,7 @@
             this.cbSoPhongNgu.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbSoPhongNgu.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbSoPhongNgu.FormattingEnabled = true;
-            this.cbSoPhongNgu.Location = new System.Drawing.Point(210, 4);
+            this.cbSoPhongNgu.Location = new System.Drawing.Point(210, 3);
             this.cbSoPhongNgu.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.cbSoPhongNgu.Name = "cbSoPhongNgu";
             this.cbSoPhongNgu.Size = new System.Drawing.Size(201, 24);
