@@ -16,5 +16,18 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             InitializeComponent();
         }
+
+        public ShowInfoApartNotRentedDetail(string maCanHo, string tenChuHo, string duAn, string soPhongNgu, string dienTich, string daiLy, string tinhTrang)
+        {
+            InitializeComponent();
+
+            txbMaCanHo.Text = maCanHo;
+            txbTenChuHo.Text = tenChuHo;
+            txbDuAn.Text = duAn;
+            txbSoPhongNgu.Text = soPhongNgu;
+            txbSQM.Text = dienTich;
+            txbDaiLy.Text = daiLy;
+            txbTinhTrang.Text = tinhTrang;
+        }
     }
 }

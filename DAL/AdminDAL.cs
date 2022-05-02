@@ -44,7 +44,7 @@ namespace QuanlyCanHoGiangTran.DAL
             return i;
         }
 
-        public int addApartmentNotRented(string maCanHo, string tenChuHo, string duAn, string soPhongNgu, string dienTich, string tinhTrang, string daiLy)
+        public int addApartmentNotRented(string maCanHo, string tenChuHo, string duAn, string tinhTrang, string dienTich, string soPhongNgu, string daiLy)
         {
             string query = "Insert into APARTMENT_NOT_RENTED (MACANHO,TENCHUHO,DUAN,SOPHONGNGU,DIENTICH,TINHTRANG,DAILY) VALUES(" +
                             "'" + maCanHo + "','" + tenChuHo + "','" + duAn + "','" + soPhongNgu + "','" + dienTich + "',N'" + tinhTrang + "','" + daiLy + "')";
@@ -162,6 +162,16 @@ namespace QuanlyCanHoGiangTran.DAL
             foreach (DataRow row in data.Rows)
             {
                 return new ApartmentSelling(row);
+            }
+            return null;
+        }
+
+        public ApartmentNotRented getApartmentNotRentedByMaCanHo(string maCanHo)
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DUAN,SOPHONGNGU,DIENTICH,TINHTRANG,DAILY FROM APARTMENT_NOT_RENTED WHERE MACANHO = '" + maCanHo + "'");
+            foreach (DataRow row in data.Rows)
+            {
+                return new ApartmentNotRented(row);
             }
             return null;
         }

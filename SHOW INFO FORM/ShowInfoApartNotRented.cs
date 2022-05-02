@@ -1,5 +1,6 @@
 ﻿using QuanlyCanHoGiangTran.ADDING_FORM;
 using QuanlyCanHoGiangTran.DAL;
+using QuanlyCanHoGiangTran.OTHERS_FUNCTION_FORM;
 using QuanlyCanHoGiangTran.REMOVING_FORM;
 using System;
 using System.Collections.Generic;
@@ -55,17 +56,6 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             txbSearch.Clear();
         }
-
-        private void btnRefresh_Click(object sender, EventArgs e)
-        {
-            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_NOT_RENTED");
-        }
-
-        private void pbRefresh_Click(object sender, EventArgs e)
-        {
-            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_NOT_RENTED");
-        }
-
         private void btnAdd_Click(object sender, EventArgs e)
         {
             AddNewApartNotRented addNewApartNotRented = new AddNewApartNotRented();
@@ -88,6 +78,28 @@ namespace QuanlyCanHoGiangTran.SHOW_INFO_FORM
         {
             RemoveApartNotRented removeApartNotRented = new RemoveApartNotRented();
             removeApartNotRented.Show();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_NOT_RENTED");
+        }
+
+        private void pbRefresh_Click(object sender, EventArgs e)
+        {
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT * FROM APARTMENT_NOT_RENTED");
+        }
+
+        private void btnInformationDetail_Click(object sender, EventArgs e)
+        {
+            InforDetailApartNotRented inforDetailApartNotRented = new InforDetailApartNotRented();
+            inforDetailApartNotRented.Show();
+        }
+
+        private void pbInfoDetails_Click(object sender, EventArgs e)
+        {
+            InforDetailApartNotRented inforDetailApartNotRented = new InforDetailApartNotRented();
+            inforDetailApartNotRented.Show();
         }
     }
 }
