@@ -112,6 +112,7 @@
             this.btnDetailInformation.Text = "Detail Information";
             this.btnDetailInformation.TextColor = System.Drawing.Color.White;
             this.btnDetailInformation.UseVisualStyleBackColor = false;
+            this.btnDetailInformation.Click += new System.EventHandler(this.btnDetailInformation_Click);
             // 
             // InforDetailSellingApart
             // 

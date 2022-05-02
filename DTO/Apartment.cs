@@ -29,8 +29,6 @@ namespace QuanlyCanHoGiangTran.DTO
 
         private DateTime _ngaybatdau;
         private DateTime _ngayketthuc;
-        private DateTime _ngaydau;
-        private DateTime _ngaycuoi;
 
         private int _songaynhacnho;
         private int _chuky;

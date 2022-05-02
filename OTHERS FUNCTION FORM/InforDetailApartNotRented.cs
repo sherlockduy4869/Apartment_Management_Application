@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QuanlyCanHoGiangTran.SHOW_INFO_FORM;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,13 @@ namespace QuanlyCanHoGiangTran.OTHERS_FUNCTION_FORM
         public InforDetailApartNotRented()
         {
             InitializeComponent();
+        }
+
+        private void btnDetailInformation_Click(object sender, EventArgs e)
+        {
+            ShowInfoApartNotRentedDetail showInfoApartNotRentedDetail = new ShowInfoApartNotRentedDetail();
+            showInfoApartNotRentedDetail.Show();
+            this.Close();
         }
     }
 }
