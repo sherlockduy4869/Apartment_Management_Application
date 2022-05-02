@@ -156,7 +156,7 @@
             this.cbFinanceCategory.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbFinanceCategory.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbFinanceCategory.FormattingEnabled = true;
-            this.cbFinanceCategory.Location = new System.Drawing.Point(143, 22);
+            this.cbFinanceCategory.Location = new System.Drawing.Point(143, 6);
             this.cbFinanceCategory.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.cbFinanceCategory.Name = "cbFinanceCategory";
             this.cbFinanceCategory.Size = new System.Drawing.Size(222, 24);
@@ -168,12 +168,12 @@
             this.tableLayoutPanel3.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel3.Controls.Add(this.panel14, 0, 1);
             this.tableLayoutPanel3.Controls.Add(this.cbFinanceCategory, 0, 0);
-            this.tableLayoutPanel3.Location = new System.Drawing.Point(229, 483);
+            this.tableLayoutPanel3.Location = new System.Drawing.Point(229, 497);
             this.tableLayoutPanel3.Name = "tableLayoutPanel3";
             this.tableLayoutPanel3.RowCount = 2;
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34.53238F));
-            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 65.46763F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(509, 198);
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 21.21212F));
+            this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 78.78788F));
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(509, 171);
             this.tableLayoutPanel3.TabIndex = 48;
             // 
             // panel14
@@ -183,7 +183,7 @@
             this.panel14.Controls.Add(this.pbDone);
             this.panel14.Controls.Add(this.btnRedo);
             this.panel14.Controls.Add(this.btnMarkDone);
-            this.panel14.Location = new System.Drawing.Point(3, 71);
+            this.panel14.Location = new System.Drawing.Point(3, 41);
             this.panel14.Name = "panel14";
             this.panel14.Size = new System.Drawing.Size(503, 124);
             this.panel14.TabIndex = 0;
@@ -340,7 +340,7 @@
             // txbChuKy
             // 
             this.txbChuKy.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbChuKy.Location = new System.Drawing.Point(128, 24);
+            this.txbChuKy.Location = new System.Drawing.Point(128, 18);
             this.txbChuKy.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbChuKy.Name = "txbChuKy";
             this.txbChuKy.ReadOnly = true;
@@ -351,7 +351,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(15, 30);
+            this.label8.Location = new System.Drawing.Point(15, 24);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(90, 16);
@@ -385,7 +385,7 @@
             // txbTongThu
             // 
             this.txbTongThu.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbTongThu.Location = new System.Drawing.Point(128, 24);
+            this.txbTongThu.Location = new System.Drawing.Point(128, 18);
             this.txbTongThu.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbTongThu.Name = "txbTongThu";
             this.txbTongThu.ReadOnly = true;
@@ -397,7 +397,7 @@
             // 
             this.lbTongThu.AutoSize = true;
             this.lbTongThu.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbTongThu.Location = new System.Drawing.Point(15, 30);
+            this.lbTongThu.Location = new System.Drawing.Point(15, 24);
             this.lbTongThu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTongThu.Name = "lbTongThu";
             this.lbTongThu.Size = new System.Drawing.Size(46, 16);
@@ -431,7 +431,7 @@
             // txbBalance
             // 
             this.txbBalance.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbBalance.Location = new System.Drawing.Point(128, 24);
+            this.txbBalance.Location = new System.Drawing.Point(128, 18);
             this.txbBalance.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbBalance.Name = "txbBalance";
             this.txbBalance.ReadOnly = true;
@@ -442,7 +442,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(15, 30);
+            this.label7.Location = new System.Drawing.Point(15, 24);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(52, 16);
@@ -476,7 +476,7 @@
             // txbTongChi
             // 
             this.txbTongChi.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbTongChi.Location = new System.Drawing.Point(128, 24);
+            this.txbTongChi.Location = new System.Drawing.Point(128, 18);
             this.txbTongChi.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbTongChi.Name = "txbTongChi";
             this.txbTongChi.ReadOnly = true;
@@ -487,7 +487,7 @@
             // 
             this.lbTongChi.AutoSize = true;
             this.lbTongChi.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lbTongChi.Location = new System.Drawing.Point(15, 30);
+            this.lbTongChi.Location = new System.Drawing.Point(15, 24);
             this.lbTongChi.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lbTongChi.Name = "lbTongChi";
             this.lbTongChi.Size = new System.Drawing.Size(56, 16);
@@ -521,7 +521,7 @@
             // txbThue
             // 
             this.txbThue.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbThue.Location = new System.Drawing.Point(163, 24);
+            this.txbThue.Location = new System.Drawing.Point(160, 18);
             this.txbThue.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbThue.Name = "txbThue";
             this.txbThue.ReadOnly = true;
@@ -554,7 +554,7 @@
             // txbPhiKeKhaiThue
             // 
             this.txbPhiKeKhaiThue.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbPhiKeKhaiThue.Location = new System.Drawing.Point(163, 24);
+            this.txbPhiKeKhaiThue.Location = new System.Drawing.Point(163, 18);
             this.txbPhiKeKhaiThue.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbPhiKeKhaiThue.Name = "txbPhiKeKhaiThue";
             this.txbPhiKeKhaiThue.ReadOnly = true;
@@ -565,7 +565,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(15, 30);
+            this.label6.Location = new System.Drawing.Point(15, 24);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(90, 16);
@@ -587,7 +587,7 @@
             // txbPhiQuanLy
             // 
             this.txbPhiQuanLy.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbPhiQuanLy.Location = new System.Drawing.Point(163, 24);
+            this.txbPhiQuanLy.Location = new System.Drawing.Point(163, 18);
             this.txbPhiQuanLy.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbPhiQuanLy.Name = "txbPhiQuanLy";
             this.txbPhiQuanLy.ReadOnly = true;
@@ -598,7 +598,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(15, 30);
+            this.label9.Location = new System.Drawing.Point(15, 24);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(100, 16);
@@ -620,7 +620,7 @@
             // txbTienRefundKhach
             // 
             this.txbTienRefundKhach.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbTienRefundKhach.Location = new System.Drawing.Point(163, 24);
+            this.txbTienRefundKhach.Location = new System.Drawing.Point(163, 18);
             this.txbTienRefundKhach.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbTienRefundKhach.Name = "txbTienRefundKhach";
             this.txbTienRefundKhach.ReadOnly = true;
@@ -631,7 +631,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label10.Location = new System.Drawing.Point(15, 30);
+            this.label10.Location = new System.Drawing.Point(15, 24);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(105, 16);
@@ -653,7 +653,7 @@
             // txbPhiDonVeSinh
             // 
             this.txbPhiDonVeSinh.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.txbPhiDonVeSinh.Location = new System.Drawing.Point(163, 24);
+            this.txbPhiDonVeSinh.Location = new System.Drawing.Point(163, 19);
             this.txbPhiDonVeSinh.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txbPhiDonVeSinh.Name = "txbPhiDonVeSinh";
             this.txbPhiDonVeSinh.ReadOnly = true;
@@ -664,7 +664,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Century", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.Location = new System.Drawing.Point(15, 30);
+            this.label12.Location = new System.Drawing.Point(15, 27);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(76, 16);
@@ -686,10 +686,10 @@
             this.panel12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel12.Controls.Add(this.dtpkNgayCuoi);
             this.panel12.Controls.Add(this.label13);
-            this.panel12.Location = new System.Drawing.Point(299, 0);
+            this.panel12.Location = new System.Drawing.Point(334, 0);
             this.panel12.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(218, 50);
+            this.panel12.Size = new System.Drawing.Size(218, 53);
             this.panel12.TabIndex = 28;
             // 
             // dtpkNgayCuoi
