@@ -1,4 +1,6 @@
-﻿using QuanlyCanHoGiangTran.SHOW_INFO_FORM;
+﻿using QuanlyCanHoGiangTran.DAL;
+using QuanlyCanHoGiangTran.DTO;
+using QuanlyCanHoGiangTran.SHOW_INFO_FORM;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,9 +22,30 @@ namespace QuanlyCanHoGiangTran.OTHERS_FUNCTION_FORM
 
         private void btnDetailInformation_Click(object sender, EventArgs e)
         {
-            ShowInforApartRentedDetail showInforApartRentedDetail = new ShowInforApartRentedDetail();
-            showInforApartRentedDetail.Show();
-            this.Close();
+            Apartment apartment = AdminDAL.Instance.getApartmentByMaCanHo(txbMaCanHo.Text);
+
+
+            
+
+            try
+            {
+                if (apartment != null)
+                {
+                    ShowInforApartRentedDetail showInforApartRentedDetail = new ShowInforApartRentedDetail(apartment.Macanho, apartment.Duan, apartment.Daily, apartment.Tenchuho, apartment.Email, apartment.Phone, apartment.Masothue, apartment.Hinhthucthuthue
+                                                                                                     , apartment.Coquanthuthue, apartment.Chuky, apartment.Tienthuemotthang, apartment.Thue, apartment.Phikekhaithue, apartment.Phiquanly
+                                                                                                     , apartment.Tienrefundkhach, apartment.Phidonvesinh, apartment.Tienthu, apartment.Ngaybatdau, apartment.Ngayketthuc, apartment.SoNgayNhacNho);
+                    showInforApartRentedDetail.Show();
+                    this.Close();
+                }
+                else
+                {
+                    MessageBox.Show("ERROR 404");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("ERROR 404");
+            }
         }
     }
 }

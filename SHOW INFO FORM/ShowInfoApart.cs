@@ -10,6 +10,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using QuanlyCanHoGiangTran.OTHERS_FUNCTION_FORM;
 
 namespace QuanlyCanHoGiangTran
 {
@@ -80,18 +81,6 @@ namespace QuanlyCanHoGiangTran
             txbSearch.Clear();
         }
 
-        private void btnRefresh_Click(object sender, EventArgs e)
-        {
-            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,NGAYBATDAU,NGAYKETTHUC,EMAIL,PHONE,DUAN,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
-                                                                         "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU FROM APARTMENT_INFO");
-        }
-
-        private void pbRefresh_Click(object sender, EventArgs e)
-        {
-            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,NGAYBATDAU,NGAYKETTHUC,EMAIL,PHONE,DUAN,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
-                                                                         "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU FROM APARTMENT_INFO");
-        }
-
         private void btnAdd_Click_1(object sender, EventArgs e)
         {
             AddNewApart addNewApart = new AddNewApart();
@@ -114,6 +103,30 @@ namespace QuanlyCanHoGiangTran
         {
             RemoveApart removeApart = new RemoveApart();
             removeApart.Show();
+        }
+
+        private void btnRefresh_Click(object sender, EventArgs e)
+        {
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,NGAYBATDAU,NGAYKETTHUC,EMAIL,PHONE,DUAN,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
+                                                                         "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU FROM APARTMENT_INFO");
+        }
+
+        private void pbRefresh_Click(object sender, EventArgs e)
+        {
+            dtgvApartInfo.DataSource = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DAILY,NGAYBATDAU,NGAYKETTHUC,EMAIL,PHONE,DUAN,MASOTHUE,HINHTHUCKHAITHUE,COQUANTHUTHUE,THUE,PHIKEKHAITHUE," +
+                                                                         "PHIQUANLY,TIENREFUNDKHACH,PHIDONVESINH,TIENTHU FROM APARTMENT_INFO");
+        }
+
+        private void btnInformationDetail_Click(object sender, EventArgs e)
+        {
+            InforDetailRentedApartment inforDetailRentedApartment = new InforDetailRentedApartment();
+            inforDetailRentedApartment.Show();
+        }
+
+        private void pbInfoDetails_Click(object sender, EventArgs e)
+        {
+            InforDetailRentedApartment inforDetailRentedApartment = new InforDetailRentedApartment();
+            inforDetailRentedApartment.Show();
         }
     }
 }

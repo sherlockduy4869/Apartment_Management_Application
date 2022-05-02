@@ -102,7 +102,7 @@
             this.cbDuAn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.cbDuAn.Font = new System.Drawing.Font("Century", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.cbDuAn.FormattingEnabled = true;
-            this.cbDuAn.Location = new System.Drawing.Point(163, 7);
+            this.cbDuAn.Location = new System.Drawing.Point(163, 6);
             this.cbDuAn.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.cbDuAn.Name = "cbDuAn";
             this.cbDuAn.Size = new System.Drawing.Size(158, 24);

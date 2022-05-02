@@ -391,7 +391,7 @@
             this.pbInfoDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.pbInfoDetails.Cursor = System.Windows.Forms.Cursors.Hand;
             this.pbInfoDetails.Image = ((System.Drawing.Image)(resources.GetObject("pbInfoDetails.Image")));
-            this.pbInfoDetails.Location = new System.Drawing.Point(0, 2);
+            this.pbInfoDetails.Location = new System.Drawing.Point(4, 1);
             this.pbInfoDetails.Name = "pbInfoDetails";
             this.pbInfoDetails.Size = new System.Drawing.Size(29, 29);
             this.pbInfoDetails.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -403,10 +403,9 @@
             // 
             this.btnInformationDetail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(114)))));
             this.btnInformationDetail.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnInformationDetail.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnInformationDetail.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInformationDetail.ForeColor = System.Drawing.Color.White;
-            this.btnInformationDetail.Location = new System.Drawing.Point(0, 0);
+            this.btnInformationDetail.Location = new System.Drawing.Point(3, -1);
             this.btnInformationDetail.Name = "btnInformationDetail";
             this.btnInformationDetail.Size = new System.Drawing.Size(129, 34);
             this.btnInformationDetail.TabIndex = 61;
