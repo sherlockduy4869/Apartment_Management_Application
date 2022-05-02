@@ -24,9 +24,6 @@ namespace QuanlyCanHoGiangTran.OTHERS_FUNCTION_FORM
         {
             Apartment apartment = AdminDAL.Instance.getApartmentByMaCanHo(txbMaCanHo.Text);
 
-
-            
-
             try
             {
                 if (apartment != null)

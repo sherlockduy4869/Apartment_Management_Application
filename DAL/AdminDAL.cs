@@ -155,6 +155,16 @@ namespace QuanlyCanHoGiangTran.DAL
             return null;
         }
 
+        public ApartmentSelling getApartmentSellingByMaCanHo(string maCanHo)
+        {
+            DataTable data = DataProvider.Instance.ExecuteQuery("SELECT MACANHO,TENCHUHO,DUAN,SOPHONGNGU,DIENTICH,GIATIENUSD,GIATIENVND,EMAIL," +
+                                                                "PHONE,DAILY,NGAYNHAPDATA,GHICHU FROM APARTMENT_SELLING WHERE MACANHO = '" + maCanHo + "'");
+            foreach (DataRow row in data.Rows)
+            {
+                return new ApartmentSelling(row);
+            }
+            return null;
+        }
 
         public ApartmentMoneyTax getApartmentMoneyByMaCanHo(string maCanHo)
         {
