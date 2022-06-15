@@ -240,7 +240,8 @@ BEGIN
 	SET @ngaycuoiMinus = DATEADD(DAY, -1, @ngaycuoi)
 	SET @tiencanthu = @tienthu
 
-	INSERT INTO APARTMENT_MONEY(MACANHO, TENCHUHO, DAILY, EMAIL, PHONE, DUAN, NGAYDAU, NGAYCUOI, CHUKY, TIENCANTHU) VALUES(@macanho, @tenchuho,@daily,@email,@phone, @duan, @ngaydau, @ngaycuoiMinus, @chuky, @tiencanthu)
+	INSERT INTO APARTMENT_MONEY(MACANHO, TENCHUHO, DAILY, EMAIL, PHONE, DUAN, NGAYDAU, NGAYCUOI, CHUKY, TIENCANTHU)
+	VALUES(@macanho, @tenchuho,@daily,@email,@phone, @duan, @ngaydau, @ngaycuoiMinus, @chuky, @tiencanthu)
 	
 END
 GO
@@ -294,8 +295,13 @@ BEGIN
 
 	SET @ngaynhac = DATEADD(DAY, -@songaynhacnho, @ngayketthuc)
 
-	INSERT INTO APARTMENT_CONTRACT(MACANHO, TENCHUHO, DAILY, EMAIL, PHONE, DUAN, MASOTHUE, HINHTHUCKHAITHUE, COQUANTHUTHUE, THUE, PHIKEKHAITHUE, PHIQUANLY, TIENREFUNDKHACH, PHIDONVESINH, NGAYBATDAU, NGAYKETTHUC, NGAYNHAC, SONGAYNHACNHO, TIENTHU, TIENTHUEMOTTHANG) 
-	VALUES(@macanho, @tenchuho, @daily,@email,@phone, @duan,@masothue,@hinhthuckhaithue,@coquanthuthue,@thue,@phikekhaithue,@phiquanly,@tienrefundkhach,@phidonvesinh,@ngaybatdau, @ngayketthuc, @ngaynhac, @songaynhacnho, @tienthu, @tienthuemotthang)
+	INSERT INTO APARTMENT_CONTRACT(MACANHO, TENCHUHO, DAILY, EMAIL, PHONE, DUAN, MASOTHUE, HINHTHUCKHAITHUE, 
+	COQUANTHUTHUE, THUE, PHIKEKHAITHUE, PHIQUANLY, TIENREFUNDKHACH, PHIDONVESINH, NGAYBATDAU, NGAYKETTHUC, 
+	NGAYNHAC, SONGAYNHACNHO, TIENTHU, TIENTHUEMOTTHANG) 
+
+	VALUES(@macanho, @tenchuho, @daily,@email,@phone, @duan,@masothue,@hinhthuckhaithue,
+	@coquanthuthue,@thue,@phikekhaithue,@phiquanly,@tienrefundkhach,@phidonvesinh,@ngaybatdau, 
+	@ngayketthuc, @ngaynhac, @songaynhacnho, @tienthu, @tienthuemotthang)
 END
 GO
 
